@@ -146,6 +146,10 @@ if __name__ == "__main__":
     for model, is_inst in models:
         for file_name, ds_name, lang in datasets:
             for wm_name, need_obf in wms:
+                # The prompts of MultiPL-E JS are simple.
+                # The inst scheme will generate wrong function name for MultiPL-E JS.
+                if ds_name == "mbpp_js": # MultiPL-E
+                    is_inst = False
 
                 para_comb_count = len(wm_name_2_para_comb[wm_name])
                 ds_task_count = len(ds_name_2_data[ds_name])

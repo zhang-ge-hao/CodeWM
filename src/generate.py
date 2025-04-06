@@ -128,32 +128,31 @@ def get_solution(task: GenTask):
         elif "```" in generation:
             solution = generation.split("```")[0]
         else:
-            solution = None
-        if solution is not None:
-            if task.language == "py":
-                met_entry_point = False
-                for idx in range(len(solution) - 1):
-                    if solution[idx: idx + len(task.entry_point)] == task.entry_point:
-                        met_entry_point = True
-                    elif met_entry_point and solution[idx] == "\n":
-                        if solution[idx + 1] not in ("\t", "#", "\n", " "):
-                            return solution[: idx].rstrip()
-            elif task.language == "js":
-                met_entry_point = False
-                met_lb = False
-                bracket_debt = 1
-                for idx in range(len(solution)):
-                    if solution[idx: idx + len(task.entry_point)] == task.entry_point:
-                        met_entry_point = True
-                    elif not met_lb and met_entry_point and solution[idx] == "{":
-                        met_lb = True
-                    elif met_entry_point and met_lb:
-                        if solution[idx] == "{":
-                            bracket_debt += 1
-                        elif solution[idx] == "}":
-                            bracket_debt -= 1
-                        if bracket_debt == 0:
-                            return solution[: idx + 1].rstrip()
+            solution = generation
+        if task.language == "py":
+            met_entry_point = False
+            for idx in range(len(solution) - 1):
+                if solution[idx: idx + len(task.entry_point)] == task.entry_point:
+                    met_entry_point = True
+                elif met_entry_point and solution[idx] == "\n":
+                    if solution[idx + 1] not in ("\t", "#", "\n", " "):
+                        return solution[: idx].rstrip()
+        elif task.language == "js":
+            met_entry_point = False
+            met_lb = False
+            bracket_debt = 1
+            for idx in range(len(solution)):
+                if solution[idx: idx + len(task.entry_point)] == task.entry_point:
+                    met_entry_point = True
+                elif not met_lb and met_entry_point and solution[idx] == "{":
+                    met_lb = True
+                elif met_entry_point and met_lb:
+                    if solution[idx] == "{":
+                        bracket_debt += 1
+                    elif solution[idx] == "}":
+                        bracket_debt -= 1
+                    if bracket_debt == 0:
+                        return solution[: idx + 1].rstrip()
             return solution
         return generation
     elif task.language == "py":
