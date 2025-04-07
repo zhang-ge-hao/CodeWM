@@ -4,9 +4,10 @@ import re
 import os
 from dataclasses import asdict
 from itertools import product
+import random
 sys.path.append("src")
 
-from _data_structure import *
+from _dataclass import *
 
 def extract_entry_point(dp, ds_name):
     if "entry_point" in dp:
@@ -82,7 +83,7 @@ if __name__ == "__main__":
     ]
 
     lang_2_obf = {
-        "py": ["pyminify"],
+        "py": ["pyminify", "pyminifier"],
         "js": ["javascript-obfuscator", "uglifyjs"]
     }
 
@@ -170,11 +171,15 @@ if __name__ == "__main__":
 
                         gen_task = GenTask(
                             id=gen_task_id,
-                            task_name=task_name, model_name=model, watermarking=wm_name, 
+                            task_name=task_name, dataset_name=ds_name, 
+                            model_name=model, watermarking=wm_name, 
                             language=lang, is_inst=is_inst, need_obf=need_obf,
-                            temperature=temperature, delta=delta, gamma=gamma, entropy_threshold=entropy_threshold,
+                            temperature=temperature, delta=delta, 
+                            gamma=gamma, entropy_threshold=entropy_threshold,
                             ori_prompt=ori_prompt, entry_point=entry_point, test=test,
-                            p4d=None, g4d=None, solution=None, passed=None, res_d=None,
+                            p4d=None, g4d=None, solution=None, s_len=None,
+                            passed=None, z_score=None, p_value=None,
+                            custom_seed=int(random.uniform(0, 0xFFFFFFFFFFFFFFFF))
                         )
                         dp_gen_tasks.append(gen_task)
 
@@ -184,7 +189,8 @@ if __name__ == "__main__":
                             obf_task_id = f"{obf_name}--{gen_task_id}"
                             obf_task = ObfTask(
                                 id=obf_task_id, gen_task_id=gen_task_id, obf_name=obf_name,
-                                p4d=None, g4d=None, solution=None, passed=None, res_d=None
+                                p4d=None, g4d=None, solution=None, s_len=None,
+                                passed=None, z_score=None, p_value=None, bad_trans=None
                             )
                             dp_obf_tasks.append(obf_task)
                         

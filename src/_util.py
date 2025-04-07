@@ -6,12 +6,6 @@ import json
 from dataclasses import asdict
 
 
-def hash_str_to_int(string):
-    hash_obj = hashlib.sha3_512(string.encode())
-    hash_int = int(hash_obj.hexdigest(), 16)
-    return hash_int & 0xFFFFFFFFFFFFFFFF
-
-
 @contextlib.contextmanager
 def change_dir(path):
     prev = os.getcwd()

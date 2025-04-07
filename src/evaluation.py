@@ -6,7 +6,7 @@ import contextlib
 import signal
 import logging
 sys.path.append("src")
-from _data_structure import *
+from _dataclass import *
 from _util import create_tempdir
 
 
@@ -32,7 +32,7 @@ def evaluate(task: GenTask|ObfTask, gen_task: GenTask):
                 "from typing import *", "from collections import *",
             ]
             import_helper = "\n".join(import_helper)
-            code_with_test = "\n\n".join([import_helper, task.solution, task.test])
+            code_with_test = "\n\n".join([import_helper, task.solution, gen_task.test])
             try:
                 exec_globals = {}
                 with swallow_io():
@@ -46,7 +46,7 @@ def evaluate(task: GenTask|ObfTask, gen_task: GenTask):
             except Exception as e:
                 task.passed = False
         elif gen_task.language == "js":
-            code_with_test = "\n\n".join([task.solution, task.test])
+            code_with_test = "\n\n".join([task.solution, gen_task.test])
             code_file_name = "test.js"
             with open(code_file_name, "w") as file:
                 file.write(code_with_test)
@@ -71,7 +71,7 @@ def evaluate(task: GenTask|ObfTask, gen_task: GenTask):
         else:
             raise NotImplementedError()
         if not task.passed:
-            logging.warning(f"failed:\n{code_with_test}\n{'*' * 30}\n")
+            logging.warning(f"Not Pass:\n{code_with_test}\n{'*' * 30}\n")
 
 
 class WriteOnlyStringIO(io.StringIO):

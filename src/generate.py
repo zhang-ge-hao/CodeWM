@@ -12,13 +12,12 @@ import json
 from dataclasses import asdict
 sys.path.append("src")
 
-from _data_structure import *
+from _dataclass import *
 from _sweet import (
     SweetLogitsProcessor,
     WatermarkLogitsProcessor,
 )
 from _util import (
-    hash_str_to_int,
     dataclass_2_str
 )
 from _hf_obj import (
@@ -153,8 +152,7 @@ def get_solution(task: GenTask):
                         bracket_debt -= 1
                     if bracket_debt == 0:
                         return solution[: idx + 1].rstrip()
-            return solution
-        return generation
+        return solution
     elif task.language == "py":
         for idx in range(len(generation) - 1):
             if generation[idx] == "\n":
@@ -178,7 +176,7 @@ def get_solution(task: GenTask):
 def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
     logging.info(f"[start] {dataclass_2_str(task)}")
 
-    custom_seed = hash_str_to_int(task.id)
+    custom_seed = task.custom_seed
     hf_pipeline = get_hf_pipeline(task.model_name)
     tokenizer = get_hf_tokenizer(task.model_name)
 
@@ -236,6 +234,7 @@ def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
                            stopping_criteria=stopping_criteria_list,
                            **wm_param)[0]["generated_text"][len(task.p4d): ]
     task.solution = get_solution(task)
+    task.s_len = len(tokenizer.encode(task.solution))
     logging.info(f"[generated] {dataclass_2_str(task)}")
 
     evaluate(task=task, gen_task=task)

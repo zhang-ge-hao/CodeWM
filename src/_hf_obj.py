@@ -20,6 +20,7 @@ def get_hf_pipeline(model_name):
 def get_hf_tokenizer(model_name):
     if model_name not in HF_TOKENIZERS:
         hf_tokenizer = AutoTokenizer.from_pretrained(model_name)
+        hf_tokenizer.pad_token = hf_tokenizer.eos_token
         HF_TOKENIZERS[model_name] = hf_tokenizer
     return HF_TOKENIZERS[model_name]
 
