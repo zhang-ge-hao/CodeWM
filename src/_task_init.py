@@ -5,6 +5,7 @@ import os
 from dataclasses import asdict
 from itertools import product
 import random
+import argparse
 sys.path.append("src")
 
 from _dataclass import *
@@ -63,6 +64,14 @@ def extract_test(dp, ds_name):
 
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    default_slurm_log_dir = os.path.join(os.getenv("PI_WORKDIR"), "CodeWM_log")
+    parser.add_argument("--slurm", action='store_true')
+    parser.add_argument("--log_dir", type=str, default=default_slurm_log_dir)
+    parser.add_argument("--rewrite", action='store_true')
+    args = parser.parse_args()
+
     models = [ # and is_inst
         ("meta-llama/Llama-3.1-8B-Instruct", True),
         ("deepseek-ai/deepseek-coder-33b-base", False)
@@ -144,6 +153,10 @@ if __name__ == "__main__":
     gen_task_id_set = set()
     gen_task_count, obf_task_count = 0, 0
 
+    with open("data/slurm/template") as file:
+        slurm_template = "".join(file.readlines())
+    slurm_commands = []
+
     for model, is_inst in models:
         for file_name, ds_name, lang in datasets:
             for wm_name, need_obf in wms:
@@ -160,7 +173,28 @@ if __name__ == "__main__":
                       f"{para_comb_count} x {ds_task_count} = {para_comb_count * ds_task_count}")
 
                 for __dp_idx, (temperature, delta, gamma, entropy_threshold) in enumerate(wm_name_2_para_comb[wm_name]):
-                    dp_idx, dp_gen_tasks, dp_obf_tasks = __dp_idx + 1, [], []
+                    dp_idx, dp_gen_tasks, dp_obf_tasks = f"{__dp_idx+1:03d}", [], []
+
+                    if args.slurm:
+                        log_dir = args.log_dir
+                        rewrite = args.rewrite
+                        command = f"python main.py -t {task_folder_name} -d {dp_idx}"
+                        slurm_script = slurm_template.format(log_dir=log_dir, 
+                                                             task_name=task_folder_name,
+                                                             dp_idx=dp_idx,
+                                                             command=command)
+                        slurm_script_path = f"data/slurm/task/{task_folder_name}/{dp_idx}.sh"
+                        os.makedirs(os.path.dirname(slurm_script_path), exist_ok=True)
+                        with open(slurm_script_path, "w") as file:
+                            file.write(slurm_script)
+
+                        metrics_path = f"data/result/{task_folder_name}/{dp_idx}/metrics.jsonl"
+                        had_run = os.path.exists(metrics_path)
+
+                        if not had_run or rewrite:
+                            slurm_commands.append(f"sbatch {slurm_script_path}")
+                        continue
+
                     for task_name, ori_prompt, entry_point, test in ds_name_2_data[ds_name]:
 
                         gen_task_id = f"{task_name}--{model}--{wm_name}--" + \
@@ -197,11 +231,15 @@ if __name__ == "__main__":
                     gen_task_count += len(dp_gen_tasks)
                     obf_task_count += len(dp_obf_tasks)
                     for task_type, tasks in [("generate", dp_gen_tasks), ("obfuscate", dp_obf_tasks)]:
-                        dp_file_path = f"data/task/{task_folder_name}/{dp_idx:03d}/{task_type}.jsonl"
+                        dp_file_path = f"data/task/{task_folder_name}/{dp_idx}/{task_type}.jsonl"
                         os.makedirs(os.path.dirname(dp_file_path), exist_ok=True)
                         with open(dp_file_path, "w") as file:
                             for task in tasks:
                                 file.write(json.dumps(asdict(task)) + "\n")
-
-    print(f"COUNT(gen_tasks): {gen_task_count}")
-    print(f"COUNT(obf_tasks): {obf_task_count}")
+    if args.slurm:
+        with open(f"data/slurm/sbatch.sh", "w") as file:
+            file.write("\n".join(slurm_commands))
+        print(f"COUNT(slurm_commands): {len(slurm_commands)}")
+    else:
+        print(f"COUNT(gen_tasks): {gen_task_count}")
+        print(f"COUNT(obf_tasks): {obf_task_count}")

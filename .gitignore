@@ -2,6 +2,7 @@ __pycache__
 
 data/task
 data/result
+data/slurm
 
 log/
 
