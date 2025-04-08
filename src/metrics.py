@@ -6,7 +6,7 @@ from scipy.stats import norm
 from sklearn.metrics import roc_curve, auc
 sys.path.append("src")
 
-from _dataclass import *
+from _data import *
 
 
 def cal_ideal_auroc(samples: List[float]) -> float:
@@ -19,18 +19,30 @@ def cal_ideal_auroc(samples: List[float]) -> float:
     return auroc
 
 
+def merge_field(tasks: List[GenTask], field_name: str):
+    fields = [asdict(t)[field_name] for t in tasks]
+    if all(f is None for f in fields):
+        return None
+    assert all(f is not None for f in fields)
+    assert len(set(fields)) == 1
+    return fields[0]
+
+
 def calculate(gen_tasks: List[GenTask], 
               obf_tasks: List[ObfTask]) -> List[DataPoint]:
     if len(gen_tasks) == 0:
         return []
-    
-    assert all(t.need_obf for t in gen_tasks) or \
-        all(not t.need_obf for t in gen_tasks)
-    
-    need_obf = gen_tasks[0].need_obf
+
+    need_obf = merge_field(gen_tasks, "need_obf")
+    temperature = merge_field(gen_tasks, "temperature")
+    delta = merge_field(gen_tasks, "delta")
+    gamma = merge_field(gen_tasks, "gamma")
+    entropy_threshold = merge_field(gen_tasks, "entropy_threshold")
 
     assert (need_obf and len(obf_tasks) > 0) or \
-        (not need_obf and len(obf_tasks == 0))
+        (not need_obf and len(obf_tasks) == 0)
+    
+    pass1_only = not need_obf # TODO
 
     for field_name in ["language", "dataset_name", 
                        "model_name", "watermarking"]:
@@ -46,7 +58,7 @@ def calculate(gen_tasks: List[GenTask],
         for obf_task in obf_tasks:
             if obf_task.obf_name not in obf_name_2_success_gen_task_ids:
                 obf_name_2_success_gen_task_ids[obf_task.obf_name] = set()
-            if obf_task.solution is not None:
+            if obf_task.solution is not None and not obf_task.bad_trans:
                 obf_name_2_success_gen_task_ids[obf_task.obf_name].add(
                     obf_task.gen_task_id)
         retained_gen_task_ids = set([t.id for t in gen_tasks])
@@ -69,19 +81,20 @@ def calculate(gen_tasks: List[GenTask],
     for obf_name, tasks in obf_name_2_tasks.items():
         assert all(isinstance(t, GenTask) or isinstance(t, ObfTask) for t in tasks)
         pass1 = sum([(1 if t.passed else 0) for t in tasks]) / len(tasks)
-        auroc = cal_ideal_auroc([t.z_score for t in tasks])
-        z_score = sum([t.z_score for t in tasks]) / len(tasks)
-        p_value = sum([t.p_value for t in tasks]) / len(tasks)
         len_sum = sum([t.s_len for t in tasks])
-
-        bad_trans = None
-        if obf_name != "Original":
-            bad_trans = sum([(1 if t.bad_trans else 0) for t in tasks])
+        if pass1_only:
+            auroc, z_score, p_value = None, None, None
+        else:
+            auroc = cal_ideal_auroc([t.z_score for t in tasks])
+            z_score = sum([t.z_score for t in tasks]) / len(tasks)
+            p_value = sum([t.p_value for t in tasks]) / len(tasks)
 
         dp = DataPoint(language=language, dataset_name=dataset_name,
                        model_name=model_name, watermarking=watermarking,
                        obf_name=obf_name, pass1=pass1, auroc=auroc,
                        z_score=z_score, p_value=p_value, exp_c=len(gen_tasks),
-                       comp_c=len(tasks), len_sum=len_sum, bad_trans=bad_trans)
+                       comp_c=len(tasks), len_sum=len_sum, 
+                       temperature=temperature, delta=delta, gamma=gamma,
+                       entropy_threshold=entropy_threshold)
         ret.append(dp)
     return ret

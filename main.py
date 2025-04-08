@@ -45,7 +45,7 @@ import traceback
 from dataclasses import asdict
 from itertools import product
 
-from _dataclass import *
+from _data import *
 from generate import generate
 from obfuscate import obfuscate
 from metrics import calculate

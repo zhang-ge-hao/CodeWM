@@ -7,7 +7,7 @@ from transformers import (
 import scipy
 import torch
 sys.path.append("src")
-from _dataclass import *
+from _data import *
 from _hf_obj import (
     get_hf_pipeline, 
     get_hf_tokenizer,

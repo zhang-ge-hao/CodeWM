@@ -71,4 +71,7 @@ class DataPoint:
     comp_c: int # compilable case count
     len_sum: int # length sum compilable cases
 
-    bad_trans: int
+    temperature: float
+    delta: float
+    gamma: float
+    entropy_threshold: float

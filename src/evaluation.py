@@ -6,7 +6,7 @@ import contextlib
 import signal
 import logging
 sys.path.append("src")
-from _dataclass import *
+from _data import *
 from _util import create_tempdir
 
 

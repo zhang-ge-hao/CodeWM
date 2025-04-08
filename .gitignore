@@ -1,9 +1,10 @@
 __pycache__
 
-data/task
-data/result
-data/slurm
+data/
+!data/original
 
 log/
+
+filed/
 
 .vscode

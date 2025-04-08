@@ -8,7 +8,7 @@ import random
 import argparse
 sys.path.append("src")
 
-from _dataclass import *
+from _data import *
 
 def extract_entry_point(dp, ds_name):
     if "entry_point" in dp:

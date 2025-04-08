@@ -14,7 +14,7 @@ import json
 from dataclasses import asdict
 sys.path.append("src")
 
-from _dataclass import *
+from _data import *
 from _sweet import (
     SweetLogitsProcessor,
     WatermarkLogitsProcessor,
