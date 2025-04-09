@@ -1,7 +1,6 @@
 import os, sys, io
 import math
 from transformers import (
-    SynthIDTextWatermarkLogitsProcessor,
     PreTrainedTokenizerBase
 )
 import scipy
@@ -17,6 +16,7 @@ from _sweet import (
     SweetDetector,
     WatermarkDetector
 )
+from _synthid import SynthIDLogitsProcessor_withTemperature
 
 
 def synthid_compute_z_score(observed_g_tensor: torch.Tensor, 
@@ -73,8 +73,8 @@ def detect(task: GenTask|ObfTask, gen_task: GenTask, z_threshold=4.0, ngram_len=
             task.z_score = 0
         else:
             config_dict = get_synthid_config(custom_seed, ngram_len)
-            synthid_processor = SynthIDTextWatermarkLogitsProcessor(device="cuda",
-                                                                    **config_dict)
+            synthid_processor = SynthIDLogitsProcessor_withTemperature(
+                temperature=gen_task.temperature, device="cuda", **config_dict)
 
             g_tensor = synthid_processor.compute_g_values(output_ids) 
 

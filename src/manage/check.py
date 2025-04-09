@@ -62,3 +62,33 @@ if action == "metrics":
         with open(mp, "w") as file:
             for dp in dps:
                 file.write(json.dumps(asdict(dp)) + "\n")
+if action == "synthid_diff":
+    pairs = {}
+    for fn1, fn2, gp, op, mp in all_exps():
+        with open(mp) as file:
+            dps = [DataPoint(**json.loads(l)) for l in file]
+        for dp in dps:
+            if dp.watermarking == "no_wm" or \
+                    (dp.watermarking == "synthid" and dp.obf_name == "Original"):
+                key = (dp.model_name, dp.dataset_name, dp.temperature)
+                if key not in pairs:
+                    pairs[key] = []
+                if dp.watermarking == "no_wm":
+                    pairs[key] = [dp.pass1] + pairs[key]
+                else:
+                    pairs[key] = pairs[key] + [dp.pass1]
+    __pairs = {}
+    for (mn, ds, _), p in pairs.items():
+        if (mn, ds) not in __pairs:
+            __pairs[(mn, ds)] = []
+        __pairs[(mn, ds)].append(p)
+    pairs = __pairs
+    for (mn, ds), ps in pairs.items():
+        diffs = [p2 - p1 for p1, p2 in ps]
+        print(mn)
+        print(ds)
+        print(len([d for d in diffs if d >= 0]), len([d for d in diffs if d < 0]))
+        # diffs.sort()
+        # print(diffs)
+        print(sum([d for d in diffs]) / len(diffs))
+        print()

@@ -1,4 +1,5 @@
 import torch
+import random
 from transformers import (
     pipeline,
     AutoTokenizer
@@ -26,12 +27,12 @@ def get_hf_tokenizer(model_name):
 
 
 def get_synthid_config(custom_seed, ngram_len):
+    rng = random.Random(custom_seed)
+    keys = [int(rng.uniform(0, 1000)) for _ in range(30)]
     return {
         # This corresponds to H=4 context window size in the paper.
         "ngram_len": ngram_len,
-        "keys": [673, 197, 281, 206, 634, 513, 697, 187, 876, 555, 
-                    837, 271, 897, 455, 314, 494, 236, 539, 394, 414, 
-                    531, 108, 285, 596, 820, 219, 312, 183, 392, 972],
+        "keys": keys,
         "sampling_table_size": 2**16,
         "sampling_table_seed": custom_seed,
         "context_history_size": 1024,
