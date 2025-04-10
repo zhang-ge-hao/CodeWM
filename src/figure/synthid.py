@@ -80,7 +80,7 @@ def draw_plot(ax: Axes, obf_dps: List[DataPoint], ori_dps: List[DataPoint],
                      loc="left")
 
 
-def draw_line_chart(axs: List[Axes], dps: List[DataPoint], 
+def draw_line_chart(fig, axs: List[Axes], dps: List[DataPoint], 
                     short_model_name, selected_obfuscators):
     selected_obfuscators = ["Original"] + selected_obfuscators
     pass1_lines: Dict[Any, List[DataPoint]] = {}
@@ -89,6 +89,12 @@ def draw_line_chart(axs: List[Axes], dps: List[DataPoint],
     def is_model_match(dp: DataPoint):
         _mn = dp.model_name.split("/")[1].replace("-", " ")
         return _mn.lower() == model_name_map[model_name].lower()
+
+    __obf_2_marker = {}
+    def obf_2_marker(obf):
+        if obf not in __obf_2_marker:
+            __obf_2_marker[obf] = marker_set[len(__obf_2_marker)]
+        return __obf_2_marker[obf]
 
     __dsn_2_color = {}
     def dsn_2_color(dsn):
@@ -123,8 +129,9 @@ def draw_line_chart(axs: List[Axes], dps: List[DataPoint],
         wm = line_dps[0].watermarking
         pass1_ax.plot([dp.temperature for dp in line_dps], 
                       [dp.pass1 for dp in line_dps], dsn_2_color(ds_name),
-                      marker="o" if wm == "no_wm" else "s", 
-                      linewidth=1, markersize=4, 
+                    #   marker="o" if wm == "no_wm" else "s", 
+                      linewidth=2, markersize=4, 
+                      linestyle="-" if wm == "no_wm" else "--", 
                       label=ds_name)
     
     for (ds, obf), line_dps in auroc_lines.items():
@@ -132,13 +139,91 @@ def draw_line_chart(axs: List[Axes], dps: List[DataPoint],
         ds_name = line_dps[0].dataset_name
         obf = line_dps[0].obf_name
         auroc_ax.plot([dp.temperature for dp in line_dps], 
-                      [dp.auroc for dp in line_dps], dsn_2_color(ds_name),
-                      marker="o" if obf == "Original" else "s", 
-                      linewidth=1, markersize=4, 
-                      label=ds_name)
-    pass1_ax.legend()
-    auroc_ax.legend()
+                    [dp.auroc for dp in line_dps], 
+                    color=dsn_2_color(ds_name),
+                    marker=obf_2_marker(obf), 
+                    markerfacecolor="white",
+                    markeredgecolor=dsn_2_color(ds_name),
+                    markeredgewidth=1.5,
+                    linewidth=2, markersize=6, 
+                    label=ds_name)
 
+    pass1_ax.set_ylabel("Pass@1")
+    auroc_ax.set_ylabel("AUROC")
+    pass1_ax.set_xlabel("Temperature")
+    auroc_ax.set_xlabel("Temperature")
+    # pass1_ax.set_title("Code Generation Performance\nBef./Aft. Watermarking")
+    # auroc_ax.set_title("Watermarking Detection Performance\nBef./Aft. Obfuscation")
+
+    pass1_ax.set_xticks([dp.temperature for dp in dps])
+    auroc_ax.set_xticks([dp.temperature for dp in dps])
+    # pass1_ax.legend()
+    # auroc_ax.legend()
+
+    line_2ds = []
+    datasets = ["humaneval_py", "humaneval_js", "mbpp_py", "mbpp_js"]
+    for dsn in datasets:
+        color = __dsn_2_color[dsn]
+        line_2ds.append(
+            Line2D([0], [0], 
+                   marker="s", 
+                   label=dataset_name_map[dsn],
+                   markerfacecolor=color, 
+                   markeredgecolor="none",
+                   markersize=7,
+                   linestyle='none')
+        )
+    legend = fig.legend(
+        handles=line_2ds, ncol=1, title="Dataset (Line Color)       ",
+        loc='upper left', title_fontsize=7, 
+        fontsize=7, frameon=True,
+        bbox_to_anchor=(0.82, 0.89))
+    # auroc_ax.add_artist(legend)
+    legend.get_title().set_ha('left')
+    legend._legend_box.align = "left"
+
+    line_2ds = []
+
+    obf_names = ["Original", "pyminify", "pyminifier", 
+                 "javascript-obfuscator", "uglifyjs"]
+    for obf_name in obf_names:
+        line_2ds.append(
+            Line2D([0], [0], 
+                   marker=obf_2_marker(obf_name), 
+                   label=obf_name_map.get(obf_name, "Original"),
+                   markerfacecolor="white", 
+                   markeredgecolor="darkgrey",
+                   markersize=7,
+                   markeredgewidth=1.5,
+                   linestyle='none')
+        )
+    legend = fig.legend(
+        handles=line_2ds, ncol=1, title="Obfuscation (Marker)     ",
+        loc='upper left', title_fontsize=7, 
+        fontsize=7, frameon=True,
+        bbox_to_anchor=(0.82, 0.63))
+    # auroc_ax.add_artist(legend)
+    legend.get_title().set_ha('left')
+    legend._legend_box.align = "left"
+
+    line_2ds = []
+    for label, linestyle in [("Non-WMed", "-"), ("SynthID WMed", "--")]:
+        line_2ds.append(
+            Line2D([0], [0], 
+                   label=label,
+                   color="darkgrey",
+                   marker="none",
+                   linewidth=2,
+                   linestyle=linestyle)
+        )
+    legend = fig.legend(
+        handles=line_2ds, ncol=1, title="Bef./Aft. WM (Line Style)",
+        loc='lower left', title_fontsize=7, 
+        fontsize=7, frameon=True,
+        bbox_to_anchor=(0.82, 0.14))
+    # auroc_ax.add_artist(legend)
+    legend.get_title().set_ha('left')
+    legend._legend_box.align = "left"
 
 if __name__ == "__main__":
     result_root = "data/result"
@@ -146,7 +231,7 @@ if __name__ == "__main__":
 
     selected_models = ["Llama31Instruct8B", "DSCoderBase33B"]
     cn_and_selected_obfs = [
-        ("good_obf", ["pyminify", "javascript-obfuscator"]),
+        # ("good_obf", ["pyminify", "javascript-obfuscator"]),
         ("all", ["pyminify", "pyminifier", 
                  "javascript-obfuscator", "uglifyjs"])
     ]
@@ -169,11 +254,14 @@ if __name__ == "__main__":
 
     for model_name, (config_name, selected_obfuscators) in \
             product(selected_models, cn_and_selected_obfs):
-        fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(8, 4))
-        draw_line_chart(axs, dps, model_name, selected_obfuscators)
-        fig.suptitle(model_name_map[model_name], fontsize=11)
+        fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(8, 3.1))
+        draw_line_chart(fig, axs, dps, model_name, selected_obfuscators)
+        fig.suptitle(
+            f"{model_name_map[model_name]} vs. SynthID", fontsize=11
+        )
         plt.tight_layout()
         fig_path = f"{figure_output_root}/synthid--{model_name}--{config_name}.pdf"
         if os.path.exists(fig_path):
             os.remove(fig_path)
+        fig.subplots_adjust(right=0.81, wspace=0.22)
         plt.savefig(fig_path)

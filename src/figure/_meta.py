@@ -79,6 +79,7 @@ entropy_threshold_2_edgecolor = {k: v for k, v in zip(
     entropy_thresholds, classical_set)}
 gamma_2_marker = {0.10: "o", 0.25: "s", 0.50: "^"}
 
+marker_set = ["o", "s", "^", "D", "p"]
 
 def is_idx(folder_name):
     try:
