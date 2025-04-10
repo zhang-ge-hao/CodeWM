@@ -80,7 +80,7 @@ def calculate(gen_tasks: List[GenTask],
     ret: List[DataPoint] = []
     for obf_name, tasks in obf_name_2_tasks.items():
         assert all(isinstance(t, GenTask) or isinstance(t, ObfTask) for t in tasks)
-        pass1 = sum([(1 if t.passed else 0) for t in tasks]) / len(tasks)
+        pass1 = sum([(1 if t.passed else 0) for t in tasks]) / len(gen_tasks)
         len_sum = sum([t.s_len for t in tasks])
         if pass1_only:
             auroc, z_score, p_value = None, None, None

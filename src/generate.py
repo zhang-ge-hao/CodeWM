@@ -3,7 +3,8 @@ from transformers import (
     pipeline,
     StoppingCriteria,
     StoppingCriteriaList,
-    LogitsProcessorList
+    LogitsProcessorList,
+    SynthIDTextWatermarkLogitsProcessor
 )
 import logging
 import sys
@@ -16,7 +17,6 @@ from _sweet import (
     SweetLogitsProcessor,
     WatermarkLogitsProcessor,
 )
-from _synthid import SynthIDLogitsProcessor_withTemperature
 from _util import (
     dataclass_2_str
 )
@@ -191,8 +191,8 @@ def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
     assert task.temperature is not None
     if task.watermarking == "synthid":
         config_dict = get_synthid_config(custom_seed, ngram_len)
-        logits_processor = SynthIDLogitsProcessor_withTemperature(
-            temperature=task.temperature, device="cuda", **config_dict)
+        logits_processor = SynthIDTextWatermarkLogitsProcessor(
+            device="cuda", **config_dict)
         wm_param = {"logits_processor": LogitsProcessorList([logits_processor])}
     elif task.watermarking == "sweet":
         assert all(p is not None for p in [
@@ -222,13 +222,9 @@ def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
         raise NotImplementedError()
     
     assert task.temperature is not None
-    temperature = task.temperature
-    # NOTE: temperature has been applied in SynthIDLogitsProcessor_withTemperature
-    if task.watermarking == "synthid":
-        temperature = 1.0
     task.g4d = hf_pipeline(task.p4d,
                            do_sample=True, max_new_tokens=max_new_tokens,
-                           temperature=temperature,
+                           temperature=task.temperature,
                            pad_token_id=tokenizer.eos_token_id,
                            stopping_criteria=stopping_criteria_list,
                            **wm_param)[0]["generated_text"][len(task.p4d): ]

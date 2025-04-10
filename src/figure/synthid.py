@@ -173,4 +173,7 @@ if __name__ == "__main__":
         draw_line_chart(axs, dps, model_name, selected_obfuscators)
         fig.suptitle(model_name_map[model_name], fontsize=11)
         plt.tight_layout()
-        plt.savefig(f"{figure_output_root}/synthid--{model_name}--{config_name}.pdf")
+        fig_path = f"{figure_output_root}/synthid--{model_name}--{config_name}.pdf"
+        if os.path.exists(fig_path):
+            os.remove(fig_path)
+        plt.savefig(fig_path)
