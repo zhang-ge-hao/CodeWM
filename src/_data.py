@@ -18,6 +18,7 @@ class GenTask:
     delta: float
     gamma: float
     entropy_threshold: float
+    ngram_len: int
 
     ori_prompt: str
     entry_point: str
@@ -75,3 +76,4 @@ class DataPoint:
     delta: float
     gamma: float
     entropy_threshold: float
+    ngram_len: int

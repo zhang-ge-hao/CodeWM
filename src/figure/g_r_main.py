@@ -106,7 +106,7 @@ if __name__ == "__main__":
     result_root = "data/result"
     figure_output_root = "data/figure"
 
-    selected_models = ["Llama31Instruct8B"]
+    selected_models = ["Llama31Instruct8B", "DSCoderBase33B"]
     lang_2_selected_obf = {
         "py": ["pyminify"],
         "js": ["javascript-obfuscator"]

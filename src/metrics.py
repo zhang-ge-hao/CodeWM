@@ -38,6 +38,7 @@ def calculate(gen_tasks: List[GenTask],
     delta = merge_field(gen_tasks, "delta")
     gamma = merge_field(gen_tasks, "gamma")
     entropy_threshold = merge_field(gen_tasks, "entropy_threshold")
+    ngram_len = merge_field(gen_tasks, "ngram_len")
 
     assert (need_obf and len(obf_tasks) > 0) or \
         (not need_obf and len(obf_tasks) == 0)
@@ -94,7 +95,7 @@ def calculate(gen_tasks: List[GenTask],
                        obf_name=obf_name, pass1=pass1, auroc=auroc,
                        z_score=z_score, p_value=p_value, exp_c=len(gen_tasks),
                        comp_c=len(tasks), len_sum=len_sum, 
-                       temperature=temperature, delta=delta, gamma=gamma,
-                       entropy_threshold=entropy_threshold)
+                       temperature=temperature, delta=delta, gamma=gamma, 
+                       entropy_threshold=entropy_threshold, ngram_len=ngram_len)
         ret.append(dp)
     return ret

@@ -101,9 +101,9 @@ if __name__ == "__main__":
         "gamma": [0.1, 0.25, 0.5],
         "entropy_threshold": [0.3, 0.6, 0.9, 1.2],
         "temperature": [0.25, 0.5, 0.75, 1.0, 1.25],
+        "ngram_len": [5, 4, 3, 2],
         # "max_new_tokens": [512],
         # "z_threshold": [4],
-        # "ngram_len": [5]
     }
 
     model_2_shorter_name = {
@@ -132,22 +132,29 @@ if __name__ == "__main__":
     wm_name_2_para_comb = {}
     for wm_name, need_obf in wms:
         wm_name_2_para_comb[wm_name] = []
-        if wm_name in ["no_wm", "synthid"]:
+        if wm_name == "no_wm":
             for temperature in para_candidate["temperature"]:
                 wm_name_2_para_comb[wm_name].append((
-                    temperature, None, None, None
+                    temperature, None, None, None, None
+                ))
+        elif wm_name == "synthid":
+            for temperature in para_candidate["temperature"]:
+                wm_name_2_para_comb[wm_name].append((
+                    temperature, None, None, None, 5
                 ))
         elif wm_name == "wllm":
-            for delta, gamma in product(para_candidate["delta"], para_candidate["gamma"]):
+            for ngram_len, delta, gamma in product(para_candidate["ngram_len"],
+                                                   para_candidate["delta"], 
+                                                   para_candidate["gamma"]):
                 wm_name_2_para_comb[wm_name].append((
-                    1.0, delta, gamma, None
+                    1.0, delta, gamma, None, ngram_len
                 ))
         elif wm_name == "sweet":
             for delta, gamma, entropy_threshold in product(para_candidate["delta"], 
                                                            para_candidate["gamma"], 
                                                            para_candidate["entropy_threshold"]):
                 wm_name_2_para_comb[wm_name].append((
-                    1.0, delta, gamma, entropy_threshold
+                    1.0, delta, gamma, entropy_threshold, 5
                 ))
 
     gen_task_id_set = set()
@@ -172,7 +179,11 @@ if __name__ == "__main__":
                 print(f"{task_folder_name}: " + \
                       f"{para_comb_count} x {ds_task_count} = {para_comb_count * ds_task_count}")
 
-                for __dp_idx, (temperature, delta, gamma, entropy_threshold) in enumerate(wm_name_2_para_comb[wm_name]):
+                for __dp_idx, (temperature, 
+                               delta, 
+                               gamma, 
+                               entropy_threshold, 
+                               ngram_len) in enumerate(wm_name_2_para_comb[wm_name]):
                     dp_idx, dp_gen_tasks, dp_obf_tasks = f"{__dp_idx+1:03d}", [], []
 
                     if args.slurm:
@@ -199,6 +210,8 @@ if __name__ == "__main__":
 
                         gen_task_id = f"{task_name}--{model}--{wm_name}--" + \
                             f"{temperature}/{delta}/{gamma}/{entropy_threshold}"
+                        if ngram_len is not None and ngram_len != 5:
+                            gen_task_id += f"/{ngram_len}"
                         
                         assert gen_task_id not in gen_task_id_set, gen_task_id
                         gen_task_id_set.add(gen_task_id)
@@ -209,7 +222,7 @@ if __name__ == "__main__":
                             model_name=model, watermarking=wm_name, 
                             language=lang, is_inst=is_inst, need_obf=need_obf,
                             temperature=temperature, delta=delta, 
-                            gamma=gamma, entropy_threshold=entropy_threshold,
+                            gamma=gamma, entropy_threshold=entropy_threshold, ngram_len=ngram_len,
                             ori_prompt=ori_prompt, entry_point=entry_point, test=test,
                             p4d=None, g4d=None, solution=None, s_len=None,
                             passed=None, z_score=None, p_value=None,

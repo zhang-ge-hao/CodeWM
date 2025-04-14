@@ -56,7 +56,7 @@ def calculate_entropy(model, tokenized_text):
         return entropy[0].cpu().tolist()
 
 
-def detect(task: GenTask|ObfTask, gen_task: GenTask, z_threshold=4.0, ngram_len=5):
+def detect(task: GenTask|ObfTask, gen_task: GenTask, z_threshold=4.0):
     assert all(o is not None for o in [
         task.p4d, task.g4d, task.solution])
     if not gen_task.need_obf or gen_task.watermarking == "no_wm":
@@ -69,10 +69,10 @@ def detect(task: GenTask|ObfTask, gen_task: GenTask, z_threshold=4.0, ngram_len=
         output_ids = tokenizer(output_text, return_tensors="pt").input_ids
         output_ids = output_ids.to("cuda")
 
-        if output_ids.size(-1) < ngram_len:
+        if output_ids.size(-1) < gen_task.ngram_len:
             task.z_score = 0
         else:
-            config_dict = get_synthid_config(custom_seed, ngram_len)
+            config_dict = get_synthid_config(custom_seed, gen_task.ngram_len)
             synthid_processor = SynthIDTextWatermarkLogitsProcessor(
                 device="cuda", **config_dict)
 
@@ -99,7 +99,7 @@ def detect(task: GenTask|ObfTask, gen_task: GenTask, z_threshold=4.0, ngram_len=
                 tokenizer=tokenizer,
                 z_threshold=z_threshold,
                 entropy_threshold=gen_task.entropy_threshold,
-                ngram_len=ngram_len,
+                ngram_len=gen_task.ngram_len,
                 hash_key=custom_seed)
             hf_pipeline = get_hf_pipeline(gen_task.model_name)
             entropy = calculate_entropy(hf_pipeline.model,
@@ -113,7 +113,7 @@ def detect(task: GenTask|ObfTask, gen_task: GenTask, z_threshold=4.0, ngram_len=
                 gamma=gen_task.gamma,
                 tokenizer=tokenizer,
                 z_threshold=z_threshold,
-                ngram_len=ngram_len,
+                ngram_len=gen_task.ngram_len,
                 hash_key=custom_seed)
             detection_result_dict = detector.detect(tokenized_text=tokenized_text,
                                                     tokenized_prefix=tokenized_prefix)

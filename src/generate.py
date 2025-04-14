@@ -173,7 +173,7 @@ def get_solution(task: GenTask):
         raise NotImplementedError()
 
 
-def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
+def generate(task: GenTask, max_new_tokens=512):
     logging.info(f"[start] {dataclass_2_str(task)}")
 
     custom_seed = task.custom_seed
@@ -190,7 +190,7 @@ def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
 
     assert task.temperature is not None
     if task.watermarking == "synthid":
-        config_dict = get_synthid_config(custom_seed, ngram_len)
+        config_dict = get_synthid_config(custom_seed, task.ngram_len)
         logits_processor = SynthIDTextWatermarkLogitsProcessor(
             device="cuda", **config_dict)
         wm_param = {"logits_processor": LogitsProcessorList([logits_processor])}
@@ -203,7 +203,7 @@ def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
             gamma=task.gamma,
             delta=task.delta,
             entropy_threshold=task.entropy_threshold,
-            ngram_len=ngram_len,
+            ngram_len=task.ngram_len,
             hash_key=custom_seed)
         wm_param = {"logits_processor": LogitsProcessorList([logits_processor])}
     elif task.watermarking == "wllm":
@@ -213,7 +213,7 @@ def generate(task: GenTask, max_new_tokens=512, ngram_len=5):
             vocab=vocab,
             gamma=task.gamma,
             delta=task.delta,
-            ngram_len=ngram_len,
+            ngram_len=task.ngram_len,
             hash_key=custom_seed)
         wm_param = {"logits_processor": LogitsProcessorList([logits_processor])}
     elif task.watermarking == "no_wm":

@@ -228,3 +228,23 @@ if action == "maintain":
         print(dp)
     print(len(maintained_dps))
     print(total_count)
+if action == "update_n_gram":
+    for fn1, fn2, gp, op, mp in all_exps():
+        if "no_wm" in fn1:
+            ngram_len = None
+        else:
+            ngram_len = 5
+        with open(mp) as file:
+            dp_dicts = [json.loads(l) for l in file]
+        
+        with open(mp, "w") as file:
+            for dp_dict in dp_dicts:
+                dp_dict["ngram_len"] = ngram_len
+                file.write(json.dumps(dp_dict) + "\n")
+        
+        with open(gp) as file:
+            gen_t_dicts = [json.loads(l) for l in file]
+        with open(gp, "w") as file:
+            for gen_task in gen_t_dicts:
+                gen_task["ngram_len"] = ngram_len
+                file.write(json.dumps(gen_task) + "\n")
