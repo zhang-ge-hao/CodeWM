@@ -75,7 +75,8 @@ if __name__ == "__main__":
                 dp_demo.dataset_name, dp_demo.temperature)
             ax_row = obf_name_2_row(obf_name)
             ax = axs[ax_row]
-            draw_plot(ax, dps, no_wm_res, 
+            draw_plot(ax, dps, no_wm_res,
+                      add_title=False, 
                         add_x_label=True,
                         add_y_label=True, 
                         add_h_line_tag=True, 

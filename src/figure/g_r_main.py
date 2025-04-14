@@ -14,7 +14,8 @@ from figure._meta import *
 
 
 def draw_plot(ax: Axes, dps: List[DataPoint], no_wm_res, 
-              add_x_label, add_y_label, add_h_line_tag, dataset_name, threshold_ratio=0.8):
+              add_title, add_x_label, add_y_label, add_h_line_tag, 
+              dataset_name, threshold_ratio=0.8):
     global GLOBAL_ZORDER
     GLOBAL_ZORDER = 0
     def zo():
@@ -82,16 +83,18 @@ def draw_plot(ax: Axes, dps: List[DataPoint], no_wm_res,
                 **tag_config, bbox=tag_box)
 
     # Title and Label
-    # ax.set_title(dps[0].obf_name, fontsize=25, pad=20)
     if add_x_label:
         ax.set_xlabel(f"Pass@1\n{dataset_name}")
 
     if dps[0].obf_name == "Original":
-        x_label = "Original WM"
+        title = "Original WM"
     else:
-        x_label = obf_name_map[dps[0].obf_name] + " Obfuscated"
+        title = obf_name_map[dps[0].obf_name] + " Obfuscated"
+    if add_title:
+        ax.set_title(title)
+
     if add_x_label:
-        ax.set_xlabel(f"Pass@1\n({x_label})")
+        ax.set_xlabel(f"Pass@1")
 
     if add_y_label:
         ax.set_ylabel(f"{dataset_name}\nAUROC")
@@ -171,11 +174,16 @@ if __name__ == "__main__":
                 ax_col = obf_name_2_col(obf_name)
                 ax = axs[ax_row, ax_col]
                 draw_plot(ax, dps, no_wm_res, 
+                          add_title=ax_row == 0,
                           add_x_label=ax_row == len(dataset_ordered) - 1,
                           add_y_label=ax_col == 0, 
                           add_h_line_tag=ax_col == 0, 
                           dataset_name=dp_demo.dataset_name)
-        fig.suptitle(f"{model_name_map[model_name]} vs. {lang_map[lang]}", 
-                     fontsize=11)
+                if ax_row == 0 and ax_col == 1:
+                    add_gamma_legend(ax)
+                    add_delta_legend(ax)
+                    add_entropy_threshold_legend(ax)
+        # fig.suptitle(f"{model_name_map[model_name]} vs. {lang_map[lang]}", 
+        #              fontsize=11)
         plt.tight_layout()
         plt.savefig(f"{figure_output_root}/g_r_main--{model_name}--{lang}.pdf")

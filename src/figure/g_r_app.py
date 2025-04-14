@@ -14,6 +14,7 @@ from figure._meta import *
 
 
 def draw_plot(ax: Axes, dps: List[DataPoint], no_wm_res, 
+              add_title,
               add_x_label, add_y_label, dataset_name, 
               threshold_ratio=0.8,):
     global GLOBAL_ZORDER
@@ -56,11 +57,13 @@ def draw_plot(ax: Axes, dps: List[DataPoint], no_wm_res,
     ax.set_ylim(0.2, 1.05)
 
     if dps[0].obf_name == "Original":
-        x_label = "Original WM"
+        title = "Original WM"
     else:
-        x_label = obf_name_map[dps[0].obf_name] + " Obfuscated"
+        title = obf_name_map[dps[0].obf_name] + " Obfuscated"
+    if add_title:
+        ax.set_title(title)
     if add_x_label:
-        ax.set_xlabel(f"Pass@1\n({x_label})")
+        ax.set_xlabel(f"Pass@1")
     else:
         ax.tick_params(labelbottom=False)
 
@@ -75,7 +78,12 @@ if __name__ == "__main__":
     figure_output_root = "data/figure"
 
     models_ordered = ["DSCoderBase33B", "Llama31Instruct8B"]
-    lang_2_datasets = {
+    
+    # dataset_ordered = ["humaneval_py", "mbpp_py", "humaneval_js", "mbpp_js"]
+
+    langs = ["py", "js"]
+
+    lang_2_ds = {
         "py": ["humaneval_py", "mbpp_py"],
         "js": ["humaneval_js", "mbpp_js"],
     }
@@ -86,10 +94,10 @@ if __name__ == "__main__":
         "font.serif": ["DejaVu Serif", "Times"], 
     })
 
-    for model_name, lang in product(models_ordered, lang_2_datasets.keys()):
-        fig, axs = plt.subplots(nrows=2, ncols=3, figsize=(8, 4),
+    for model_name, lang in product(models_ordered, langs):
+        fig, axs = plt.subplots(nrows=2, ncols=3, figsize=(8, 3),
                                 sharey="row", sharex="col")
-        dataset_ordered = lang_2_datasets[lang]
+        dataset_ordered = lang_2_ds[lang]
         def ff_name_2_row(ff_name):
             for r_id, d in enumerate(dataset_ordered):
                 if d in ff_name:
@@ -137,10 +145,11 @@ if __name__ == "__main__":
                 ax_col = obf_name_2_col(obf_name)
                 ax = axs[ax_row, ax_col]
                 draw_plot(ax, dps, no_wm_res, 
+                          add_title=ax_row == 0,
                           add_x_label=ax_row == len(dataset_ordered) - 1,
                           add_y_label=ax_col == 0, 
                           dataset_name=dp_demo.dataset_name)
-        fig.suptitle(f"{model_name_map[model_name]} vs. {lang_map[lang]}", 
-                     fontsize=11)
+        # fig.suptitle(f"{model_name_map[model_name]} vs. {lang_map[lang]}", 
+        #              fontsize=11, y=0.93)
         plt.tight_layout()
         plt.savefig(f"{figure_output_root}/g_r_app--{model_name}--{lang}.pdf")

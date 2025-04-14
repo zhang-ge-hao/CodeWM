@@ -58,7 +58,7 @@ def calculate(gen_tasks: List[GenTask],
         for obf_task in obf_tasks:
             if obf_task.obf_name not in obf_name_2_success_gen_task_ids:
                 obf_name_2_success_gen_task_ids[obf_task.obf_name] = set()
-            if obf_task.solution is not None and not obf_task.bad_trans:
+            if obf_task.solution is not None:
                 obf_name_2_success_gen_task_ids[obf_task.obf_name].add(
                     obf_task.gen_task_id)
         retained_gen_task_ids = set([t.id for t in gen_tasks])

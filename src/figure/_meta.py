@@ -46,12 +46,12 @@ wllm_edgecolor = "#44403f"
 
 dataset_name_map = {
     "humaneval_py": "HumanEval",
-    "humaneval_js": "HumanEval-JS",
-    "mbpp_py": "MBPP",
+    "humaneval_js": "HumanEval-X-JS",
+    "mbpp_py": "MBPP+ (Base)",
     "mbpp_js": "MBPP-JS",
 }
 obf_name_map = {
-    "pyminify": "PyMinify",
+    "pyminify": "Python-Minifier",
     "pyminifier": "PyMinifier",
     "javascript-obfuscator": "JS Obfuscator",
     "uglifyjs": "UglifyJS",

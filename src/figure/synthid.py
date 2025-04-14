@@ -152,8 +152,8 @@ def draw_line_chart(fig, axs: List[Axes], dps: List[DataPoint],
     auroc_ax.set_ylabel("AUROC")
     pass1_ax.set_xlabel("Temperature")
     auroc_ax.set_xlabel("Temperature")
-    # pass1_ax.set_title("Code Generation Performance\nBef./Aft. Watermarking")
-    # auroc_ax.set_title("Watermarking Detection Performance\nBef./Aft. Obfuscation")
+    pass1_ax.set_title("Code Generation Performance\nBef./Aft. Watermarking")
+    auroc_ax.set_title("Watermarking Detection Performance\nBef./Aft. Obfuscation")
 
     pass1_ax.set_xticks([dp.temperature for dp in dps])
     auroc_ax.set_xticks([dp.temperature for dp in dps])
@@ -256,9 +256,9 @@ if __name__ == "__main__":
             product(selected_models, cn_and_selected_obfs):
         fig, axs = plt.subplots(nrows=1, ncols=2, figsize=(8, 3.1))
         draw_line_chart(fig, axs, dps, model_name, selected_obfuscators)
-        fig.suptitle(
-            f"{model_name_map[model_name]} vs. SynthID", fontsize=11
-        )
+        # fig.suptitle(
+        #     f"{model_name_map[model_name]} vs. SynthID", fontsize=11
+        # )
         plt.tight_layout()
         fig_path = f"{figure_output_root}/synthid--{model_name}--{config_name}.pdf"
         if os.path.exists(fig_path):
