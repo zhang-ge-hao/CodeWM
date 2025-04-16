@@ -68,7 +68,8 @@ def draw_plot(ax: Axes, dps: List[DataPoint], no_wm_res,
         ax.tick_params(labelbottom=False)
 
     if add_y_label:
-        ax.set_ylabel(f"{dataset_name}\nAUROC")
+        # ax.set_ylabel(f"{dataset_name}\nAUROC")
+        ax.set_ylabel(f"AUROC")
     else:
         ax.tick_params(labelleft=False)
 
