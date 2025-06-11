@@ -248,3 +248,24 @@ if action == "update_n_gram":
             for gen_task in gen_t_dicts:
                 gen_task["ngram_len"] = ngram_len
                 file.write(json.dumps(gen_task) + "\n")
+if action == "tmp_cpp":
+    import numpy as np
+    ori_auroc_list = []
+    obf_auroc_list = []
+    for fn1, fn2, gp, op, mp in all_exps():
+        if "humaneval_cpp" in fn1 and "wllm" in fn1:
+            with open(mp) as file:
+                dps = [DataPoint(**json.loads(l)) for l in file]
+            for dp in dps:
+                if dp.obf_name == "Original":
+                    ori_auroc_list.append(dp.auroc)
+                elif dp.obf_name == "stunnix":
+                    obf_auroc_list.append(dp.auroc)
+    print(len(ori_auroc_list))
+    print(len(obf_auroc_list))
+    ori_mean = np.mean(ori_auroc_list)
+    obf_mean = np.mean(obf_auroc_list)
+    obf_std = np.std(obf_auroc_list, ddof=1)
+
+    print(f"{ori_mean} -> {obf_mean}")
+    print(obf_std)

@@ -68,6 +68,35 @@ def evaluate(task: GenTask|ObfTask, gen_task: GenTask):
             finally:
                 if task.passed is None:
                     task.passed = False
+        elif gen_task.language == "cpp":
+            code_with_test = "\n\n".join([task.solution, gen_task.test])
+            code_file_prefix = "test"
+            with open(f"{code_file_prefix}.cpp", "w") as file:
+                file.write(code_with_test)
+            with open(f"{code_file_prefix}.sh", "w") as file:
+                file.write(f"g++ {code_file_prefix}.cpp -o {code_file_prefix}")
+                file.write("\n")
+                file.write(f"./{code_file_prefix}")
+            try:
+                exec_result = None
+                with time_limit(10):
+                    cmd = ["sh", f"{code_file_prefix}.sh"]
+                    exec_result = subprocess.run(
+                        cmd, 
+                        timeout=10, 
+                        capture_output=True)
+
+                if exec_result.stderr.decode():
+                    task.passed = False
+                elif exec_result.stdout.decode():
+                    task.passed = False
+                else:
+                    task.passed = True
+            except TimeoutException:
+                task.passed = False
+            finally:
+                if task.passed is None:
+                    task.passed = False
         else:
             raise NotImplementedError()
         if not task.passed:

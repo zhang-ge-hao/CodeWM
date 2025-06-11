@@ -31,7 +31,7 @@ from detection import detect
 
 def make_raw_chat_prompt(task: GenTask, tokenizer) -> str:
     task_prompt = task.ori_prompt.strip()
-    language_full_name_map = {"js": "JavaScript", "py": "Python"}
+    language_full_name_map = {"js": "JavaScript", "py": "Python", "cpp": "C++"}
     language = language_full_name_map[task.language]
 
     instruction_prefix = f"Please provide a self-contained {language} " + \
@@ -85,7 +85,7 @@ class CodeStoppingCriteria(StoppingCriteria):
             if self.task.is_inst:
                 if "\n```" in generated_text:
                     return True
-            elif self.task.language == "js":
+            elif self.task.language in ["js", "cpp"]:
                 bracket_debt = 1
                 for char in generated_text:
                     if char == "{":
@@ -136,7 +136,7 @@ def get_solution(task: GenTask):
                 elif met_entry_point and solution[idx] == "\n":
                     if solution[idx + 1] not in ("\t", "#", "\n", " "):
                         return solution[: idx].rstrip()
-        elif task.language == "js":
+        elif task.language in ["js", "cpp"]:
             met_entry_point = False
             met_lb = False
             bracket_debt = 1
@@ -152,6 +152,8 @@ def get_solution(task: GenTask):
                         bracket_debt -= 1
                     if bracket_debt == 0:
                         return solution[: idx + 1].rstrip()
+        else:
+            raise NotImplementedError()
         return solution
     elif task.language == "py":
         for idx in range(len(generation) - 1):
@@ -159,7 +161,7 @@ def get_solution(task: GenTask):
                 if generation[idx + 1] not in ("\t", "#", "\n", " "):
                     return prompt + generation[: idx].rstrip()
         return prompt + generation
-    elif task.language == "js":
+    elif task.language in ["js", "cpp"]:
         bracket_debt = 1
         for idx in range(len(generation)):
             if generation[idx] == "{":

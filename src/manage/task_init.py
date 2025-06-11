@@ -13,7 +13,7 @@ from _data import *
 def extract_entry_point(dp, ds_name):
     if "entry_point" in dp:
         return dp["entry_point"]
-    assert ds_name in ["humaneval_py", "humaneval_js", "mbpp_js"]
+    assert ds_name in ["humaneval_py", "humaneval_js", "humaneval_cpp", "mbpp_js"]
     prompt = dp["prompt"]
     if ds_name == "mbpp_js": # MultiPL-E
         name = dp["name"]
@@ -32,6 +32,16 @@ def extract_entry_point(dp, ds_name):
         const_idx = [idx for idx, token in enumerate(declaration_tokens)
                     if token == "const"][0]
         return declaration_tokens[const_idx + 1]
+    elif ds_name == "humaneval_cpp":
+        if dp["task_id"] == "CPP/38":
+            return "decode_cyclic"
+        declaration = dp["declaration"]
+        declaration = declaration.strip().split("\n")[-1]
+        declaration = declaration.split("(")[-2]
+        declaration_tokens = re.split(r"[^A-Za-z_0-9]+", declaration)
+        while len(declaration_tokens[-1]) == 0:
+            declaration_tokens = declaration_tokens[:-1]
+        return declaration_tokens[-1]
     raise RuntimeError(f"parse_function_name failed on {prompt}.")
 
 
@@ -74,26 +84,28 @@ if __name__ == "__main__":
 
     models = [ # and is_inst
         ("meta-llama/Llama-3.1-8B-Instruct", True),
-        ("deepseek-ai/deepseek-coder-33b-base", False)
+        # ("deepseek-ai/deepseek-coder-33b-base", False)
     ]
 
     datasets = [ # and language
-        ("humaneval-x_py.jsonl", "humaneval_py", "py"), 
-        ("humaneval-x_js.jsonl", "humaneval_js", "js"), 
-        ("mbppp_py.jsonl", "mbpp_py", "py"), 
-        ("mbpp-MuE_js.jsonl", "mbpp_js", "js"), 
+        # ("humaneval-x_py.jsonl", "humaneval_py", "py"), 
+        # ("humaneval-x_js.jsonl", "humaneval_js", "js"), 
+        ("humaneval-x_cpp.jsonl", "humaneval_cpp", "cpp"), 
+        # ("mbppp_py.jsonl", "mbpp_py", "py"), 
+        # ("mbpp-MuE_js.jsonl", "mbpp_js", "js"), 
     ]
 
     wms = [ # and need_obf
         ("no_wm", False),
-        ("synthid", True), 
+        # ("synthid", True), 
         ("wllm", True), 
-        ("sweet", True)
+        # ("sweet", True)
     ]
 
     lang_2_obf = {
         "py": ["pyminify", "pyminifier"],
-        "js": ["javascript-obfuscator", "uglifyjs"]
+        "js": ["javascript-obfuscator", "uglifyjs"],
+        "cpp": ["stunnix"]
     }
 
     para_candidate = {
@@ -101,7 +113,8 @@ if __name__ == "__main__":
         "gamma": [0.1, 0.25, 0.5],
         "entropy_threshold": [0.3, 0.6, 0.9, 1.2],
         "temperature": [0.25, 0.5, 0.75, 1.0, 1.25],
-        "ngram_len": [5, 4, 3, 2],
+        "ngram_len": [5],
+        # "ngram_len": [5, 4, 3, 2],
         # "max_new_tokens": [512],
         # "z_threshold": [4],
     }
@@ -170,6 +183,8 @@ if __name__ == "__main__":
                 # The prompts of MultiPL-E JS are simple.
                 # The inst scheme will generate wrong function name for MultiPL-E JS.
                 if ds_name == "mbpp_js": # MultiPL-E
+                    is_inst = False
+                elif ds_name == "humaneval_cpp": # HumanEval X
                     is_inst = False
 
                 para_comb_count = len(wm_name_2_para_comb[wm_name])

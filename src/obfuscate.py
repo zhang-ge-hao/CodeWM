@@ -111,6 +111,43 @@ def obfuscate(task: ObfTask, gen_task: GenTask):
                 task.p4d = gen_task.p4d
                 task.g4d = inline_function_content + "\n".join(
                     obfuscated_code_lines[idx + 1:])
+        elif gen_task.language == "cpp":
+            solution_file_name = "solution.cpp"
+            with open(solution_file_name, "w") as file:
+                file.write(gen_task.solution)
+            if task.obf_name == "stunnix":
+                obfuscated_file_name = "obfuscated.cpp"
+                cmd = ["cxx-obfus", "-i", "none", 
+                       "-o", obfuscated_file_name, solution_file_name]
+                try:
+                    result = subprocess.run(cmd, timeout=10, 
+                                            capture_output=True, text=True)
+                    if result.returncode != 0:
+                        logging.error(f"Error during obfuscation:\n{result.stderr}")
+                    else:
+                        with open(obfuscated_file_name) as file:
+                            task.solution = "".join(file.readlines())
+                        task.s_len = len(tokenizer.encode(task.solution))
+                except Exception as e:
+                    logging.error(traceback.format_exc())
+            else:
+                raise NotImplementedError()
+            if gen_task.is_inst:
+                task.p4d = gen_task.p4d
+                task.g4d = task.solution
+            else:
+                obfuscated_code_lines = task.solution.split("\n")
+                inline_function_content = ""
+                for idx, line in enumerate(obfuscated_code_lines):
+                    if gen_task.entry_point in line:
+                        inline_function_content = "){".join(line.split("){")[1:])
+                        if len(inline_function_content) > 0:
+                            inline_function_content = inline_function_content.strip()
+                            inline_function_content = f"    {inline_function_content}\n"
+                        break
+                task.p4d = gen_task.p4d
+                task.g4d = inline_function_content + "\n".join(
+                    obfuscated_code_lines[idx + 1:])
         else:
             raise NotImplementedError()
     logging.info(f"[obfuscated] {dataclass_2_str(task)}")
