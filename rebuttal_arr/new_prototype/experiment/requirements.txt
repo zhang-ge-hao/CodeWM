@@ -1,0 +1,7 @@
+libcst>=1.8
+hypothesis>=6
+pytest>=8
+scikit-learn
+scipy
+torch
+transformers
