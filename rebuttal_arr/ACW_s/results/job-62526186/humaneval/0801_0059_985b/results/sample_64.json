@@ -1,0 +1,385 @@
+{
+  "prompt": [
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\""
+  ],
+  "generations": [
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n",
+    "FIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count(\"abcde\")\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\" \n    count = 0\n    for letter in s:\n        if letter.lower() in ['a', 'e', 'i', 'o', 'u']:\n            count += 1\n    if s[-1].lower() == 'y':\n        count += 1\n    return count\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(\"abcde\") == 2, \"Test 1\"\n    assert candidate(\"Alone\") == 3, \"Test 2\"\n    assert candidate(\"key\") == 2, \"Test 3\"\n    assert candidate(\"bye\") == 1, \"Test 4\"\n    assert candidate(\"keY\") == 2, \"Test 5\"\n    assert candidate(\"bYe\") == 1, \"Test 6\"\n    assert candidate(\"ACEDY\") == 3, \"Test 7\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(vowels_count)"
+  ],
+  "solution": [
+    "    vowels = \"aeiouAEIOU\"\n    n_vowels = sum(c in vowels for c in s)\n    if s[-1] == 'y' or s[-1] == 'Y':\n        n_vowels += 1\n    return n_vowels\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.25,
+      0.0400390625,
+      1.6484375,
+      0.138671875,
+      0.09375,
+      0.000286102294921875,
+      0.287109375,
+      0.0013427734375,
+      1.421875,
+      1.5625,
+      0.001007080078125,
+      0.0211181640625,
+      0.416015625,
+      0.040283203125,
+      0.08203125,
+      0.1044921875,
+      0.67578125,
+      0.000537872314453125,
+      0.06298828125,
+      1.4140625,
+      0.000732421875,
+      0.12255859375,
+      0.000396728515625,
+      0.0205078125,
+      0.00103759765625,
+      0.0003147125244140625,
+      0.01202392578125,
+      0.0025787353515625,
+      0.0002574920654296875,
+      0.00170135498046875,
+      0.005584716796875,
+      0.0004215240478515625,
+      8.404254913330078e-06,
+      0.431640625,
+      0.0267333984375,
+      0.0289306640625,
+      0.1298828125,
+      0.0264892578125,
+      0.0004425048828125,
+      0.5390625,
+      0.515625,
+      0.25390625,
+      0.0693359375,
+      0.29296875,
+      3.314018249511719e-05,
+      0.5390625,
+      0.0111083984375,
+      0.00011396408081054688,
+      0.01220703125,
+      0.2470703125,
+      1.430511474609375e-05,
+      0.03759765625,
+      0.031982421875,
+      0.0050048828125,
+      0.0234375,
+      0.0267333984375,
+      0.000331878662109375,
+      0.287109375,
+      0.002532958984375,
+      0.002410888671875,
+      0.0037994384765625,
+      1.078125
+    ],
+    "len": 62,
+    "num_tokens_generated": 62,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.08064516129032258,
+    "green_fraction": 0.8,
+    "z_score": 1.3416407864998738,
+    "p_value": 0.08985624743949988,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.173828125,
+      1.625,
+      0.423828125,
+      0.125,
+      1.5703125,
+      0.01031494140625,
+      0.0003757476806640625,
+      0.0030517578125,
+      0.240234375,
+      0.00049591064453125,
+      0.00101470947265625,
+      0.2490234375,
+      0.032470703125,
+      0.5703125,
+      0.89453125,
+      0.00159454345703125,
+      0.09130859375,
+      0.0264892578125,
+      0.515625,
+      1.4453125,
+      0.08935546875,
+      0.0028076171875,
+      2.592802047729492e-06,
+      0.008544921875,
+      8.916854858398438e-05,
+      0.000278472900390625,
+      0.00347900390625,
+      0.263671875,
+      0.27734375,
+      0.251953125,
+      0.01092529296875,
+      1.0703125,
+      2.562999725341797e-05,
+      0.8359375,
+      0.16796875,
+      0.6875,
+      0.002685546875,
+      0.58203125,
+      0.00225830078125,
+      0.000255584716796875,
+      0.0001506805419921875,
+      6.341934204101562e-05,
+      0.000759124755859375,
+      0.00299072265625,
+      0.0004596710205078125,
+      0.00011777877807617188,
+      0.00787353515625,
+      0.01141357421875,
+      0.03076171875,
+      0.0005645751953125,
+      1.1455267667770386e-07,
+      1.4901161193847656e-05,
+      0.0361328125,
+      0.025390625,
+      0.000835418701171875,
+      0.055908203125,
+      0.000545501708984375,
+      0.0020751953125,
+      0.0037078857421875,
+      6.031990051269531e-05,
+      6.332993507385254e-07,
+      6.9141387939453125e-06,
+      1.03125
+    ],
+    "len": 63,
+    "num_tokens_generated": 63,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.047619047619047616,
+    "green_fraction": 0.0,
+    "z_score": -1.7320508075688774,
+    "p_value": 0.9583677416682248,
+    "prediction": false
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "prompt": [
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\""
+  ],
+  "generations": [
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    vowels = ['A', 'E', 'I', 'O', 'U']\n    count = 0\n    for i in range(0, len(s), 2):\n        if s[i] in vowels:\n            count += 1\n    return count",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)\n",
+    "def count_upper(s):\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    count_upper('aBCdEf') returns 1\n    count_upper('abcdefg') returns 0\n    count_upper('dBBE') returns 0\n    \"\"\" \n    upper_vowels = 'AEIOU'\n    return sum(1 for i in range(0, len(s), 2) if s[i] in upper_vowels)"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate('aBCdEf')  == 1\n    assert candidate('abcdefg') == 0\n    assert candidate('dBBE') == 0\n    assert candidate('B')  == 0\n    assert candidate('U')  == 1\n    assert candidate('') == 0\n    assert candidate('EEEE') == 2\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True\n\n\ncheck(count_upper)"
+  ],
+  "solution": [
+    "    count = 0\n    for i in range(0,len(s),2):\n        if s[i] in \"AEIOU\":\n            count += 1\n    return count\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.5078125,
+      0.010498046875,
+      1.921875,
+      0.2138671875,
+      0.00131988525390625,
+      0.025390625,
+      0.0247802734375,
+      1.21875,
+      0.0277099609375,
+      0.0107421875,
+      0.0018157958984375,
+      0.006072998046875,
+      0.04150390625,
+      0.70703125,
+      0.00077056884765625,
+      0.154296875,
+      0.003753662109375,
+      0.001251220703125,
+      0.158203125,
+      0.0986328125,
+      0.002044677734375,
+      0.29296875,
+      0.0189208984375,
+      0.024169921875,
+      0.0002880096435546875,
+      5.632638931274414e-06,
+      0.000347137451171875,
+      0.0004100799560546875,
+      3.9637088775634766e-06,
+      9.715557098388672e-06,
+      4.172325134277344e-05,
+      0.0002593994140625,
+      1.2479722499847412e-07,
+      0.00021076202392578125,
+      0.0001811981201171875,
+      0.0001392364501953125,
+      2.294778823852539e-06,
+      1.8905848264694214e-07,
+      2.7939677238464355e-07,
+      1.0390625
+    ],
+    "len": 40,
+    "num_tokens_generated": 40,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.075,
+    "green_fraction": 1.0,
+    "z_score": 1.7320508075688774,
+    "p_value": 0.0416322583317752,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.0927734375,
+      1.7578125,
+      0.1611328125,
+      0.0228271484375,
+      8.630752563476562e-05,
+      0.05224609375,
+      1.609325408935547e-05,
+      0.921875,
+      0.484375,
+      0.1357421875,
+      0.022216796875,
+      0.099609375,
+      0.042236328125,
+      0.314453125,
+      0.0020294189453125,
+      0.10400390625,
+      0.04345703125,
+      0.1787109375,
+      0.037353515625,
+      0.05419921875,
+      0.267578125,
+      0.00019073486328125,
+      0.08837890625,
+      0.07568359375,
+      1.234375,
+      0.007598876953125,
+      0.00183868408203125,
+      0.000705718994140625,
+      0.01806640625,
+      0.05419921875,
+      0.00135040283203125,
+      0.8125,
+      0.2470703125,
+      0.000774383544921875,
+      0.1337890625,
+      0.00823974609375,
+      0.00080108642578125,
+      0.0286865234375,
+      0.828125
+    ],
+    "len": 39,
+    "num_tokens_generated": 39,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.05128205128205128,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  }
+}

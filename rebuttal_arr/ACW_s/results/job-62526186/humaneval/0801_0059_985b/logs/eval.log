@@ -1,0 +1,837 @@
+2026-08-01 00:59:12,777 - src.main - INFO - Output directory: /home/gehaozhang_umass_edu/projects/code-watermarking/rebuttal_arr/acw_s/results/job-62526186/humaneval/0801_0059_985b
+2026-08-01 00:59:13,180 - src.utils - INFO - Using seed: 42
+2026-08-01 00:59:15,433 - src.utils - INFO - Loaded tokenizer from infly/opencoder-1.5b-instruct
+2026-08-01 00:59:15,433 - src.main - INFO - Loading model from infly/opencoder-1.5b-instruct
+2026-08-01 01:00:59,039 - src.main - INFO - Warning: Vocabulary size mismatch!
+2026-08-01 01:00:59,137 - src.utils - INFO - Loading processors and detectors for watermarking method: sweetcode
+2026-08-01 01:00:59,138 - src.utils - INFO - Loading sweet code watermarking
+2026-08-01 01:00:59,138 - src.datahelper - INFO - Loading task data for humaneval
+2026-08-01 01:01:01,837 - src.datahelper - INFO - Loading 164 items from dataset
+2026-08-01 01:01:02,048 - src.datahelper - INFO - Created TaskDataset with 164 items and 1 copies each
+2026-08-01 01:01:02,061 - src.main - INFO - Processing batch 0
+2026-08-01 01:01:11,959 - src.main - INFO - Generate tokens done
+2026-08-01 01:01:11,981 - src.main - INFO - Post generation processing done
+2026-08-01 01:01:14,913 - src.main - INFO - Evaluate machine done
+2026-08-01 01:01:15,812 - src.main - INFO - Evaluate human done
+2026-08-01 01:01:15,829 - src.main - INFO - Processing batch 1
+2026-08-01 01:01:39,519 - src.main - INFO - Generate tokens done
+2026-08-01 01:01:39,553 - src.main - INFO - Post generation processing done
+2026-08-01 01:01:41,863 - src.main - INFO - Evaluate machine done
+2026-08-01 01:01:42,778 - src.main - INFO - Evaluate human done
+2026-08-01 01:01:42,784 - src.main - INFO - Processing batch 2
+2026-08-01 01:01:46,071 - src.main - INFO - Generate tokens done
+2026-08-01 01:01:46,087 - src.main - INFO - Post generation processing done
+2026-08-01 01:01:48,430 - src.main - INFO - Evaluate machine done
+2026-08-01 01:01:49,251 - src.main - INFO - Evaluate human done
+2026-08-01 01:01:49,257 - src.main - INFO - Processing batch 3
+2026-08-01 01:01:54,541 - src.main - INFO - Generate tokens done
+2026-08-01 01:01:54,566 - src.main - INFO - Post generation processing done
+2026-08-01 01:01:56,841 - src.main - INFO - Evaluate machine done
+2026-08-01 01:01:57,320 - src.main - INFO - Evaluate human done
+2026-08-01 01:01:57,338 - src.main - INFO - Processing batch 4
+2026-08-01 01:02:08,495 - src.main - INFO - Generate tokens done
+2026-08-01 01:02:08,520 - src.main - INFO - Post generation processing done
+2026-08-01 01:02:10,767 - src.main - INFO - Evaluate machine done
+2026-08-01 01:02:11,493 - src.main - INFO - Evaluate human done
+2026-08-01 01:02:11,501 - src.main - INFO - Processing batch 5
+2026-08-01 01:02:17,321 - src.main - INFO - Generate tokens done
+2026-08-01 01:02:17,340 - src.main - INFO - Post generation processing done
+2026-08-01 01:02:19,792 - src.main - INFO - Evaluate machine done
+2026-08-01 01:02:20,344 - src.main - INFO - Evaluate human done
+2026-08-01 01:02:20,353 - src.main - INFO - Processing batch 6
+2026-08-01 01:02:58,110 - src.main - INFO - Generate tokens done
+2026-08-01 01:02:58,154 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:00,799 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:01,928 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:01,934 - src.main - INFO - Processing batch 7
+2026-08-01 01:03:04,058 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:04,073 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:06,321 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:06,829 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:06,836 - src.main - INFO - Processing batch 8
+2026-08-01 01:03:12,947 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:12,967 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:15,419 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:16,191 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:16,202 - src.main - INFO - Processing batch 9
+2026-08-01 01:03:22,314 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:22,333 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:24,445 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:25,213 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:25,221 - src.main - INFO - Processing batch 10
+2026-08-01 01:03:31,046 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:31,071 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:33,277 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:34,339 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:34,346 - src.main - INFO - Processing batch 11
+2026-08-01 01:03:37,727 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:37,741 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:39,870 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:40,761 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:40,769 - src.main - INFO - Processing batch 12
+2026-08-01 01:03:43,462 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:43,479 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:45,766 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:46,609 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:46,615 - src.main - INFO - Processing batch 13
+2026-08-01 01:03:51,368 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:51,383 - src.main - INFO - Post generation processing done
+2026-08-01 01:03:53,640 - src.main - INFO - Evaluate machine done
+2026-08-01 01:03:54,268 - src.main - INFO - Evaluate human done
+2026-08-01 01:03:54,274 - src.main - INFO - Processing batch 14
+2026-08-01 01:03:58,739 - src.main - INFO - Generate tokens done
+2026-08-01 01:03:58,752 - src.main - INFO - Post generation processing done
+2026-08-01 01:04:00,997 - src.main - INFO - Evaluate machine done
+2026-08-01 01:04:01,524 - src.main - INFO - Evaluate human done
+2026-08-01 01:04:01,530 - src.main - INFO - Processing batch 15
+2026-08-01 01:04:06,591 - src.main - INFO - Generate tokens done
+2026-08-01 01:04:06,607 - src.main - INFO - Post generation processing done
+2026-08-01 01:04:08,827 - src.main - INFO - Evaluate machine done
+2026-08-01 01:04:09,447 - src.main - INFO - Evaluate human done
+2026-08-01 01:04:09,457 - src.main - INFO - Processing batch 16
+2026-08-01 01:04:10,745 - src.main - INFO - Generate tokens done
+2026-08-01 01:04:10,758 - src.main - INFO - Post generation processing done
+2026-08-01 01:04:12,776 - src.main - INFO - Evaluate machine done
+2026-08-01 01:04:13,282 - src.main - INFO - Evaluate human done
+2026-08-01 01:04:13,288 - src.main - INFO - Processing batch 17
+2026-08-01 01:04:23,659 - src.main - INFO - Generate tokens done
+2026-08-01 01:04:23,690 - src.main - INFO - Post generation processing done
+2026-08-01 01:04:26,035 - src.main - INFO - Evaluate machine done
+2026-08-01 01:04:26,602 - src.main - INFO - Evaluate human done
+2026-08-01 01:04:26,640 - src.main - INFO - Processing batch 18
+2026-08-01 01:05:26,811 - src.main - INFO - Generate tokens done
+2026-08-01 01:05:26,864 - src.main - INFO - Post generation processing done
+2026-08-01 01:05:29,196 - src.main - INFO - Evaluate machine done
+2026-08-01 01:05:29,956 - src.main - INFO - Evaluate human done
+2026-08-01 01:05:29,965 - src.main - INFO - Processing batch 19
+2026-08-01 01:05:54,035 - src.main - INFO - Generate tokens done
+2026-08-01 01:05:54,069 - src.main - INFO - Post generation processing done
+2026-08-01 01:05:56,520 - src.main - INFO - Evaluate machine done
+2026-08-01 01:05:57,565 - src.main - INFO - Evaluate human done
+2026-08-01 01:05:57,571 - src.main - INFO - Processing batch 20
+2026-08-01 01:06:10,611 - src.main - INFO - Generate tokens done
+2026-08-01 01:06:10,642 - src.main - INFO - Post generation processing done
+2026-08-01 01:06:13,135 - src.main - INFO - Evaluate machine done
+2026-08-01 01:06:13,962 - src.main - INFO - Evaluate human done
+2026-08-01 01:06:13,969 - src.main - INFO - Processing batch 21
+2026-08-01 01:06:23,696 - src.main - INFO - Generate tokens done
+2026-08-01 01:06:23,721 - src.main - INFO - Post generation processing done
+2026-08-01 01:06:25,979 - src.main - INFO - Evaluate machine done
+2026-08-01 01:06:26,931 - src.main - INFO - Evaluate human done
+2026-08-01 01:06:26,940 - src.main - INFO - Processing batch 22
+2026-08-01 01:06:29,316 - src.main - INFO - Generate tokens done
+2026-08-01 01:06:29,342 - src.main - INFO - Post generation processing done
+2026-08-01 01:06:31,531 - src.main - INFO - Evaluate machine done
+2026-08-01 01:06:32,115 - src.main - INFO - Evaluate human done
+2026-08-01 01:06:32,293 - src.main - INFO - Processing batch 23
+2026-08-01 01:06:33,295 - src.main - INFO - Generate tokens done
+2026-08-01 01:06:33,304 - src.main - INFO - Post generation processing done
+2026-08-01 01:06:35,499 - src.main - INFO - Evaluate machine done
+2026-08-01 01:06:36,099 - src.main - INFO - Evaluate human done
+2026-08-01 01:06:36,105 - src.main - INFO - Processing batch 24
+2026-08-01 01:06:49,672 - src.main - INFO - Generate tokens done
+2026-08-01 01:06:49,691 - src.main - INFO - Post generation processing done
+2026-08-01 01:06:52,065 - src.main - INFO - Evaluate machine done
+2026-08-01 01:06:52,575 - src.main - INFO - Evaluate human done
+2026-08-01 01:06:52,582 - src.main - INFO - Processing batch 25
+2026-08-01 01:07:06,547 - src.main - INFO - Generate tokens done
+2026-08-01 01:07:06,575 - src.main - INFO - Post generation processing done
+2026-08-01 01:07:08,862 - src.main - INFO - Evaluate machine done
+2026-08-01 01:07:09,523 - src.main - INFO - Evaluate human done
+2026-08-01 01:07:09,546 - src.main - INFO - Processing batch 26
+2026-08-01 01:07:14,995 - src.main - INFO - Generate tokens done
+2026-08-01 01:07:15,012 - src.main - INFO - Post generation processing done
+2026-08-01 01:07:18,224 - src.main - INFO - Evaluate machine done
+2026-08-01 01:07:22,062 - src.main - INFO - Evaluate human done
+2026-08-01 01:07:22,069 - src.main - INFO - Processing batch 27
+2026-08-01 01:07:28,873 - src.main - INFO - Generate tokens done
+2026-08-01 01:07:28,887 - src.main - INFO - Post generation processing done
+2026-08-01 01:07:31,195 - src.main - INFO - Evaluate machine done
+2026-08-01 01:07:31,793 - src.main - INFO - Evaluate human done
+2026-08-01 01:07:31,799 - src.main - INFO - Processing batch 28
+2026-08-01 01:07:32,931 - src.main - INFO - Generate tokens done
+2026-08-01 01:07:32,942 - src.main - INFO - Post generation processing done
+2026-08-01 01:07:35,184 - src.main - INFO - Evaluate machine done
+2026-08-01 01:07:35,690 - src.main - INFO - Evaluate human done
+2026-08-01 01:07:35,697 - src.main - INFO - Processing batch 29
+2026-08-01 01:07:39,604 - src.main - INFO - Generate tokens done
+2026-08-01 01:07:39,620 - src.main - INFO - Post generation processing done
+2026-08-01 01:07:41,860 - src.main - INFO - Evaluate machine done
+2026-08-01 01:07:42,653 - src.main - INFO - Evaluate human done
+2026-08-01 01:07:42,666 - src.main - INFO - Processing batch 30
+2026-08-01 01:07:44,899 - src.main - INFO - Generate tokens done
+2026-08-01 01:07:44,916 - src.main - INFO - Post generation processing done
+2026-08-01 01:07:47,279 - src.main - INFO - Evaluate machine done
+2026-08-01 01:07:47,955 - src.main - INFO - Evaluate human done
+2026-08-01 01:07:47,966 - src.main - INFO - Processing batch 31
+2026-08-01 01:08:00,129 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:00,153 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:02,444 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:03,077 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:03,082 - src.main - INFO - Processing batch 32
+2026-08-01 01:08:22,526 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:22,573 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:24,977 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:26,447 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:26,456 - src.main - INFO - Processing batch 33
+2026-08-01 01:08:32,501 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:32,526 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:34,745 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:35,579 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:35,597 - src.main - INFO - Processing batch 34
+2026-08-01 01:08:36,878 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:36,890 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:39,194 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:39,791 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:39,801 - src.main - INFO - Processing batch 35
+2026-08-01 01:08:40,806 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:40,819 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:43,031 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:43,531 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:43,535 - src.main - INFO - Processing batch 36
+2026-08-01 01:08:45,068 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:45,082 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:47,217 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:48,281 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:48,287 - src.main - INFO - Processing batch 37
+2026-08-01 01:08:54,446 - src.main - INFO - Generate tokens done
+2026-08-01 01:08:54,468 - src.main - INFO - Post generation processing done
+2026-08-01 01:08:56,563 - src.main - INFO - Evaluate machine done
+2026-08-01 01:08:57,223 - src.main - INFO - Evaluate human done
+2026-08-01 01:08:57,233 - src.main - INFO - Processing batch 38
+2026-08-01 01:09:12,842 - src.main - INFO - Generate tokens done
+2026-08-01 01:09:12,875 - src.main - INFO - Post generation processing done
+2026-08-01 01:09:15,289 - src.main - INFO - Evaluate machine done
+2026-08-01 01:09:15,820 - src.main - INFO - Evaluate human done
+2026-08-01 01:09:15,833 - src.main - INFO - Processing batch 39
+2026-08-01 01:09:41,463 - src.main - INFO - Generate tokens done
+2026-08-01 01:09:41,497 - src.main - INFO - Post generation processing done
+2026-08-01 01:09:46,763 - src.main - INFO - Evaluate machine done
+2026-08-01 01:09:47,651 - src.main - INFO - Evaluate human done
+2026-08-01 01:09:47,662 - src.main - INFO - Processing batch 40
+2026-08-01 01:10:14,896 - src.main - INFO - Generate tokens done
+2026-08-01 01:10:14,950 - src.main - INFO - Post generation processing done
+2026-08-01 01:10:17,328 - src.main - INFO - Evaluate machine done
+2026-08-01 01:10:17,822 - src.main - INFO - Evaluate human done
+2026-08-01 01:10:17,837 - src.main - INFO - Processing batch 41
+2026-08-01 01:10:44,915 - src.main - INFO - Generate tokens done
+2026-08-01 01:10:44,956 - src.main - INFO - Post generation processing done
+2026-08-01 01:10:47,620 - src.main - INFO - Evaluate machine done
+2026-08-01 01:10:48,192 - src.main - INFO - Evaluate human done
+2026-08-01 01:10:48,204 - src.main - INFO - Processing batch 42
+2026-08-01 01:10:50,170 - src.main - INFO - Generate tokens done
+2026-08-01 01:10:50,187 - src.main - INFO - Post generation processing done
+2026-08-01 01:10:52,258 - src.main - INFO - Evaluate machine done
+2026-08-01 01:10:52,791 - src.main - INFO - Evaluate human done
+2026-08-01 01:10:52,796 - src.main - INFO - Processing batch 43
+2026-08-01 01:10:58,452 - src.main - INFO - Generate tokens done
+2026-08-01 01:10:58,477 - src.main - INFO - Post generation processing done
+2026-08-01 01:11:00,623 - src.main - INFO - Evaluate machine done
+2026-08-01 01:11:01,423 - src.main - INFO - Evaluate human done
+2026-08-01 01:11:01,428 - src.main - INFO - Processing batch 44
+2026-08-01 01:11:08,838 - src.main - INFO - Generate tokens done
+2026-08-01 01:11:08,857 - src.main - INFO - Post generation processing done
+2026-08-01 01:11:11,156 - src.main - INFO - Evaluate machine done
+2026-08-01 01:11:11,784 - src.main - INFO - Evaluate human done
+2026-08-01 01:11:11,790 - src.main - INFO - Processing batch 45
+2026-08-01 01:11:13,595 - src.main - INFO - Generate tokens done
+2026-08-01 01:11:13,605 - src.main - INFO - Post generation processing done
+2026-08-01 01:11:15,875 - src.main - INFO - Evaluate machine done
+2026-08-01 01:11:16,378 - src.main - INFO - Evaluate human done
+2026-08-01 01:11:16,386 - src.main - INFO - Processing batch 46
+2026-08-01 01:12:05,826 - src.main - INFO - Generate tokens done
+2026-08-01 01:12:05,883 - src.main - INFO - Post generation processing done
+2026-08-01 01:12:13,180 - src.main - INFO - Evaluate machine done
+2026-08-01 01:12:13,866 - src.main - INFO - Evaluate human done
+2026-08-01 01:12:13,879 - src.main - INFO - Processing batch 47
+2026-08-01 01:12:22,470 - src.main - INFO - Generate tokens done
+2026-08-01 01:12:22,488 - src.main - INFO - Post generation processing done
+2026-08-01 01:12:24,679 - src.main - INFO - Evaluate machine done
+2026-08-01 01:12:25,500 - src.main - INFO - Evaluate human done
+2026-08-01 01:12:25,506 - src.main - INFO - Processing batch 48
+2026-08-01 01:12:30,072 - src.main - INFO - Generate tokens done
+2026-08-01 01:12:30,087 - src.main - INFO - Post generation processing done
+2026-08-01 01:12:32,659 - src.main - INFO - Evaluate machine done
+2026-08-01 01:12:33,416 - src.main - INFO - Evaluate human done
+2026-08-01 01:12:33,427 - src.main - INFO - Processing batch 49
+2026-08-01 01:12:38,566 - src.main - INFO - Generate tokens done
+2026-08-01 01:12:38,585 - src.main - INFO - Post generation processing done
+2026-08-01 01:12:40,826 - src.main - INFO - Evaluate machine done
+2026-08-01 01:12:41,483 - src.main - INFO - Evaluate human done
+2026-08-01 01:12:41,488 - src.main - INFO - Processing batch 50
+2026-08-01 01:12:46,208 - src.main - INFO - Generate tokens done
+2026-08-01 01:12:46,225 - src.main - INFO - Post generation processing done
+2026-08-01 01:12:48,567 - src.main - INFO - Evaluate machine done
+2026-08-01 01:12:49,125 - src.main - INFO - Evaluate human done
+2026-08-01 01:12:49,137 - src.main - INFO - Processing batch 51
+2026-08-01 01:12:58,529 - src.main - INFO - Generate tokens done
+2026-08-01 01:12:58,553 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:00,943 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:01,682 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:01,687 - src.main - INFO - Processing batch 52
+2026-08-01 01:13:04,722 - src.main - INFO - Generate tokens done
+2026-08-01 01:13:04,736 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:07,128 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:07,852 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:07,858 - src.main - INFO - Processing batch 53
+2026-08-01 01:13:08,974 - src.main - INFO - Generate tokens done
+2026-08-01 01:13:08,984 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:11,172 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:11,707 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:11,715 - src.main - INFO - Processing batch 54
+2026-08-01 01:13:16,059 - src.main - INFO - Generate tokens done
+2026-08-01 01:13:16,082 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:18,388 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:19,084 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:19,099 - src.main - INFO - Processing batch 55
+2026-08-01 01:13:23,947 - src.main - INFO - Generate tokens done
+2026-08-01 01:13:23,960 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:26,279 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:27,134 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:27,144 - src.main - INFO - Processing batch 56
+2026-08-01 01:13:34,559 - src.main - INFO - Generate tokens done
+2026-08-01 01:13:34,579 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:36,855 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:37,485 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:37,495 - src.main - INFO - Processing batch 57
+2026-08-01 01:13:53,186 - src.main - INFO - Generate tokens done
+2026-08-01 01:13:53,212 - src.main - INFO - Post generation processing done
+2026-08-01 01:13:55,410 - src.main - INFO - Evaluate machine done
+2026-08-01 01:13:55,937 - src.main - INFO - Evaluate human done
+2026-08-01 01:13:55,941 - src.main - INFO - Processing batch 58
+2026-08-01 01:14:05,762 - src.main - INFO - Generate tokens done
+2026-08-01 01:14:05,786 - src.main - INFO - Post generation processing done
+2026-08-01 01:14:08,065 - src.main - INFO - Evaluate machine done
+2026-08-01 01:14:08,709 - src.main - INFO - Evaluate human done
+2026-08-01 01:14:08,714 - src.main - INFO - Processing batch 59
+2026-08-01 01:14:24,905 - src.main - INFO - Generate tokens done
+2026-08-01 01:14:24,932 - src.main - INFO - Post generation processing done
+2026-08-01 01:14:27,303 - src.main - INFO - Evaluate machine done
+2026-08-01 01:14:28,227 - src.main - INFO - Evaluate human done
+2026-08-01 01:14:28,258 - src.main - INFO - Processing batch 60
+2026-08-01 01:14:32,487 - src.main - INFO - Generate tokens done
+2026-08-01 01:14:32,504 - src.main - INFO - Post generation processing done
+2026-08-01 01:14:34,855 - src.main - INFO - Evaluate machine done
+2026-08-01 01:14:35,453 - src.main - INFO - Evaluate human done
+2026-08-01 01:14:35,465 - src.main - INFO - Processing batch 61
+2026-08-01 01:14:55,317 - src.main - INFO - Generate tokens done
+2026-08-01 01:14:55,347 - src.main - INFO - Post generation processing done
+2026-08-01 01:14:57,656 - src.main - INFO - Evaluate machine done
+2026-08-01 01:14:58,226 - src.main - INFO - Evaluate human done
+2026-08-01 01:14:58,231 - src.main - INFO - Processing batch 62
+2026-08-01 01:15:03,203 - src.main - INFO - Generate tokens done
+2026-08-01 01:15:03,223 - src.main - INFO - Post generation processing done
+2026-08-01 01:15:05,400 - src.main - INFO - Evaluate machine done
+2026-08-01 01:15:06,035 - src.main - INFO - Evaluate human done
+2026-08-01 01:15:06,042 - src.main - INFO - Processing batch 63
+2026-08-01 01:15:17,899 - src.main - INFO - Generate tokens done
+2026-08-01 01:15:17,930 - src.main - INFO - Post generation processing done
+2026-08-01 01:15:20,238 - src.main - INFO - Evaluate machine done
+2026-08-01 01:15:20,795 - src.main - INFO - Evaluate human done
+2026-08-01 01:15:20,801 - src.main - INFO - Processing batch 64
+2026-08-01 01:15:29,536 - src.main - INFO - Generate tokens done
+2026-08-01 01:15:29,561 - src.main - INFO - Post generation processing done
+2026-08-01 01:15:31,891 - src.main - INFO - Evaluate machine done
+2026-08-01 01:15:32,797 - src.main - INFO - Evaluate human done
+2026-08-01 01:15:32,809 - src.main - INFO - Processing batch 65
+2026-08-01 01:15:38,760 - src.main - INFO - Generate tokens done
+2026-08-01 01:15:38,778 - src.main - INFO - Post generation processing done
+2026-08-01 01:15:40,863 - src.main - INFO - Evaluate machine done
+2026-08-01 01:15:42,547 - src.main - INFO - Evaluate human done
+2026-08-01 01:15:42,554 - src.main - INFO - Processing batch 66
+2026-08-01 01:15:48,367 - src.main - INFO - Generate tokens done
+2026-08-01 01:15:48,387 - src.main - INFO - Post generation processing done
+2026-08-01 01:15:50,694 - src.main - INFO - Evaluate machine done
+2026-08-01 01:15:51,328 - src.main - INFO - Evaluate human done
+2026-08-01 01:15:51,333 - src.main - INFO - Processing batch 67
+2026-08-01 01:16:51,481 - src.main - INFO - Generate tokens done
+2026-08-01 01:16:51,550 - src.main - INFO - Post generation processing done
+2026-08-01 01:16:54,750 - src.main - INFO - Evaluate machine done
+2026-08-01 01:16:55,600 - src.main - INFO - Evaluate human done
+2026-08-01 01:16:55,617 - src.main - INFO - Processing batch 68
+2026-08-01 01:17:55,726 - src.main - INFO - Generate tokens done
+2026-08-01 01:17:55,816 - src.main - INFO - Post generation processing done
+2026-08-01 01:17:58,376 - src.main - INFO - Evaluate machine done
+2026-08-01 01:17:58,950 - src.main - INFO - Evaluate human done
+2026-08-01 01:17:58,972 - src.main - INFO - Processing batch 69
+2026-08-01 01:18:08,553 - src.main - INFO - Generate tokens done
+2026-08-01 01:18:08,582 - src.main - INFO - Post generation processing done
+2026-08-01 01:18:10,769 - src.main - INFO - Evaluate machine done
+2026-08-01 01:18:11,572 - src.main - INFO - Evaluate human done
+2026-08-01 01:18:11,577 - src.main - INFO - Processing batch 70
+2026-08-01 01:18:31,632 - src.main - INFO - Generate tokens done
+2026-08-01 01:18:31,664 - src.main - INFO - Post generation processing done
+2026-08-01 01:18:34,083 - src.main - INFO - Evaluate machine done
+2026-08-01 01:18:34,671 - src.main - INFO - Evaluate human done
+2026-08-01 01:18:34,676 - src.main - INFO - Processing batch 71
+2026-08-01 01:18:46,826 - src.main - INFO - Generate tokens done
+2026-08-01 01:18:46,852 - src.main - INFO - Post generation processing done
+2026-08-01 01:18:49,003 - src.main - INFO - Evaluate machine done
+2026-08-01 01:18:49,700 - src.main - INFO - Evaluate human done
+2026-08-01 01:18:49,707 - src.main - INFO - Processing batch 72
+2026-08-01 01:18:53,866 - src.main - INFO - Generate tokens done
+2026-08-01 01:18:53,899 - src.main - INFO - Post generation processing done
+2026-08-01 01:18:56,167 - src.main - INFO - Evaluate machine done
+2026-08-01 01:18:56,858 - src.main - INFO - Evaluate human done
+2026-08-01 01:18:56,864 - src.main - INFO - Processing batch 73
+2026-08-01 01:19:03,745 - src.main - INFO - Generate tokens done
+2026-08-01 01:19:03,771 - src.main - INFO - Post generation processing done
+2026-08-01 01:19:05,992 - src.main - INFO - Evaluate machine done
+2026-08-01 01:19:06,642 - src.main - INFO - Evaluate human done
+2026-08-01 01:19:06,654 - src.main - INFO - Processing batch 74
+2026-08-01 01:19:12,106 - src.main - INFO - Generate tokens done
+2026-08-01 01:19:12,137 - src.main - INFO - Post generation processing done
+2026-08-01 01:19:14,466 - src.main - INFO - Evaluate machine done
+2026-08-01 01:19:15,132 - src.main - INFO - Evaluate human done
+2026-08-01 01:19:15,150 - src.main - INFO - Processing batch 75
+2026-08-01 01:19:37,801 - src.main - INFO - Generate tokens done
+2026-08-01 01:19:37,832 - src.main - INFO - Post generation processing done
+2026-08-01 01:19:40,101 - src.main - INFO - Evaluate machine done
+2026-08-01 01:19:41,164 - src.main - INFO - Evaluate human done
+2026-08-01 01:19:41,207 - src.main - INFO - Processing batch 76
+2026-08-01 01:19:50,124 - src.main - INFO - Generate tokens done
+2026-08-01 01:19:50,150 - src.main - INFO - Post generation processing done
+2026-08-01 01:19:52,545 - src.main - INFO - Evaluate machine done
+2026-08-01 01:19:53,803 - src.main - INFO - Evaluate human done
+2026-08-01 01:19:53,808 - src.main - INFO - Processing batch 77
+2026-08-01 01:20:02,593 - src.main - INFO - Generate tokens done
+2026-08-01 01:20:02,616 - src.main - INFO - Post generation processing done
+2026-08-01 01:20:04,921 - src.main - INFO - Evaluate machine done
+2026-08-01 01:20:05,434 - src.main - INFO - Evaluate human done
+2026-08-01 01:20:05,440 - src.main - INFO - Processing batch 78
+2026-08-01 01:20:39,509 - src.main - INFO - Generate tokens done
+2026-08-01 01:20:39,570 - src.main - INFO - Post generation processing done
+2026-08-01 01:20:41,800 - src.main - INFO - Evaluate machine done
+2026-08-01 01:20:42,554 - src.main - INFO - Evaluate human done
+2026-08-01 01:20:42,621 - src.main - INFO - Processing batch 79
+2026-08-01 01:20:46,621 - src.main - INFO - Generate tokens done
+2026-08-01 01:20:46,643 - src.main - INFO - Post generation processing done
+2026-08-01 01:20:48,980 - src.main - INFO - Evaluate machine done
+2026-08-01 01:20:49,502 - src.main - INFO - Evaluate human done
+2026-08-01 01:20:49,513 - src.main - INFO - Processing batch 80
+2026-08-01 01:20:59,695 - src.main - INFO - Generate tokens done
+2026-08-01 01:20:59,720 - src.main - INFO - Post generation processing done
+2026-08-01 01:21:03,106 - src.main - INFO - Evaluate machine done
+2026-08-01 01:21:08,703 - src.main - INFO - Evaluate human done
+2026-08-01 01:21:08,708 - src.main - INFO - Processing batch 81
+2026-08-01 01:22:08,895 - src.main - INFO - Generate tokens done
+2026-08-01 01:22:08,969 - src.main - INFO - Post generation processing done
+2026-08-01 01:22:11,312 - src.main - INFO - Evaluate machine done
+2026-08-01 01:22:12,111 - src.main - INFO - Evaluate human done
+2026-08-01 01:22:12,120 - src.main - INFO - Processing batch 82
+2026-08-01 01:22:20,817 - src.main - INFO - Generate tokens done
+2026-08-01 01:22:20,837 - src.main - INFO - Post generation processing done
+2026-08-01 01:22:23,091 - src.main - INFO - Evaluate machine done
+2026-08-01 01:22:23,877 - src.main - INFO - Evaluate human done
+2026-08-01 01:22:23,892 - src.main - INFO - Processing batch 83
+2026-08-01 01:22:53,968 - src.main - INFO - Generate tokens done
+2026-08-01 01:22:54,000 - src.main - INFO - Post generation processing done
+2026-08-01 01:22:56,631 - src.main - INFO - Evaluate machine done
+2026-08-01 01:22:57,293 - src.main - INFO - Evaluate human done
+2026-08-01 01:22:57,298 - src.main - INFO - Processing batch 84
+2026-08-01 01:23:06,793 - src.main - INFO - Generate tokens done
+2026-08-01 01:23:06,819 - src.main - INFO - Post generation processing done
+2026-08-01 01:23:09,064 - src.main - INFO - Evaluate machine done
+2026-08-01 01:23:09,666 - src.main - INFO - Evaluate human done
+2026-08-01 01:23:09,672 - src.main - INFO - Processing batch 85
+2026-08-01 01:23:16,539 - src.main - INFO - Generate tokens done
+2026-08-01 01:23:16,555 - src.main - INFO - Post generation processing done
+2026-08-01 01:23:18,846 - src.main - INFO - Evaluate machine done
+2026-08-01 01:23:19,668 - src.main - INFO - Evaluate human done
+2026-08-01 01:23:19,676 - src.main - INFO - Processing batch 86
+2026-08-01 01:23:25,935 - src.main - INFO - Generate tokens done
+2026-08-01 01:23:25,958 - src.main - INFO - Post generation processing done
+2026-08-01 01:23:28,635 - src.main - INFO - Evaluate machine done
+2026-08-01 01:23:29,149 - src.main - INFO - Evaluate human done
+2026-08-01 01:23:29,159 - src.main - INFO - Processing batch 87
+2026-08-01 01:23:39,323 - src.main - INFO - Generate tokens done
+2026-08-01 01:23:39,363 - src.main - INFO - Post generation processing done
+2026-08-01 01:23:41,776 - src.main - INFO - Evaluate machine done
+2026-08-01 01:23:42,535 - src.main - INFO - Evaluate human done
+2026-08-01 01:23:42,548 - src.main - INFO - Processing batch 88
+2026-08-01 01:23:58,444 - src.main - INFO - Generate tokens done
+2026-08-01 01:23:58,482 - src.main - INFO - Post generation processing done
+2026-08-01 01:24:01,038 - src.main - INFO - Evaluate machine done
+2026-08-01 01:24:01,938 - src.main - INFO - Evaluate human done
+2026-08-01 01:24:01,952 - src.main - INFO - Processing batch 89
+2026-08-01 01:24:11,988 - src.main - INFO - Generate tokens done
+2026-08-01 01:24:12,012 - src.main - INFO - Post generation processing done
+2026-08-01 01:24:14,519 - src.main - INFO - Evaluate machine done
+2026-08-01 01:24:15,268 - src.main - INFO - Evaluate human done
+2026-08-01 01:24:15,285 - src.main - INFO - Processing batch 90
+2026-08-01 01:24:20,457 - src.main - INFO - Generate tokens done
+2026-08-01 01:24:20,478 - src.main - INFO - Post generation processing done
+2026-08-01 01:24:22,568 - src.main - INFO - Evaluate machine done
+2026-08-01 01:24:23,133 - src.main - INFO - Evaluate human done
+2026-08-01 01:24:23,146 - src.main - INFO - Processing batch 91
+2026-08-01 01:24:31,636 - src.main - INFO - Generate tokens done
+2026-08-01 01:24:31,659 - src.main - INFO - Post generation processing done
+2026-08-01 01:24:33,883 - src.main - INFO - Evaluate machine done
+2026-08-01 01:24:34,850 - src.main - INFO - Evaluate human done
+2026-08-01 01:24:34,859 - src.main - INFO - Processing batch 92
+2026-08-01 01:24:44,010 - src.main - INFO - Generate tokens done
+2026-08-01 01:24:44,036 - src.main - INFO - Post generation processing done
+2026-08-01 01:24:46,551 - src.main - INFO - Evaluate machine done
+2026-08-01 01:24:47,521 - src.main - INFO - Evaluate human done
+2026-08-01 01:24:47,529 - src.main - INFO - Processing batch 93
+2026-08-01 01:25:12,886 - src.main - INFO - Generate tokens done
+2026-08-01 01:25:12,922 - src.main - INFO - Post generation processing done
+2026-08-01 01:25:15,231 - src.main - INFO - Evaluate machine done
+2026-08-01 01:25:16,443 - src.main - INFO - Evaluate human done
+2026-08-01 01:25:16,457 - src.main - INFO - Processing batch 94
+2026-08-01 01:25:36,078 - src.main - INFO - Generate tokens done
+2026-08-01 01:25:36,127 - src.main - INFO - Post generation processing done
+2026-08-01 01:25:38,470 - src.main - INFO - Evaluate machine done
+2026-08-01 01:25:39,180 - src.main - INFO - Evaluate human done
+2026-08-01 01:25:39,192 - src.main - INFO - Processing batch 95
+2026-08-01 01:25:56,532 - src.main - INFO - Generate tokens done
+2026-08-01 01:25:56,569 - src.main - INFO - Post generation processing done
+2026-08-01 01:25:59,177 - src.main - INFO - Evaluate machine done
+2026-08-01 01:26:02,358 - src.main - INFO - Evaluate human done
+2026-08-01 01:26:02,381 - src.main - INFO - Processing batch 96
+2026-08-01 01:26:12,806 - src.main - INFO - Generate tokens done
+2026-08-01 01:26:12,834 - src.main - INFO - Post generation processing done
+2026-08-01 01:26:15,127 - src.main - INFO - Evaluate machine done
+2026-08-01 01:26:15,608 - src.main - INFO - Evaluate human done
+2026-08-01 01:26:15,613 - src.main - INFO - Processing batch 97
+2026-08-01 01:26:25,977 - src.main - INFO - Generate tokens done
+2026-08-01 01:26:26,000 - src.main - INFO - Post generation processing done
+2026-08-01 01:26:28,181 - src.main - INFO - Evaluate machine done
+2026-08-01 01:26:28,784 - src.main - INFO - Evaluate human done
+2026-08-01 01:26:28,831 - src.main - INFO - Processing batch 98
+2026-08-01 01:26:37,264 - src.main - INFO - Generate tokens done
+2026-08-01 01:26:37,283 - src.main - INFO - Post generation processing done
+2026-08-01 01:26:39,525 - src.main - INFO - Evaluate machine done
+2026-08-01 01:26:40,166 - src.main - INFO - Evaluate human done
+2026-08-01 01:26:40,173 - src.main - INFO - Processing batch 99
+2026-08-01 01:26:49,323 - src.main - INFO - Generate tokens done
+2026-08-01 01:26:49,351 - src.main - INFO - Post generation processing done
+2026-08-01 01:26:51,963 - src.main - INFO - Evaluate machine done
+2026-08-01 01:26:53,437 - src.main - INFO - Evaluate human done
+2026-08-01 01:26:53,451 - src.main - INFO - Processing batch 100
+2026-08-01 01:27:01,469 - src.main - INFO - Generate tokens done
+2026-08-01 01:27:01,494 - src.main - INFO - Post generation processing done
+2026-08-01 01:27:03,750 - src.main - INFO - Evaluate machine done
+2026-08-01 01:27:04,253 - src.main - INFO - Evaluate human done
+2026-08-01 01:27:04,264 - src.main - INFO - Processing batch 101
+2026-08-01 01:27:07,317 - src.main - INFO - Generate tokens done
+2026-08-01 01:27:07,337 - src.main - INFO - Post generation processing done
+2026-08-01 01:27:09,731 - src.main - INFO - Evaluate machine done
+2026-08-01 01:27:11,056 - src.main - INFO - Evaluate human done
+2026-08-01 01:27:11,075 - src.main - INFO - Processing batch 102
+2026-08-01 01:28:11,127 - src.main - INFO - Generate tokens done
+2026-08-01 01:28:11,193 - src.main - INFO - Post generation processing done
+2026-08-01 01:28:13,616 - src.main - INFO - Evaluate machine done
+2026-08-01 01:28:15,420 - src.main - INFO - Evaluate human done
+2026-08-01 01:28:15,433 - src.main - INFO - Processing batch 103
+2026-08-01 01:28:20,826 - src.main - INFO - Generate tokens done
+2026-08-01 01:28:20,849 - src.main - INFO - Post generation processing done
+2026-08-01 01:28:23,342 - src.main - INFO - Evaluate machine done
+2026-08-01 01:28:24,097 - src.main - INFO - Evaluate human done
+2026-08-01 01:28:24,103 - src.main - INFO - Processing batch 104
+2026-08-01 01:28:32,809 - src.main - INFO - Generate tokens done
+2026-08-01 01:28:32,831 - src.main - INFO - Post generation processing done
+2026-08-01 01:28:35,164 - src.main - INFO - Evaluate machine done
+2026-08-01 01:28:36,116 - src.main - INFO - Evaluate human done
+2026-08-01 01:28:36,121 - src.main - INFO - Processing batch 105
+2026-08-01 01:28:55,353 - src.main - INFO - Generate tokens done
+2026-08-01 01:28:55,402 - src.main - INFO - Post generation processing done
+2026-08-01 01:28:57,858 - src.main - INFO - Evaluate machine done
+2026-08-01 01:28:58,821 - src.main - INFO - Evaluate human done
+2026-08-01 01:28:58,830 - src.main - INFO - Processing batch 106
+2026-08-01 01:29:06,563 - src.main - INFO - Generate tokens done
+2026-08-01 01:29:06,587 - src.main - INFO - Post generation processing done
+2026-08-01 01:29:08,880 - src.main - INFO - Evaluate machine done
+2026-08-01 01:29:09,690 - src.main - INFO - Evaluate human done
+2026-08-01 01:29:09,697 - src.main - INFO - Processing batch 107
+2026-08-01 01:29:27,728 - src.main - INFO - Generate tokens done
+2026-08-01 01:29:27,770 - src.main - INFO - Post generation processing done
+2026-08-01 01:29:30,572 - src.main - INFO - Evaluate machine done
+2026-08-01 01:29:31,321 - src.main - INFO - Evaluate human done
+2026-08-01 01:29:31,329 - src.main - INFO - Processing batch 108
+2026-08-01 01:29:43,822 - src.main - INFO - Generate tokens done
+2026-08-01 01:29:43,849 - src.main - INFO - Post generation processing done
+2026-08-01 01:29:46,423 - src.main - INFO - Evaluate machine done
+2026-08-01 01:29:48,089 - src.main - INFO - Evaluate human done
+2026-08-01 01:29:48,095 - src.main - INFO - Processing batch 109
+2026-08-01 01:30:48,213 - src.main - INFO - Generate tokens done
+2026-08-01 01:30:48,291 - src.main - INFO - Post generation processing done
+2026-08-01 01:30:50,772 - src.main - INFO - Evaluate machine done
+2026-08-01 01:30:51,822 - src.main - INFO - Evaluate human done
+2026-08-01 01:30:51,852 - src.main - INFO - Processing batch 110
+2026-08-01 01:31:29,637 - src.main - INFO - Generate tokens done
+2026-08-01 01:31:29,690 - src.main - INFO - Post generation processing done
+2026-08-01 01:31:32,081 - src.main - INFO - Evaluate machine done
+2026-08-01 01:31:33,264 - src.main - INFO - Evaluate human done
+2026-08-01 01:31:33,274 - src.main - INFO - Processing batch 111
+2026-08-01 01:31:48,891 - src.main - INFO - Generate tokens done
+2026-08-01 01:31:48,923 - src.main - INFO - Post generation processing done
+2026-08-01 01:31:52,302 - src.main - INFO - Evaluate machine done
+2026-08-01 01:31:56,981 - src.main - INFO - Evaluate human done
+2026-08-01 01:31:56,993 - src.main - INFO - Processing batch 112
+2026-08-01 01:32:05,748 - src.main - INFO - Generate tokens done
+2026-08-01 01:32:05,777 - src.main - INFO - Post generation processing done
+2026-08-01 01:32:08,083 - src.main - INFO - Evaluate machine done
+2026-08-01 01:32:08,919 - src.main - INFO - Evaluate human done
+2026-08-01 01:32:08,928 - src.main - INFO - Processing batch 113
+2026-08-01 01:32:18,805 - src.main - INFO - Generate tokens done
+2026-08-01 01:32:18,836 - src.main - INFO - Post generation processing done
+2026-08-01 01:32:21,170 - src.main - INFO - Evaluate machine done
+2026-08-01 01:32:22,151 - src.main - INFO - Evaluate human done
+2026-08-01 01:32:22,164 - src.main - INFO - Processing batch 114
+2026-08-01 01:32:31,137 - src.main - INFO - Generate tokens done
+2026-08-01 01:32:31,158 - src.main - INFO - Post generation processing done
+2026-08-01 01:32:33,601 - src.main - INFO - Evaluate machine done
+2026-08-01 01:32:34,492 - src.main - INFO - Evaluate human done
+2026-08-01 01:32:34,498 - src.main - INFO - Processing batch 115
+2026-08-01 01:32:40,477 - src.main - INFO - Generate tokens done
+2026-08-01 01:32:40,521 - src.main - INFO - Post generation processing done
+2026-08-01 01:32:43,029 - src.main - INFO - Evaluate machine done
+2026-08-01 01:32:43,549 - src.main - INFO - Evaluate human done
+2026-08-01 01:32:43,561 - src.main - INFO - Processing batch 116
+2026-08-01 01:32:48,543 - src.main - INFO - Generate tokens done
+2026-08-01 01:32:48,569 - src.main - INFO - Post generation processing done
+2026-08-01 01:32:50,933 - src.main - INFO - Evaluate machine done
+2026-08-01 01:32:51,587 - src.main - INFO - Evaluate human done
+2026-08-01 01:32:51,593 - src.main - INFO - Processing batch 117
+2026-08-01 01:33:02,932 - src.main - INFO - Generate tokens done
+2026-08-01 01:33:02,965 - src.main - INFO - Post generation processing done
+2026-08-01 01:33:05,315 - src.main - INFO - Evaluate machine done
+2026-08-01 01:33:06,220 - src.main - INFO - Evaluate human done
+2026-08-01 01:33:06,229 - src.main - INFO - Processing batch 118
+2026-08-01 01:33:16,667 - src.main - INFO - Generate tokens done
+2026-08-01 01:33:16,697 - src.main - INFO - Post generation processing done
+2026-08-01 01:33:19,338 - src.main - INFO - Evaluate machine done
+2026-08-01 01:33:20,228 - src.main - INFO - Evaluate human done
+2026-08-01 01:33:20,234 - src.main - INFO - Processing batch 119
+2026-08-01 01:34:20,302 - src.main - INFO - Generate tokens done
+2026-08-01 01:34:20,367 - src.main - INFO - Post generation processing done
+2026-08-01 01:34:22,645 - src.main - INFO - Evaluate machine done
+2026-08-01 01:34:23,828 - src.main - INFO - Evaluate human done
+2026-08-01 01:34:23,838 - src.main - INFO - Processing batch 120
+2026-08-01 01:34:31,920 - src.main - INFO - Generate tokens done
+2026-08-01 01:34:31,954 - src.main - INFO - Post generation processing done
+2026-08-01 01:34:34,269 - src.main - INFO - Evaluate machine done
+2026-08-01 01:34:34,921 - src.main - INFO - Evaluate human done
+2026-08-01 01:34:34,926 - src.main - INFO - Processing batch 121
+2026-08-01 01:34:45,277 - src.main - INFO - Generate tokens done
+2026-08-01 01:34:45,299 - src.main - INFO - Post generation processing done
+2026-08-01 01:34:47,558 - src.main - INFO - Evaluate machine done
+2026-08-01 01:34:48,303 - src.main - INFO - Evaluate human done
+2026-08-01 01:34:48,309 - src.main - INFO - Processing batch 122
+2026-08-01 01:34:48,639 - src.main - INFO - Generate tokens done
+2026-08-01 01:34:48,657 - src.main - INFO - Post generation processing done
+2026-08-01 01:34:50,947 - src.main - INFO - Evaluate machine done
+2026-08-01 01:34:51,494 - src.main - INFO - Evaluate human done
+2026-08-01 01:34:51,494 - src.main - INFO - skip 122
+2026-08-01 01:34:51,495 - src.main - INFO - Processing batch 123
+2026-08-01 01:35:05,637 - src.main - INFO - Generate tokens done
+2026-08-01 01:35:05,678 - src.main - INFO - Post generation processing done
+2026-08-01 01:35:08,051 - src.main - INFO - Evaluate machine done
+2026-08-01 01:35:08,758 - src.main - INFO - Evaluate human done
+2026-08-01 01:35:08,764 - src.main - INFO - Processing batch 124
+2026-08-01 01:36:08,930 - src.main - INFO - Generate tokens done
+2026-08-01 01:36:09,004 - src.main - INFO - Post generation processing done
+2026-08-01 01:36:11,736 - src.main - INFO - Evaluate machine done
+2026-08-01 01:36:13,105 - src.main - INFO - Evaluate human done
+2026-08-01 01:36:13,144 - src.main - INFO - Processing batch 125
+2026-08-01 01:36:21,880 - src.main - INFO - Generate tokens done
+2026-08-01 01:36:21,908 - src.main - INFO - Post generation processing done
+2026-08-01 01:36:24,177 - src.main - INFO - Evaluate machine done
+2026-08-01 01:36:24,972 - src.main - INFO - Evaluate human done
+2026-08-01 01:36:24,979 - src.main - INFO - Processing batch 126
+2026-08-01 01:36:29,943 - src.main - INFO - Generate tokens done
+2026-08-01 01:36:29,980 - src.main - INFO - Post generation processing done
+2026-08-01 01:36:32,323 - src.main - INFO - Evaluate machine done
+2026-08-01 01:36:33,684 - src.main - INFO - Evaluate human done
+2026-08-01 01:36:33,697 - src.main - INFO - Processing batch 127
+2026-08-01 01:37:04,952 - src.main - INFO - Generate tokens done
+2026-08-01 01:37:05,009 - src.main - INFO - Post generation processing done
+2026-08-01 01:37:07,584 - src.main - INFO - Evaluate machine done
+2026-08-01 01:37:08,383 - src.main - INFO - Evaluate human done
+2026-08-01 01:37:08,391 - src.main - INFO - Processing batch 128
+2026-08-01 01:37:18,611 - src.main - INFO - Generate tokens done
+2026-08-01 01:37:18,637 - src.main - INFO - Post generation processing done
+2026-08-01 01:37:20,960 - src.main - INFO - Evaluate machine done
+2026-08-01 01:37:21,516 - src.main - INFO - Evaluate human done
+2026-08-01 01:37:21,524 - src.main - INFO - Processing batch 129
+2026-08-01 01:38:21,639 - src.main - INFO - Generate tokens done
+2026-08-01 01:38:21,726 - src.main - INFO - Post generation processing done
+2026-08-01 01:38:24,697 - src.main - INFO - Evaluate machine done
+2026-08-01 01:38:26,146 - src.main - INFO - Evaluate human done
+2026-08-01 01:38:26,158 - src.main - INFO - Processing batch 130
+2026-08-01 01:38:48,845 - src.main - INFO - Generate tokens done
+2026-08-01 01:38:48,892 - src.main - INFO - Post generation processing done
+2026-08-01 01:38:51,491 - src.main - INFO - Evaluate machine done
+2026-08-01 01:38:52,417 - src.main - INFO - Evaluate human done
+2026-08-01 01:38:52,424 - src.main - INFO - Processing batch 131
+2026-08-01 01:39:03,633 - src.main - INFO - Generate tokens done
+2026-08-01 01:39:03,653 - src.main - INFO - Post generation processing done
+2026-08-01 01:39:06,022 - src.main - INFO - Evaluate machine done
+2026-08-01 01:39:06,701 - src.main - INFO - Evaluate human done
+2026-08-01 01:39:06,707 - src.main - INFO - Processing batch 132
+2026-08-01 01:40:06,911 - src.main - INFO - Generate tokens done
+2026-08-01 01:40:06,973 - src.main - INFO - Post generation processing done
+2026-08-01 01:40:10,024 - src.main - INFO - Evaluate machine done
+2026-08-01 01:40:11,397 - src.main - INFO - Evaluate human done
+2026-08-01 01:40:11,412 - src.main - INFO - Processing batch 133
+2026-08-01 01:40:18,404 - src.main - INFO - Generate tokens done
+2026-08-01 01:40:18,431 - src.main - INFO - Post generation processing done
+2026-08-01 01:40:20,799 - src.main - INFO - Evaluate machine done
+2026-08-01 01:40:21,538 - src.main - INFO - Evaluate human done
+2026-08-01 01:40:21,558 - src.main - INFO - Processing batch 134
+2026-08-01 01:40:28,793 - src.main - INFO - Generate tokens done
+2026-08-01 01:40:28,818 - src.main - INFO - Post generation processing done
+2026-08-01 01:40:31,261 - src.main - INFO - Evaluate machine done
+2026-08-01 01:40:32,212 - src.main - INFO - Evaluate human done
+2026-08-01 01:40:32,221 - src.main - INFO - Processing batch 135
+2026-08-01 01:40:37,826 - src.main - INFO - Generate tokens done
+2026-08-01 01:40:37,846 - src.main - INFO - Post generation processing done
+2026-08-01 01:40:40,117 - src.main - INFO - Evaluate machine done
+2026-08-01 01:40:40,792 - src.main - INFO - Evaluate human done
+2026-08-01 01:40:40,805 - src.main - INFO - Processing batch 136
+2026-08-01 01:40:50,293 - src.main - INFO - Generate tokens done
+2026-08-01 01:40:50,320 - src.main - INFO - Post generation processing done
+2026-08-01 01:40:52,713 - src.main - INFO - Evaluate machine done
+2026-08-01 01:40:53,508 - src.main - INFO - Evaluate human done
+2026-08-01 01:40:53,527 - src.main - INFO - Processing batch 137
+2026-08-01 01:40:53,875 - src.main - INFO - Generate tokens done
+2026-08-01 01:40:53,895 - src.main - INFO - Post generation processing done
+2026-08-01 01:40:56,171 - src.main - INFO - Evaluate machine done
+2026-08-01 01:40:57,413 - src.main - INFO - Evaluate human done
+2026-08-01 01:40:57,414 - src.main - INFO - skip 137
+2026-08-01 01:40:57,414 - src.main - INFO - Processing batch 138
+2026-08-01 01:41:01,620 - src.main - INFO - Generate tokens done
+2026-08-01 01:41:01,636 - src.main - INFO - Post generation processing done
+2026-08-01 01:41:04,134 - src.main - INFO - Evaluate machine done
+2026-08-01 01:41:04,827 - src.main - INFO - Evaluate human done
+2026-08-01 01:41:04,832 - src.main - INFO - Processing batch 139
+2026-08-01 01:41:13,209 - src.main - INFO - Generate tokens done
+2026-08-01 01:41:13,230 - src.main - INFO - Post generation processing done
+2026-08-01 01:41:15,390 - src.main - INFO - Evaluate machine done
+2026-08-01 01:41:16,348 - src.main - INFO - Evaluate human done
+2026-08-01 01:41:16,360 - src.main - INFO - Processing batch 140
+2026-08-01 01:41:27,565 - src.main - INFO - Generate tokens done
+2026-08-01 01:41:27,590 - src.main - INFO - Post generation processing done
+2026-08-01 01:41:29,823 - src.main - INFO - Evaluate machine done
+2026-08-01 01:41:31,143 - src.main - INFO - Evaluate human done
+2026-08-01 01:41:31,151 - src.main - INFO - Processing batch 141
+2026-08-01 01:42:31,333 - src.main - INFO - Generate tokens done
+2026-08-01 01:42:31,402 - src.main - INFO - Post generation processing done
+2026-08-01 01:42:33,964 - src.main - INFO - Evaluate machine done
+2026-08-01 01:42:35,567 - src.main - INFO - Evaluate human done
+2026-08-01 01:42:35,581 - src.main - INFO - Processing batch 142
+2026-08-01 01:42:48,116 - src.main - INFO - Generate tokens done
+2026-08-01 01:42:48,148 - src.main - INFO - Post generation processing done
+2026-08-01 01:42:50,463 - src.main - INFO - Evaluate machine done
+2026-08-01 01:42:51,172 - src.main - INFO - Evaluate human done
+2026-08-01 01:42:51,186 - src.main - INFO - Processing batch 143
+2026-08-01 01:43:03,408 - src.main - INFO - Generate tokens done
+2026-08-01 01:43:03,438 - src.main - INFO - Post generation processing done
+2026-08-01 01:43:05,803 - src.main - INFO - Evaluate machine done
+2026-08-01 01:43:06,705 - src.main - INFO - Evaluate human done
+2026-08-01 01:43:06,725 - src.main - INFO - Processing batch 144
+2026-08-01 01:43:07,064 - src.main - INFO - Generate tokens done
+2026-08-01 01:43:07,085 - src.main - INFO - Post generation processing done
+2026-08-01 01:43:09,172 - src.main - INFO - Evaluate machine done
+2026-08-01 01:43:09,838 - src.main - INFO - Evaluate human done
+2026-08-01 01:43:09,838 - src.main - INFO - skip 144
+2026-08-01 01:43:09,839 - src.main - INFO - Processing batch 145
+2026-08-01 01:43:13,673 - src.main - INFO - Generate tokens done
+2026-08-01 01:43:13,693 - src.main - INFO - Post generation processing done
+2026-08-01 01:43:15,880 - src.main - INFO - Evaluate machine done
+2026-08-01 01:43:17,213 - src.main - INFO - Evaluate human done
+2026-08-01 01:43:17,231 - src.main - INFO - Processing batch 146
+2026-08-01 01:43:29,120 - src.main - INFO - Generate tokens done
+2026-08-01 01:43:29,147 - src.main - INFO - Post generation processing done
+2026-08-01 01:43:31,496 - src.main - INFO - Evaluate machine done
+2026-08-01 01:43:32,108 - src.main - INFO - Evaluate human done
+2026-08-01 01:43:32,116 - src.main - INFO - Processing batch 147
+2026-08-01 01:43:47,367 - src.main - INFO - Generate tokens done
+2026-08-01 01:43:47,401 - src.main - INFO - Post generation processing done
+2026-08-01 01:43:49,673 - src.main - INFO - Evaluate machine done
+2026-08-01 01:43:50,625 - src.main - INFO - Evaluate human done
+2026-08-01 01:43:50,634 - src.main - INFO - Processing batch 148
+2026-08-01 01:44:33,800 - src.main - INFO - Generate tokens done
+2026-08-01 01:44:33,859 - src.main - INFO - Post generation processing done
+2026-08-01 01:44:36,784 - src.main - INFO - Evaluate machine done
+2026-08-01 01:44:37,787 - src.main - INFO - Evaluate human done
+2026-08-01 01:44:37,794 - src.main - INFO - Processing batch 149
+2026-08-01 01:44:38,152 - src.main - INFO - Generate tokens done
+2026-08-01 01:44:38,176 - src.main - INFO - Post generation processing done
+2026-08-01 01:44:40,181 - src.main - INFO - Evaluate machine done
+2026-08-01 01:44:41,033 - src.main - INFO - Evaluate human done
+2026-08-01 01:44:41,033 - src.main - INFO - skip 149
+2026-08-01 01:44:41,034 - src.main - INFO - Processing batch 150
+2026-08-01 01:45:03,677 - src.main - INFO - Generate tokens done
+2026-08-01 01:45:03,708 - src.main - INFO - Post generation processing done
+2026-08-01 01:45:06,124 - src.main - INFO - Evaluate machine done
+2026-08-01 01:45:06,830 - src.main - INFO - Evaluate human done
+2026-08-01 01:45:06,840 - src.main - INFO - Processing batch 151
+2026-08-01 01:45:12,513 - src.main - INFO - Generate tokens done
+2026-08-01 01:45:12,536 - src.main - INFO - Post generation processing done
+2026-08-01 01:45:14,801 - src.main - INFO - Evaluate machine done
+2026-08-01 01:45:15,676 - src.main - INFO - Evaluate human done
+2026-08-01 01:45:15,684 - src.main - INFO - Processing batch 152
+2026-08-01 01:45:22,851 - src.main - INFO - Generate tokens done
+2026-08-01 01:45:22,885 - src.main - INFO - Post generation processing done
+2026-08-01 01:45:25,077 - src.main - INFO - Evaluate machine done
+2026-08-01 01:45:25,820 - src.main - INFO - Evaluate human done
+2026-08-01 01:45:25,829 - src.main - INFO - Processing batch 153
+2026-08-01 01:45:42,085 - src.main - INFO - Generate tokens done
+2026-08-01 01:45:42,132 - src.main - INFO - Post generation processing done
+2026-08-01 01:45:44,796 - src.main - INFO - Evaluate machine done
+2026-08-01 01:45:46,337 - src.main - INFO - Evaluate human done
+2026-08-01 01:45:46,354 - src.main - INFO - Processing batch 154
+2026-08-01 01:46:04,632 - src.main - INFO - Generate tokens done
+2026-08-01 01:46:04,665 - src.main - INFO - Post generation processing done
+2026-08-01 01:46:07,113 - src.main - INFO - Evaluate machine done
+2026-08-01 01:46:07,861 - src.main - INFO - Evaluate human done
+2026-08-01 01:46:07,872 - src.main - INFO - Processing batch 155
+2026-08-01 01:46:17,450 - src.main - INFO - Generate tokens done
+2026-08-01 01:46:17,469 - src.main - INFO - Post generation processing done
+2026-08-01 01:46:19,858 - src.main - INFO - Evaluate machine done
+2026-08-01 01:46:20,668 - src.main - INFO - Evaluate human done
+2026-08-01 01:46:20,676 - src.main - INFO - Processing batch 156
+2026-08-01 01:46:41,454 - src.main - INFO - Generate tokens done
+2026-08-01 01:46:41,485 - src.main - INFO - Post generation processing done
+2026-08-01 01:46:43,887 - src.main - INFO - Evaluate machine done
+2026-08-01 01:46:44,707 - src.main - INFO - Evaluate human done
+2026-08-01 01:46:44,713 - src.main - INFO - Processing batch 157
+2026-08-01 01:46:52,775 - src.main - INFO - Generate tokens done
+2026-08-01 01:46:52,797 - src.main - INFO - Post generation processing done
+2026-08-01 01:46:55,264 - src.main - INFO - Evaluate machine done
+2026-08-01 01:46:55,918 - src.main - INFO - Evaluate human done
+2026-08-01 01:46:55,931 - src.main - INFO - Processing batch 158
+2026-08-01 01:47:24,439 - src.main - INFO - Generate tokens done
+2026-08-01 01:47:24,478 - src.main - INFO - Post generation processing done
+2026-08-01 01:47:26,942 - src.main - INFO - Evaluate machine done
+2026-08-01 01:47:27,704 - src.main - INFO - Evaluate human done
+2026-08-01 01:47:27,713 - src.main - INFO - Processing batch 159
+2026-08-01 01:47:35,568 - src.main - INFO - Generate tokens done
+2026-08-01 01:47:35,609 - src.main - INFO - Post generation processing done
+2026-08-01 01:47:37,987 - src.main - INFO - Evaluate machine done
+2026-08-01 01:47:38,782 - src.main - INFO - Evaluate human done
+2026-08-01 01:47:38,811 - src.main - INFO - Processing batch 160
+2026-08-01 01:48:24,666 - src.main - INFO - Generate tokens done
+2026-08-01 01:48:24,727 - src.main - INFO - Post generation processing done
+2026-08-01 01:48:32,536 - src.main - INFO - Evaluate machine done
+2026-08-01 01:48:33,690 - src.main - INFO - Evaluate human done
+2026-08-01 01:48:33,714 - src.main - INFO - Processing batch 161
+2026-08-01 01:48:53,199 - src.main - INFO - Generate tokens done
+2026-08-01 01:48:53,230 - src.main - INFO - Post generation processing done
+2026-08-01 01:48:55,599 - src.main - INFO - Evaluate machine done
+2026-08-01 01:48:56,732 - src.main - INFO - Evaluate human done
+2026-08-01 01:48:56,741 - src.main - INFO - Processing batch 162
+2026-08-01 01:49:01,668 - src.main - INFO - Generate tokens done
+2026-08-01 01:49:01,684 - src.main - INFO - Post generation processing done
+2026-08-01 01:49:04,041 - src.main - INFO - Evaluate machine done
+2026-08-01 01:49:04,816 - src.main - INFO - Evaluate human done
+2026-08-01 01:49:04,826 - src.main - INFO - Processing batch 163
+2026-08-01 01:49:13,003 - src.main - INFO - Generate tokens done
+2026-08-01 01:49:13,025 - src.main - INFO - Post generation processing done
+2026-08-01 01:49:15,289 - src.main - INFO - Evaluate machine done
+2026-08-01 01:49:16,066 - src.main - INFO - Evaluate human done
+2026-08-01 01:49:16,076 - src.utils - INFO - Analyzing results
+2026-08-01 01:49:16,094 - src.main - INFO - {'avg_pass_1': np.float64(0.655), 'avg_pass_10': np.float64(0.7725957140769447), 'avg_entropy': 0.340336900392789, 'total_count': 160, 'positive_count': 4, 'avg_len': 69.0625, 'roc_auc': np.float64(0.91486328125), 'tpr_at_fpr_0': np.float64(0.275), 'tpr_at_fpr_01': np.float64(0.35625), 'tpr_at_fpr_05': np.float64(0.55625), 'avg_watermark_fraction': 0.10952879832834712, 'avg_green_fraction': 0.9054990234653548, 'avg_z_score': 1.8452631841010039, 'avg_human_z_score': -0.0869319039751235}
+2026-08-01 01:49:16,123 - src.main - INFO - Execution completed successfully

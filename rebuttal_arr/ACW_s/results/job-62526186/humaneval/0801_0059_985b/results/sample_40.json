@@ -1,0 +1,448 @@
+{
+  "prompt": [
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\""
+  ],
+  "generations": [
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left = i + 1\n        right = len(l) - 1\n\n        # Use two pointers to find a pair that sums to the negative of the current element\n        while left < right:\n            total = l[i] + l[left] + l[right]\n\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            s = l[i] + l[left] + l[right]\n            if s == 0:\n                return True\n            elif s < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            s = l[i] + l[left] + l[right]\n            if s == 0:\n                return True\n            elif s < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            s = l[i] + l[left] + l[right]\n            if s == 0:\n                return True\n            elif s < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            s = l[i] + l[left] + l[right]\n            if s == 0:\n                return True\n            elif s < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            s = l[i] + l[left] + l[right]\n            if s == 0:\n                return True\n            elif s < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    l.sort()\n    for i in range(len(l) - 2):\n        left = i + 1\n        right = len(l) - 1\n        while left < right:\n            s = l[i] + l[left] + l[right]\n            if s == 0:\n                return True\n            elif s < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n\n    # Iterate over the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left = i + 1\n        right = len(l) - 1\n\n        # Use two pointers to find a triplet that sums to zero\n        while left < right:\n            total = l[i] + l[left] + l[right]\n\n            # If the sum is zero, return True\n            if total == 0:\n                return True\n\n            # If the sum is less than zero, increment the left pointer\n            elif total < 0:\n                left += 1\n\n            # If the sum is greater than zero, decrement the right pointer\n            else:\n                right -= 1\n\n    # If no triplet sums to zero is found, return False\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left = i + 1\n        right = len(l) - 1\n\n        # Use two pointers to find a pair that sums to -l[i]\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n\n        # Use two pointers to find a triplet summing to zero\n        while left < right:\n            s = l[i] + l[left] + l[right]\n\n            # If the sum is zero, return True\n            if s == 0:\n                return True\n\n            # If the sum is less than zero, increment the left pointer\n            elif s < 0:\n                left += 1\n\n            # If the sum is greater than zero, decrement the right pointer\n            else:\n                right -= 1\n\n    # If no triplet summing to zero is found, return False\n    return False",
+    "def triples_sum_to_zero(l: list):\n    \"\"\"\n    triples_sum_to_zero takes a list of integers as an input.\n    it returns True if there are three distinct elements in the list that\n    sum to zero, and False otherwise.\n\n    >>> triples_sum_to_zero([1, 3, 5, 0])\n    False\n    >>> triples_sum_to_zero([1, 3, -2, 1])\n    True\n    >>> triples_sum_to_zero([1, 2, 3, 7])\n    False\n    >>> triples_sum_to_zero([2, 4, -5, 3, 9, 7])\n    True\n    >>> triples_sum_to_zero([1])\n    False\n    \"\"\" \n    # Sort the list\n    l.sort()\n    # Iterate through the list\n    for i in range(len(l) - 2):\n        # Initialize two pointers\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            sum = l[i] + l[left] + l[right]\n            if sum == 0:\n                return True\n            elif sum < 0:\n                left += 1\n            else:\n                right -= 1\n    return False"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 3, 5, 0]) == False\n    assert candidate([1, 3, 5, -1]) == False\n    assert candidate([1, 3, -2, 1]) == True\n    assert candidate([1, 2, 3, 7]) == False\n    assert candidate([1, 2, 5, 7]) == False\n    assert candidate([2, 4, -5, 3, 9, 7]) == True\n    assert candidate([1]) == False\n    assert candidate([1, 3, 5, -100]) == False\n    assert candidate([100, 3, 5, -100]) == False\n\n\ncheck(triples_sum_to_zero)"
+  ],
+  "solution": [
+    "    for i in range(len(l)):\n        for j in range(i + 1, len(l)):\n            for k in range(j + 1, len(l)):\n                if l[i] + l[j] + l[k] == 0:\n                    return True\n    return False\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.890625,
+      0.023193359375,
+      1.2265625,
+      3.28125,
+      0.3671875,
+      0.453125,
+      1.1328125,
+      0.000484466552734375,
+      0.181640625,
+      0.333984375,
+      0.703125,
+      0.00135040283203125,
+      0.6953125,
+      1.3359375,
+      0.7578125,
+      0.07958984375,
+      0.08203125,
+      0.90234375,
+      0.00019741058349609375,
+      0.08251953125,
+      0.10302734375,
+      0.08349609375,
+      0.0015869140625,
+      0.26953125,
+      0.00018787384033203125,
+      0.6953125,
+      0.0003376007080078125,
+      0.0079345703125,
+      0.0023193359375,
+      0.12255859375,
+      0.07421875,
+      0.75,
+      1.3671875,
+      0.047119140625,
+      0.005035400390625,
+      0.0947265625,
+      6.341934204101562e-05,
+      1.21875,
+      0.71875,
+      0.0020751953125,
+      0.0181884765625,
+      0.0001468658447265625,
+      2.4586915969848633e-06,
+      0.0196533203125,
+      5.304813385009766e-06,
+      7.677078247070312e-05,
+      0.00016117095947265625,
+      0.00011301040649414062,
+      7.241964340209961e-06,
+      0.00225830078125,
+      3.4809112548828125e-05,
+      0.00139617919921875,
+      1.823902130126953e-05,
+      0.4609375,
+      0.00193023681640625,
+      0.5859375,
+      0.3125,
+      0.1689453125,
+      0.7109375,
+      0.66015625,
+      0.0308837890625,
+      1.0625,
+      0.80859375,
+      0.392578125,
+      0.4296875,
+      0.2265625,
+      0.984375,
+      0.1767578125,
+      0.30859375,
+      0.12890625,
+      0.0419921875,
+      0.2275390625,
+      0.029052734375,
+      2.562999725341797e-05,
+      0.00045013427734375,
+      0.00665283203125,
+      0.00029754638671875,
+      5.364418029785156e-06,
+      0.00860595703125,
+      0.00089263916015625,
+      1.4296875,
+      0.0224609375,
+      4.9114227294921875e-05,
+      0.00080108642578125,
+      3.9637088775634766e-06,
+      6.771087646484375e-05,
+      2.9087066650390625e-05,
+      1.3768672943115234e-05,
+      1.7657876014709473e-06,
+      0.000118255615234375,
+      0.0001087188720703125,
+      1.8905848264694214e-07,
+      0.5078125,
+      0.0002956390380859375,
+      0.53125,
+      0.0008087158203125,
+      0.1044921875,
+      1.5735626220703125e-05,
+      3.0994415283203125e-06,
+      0.0205078125,
+      0.0016632080078125,
+      0.07568359375,
+      1.1920928955078125e-05,
+      0.400390625,
+      0.00091552734375,
+      0.001251220703125,
+      1.1861324310302734e-05,
+      0.038330078125,
+      8.487701416015625e-05,
+      2.968311309814453e-05,
+      0.005218505859375,
+      0.0002880096435546875,
+      0.0079345703125,
+      0.00433349609375,
+      0.00112152099609375,
+      8.106231689453125e-06,
+      0.0262451171875,
+      0.0002613067626953125,
+      0.022216796875,
+      0.06591796875,
+      0.0002574920654296875,
+      0.00016880035400390625,
+      0.0002689361572265625,
+      0.0001850128173828125,
+      2.8014183044433594e-06,
+      0.484375,
+      0.00135040283203125,
+      0.421875,
+      1.2576580047607422e-05
+    ],
+    "len": 129,
+    "num_tokens_generated": 129,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.05426356589147287,
+    "green_fraction": 1.0,
+    "z_score": 2.6457513110645903,
+    "p_value": 0.00407548579675135,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.0732421875,
+      1.0,
+      0.0546875,
+      0.026611328125,
+      0.009765625,
+      0.048828125,
+      0.00086212158203125,
+      0.9296875,
+      0.0101318359375,
+      0.50390625,
+      0.01318359375,
+      0.000659942626953125,
+      0.000392913818359375,
+      0.031494140625,
+      0.6640625,
+      0.00139617919921875,
+      0.00016021728515625,
+      0.0031585693359375,
+      0.000270843505859375,
+      5.602836608886719e-05,
+      0.004608154296875,
+      0.0003414154052734375,
+      0.002227783203125,
+      0.02587890625,
+      1.0013580322265625e-05,
+      5.173683166503906e-05,
+      0.00070953369140625,
+      0.00177764892578125,
+      0.0002384185791015625,
+      1.6450881958007812e-05,
+      0.0004558563232421875,
+      5.6743621826171875e-05,
+      1.895427703857422e-05,
+      0.000461578369140625,
+      0.00028228759765625,
+      0.01190185546875,
+      0.011474609375,
+      4.6253204345703125e-05,
+      0.00014781951904296875,
+      8.866190910339355e-07,
+      3.0517578125e-05,
+      3.147125244140625e-05,
+      9.052455425262451e-07,
+      1.0192394256591797e-05,
+      9.632110595703125e-05,
+      1.4722347259521484e-05,
+      1.6689300537109375e-05,
+      5.91278076171875e-05,
+      3.62396240234375e-05,
+      6.616115570068359e-06,
+      0.002593994140625,
+      9.012222290039062e-05,
+      0.000347137451171875,
+      5.1975250244140625e-05,
+      0.061279296875,
+      0.003570556640625,
+      0.00026702880859375,
+      9.119510650634766e-06,
+      0.94140625
+    ],
+    "len": 59,
+    "num_tokens_generated": 59,
+    "num_tokens_scored": 0,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0,
+    "green_fraction": 0,
+    "z_score": 0.0,
+    "p_value": 1,
+    "prediction": false
+  }
+}

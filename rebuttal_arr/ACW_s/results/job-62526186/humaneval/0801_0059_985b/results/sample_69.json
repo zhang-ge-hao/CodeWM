@@ -1,0 +1,374 @@
+{
+  "prompt": [
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    '''"
+  ],
+  "generations": [
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    for i in range(max_val, 0, -1):\n        if i in freq and freq[i] >= i:\n            return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    for i in range(max_val, 0, -1):\n        if i in freq and freq[i] >= i:\n            return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_freq = max(freq.values())\n    if max_freq < len(lst):\n        return -1\n    else:\n        for i in sorted(freq.keys(), reverse=True):\n            if freq[i] == max_freq:\n                return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_freq = max(freq.values())\n    for num in sorted(set(lst), reverse=True):\n        if freq[num] == max_freq:\n            return num\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_freq = max(freq.values())\n    for num in sorted(set(lst), reverse=True):\n        if freq[num] == max_freq:\n            return num\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_freq = max(freq.values())\n    if max_freq < len(lst):\n        return -1\n    else:\n        for i in sorted(set(lst), reverse=True):\n            if freq[i] == max_freq:\n                return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    for i in range(max_val, 0, -1):\n        if i in freq and freq[i] >= i:\n            return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_freq = max(freq.values())\n    if max_freq < len(lst):\n        return -1\n    else:\n        for i in sorted(freq.keys(), reverse=True):\n            if freq[i] == max_freq:\n                return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    for i in range(max_val, 0, -1):\n        if i in freq and freq[i] >= i:\n            return i\n    return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    if max_val in freq and freq[max_val] >= max_val:\n        return max_val\n    else:\n        return -1",
+    "def search(lst):\n    '''\n    You are given a non-empty list of positive integers. Return the greatest integer that is greater than \n    zero, and has a frequency greater than or equal to the value of the integer itself. \n    The frequency of an integer is the number of times it appears in the list.\n    If no such a value exist, return -1.\n    Examples:\n        search([4, 1, 2, 2, 3, 1]) == 2\n        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3\n        search([5, 5, 4, 4, 4]) == -1\n    ''' \n    from collections import Counter\n    freq = Counter(lst)\n    max_val = max(lst)\n    for i in range(max_val, 0, -1):\n        if i in freq and freq[i] >= i:\n            return i\n    return -1"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # manually generated tests\n    assert candidate([5, 5, 5, 5, 1]) == 1\n    assert candidate([4, 1, 4, 1, 4, 4]) == 4\n    assert candidate([3, 3]) == -1\n    assert candidate([8, 8, 8, 8, 8, 8, 8, 8]) == 8\n    assert candidate([2, 3, 3, 2, 2]) == 2\n\n    # automatically generated tests\n    assert candidate([2, 7, 8, 8, 4, 8, 7, 3, 9, 6, 5, 10, 4, 3, 6, 7, 1, 7, 4, 10, 8, 1]) == 1\n    assert candidate([3, 2, 8, 2]) == 2\n    assert candidate([6, 7, 1, 8, 8, 10, 5, 8, 5, 3, 10]) == 1\n    assert candidate([8, 8, 3, 6, 5, 6, 4]) == -1\n    assert candidate([6, 9, 6, 7, 1, 4, 7, 1, 8, 8, 9, 8, 10, 10, 8, 4, 10, 4, 10, 1, 2, 9, 5, 7, 9]) == 1\n    assert candidate([1, 9, 10, 1, 3]) == 1\n    assert candidate([6, 9, 7, 5, 8, 7, 5, 3, 7, 5, 10, 10, 3, 6, 10, 2, 8, 6, 5, 4, 9, 5, 3, 10]) == 5\n    assert candidate([1]) == 1\n    assert candidate([8, 8, 10, 6, 4, 3, 5, 8, 2, 4, 2, 8, 4, 6, 10, 4, 2, 1, 10, 2, 1, 1, 5]) == 4\n    assert candidate([2, 10, 4, 8, 2, 10, 5, 1, 2, 9, 5, 5, 6, 3, 8, 6, 4, 10]) == 2\n    assert candidate([1, 6, 10, 1, 6, 9, 10, 8, 6, 8, 7, 3]) == 1\n    assert candidate([9, 2, 4, 1, 5, 1, 5, 2, 5, 7, 7, 7, 3, 10, 1, 5, 4, 2, 8, 4, 1, 9, 10, 7, 10, 2, 8, 10, 9, 4]) == 4\n    assert candidate([2, 6, 4, 2, 8, 7, 5, 6, 4, 10, 4, 6, 3, 7, 8, 8, 3, 1, 4, 2, 2, 10, 7]) == 4\n    assert candidate([9, 8, 6, 10, 2, 6, 10, 2, 7, 8, 10, 3, 8, 2, 6, 2, 3, 1]) == 2\n    assert candidate([5, 5, 3, 9, 5, 6, 3, 2, 8, 5, 6, 10, 10, 6, 8, 4, 10, 7, 7, 10, 8]) == -1\n    assert candidate([10]) == -1\n    assert candidate([9, 7, 7, 2, 4, 7, 2, 10, 9, 7, 5, 7, 2]) == 2\n    assert candidate([5, 4, 10, 2, 1, 1, 10, 3, 6, 1, 8]) == 1\n    assert candidate([7, 9, 9, 9, 3, 4, 1, 5, 9, 1, 2, 1, 1, 10, 7, 5, 6, 7, 6, 7, 7, 6]) == 1\n    assert candidate([3, 10, 10, 9, 2]) == -1\n\n\ncheck(search)"
+  ],
+  "solution": [
+    "    frq = [0] * (max(lst) + 1)\n    for i in lst:\n        frq[i] += 1;\n\n    ans = -1\n    for i in range(1, len(frq)):\n        if frq[i] >= i:\n            ans = i\n    \n    return ans\n"
+  ],
+  "metrics": {
+    "pass@1": 0.25,
+    "pass@10": 0.9837461300309598,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.96875,
+      0.1005859375,
+      3.0625,
+      0.009521484375,
+      0.0002880096435546875,
+      0.216796875,
+      0.59765625,
+      0.0024871826171875,
+      2.5625,
+      0.6328125,
+      0.1328125,
+      0.00299072265625,
+      0.173828125,
+      0.10546875,
+      2.09375,
+      1.1484375,
+      0.00836181640625,
+      0.87890625,
+      1.65625,
+      0.09375,
+      0.123046875,
+      0.74609375,
+      0.76953125,
+      0.00052642822265625,
+      1.4921875,
+      0.004425048828125,
+      0.06591796875,
+      0.0087890625,
+      0.0022735595703125,
+      3.6716461181640625e-05,
+      0.00177764892578125,
+      0.01068115234375,
+      0.001129150390625,
+      4.00543212890625e-05,
+      0.051513671875,
+      0.0284423828125,
+      0.0225830078125,
+      0.0064697265625,
+      0.00021457672119140625,
+      0.01348876953125,
+      0.0001239776611328125,
+      0.58984375,
+      0.025390625,
+      0.003173828125,
+      0.00799560546875,
+      0.00555419921875,
+      0.0004100799560546875
+    ],
+    "len": 47,
+    "num_tokens_generated": 47,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.1276595744680851,
+    "green_fraction": 1.0,
+    "z_score": 2.4494897427831783,
+    "p_value": 0.007152939217714809,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.23046875,
+      2.921875,
+      0.8359375,
+      0.984375,
+      0.91796875,
+      0.259765625,
+      0.96484375,
+      0.006072998046875,
+      0.74609375,
+      0.287109375,
+      0.00494384765625,
+      0.5859375,
+      0.0032501220703125,
+      0.01104736328125,
+      0.006134033203125,
+      0.458984375,
+      0.2236328125,
+      0.177734375,
+      1.421875,
+      0.0032501220703125,
+      0.376953125,
+      0.1728515625,
+      0.06298828125,
+      0.032958984375,
+      5.304813385009766e-06,
+      0.002105712890625,
+      0.01177978515625,
+      0.0291748046875,
+      0.0255126953125,
+      0.0004177093505859375,
+      0.5234375,
+      0.007537841796875,
+      0.84765625,
+      0.0299072265625,
+      0.466796875,
+      0.027587890625,
+      0.52734375,
+      0.0004558563232421875,
+      0.08740234375,
+      0.365234375,
+      0.28515625,
+      0.087890625,
+      0.34765625,
+      0.2578125,
+      0.333984375,
+      0.0458984375,
+      0.00010776519775390625,
+      8.7738037109375e-05,
+      0.041015625,
+      0.026611328125,
+      0.0419921875,
+      0.60546875,
+      5.173683166503906e-05,
+      0.00040435791015625,
+      0.027587890625,
+      0.71875,
+      0.00982666015625,
+      0.333984375,
+      0.020263671875,
+      0.1123046875,
+      0.003692626953125,
+      0.68359375,
+      0.75,
+      0.00093841552734375,
+      0.0213623046875,
+      0.021728515625,
+      0.8671875
+    ],
+    "len": 67,
+    "num_tokens_generated": 67,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.029850746268656716,
+    "green_fraction": 0.0,
+    "z_score": -1.414213562373095,
+    "p_value": 0.9213503964748574,
+    "prediction": false
+  }
+}

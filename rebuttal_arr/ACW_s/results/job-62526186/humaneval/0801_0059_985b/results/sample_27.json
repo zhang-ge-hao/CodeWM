@@ -1,0 +1,313 @@
+{
+  "prompt": [
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\""
+  ],
+  "generations": [
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n    \n",
+    "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\" \n    flipped = ''\n    for char in string:\n        if char.islower():\n            flipped += char.upper()\n        elif char.isupper():\n            flipped += char.lower()\n        else:\n            flipped += char\n    return flipped\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('Hello!') == 'hELLO!'\n    assert candidate('These violent delights have violent ends') == 'tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS'\n\ncheck(flip_case)"
+  ],
+  "solution": [
+    "    return string.swapcase()\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.15625,
+      0.0272216796875,
+      1.8671875,
+      0.75,
+      1.2109375,
+      0.07080078125,
+      0.006805419921875,
+      0.625,
+      0.000579833984375,
+      0.00138092041015625,
+      0.140625,
+      0.0301513671875,
+      0.012939453125,
+      0.048828125,
+      0.0250244140625,
+      0.251953125,
+      0.02587890625,
+      0.00830078125,
+      0.022216796875,
+      0.0023651123046875,
+      0.006683349609375,
+      0.00372314453125,
+      0.00171661376953125,
+      0.00104522705078125,
+      0.421875,
+      0.00017547607421875,
+      0.0003337860107421875,
+      5.1021575927734375e-05,
+      0.0004558563232421875,
+      0.000850677490234375,
+      8.535385131835938e-05,
+      0.00102996826171875,
+      0.000293731689453125,
+      5.997717380523682e-07,
+      0.003448486328125,
+      0.00445556640625,
+      0.00927734375,
+      0.12255859375,
+      0.00164794921875,
+      0.0250244140625,
+      0.000629425048828125,
+      0.001190185546875,
+      0.220703125,
+      0.00238037109375,
+      0.000946044921875,
+      0.0023345947265625,
+      1.171875
+    ],
+    "len": 47,
+    "num_tokens_generated": 47,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.06382978723404255,
+    "green_fraction": 1.0,
+    "z_score": 1.7320508075688774,
+    "p_value": 0.0416322583317752,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1357421875,
+      1.8984375,
+      0.95703125,
+      0.050048828125,
+      0.001708984375,
+      1.1171875
+    ],
+    "len": 6,
+    "num_tokens_generated": 6,
+    "num_tokens_scored": 1,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.16666666666666666,
+    "green_fraction": 0.0,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

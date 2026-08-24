@@ -1,0 +1,16 @@
+{
+  "avg_pass_1": 0.655,
+  "avg_pass_10": 0.7725957140769447,
+  "avg_entropy": 0.340336900392789,
+  "total_count": 160,
+  "positive_count": 4,
+  "avg_len": 69.0625,
+  "roc_auc": 0.91486328125,
+  "tpr_at_fpr_0": 0.275,
+  "tpr_at_fpr_01": 0.35625,
+  "tpr_at_fpr_05": 0.55625,
+  "avg_watermark_fraction": 0.10952879832834712,
+  "avg_green_fraction": 0.9054990234653548,
+  "avg_z_score": 1.8452631841010039,
+  "avg_human_z_score": -0.0869319039751235
+}

@@ -1,0 +1,356 @@
+{
+  "prompt": [
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\""
+  ],
+  "generations": [
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n",
+    "from typing import List, Tuple\n\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\" \n    result = []\n    current_max = numbers[0]\n    for number in numbers:\n        if number > current_max:\n            current_max = number\n        result.append(current_max)\n    return result\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([]) == []\n    assert candidate([1, 2, 3, 4]) == [1, 2, 3, 4]\n    assert candidate([4, 3, 2, 1]) == [4, 4, 4, 4]\n    assert candidate([3, 2, 3, 100, 3]) == [3, 3, 3, 100, 100]\n\ncheck(rolling_max)"
+  ],
+  "solution": [
+    "    running_max = None\n    result = []\n\n    for n in numbers:\n        if running_max is None:\n            running_max = n\n        else:\n            running_max = max(running_max, n)\n\n        result.append(running_max)\n\n    return result\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.9296875,
+      0.023193359375,
+      2.3125,
+      0.31640625,
+      0.46484375,
+      0.00982666015625,
+      1.75,
+      0.1279296875,
+      0.064453125,
+      0.89453125,
+      0.0004329681396484375,
+      4.798173904418945e-06,
+      0.57421875,
+      0.435546875,
+      0.01019287109375,
+      1.3125,
+      0.000865936279296875,
+      0.005523681640625,
+      0.06884765625,
+      0.0125732421875,
+      0.1103515625,
+      0.05029296875,
+      0.064453125,
+      0.000148773193359375,
+      1.2040138244628906e-05,
+      0.046142578125,
+      0.005950927734375,
+      0.0019378662109375,
+      2.086162567138672e-05,
+      0.00112152099609375,
+      0.001129150390625,
+      0.0673828125,
+      0.00168609619140625,
+      0.0010528564453125,
+      0.007568359375,
+      0.00078582763671875,
+      4.351139068603516e-06,
+      0.09228515625,
+      0.07763671875,
+      0.003753662109375,
+      0.0010986328125,
+      0.8671875
+    ],
+    "len": 42,
+    "num_tokens_generated": 42,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.09523809523809523,
+    "green_fraction": 1.0,
+    "z_score": 2.0,
+    "p_value": 0.022750131948179195,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.0830078125,
+      2.3125,
+      0.1884765625,
+      0.19921875,
+      1.6640625,
+      0.158203125,
+      2.467632293701172e-05,
+      1.953125,
+      0.06494140625,
+      0.46484375,
+      8.20159912109375e-05,
+      0.06689453125,
+      1.765625,
+      0.00118255615234375,
+      0.0091552734375,
+      0.04931640625,
+      0.00811767578125,
+      0.0771484375,
+      0.03125,
+      5.543231964111328e-06,
+      0.03173828125,
+      0.00147247314453125,
+      0.5234375,
+      0.0026092529296875,
+      0.0361328125,
+      7.987022399902344e-06,
+      0.00089263916015625,
+      0.002105712890625,
+      0.1435546875,
+      0.0986328125,
+      0.92578125,
+      0.0211181640625,
+      0.0011749267578125,
+      0.19921875,
+      1.6570091247558594e-05,
+      0.000507354736328125,
+      0.007232666015625,
+      0.296875,
+      2.205371856689453e-06,
+      7.677078247070312e-05,
+      0.00616455078125,
+      0.0002956390380859375,
+      0.61328125,
+      0.00063323974609375,
+      0.005401611328125,
+      0.0269775390625,
+      0.00098419189453125,
+      1.4662742614746094e-05,
+      3.7997961044311523e-06,
+      0.2158203125,
+      0.000392913818359375,
+      0.005462646484375,
+      0.0008392333984375,
+      0.455078125
+    ],
+    "len": 54,
+    "num_tokens_generated": 54,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.07407407407407407,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  }
+}

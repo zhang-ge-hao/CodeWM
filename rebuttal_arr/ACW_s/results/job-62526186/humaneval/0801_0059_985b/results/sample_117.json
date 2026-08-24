@@ -1,0 +1,407 @@
+{
+  "prompt": [
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\""
+  ],
+  "generations": [
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in 'bcdfghjklmnpqrstvwxyz')\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in 'bcdfghjklmnpqrstvwxyz')\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in 'bcdfghjklmnpqrstvwxyz')\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = []\n    for word in words:\n        if count_consonants(word) == n:\n            result.append(word)\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() not in 'aeiou')\n\n    words = s.split()\n    result = []\n    for word in words:\n        if count_consonants(word) == n:\n            result.append(word)\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in 'bcdfghjklmnpqrstvwxyz')\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in 'bcdfghjklmnpqrstvwxyz')\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in 'bcdfghjklmnpqrstvwxyz')\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n    \n    if not s:\n        return []\n    \n    words = s.split()\n    return [word for word in words if count_consonants(word) == n]",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = []\n    for word in words:\n        if count_consonants(word) == n:\n            result.append(word)\n    return result",
+    "def select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little lamb\", 4) ==> [\"little\"]\n    select_words(\"Mary had a little lamb\", 3) ==> [\"Mary\", \"lamb\"]\n    select_words(\"simple white space\", 2) ==> []\n    select_words(\"Hello world\", 4) ==> [\"world\"]\n    select_words(\"Uncle sam\", 3) ==> [\"Uncle\"]\n    \"\"\" \n    def count_consonants(word):\n        return sum(1 for c in word if c.lower() in \"bcdfghjklmnpqrstvwxyz\")\n\n    if not s:\n        return []\n\n    words = s.split()\n    result = [word for word in words if count_consonants(word) == n]\n    return result"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(\"Mary had a little lamb\", 4) == [\"little\"], \"First test error: \" + str(candidate(\"Mary had a little lamb\", 4))      \n    assert candidate(\"Mary had a little lamb\", 3) == [\"Mary\", \"lamb\"], \"Second test error: \" + str(candidate(\"Mary had a little lamb\", 3))  \n    assert candidate(\"simple white space\", 2) == [], \"Third test error: \" + str(candidate(\"simple white space\", 2))      \n    assert candidate(\"Hello world\", 4) == [\"world\"], \"Fourth test error: \" + str(candidate(\"Hello world\", 4))  \n    assert candidate(\"Uncle sam\", 3) == [\"Uncle\"], \"Fifth test error: \" + str(candidate(\"Uncle sam\", 3))\n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(\"\", 4) == [], \"1st edge test error: \" + str(candidate(\"\", 4))\n    assert candidate(\"a b c d e f\", 1) == [\"b\", \"c\", \"d\", \"f\"], \"2nd edge test error: \" + str(candidate(\"a b c d e f\", 1))\n\n\ncheck(select_words)"
+  ],
+  "solution": [
+    "    result = []\n    for word in s.split():\n        n_consonants = 0\n        for i in range(0, len(word)):\n            if word[i].lower() not in [\"a\",\"e\",\"i\",\"o\",\"u\"]:\n                n_consonants += 1 \n        if n_consonants == n:\n            result.append(word)\n    return result\n\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.0625,
+      0.051513671875,
+      2.640625,
+      1.2421875,
+      0.255859375,
+      0.0238037109375,
+      0.2333984375,
+      0.423828125,
+      0.169921875,
+      0.07080078125,
+      1.4296875,
+      0.5859375,
+      0.7734375,
+      0.341796875,
+      0.0084228515625,
+      0.890625,
+      0.000152587890625,
+      0.004302978515625,
+      0.6484375,
+      0.044677734375,
+      0.53515625,
+      0.0021820068359375,
+      0.6484375,
+      0.79296875,
+      0.00872802734375,
+      0.000827789306640625,
+      0.0003986358642578125,
+      0.000171661376953125,
+      0.000720977783203125,
+      0.00104522705078125,
+      0.00262451171875,
+      0.00112152099609375,
+      0.000240325927734375,
+      0.00180816650390625,
+      0.78125,
+      0.81640625,
+      0.001190185546875,
+      1.640625,
+      0.361328125,
+      0.01141357421875,
+      0.57421875,
+      0.005950927734375,
+      0.00022983551025390625,
+      0.435546875,
+      0.4375,
+      4.553794860839844e-05,
+      0.3203125,
+      0.330078125,
+      0.014404296875,
+      0.0019378662109375,
+      0.0927734375,
+      0.005767822265625,
+      1.2265625,
+      0.0118408203125,
+      0.006866455078125,
+      0.00023365020751953125,
+      0.0003566741943359375,
+      2.6106834411621094e-05,
+      0.00010776519775390625,
+      0.00017070770263671875,
+      0.0283203125,
+      1.2636184692382812e-05,
+      9.000301361083984e-06,
+      3.170967102050781e-05,
+      1.0371208190917969e-05,
+      0.00811767578125,
+      1.150369644165039e-05,
+      0.00011920928955078125,
+      0.9375
+    ],
+    "len": 69,
+    "num_tokens_generated": 69,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.08695652173913043,
+    "green_fraction": 1.0,
+    "z_score": 2.4494897427831783,
+    "p_value": 0.007152939217714809,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.3046875,
+      2.3125,
+      0.7265625,
+      0.3125,
+      0.052490234375,
+      1.5546875,
+      0.482421875,
+      0.03369140625,
+      0.044677734375,
+      0.0137939453125,
+      0.486328125,
+      0.0223388671875,
+      1.125,
+      0.0250244140625,
+      0.052978515625,
+      0.1357421875,
+      0.0380859375,
+      0.640625,
+      0.0002994537353515625,
+      0.0186767578125,
+      7.152557373046875e-05,
+      0.1376953125,
+      1.15625,
+      0.22265625,
+      0.7265625,
+      0.047607421875,
+      0.8671875,
+      0.515625,
+      0.005767822265625,
+      0.00592041015625,
+      0.259765625,
+      0.01434326171875,
+      0.78125,
+      1.46875,
+      0.03759765625,
+      0.703125,
+      0.6875,
+      0.0084228515625,
+      0.6640625,
+      3.6716461181640625e-05,
+      1.5703125,
+      0.017578125,
+      0.1904296875,
+      0.0012054443359375,
+      0.007110595703125,
+      0.0084228515625,
+      0.0017547607421875,
+      0.004302978515625,
+      0.000530242919921875,
+      2.7418136596679688e-05,
+      0.4140625,
+      0.07177734375,
+      0.0054931640625,
+      9.238719940185547e-06,
+      5.340576171875e-05,
+      1.8715858459472656e-05,
+      0.6640625,
+      0.07568359375,
+      0.000949859619140625,
+      0.470703125,
+      0.55859375,
+      0.0235595703125,
+      0.255859375,
+      0.05078125,
+      1.4424324035644531e-05,
+      5.459785461425781e-05,
+      0.08154296875,
+      0.00616455078125,
+      0.279296875,
+      0.0703125,
+      0.0098876953125,
+      0.0213623046875,
+      0.00445556640625,
+      0.30078125,
+      0.1708984375,
+      0.00927734375,
+      0.034423828125,
+      1.03125
+    ],
+    "len": 78,
+    "num_tokens_generated": 78,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.05128205128205128,
+    "green_fraction": 0.25,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

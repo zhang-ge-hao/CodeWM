@@ -1,0 +1,351 @@
+{
+  "prompt": [
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\""
+  ],
+  "generations": [
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    minimum = min(numbers)\n    maximum = max(numbers)\n    range_of_numbers = maximum - minimum\n    rescaled_numbers = [(number - minimum) / range_of_numbers for number in numbers]\n    return rescaled_numbers\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    min_num = min(numbers)\n    max_num = max(numbers)\n    range_num = max_num - min_num\n    rescaled = [(num - min_num) / range_num for num in numbers]\n    return rescaled\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    min_num = min(numbers)\n    max_num = max(numbers)\n    range_num = max_num - min_num\n    rescaled = [(num - min_num) / range_num for num in numbers]\n    return rescaled\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    \n    # calculate the range of the numbers\n    range_num = max_num - min_num\n    \n    # apply the linear transformation\n    return [(num - min_num) / range_num for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    min_num = min(numbers)\n    max_num = max(numbers)\n    range_num = max_num - min_num\n    rescaled = [(num - min_num) / range_num for num in numbers]\n    return rescaled\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    \n    # calculate the range of the numbers\n    range_num = max_num - min_num\n    \n    # apply the linear transformation\n    return [(num - min_num) / range_num for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n",
+    "from typing import List\n\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\" \n    # find min and max of the list\n    min_num = min(numbers)\n    max_num = max(numbers)\n    # subtract min and divide by max-min\n    return [(num - min_num) / (max_num - min_num) for num in numbers]\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([2.0, 49.9]) == [0.0, 1.0]\n    assert candidate([100.0, 49.9]) == [1.0, 0.0]\n    assert candidate([1.0, 2.0, 3.0, 4.0, 5.0]) == [0.0, 0.25, 0.5, 0.75, 1.0]\n    assert candidate([2.0, 1.0, 5.0, 3.0, 4.0]) == [0.25, 0.0, 1.0, 0.5, 0.75]\n    assert candidate([12.0, 11.0, 15.0, 13.0, 14.0]) == [0.25, 0.0, 1.0, 0.5, 0.75]\n\ncheck(rescale_to_unit)"
+  ],
+  "solution": [
+    "    min_number = min(numbers)\n    max_number = max(numbers)\n    return [(x - min_number) / (max_number - min_number) for x in numbers]\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.140625,
+      0.0255126953125,
+      2.015625,
+      4.5625,
+      1.2109375,
+      0.48046875,
+      0.00775146484375,
+      1.7734375,
+      1.6328125,
+      1.15625,
+      0.625,
+      0.00080108642578125,
+      1.015625,
+      1.578125,
+      0.1591796875,
+      0.04736328125,
+      0.0022735595703125,
+      0.031494140625,
+      0.00109100341796875,
+      0.009521484375,
+      0.0002422332763671875,
+      0.0003910064697265625,
+      0.0016937255859375,
+      0.0001125335693359375,
+      0.69921875,
+      0.8515625,
+      0.89453125,
+      3.046875,
+      0.65625,
+      1.4453125,
+      0.203125,
+      0.306640625,
+      0.5546875,
+      0.8203125,
+      1.0,
+      0.00023651123046875,
+      2.375,
+      0.02001953125,
+      1.296875,
+      0.484375,
+      0.00084686279296875,
+      4.124641418457031e-05,
+      0.032470703125,
+      0.00046539306640625,
+      0.00250244140625,
+      0.000354766845703125,
+      1.811981201171875e-05,
+      0.0228271484375,
+      0.000644683837890625,
+      9.489059448242188e-05,
+      0.0079345703125,
+      0.046142578125,
+      7.05718994140625e-05,
+      3.886222839355469e-05,
+      0.000598907470703125,
+      0.96875
+    ],
+    "len": 56,
+    "num_tokens_generated": 56,
+    "num_tokens_scored": 11,
+    "num_green_tokens": 11,
+    "watermarking_fraction": 0.19642857142857142,
+    "green_fraction": 1.0,
+    "z_score": 3.3166247903554,
+    "p_value": 0.0004555594385768564,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.13671875,
+      2.046875,
+      1.6328125,
+      0.09375,
+      0.044921875,
+      0.004547119140625,
+      0.047119140625,
+      0.004974365234375,
+      0.318359375,
+      0.0078125,
+      0.00067138671875,
+      0.0024566650390625,
+      0.000278472900390625,
+      0.51171875,
+      0.2451171875,
+      2.796875,
+      0.11962890625,
+      1.4609375,
+      0.423828125,
+      0.0006561279296875,
+      0.00015544891357421875,
+      0.0240478515625,
+      0.001190185546875,
+      0.00830078125,
+      0.0004138946533203125,
+      3.170967102050781e-05,
+      0.0091552734375,
+      0.000850677490234375,
+      4.8160552978515625e-05,
+      0.023681640625,
+      0.0361328125,
+      0.00014400482177734375,
+      3.7670135498046875e-05,
+      0.00130462646484375,
+      0.7890625
+    ],
+    "len": 35,
+    "num_tokens_generated": 35,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.11428571428571428,
+    "green_fraction": 0.0,
+    "z_score": -2.0,
+    "p_value": 0.9772498680518208,
+    "prediction": false
+  }
+}

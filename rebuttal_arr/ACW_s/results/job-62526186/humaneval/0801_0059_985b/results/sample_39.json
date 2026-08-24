@@ -1,0 +1,428 @@
+{
+  "prompt": [
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\""
+  ],
+  "generations": [
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    def fibonacci(n):\n        a, b = 0, 1\n        for _ in range(n):\n            a, b = b, a + b\n        return a\n\n    count = 0\n    i = 0\n    while True:\n        fib_num = fibonacci(i)\n        if is_prime(fib_num):\n            count += 1\n            if count == n:\n                return fib_num\n        i += 1",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    def fibonacci(n):\n        a, b = 0, 1\n        for _ in range(n):\n            a, b = b, a + b\n        return a\n\n    count = 0\n    num = 0\n    while count < n:\n        num = fibonacci(num)\n        if is_prime(num):\n            count += 1\n    return num",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    def is_prime(num):\n        if num <= 1:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    def fib(n):\n        if n <= 0:\n            return 0\n        elif n == 1:\n            return 1\n        else:\n            return fib(n-1) + fib(n-2)\n\n    count = 0\n    i = 1\n    while True:\n        fib_num = fib(i)\n        if is_prime(fib_num):\n            count += 1\n            if count == n:\n                return fib_num\n        i += 1",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    def fibonacci(n):\n        if n <= 0:\n            return 0\n        elif n == 1:\n            return 1\n        else:\n            return fibonacci(n-1) + fibonacci(n-2)\n\n    count = 0\n    i = 1\n    while True:\n        fib_num = fibonacci(i)\n        if is_prime(fib_num):\n            count += 1\n            if count == n:\n                return fib_num\n        i += 1",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    def is_prime(num):\n        if num <= 1:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    def fib(n):\n        if n <= 0:\n            return 0\n        elif n == 1:\n            return 1\n        else:\n            return fib(n-1) + fib(n-2)\n\n    count = 0\n    i = 1\n    while True:\n        fib_num = fib(i)\n        if is_prime(fib_num):\n            count += 1\n            if count == n:\n                return fib_num\n        i += 1",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    def fibonacci(n):\n        a, b = 0, 1\n        for _ in range(n):\n            a, b = b, a + b\n        return a\n\n    count = 0\n    i = 0\n    while True:\n        fib_num = fibonacci(i)\n        if is_prime(fib_num):\n            count += 1\n            if count == n:\n                return fib_num\n        i += 1\n        if i == 100:  # Prevent infinite loop in case no prime Fibonacci number is found\n            break\n",
+    "def prime_fib(n: int):\n    \"\"\"\n    prime_fib returns n-th number that is a Fibonacci number and it's also prime.\n    >>> prime_fib(1)\n    2\n    >>> prime_fib(2)\n    3\n    >>> prime_fib(3)\n    5\n    >>> prime_fib(4)\n    13\n    >>> prime_fib(5)\n    89\n    \"\"\" \n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n            if count == n:\n                return b\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1) == 2\n    assert candidate(2) == 3\n    assert candidate(3) == 5\n    assert candidate(4) == 13\n    assert candidate(5) == 89\n    assert candidate(6) == 233\n    assert candidate(7) == 1597\n    assert candidate(8) == 28657\n    assert candidate(9) == 514229\n    assert candidate(10) == 433494437\n\n\ncheck(prime_fib)"
+  ],
+  "solution": [
+    "    import math\n\n    def is_prime(p):\n        if p < 2:\n            return False\n        for k in range(2, min(int(math.sqrt(p)) + 1, p - 1)):\n            if p % k == 0:\n                return False\n        return True\n    f = [0, 1]\n    while True:\n        f.append(f[-1] + f[-2])\n        if is_prime(f[-1]):\n            n -= 1\n        if n == 0:\n            return f[-1]\n"
+  ],
+  "metrics": {
+    "pass@1": 0.09999999999999998,
+    "pass@10": 0.763157894736842,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "timed out",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "timed out",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "timed out",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "timed out",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_prime' is not defined",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.8359375,
+      0.009033203125,
+      1.8203125,
+      0.2158203125,
+      0.003997802734375,
+      0.421875,
+      0.005157470703125,
+      0.16796875,
+      0.000732421875,
+      0.000606536865234375,
+      0.000274658203125,
+      0.1123046875,
+      6.341934204101562e-05,
+      0.439453125,
+      0.005279541015625,
+      0.0010223388671875,
+      0.02294921875,
+      0.439453125,
+      0.000415802001953125,
+      0.1083984375,
+      0.049072265625,
+      0.0021820068359375,
+      0.00133514404296875,
+      0.21875,
+      0.000244140625,
+      5.602836608886719e-06,
+      8.440017700195312e-05,
+      0.031494140625,
+      0.00014400482177734375,
+      0.00142669677734375,
+      0.2255859375,
+      9.5367431640625e-06,
+      0.0260009765625,
+      6.973743438720703e-06,
+      0.007171630859375,
+      0.275390625,
+      0.11474609375,
+      0.298828125,
+      0.0224609375,
+      0.00022602081298828125,
+      0.048583984375,
+      0.0003299713134765625,
+      0.00026702880859375,
+      3.6656856536865234e-06,
+      0.0002040863037109375,
+      0.091796875,
+      3.084540367126465e-06,
+      0.00037384033203125,
+      0.00012302398681640625,
+      6.771087646484375e-05,
+      0.005157470703125,
+      7.915496826171875e-05,
+      0.00043487548828125,
+      0.000446319580078125,
+      0.53515625
+    ],
+    "len": 55,
+    "num_tokens_generated": 55,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.03636363636363636,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.236328125,
+      2.046875,
+      1.1875,
+      1.0,
+      0.001739501953125,
+      0.734375,
+      0.2197265625,
+      0.2041015625,
+      0.71484375,
+      0.6640625,
+      0.0284423828125,
+      0.75,
+      0.0244140625,
+      1.234375,
+      0.00089263916015625,
+      0.006744384765625,
+      0.2890625,
+      0.00107574462890625,
+      0.0018768310546875,
+      0.00384521484375,
+      0.054931640625,
+      0.0002079010009765625,
+      0.455078125,
+      0.365234375,
+      0.00014209747314453125,
+      0.00164031982421875,
+      0.0038909912109375,
+      0.000598907470703125,
+      0.0059814453125,
+      0.61328125,
+      1.109375,
+      0.025390625,
+      0.00408935546875,
+      0.00122833251953125,
+      0.984375,
+      0.138671875,
+      0.00174713134765625,
+      0.0035858154296875,
+      0.0267333984375,
+      1.0859375,
+      0.51171875,
+      0.00555419921875,
+      0.006011962890625,
+      0.049560546875,
+      0.00127410888671875,
+      0.00186920166015625,
+      0.07763671875,
+      0.004425048828125,
+      0.0004024505615234375,
+      0.006011962890625,
+      3.147125244140625e-05,
+      1.8328428268432617e-06,
+      0.031982421875,
+      0.000415802001953125,
+      0.000762939453125,
+      0.001495361328125,
+      0.00927734375,
+      0.000896453857421875,
+      0.00543212890625,
+      0.000457763671875,
+      0.1025390625,
+      0.455078125,
+      2.234375,
+      1.515625,
+      1.0078125,
+      0.72265625,
+      0.484375,
+      0.023681640625,
+      0.0177001953125,
+      0.34375,
+      0.03369140625,
+      2.421875,
+      0.376953125,
+      0.010009765625,
+      0.00872802734375,
+      1.390625,
+      0.2294921875,
+      0.010009765625,
+      0.1845703125,
+      0.2265625,
+      0.123046875,
+      0.00069427490234375,
+      0.00087738037109375,
+      0.00034332275390625,
+      2.384185791015625e-05,
+      0.043212890625,
+      0.001495361328125,
+      0.1044921875,
+      0.3515625,
+      5.698204040527344e-05,
+      0.0036468505859375,
+      0.00823974609375,
+      0.000698089599609375,
+      0.412109375,
+      0.00347900390625,
+      1.546875,
+      0.10546875,
+      0.01104736328125,
+      7.581710815429688e-05,
+      0.00897216796875,
+      0.69140625,
+      0.0830078125,
+      0.5078125,
+      0.1376953125,
+      0.0004673004150390625,
+      0.002410888671875,
+      0.03271484375,
+      0.0016021728515625,
+      0.09765625,
+      0.0029144287109375,
+      0.0003147125244140625,
+      0.000644683837890625,
+      0.859375
+    ],
+    "len": 113,
+    "num_tokens_generated": 113,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 5,
+    "watermarking_fraction": 0.061946902654867256,
+    "green_fraction": 0.7142857142857143,
+    "z_score": 1.1338934190276817,
+    "p_value": 0.12841962897892828,
+    "prediction": false
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "prompt": [
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\""
+  ],
+  "generations": [
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    for digit in str(num):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    for digit in str(num):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    for digit in str(num):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)",
+    "def even_odd_count(num):\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n        even_odd_count(-12) ==> (1, 1)\n        even_odd_count(123) ==> (1, 2)\n    \"\"\" \n    evens = 0\n    odds = 0\n    for i in str(abs(num)):\n        if int(i) % 2 == 0:\n            evens += 1\n        else:\n            odds += 1\n    return (evens, odds)"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(7) == (0, 1)\n    assert candidate(-78) == (1, 1)\n    assert candidate(3452) == (2, 2)\n    assert candidate(346211) == (3, 3)\n    assert candidate(-345821) == (3, 3)\n    assert candidate(-2) == (1, 0)\n    assert candidate(-45347) == (2, 3)\n    assert candidate(0) == (1, 0)\n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True\n\n\ncheck(even_odd_count)"
+  ],
+  "solution": [
+    "    even_count = 0\n    odd_count = 0\n    for i in str(abs(num)):\n        if int(i)%2==0:\n            even_count +=1\n        else:\n            odd_count +=1\n    return (even_count, odd_count)\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.09375,
+      0.09228515625,
+      2.015625,
+      0.0771484375,
+      0.51953125,
+      0.55078125,
+      0.017578125,
+      0.1982421875,
+      2.968311309814453e-05,
+      0.050537109375,
+      0.1357421875,
+      0.003204345703125,
+      0.0057373046875,
+      0.66796875,
+      0.006072998046875,
+      0.984375,
+      2.15625,
+      0.0250244140625,
+      0.365234375,
+      0.54296875,
+      0.000270843505859375,
+      0.203125,
+      0.032470703125,
+      0.10302734375,
+      0.1611328125,
+      0.00390625,
+      0.46875,
+      0.00433349609375,
+      0.052734375,
+      0.000545501708984375,
+      0.03564453125,
+      0.038330078125,
+      0.0035552978515625,
+      0.142578125,
+      0.0272216796875,
+      0.0002613067626953125,
+      4.947185516357422e-06,
+      0.1259765625,
+      0.06640625,
+      0.000591278076171875,
+      0.054443359375,
+      0.003021240234375,
+      0.054931640625,
+      0.154296875,
+      0.0029296875,
+      0.00010395050048828125,
+      0.01239013671875,
+      0.0262451171875,
+      0.0005340576171875,
+      0.7265625,
+      0.015869140625,
+      0.046875,
+      0.357421875,
+      8.916854858398438e-05,
+      1.6927719116210938e-05,
+      0.007781982421875,
+      0.00347900390625,
+      1.046875
+    ],
+    "len": 58,
+    "num_tokens_generated": 58,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.05172413793103448,
+    "green_fraction": 1.0,
+    "z_score": 1.7320508075688774,
+    "p_value": 0.0416322583317752,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.19140625,
+      2.078125,
+      1.421875,
+      0.267578125,
+      0.0299072265625,
+      0.001373291015625,
+      0.06787109375,
+      7.4803829193115234e-06,
+      0.00179290771484375,
+      0.0028228759765625,
+      0.0218505859375,
+      0.00162506103515625,
+      0.00081634521484375,
+      0.55859375,
+      0.00194549560546875,
+      0.9453125,
+      1.328125,
+      0.0031280517578125,
+      0.2890625,
+      0.53515625,
+      0.00011301040649414062,
+      0.0986328125,
+      0.0096435546875,
+      0.027587890625,
+      0.099609375,
+      0.0019989013671875,
+      0.259765625,
+      0.048583984375,
+      0.640625,
+      0.01104736328125,
+      0.087890625,
+      0.048828125,
+      0.00067138671875,
+      9.715557098388672e-06,
+      0.78515625,
+      0.267578125,
+      0.177734375,
+      0.0023345947265625,
+      0.07177734375,
+      0.158203125,
+      0.0076904296875,
+      0.000213623046875,
+      1.823902130126953e-05,
+      0.27734375,
+      0.337890625,
+      0.45703125,
+      0.015625,
+      0.041015625,
+      0.486328125,
+      0.003021240234375,
+      1.704692840576172e-05,
+      0.041748046875,
+      0.26953125,
+      2.1338462829589844e-05,
+      1.15625
+    ],
+    "len": 55,
+    "num_tokens_generated": 55,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.05454545454545454,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -0.5773502691896258,
+    "p_value": 0.7181485691746134,
+    "prediction": false
+  }
+}

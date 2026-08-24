@@ -1,0 +1,427 @@
+{
+  "prompt": [
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\""
+  ],
+  "generations": [
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        n = abs(n)\n        sum = 0\n        while n > 0:\n            sum += n % 10\n            n = n // 10\n        return sum\n\n    count = 0\n    for num in arr:\n        if sum_of_digits(num) > 0:\n            count += 1\n    return count\n    pass",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum = 0\n        while i != 0:\n            sum += i % 10\n            i = i // 10\n        if sum > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum = 0\n        while i != 0:\n            sum += i % 10\n            i = i // 10\n        if sum > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        n = abs(n)\n        sum = 0\n        while n > 0:\n            sum += n % 10\n            n = n // 10\n        return sum\n\n    count = 0\n    for num in arr:\n        if sum_of_digits(num) > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if sum_of_digits(i) > 0:\n            count += 1\n    return count\n        \n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        n = abs(n)\n        sum = 0\n        while n > 0:\n            sum += n % 10\n            n //= 10\n        return sum\n\n    count = 0\n    for num in arr:\n        if sum_of_digits(num) > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        n = abs(n)\n        sum = 0\n        while n > 0:\n            sum += n % 10\n            n //= 10\n        return sum\n\n    count = 0\n    for num in arr:\n        if sum_of_digits(num) > 0:\n            count += 1\n    return count",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if sum_of_digits(i) > 0:\n            count += 1\n    return count\n            \n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum_digits = sum(int(digit) for digit in str(i))\n        if sum_digits > 0:\n            count += 1\n    return count\n        \n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum = 0\n        while i != 0:\n            sum += i % 10\n            i = i // 10\n        if sum > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum = 0\n        while i != 0:\n            sum += i % 10\n            i = i // 10\n        if sum > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if sum(map(int, str(abs(i)))) > 0:\n            count += 1\n    return count",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if sum_of_digits(i) > 0:\n            count += 1\n    return count\n        \n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if sum_of_digits(i) > 0:\n            count += 1\n    return count\n        \n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum = 0\n        while i != 0:\n            sum += i % 10\n            i = i // 10\n        if sum > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum = 0\n        while i != 0:\n            sum += i % 10\n            i = i // 10\n        if sum > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum_digits = sum(int(digit) for digit in str(i))\n        if sum_digits > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    # Your code here\n    count = 0\n    for i in arr:\n        if i == 0:\n            continue\n        if i < 0:\n            i = -i\n        sum_digits = sum(int(digit) for digit in str(i))\n        if sum_digits > 0:\n            count += 1\n    return count\n    pass",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        n = abs(n)\n        sum = 0\n        while n > 0:\n            sum += n % 10\n            n //= 10\n        return sum\n\n    count = 0\n    for num in arr:\n        if sum_of_digits(num) > 0:\n            count += 1\n    return count\n",
+    "def count_nums(arr):\n    \"\"\"\n    Write a function count_nums which takes an array of integers and returns\n    the number of elements which has a sum of digits > 0.\n    If a number is negative, then its first signed digit will be negative:\n    e.g. -123 has signed digits -1, 2, and 3.\n    >>> count_nums([]) == 0\n    >>> count_nums([-1, 11, -11]) == 1\n    >>> count_nums([1, 1, 2]) == 3\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        n = abs(n)\n        sum = 0\n        while n > 0:\n            sum += n % 10\n            n //= 10\n        return sum\n\n    count = 0\n    for num in arr:\n        if sum_of_digits(num) > 0:\n            count += 1\n    return count"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([]) == 0\n    assert candidate([-1, -2, 0]) == 0\n    assert candidate([1, 1, 2, -2, 3, 4, 5]) == 6\n    assert candidate([1, 6, 9, -6, 0, 1, 5]) == 5\n    assert candidate([1, 100, 98, -7, 1, -1]) == 4\n    assert candidate([12, 23, 34, -45, -56, 0]) == 5\n    assert candidate([-0, 1**0]) == 1\n    assert candidate([1]) == 1\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(count_nums)"
+  ],
+  "solution": [
+    "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return len(list(filter(lambda x: x > 0, [digits_sum(i) for i in arr])))\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'sum_of_digits' is not defined",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'sum_of_digits' is not defined",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'sum_of_digits' is not defined",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'sum_of_digits' is not defined",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.546875,
+      1.1171875,
+      1.234375,
+      1.7578125,
+      1.6484375,
+      0.259765625,
+      1.09375,
+      0.55859375,
+      0.12109375,
+      2.640625,
+      0.34375,
+      0.412109375,
+      0.06396484375,
+      0.58203125,
+      0.028076171875,
+      2.546875,
+      1.046875,
+      0.003997802734375,
+      0.000370025634765625,
+      0.2373046875,
+      0.0024566650390625,
+      0.107421875,
+      0.48828125,
+      1.140625,
+      0.010009765625,
+      0.0322265625,
+      0.057861328125,
+      0.01953125,
+      0.5078125,
+      0.197265625,
+      0.04736328125,
+      0.2353515625,
+      0.0030517578125,
+      7.0035457611083984e-06,
+      0.05078125,
+      0.00017642974853515625,
+      0.00103759765625,
+      0.7109375,
+      0.09814453125,
+      0.058837890625,
+      0.0189208984375,
+      5.817413330078125e-05,
+      0.203125,
+      0.00567626953125,
+      0.005615234375,
+      0.0302734375,
+      0.921875,
+      0.027099609375,
+      1.625,
+      0.053466796875,
+      0.01300048828125,
+      0.0003452301025390625,
+      0.1640625,
+      0.000545501708984375,
+      0.046630859375,
+      0.73046875,
+      0.000698089599609375,
+      0.0064697265625,
+      0.02001953125,
+      0.00732421875,
+      0.478515625,
+      0.0186767578125,
+      3.600120544433594e-05,
+      5.745887756347656e-05,
+      0.0020904541015625,
+      0.01068115234375,
+      0.0257568359375,
+      0.000812530517578125,
+      0.00025177001953125,
+      0.046142578125,
+      0.00543212890625,
+      0.001068115234375,
+      0.0238037109375,
+      0.00994873046875,
+      0.00012683868408203125,
+      0.39453125,
+      0.008056640625,
+      0.00099945068359375,
+      0.003662109375,
+      1.1171875,
+      2.28125,
+      0.78515625
+    ],
+    "len": 82,
+    "num_tokens_generated": 82,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.0975609756097561,
+    "green_fraction": 0.875,
+    "z_score": 2.1213203435596424,
+    "p_value": 0.016947426762344633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.30078125,
+      2.484375,
+      1.84375,
+      0.28515625,
+      0.96875,
+      0.41796875,
+      0.043701171875,
+      1.8984375,
+      0.79296875,
+      1.875,
+      0.609375,
+      0.7109375,
+      0.0002994537353515625,
+      0.294921875,
+      0.0250244140625,
+      0.3515625,
+      0.00909423828125,
+      0.0001773834228515625,
+      0.125,
+      1.2734375,
+      0.419921875,
+      0.000926971435546875,
+      0.0045166015625,
+      0.111328125,
+      0.138671875,
+      0.921875,
+      0.033203125,
+      0.017578125,
+      0.00021648406982421875,
+      0.0012969970703125,
+      0.4140625,
+      0.0277099609375,
+      2.609375,
+      1.578125,
+      0.287109375,
+      0.1259765625,
+      1.3984375,
+      0.0096435546875,
+      0.006256103515625,
+      0.003570556640625,
+      0.00067138671875,
+      0.23828125,
+      0.01361083984375,
+      0.5703125,
+      0.0810546875,
+      2.078125,
+      0.9765625,
+      0.90234375,
+      0.054931640625,
+      0.69921875,
+      1.2265625,
+      0.4140625,
+      0.0458984375,
+      0.267578125,
+      0.58203125,
+      0.0810546875,
+      0.83984375,
+      0.0030059814453125,
+      1.6171875,
+      0.59375,
+      0.05517578125,
+      1.0234375,
+      1.2890625,
+      0.5390625,
+      0.193359375,
+      0.26953125,
+      0.0074462890625,
+      0.050537109375,
+      0.7421875,
+      0.2294921875,
+      0.69140625,
+      1.359375,
+      0.0184326171875,
+      0.000568389892578125,
+      0.474609375,
+      0.7578125,
+      0.007080078125,
+      2.5272369384765625e-05,
+      0.515625,
+      0.0003204345703125,
+      0.0322265625,
+      0.00018310546875,
+      0.0004405975341796875,
+      0.005157470703125,
+      0.71875
+    ],
+    "len": 85,
+    "num_tokens_generated": 85,
+    "num_tokens_scored": 13,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.15294117647058825,
+    "green_fraction": 0.23076923076923078,
+    "z_score": -1.9414506867883021,
+    "p_value": 0.9738981823293427,
+    "prediction": false
+  }
+}

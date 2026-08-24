@@ -1,0 +1,374 @@
+{
+  "prompt": [
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\""
+  ],
+  "generations": [
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        return False\n    return True",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True\n    \n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    # Your code here\n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(len(l) - 1):\n        if (l[i+1] - l[i]) * direction < 0:\n            return False\n    return True\n    \n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction < 0:\n            return False\n    return True\n    \n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return True\n    increasing = l[0] < l[-1]\n    for i in range(1, len(l)):\n        if l[i] == l[i-1]:\n            return False\n        if increasing:\n            if l[i] < l[i-1]:\n                return False\n        else:\n            if l[i] > l[i-1]:\n                return False\n    return True\n    \n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True\n    \n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True\n    \n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    increasing = all(l[i] <= l[i + 1] for i in range(len(l) - 1))\n    decreasing = all(l[i] >= l[i + 1] for i in range(len(l) - 1))\n    return increasing or decreasing\n",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True",
+    "def monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\" \n    if len(l) < 2:\n        return True\n    if l[0] == l[-1]:\n        return all(x == l[0] for x in l)\n    direction = l[-1] - l[0]\n    for i in range(1, len(l)):\n        if (l[i-1] - l[i]) * direction >= 0:\n            continue\n        else:\n            return False\n    return True"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2, 4, 10]) == True\n    assert candidate([1, 2, 4, 20]) == True\n    assert candidate([1, 20, 4, 10]) == False\n    assert candidate([4, 1, 0, -10]) == True\n    assert candidate([4, 1, 1, 0]) == True\n    assert candidate([1, 2, 3, 2, 5, 60]) == False\n    assert candidate([1, 2, 3, 4, 5, 60]) == True\n    assert candidate([9, 9, 9, 9]) == True\n\n\ncheck(monotonic)"
+  ],
+  "solution": [
+    "    if l == sorted(l) or l == sorted(l, reverse=True):\n        return True\n    return False\n"
+  ],
+  "metrics": {
+    "pass@1": 0.4,
+    "pass@10": 0.9996427720885925,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.328125,
+      0.0247802734375,
+      2.46875,
+      0.640625,
+      0.049072265625,
+      0.240234375,
+      1.03125,
+      0.0208740234375,
+      0.52734375,
+      0.470703125,
+      0.0301513671875,
+      0.0615234375,
+      0.345703125,
+      1.09375,
+      0.0157470703125,
+      2.890625,
+      0.31640625,
+      0.1513671875,
+      0.390625,
+      0.062255859375,
+      0.91796875,
+      0.0020904541015625,
+      0.67578125,
+      0.0003376007080078125,
+      0.38671875,
+      0.01123046875,
+      1.09375,
+      1.0546875,
+      1.2578125,
+      0.40625,
+      0.004791259765625,
+      0.0038604736328125,
+      0.0004558563232421875,
+      0.00010585784912109375,
+      0.0011444091796875,
+      0.00118255615234375,
+      0.000141143798828125,
+      0.000762939453125,
+      0.439453125,
+      0.251953125,
+      1.8515625,
+      0.03125,
+      0.8515625,
+      0.5078125,
+      3.647804260253906e-05,
+      0.00982666015625,
+      0.0267333984375,
+      0.0047607421875,
+      0.00579833984375,
+      0.0002346038818359375,
+      0.11767578125,
+      0.0174560546875,
+      0.41796875,
+      0.365234375,
+      0.010009765625,
+      0.000301361083984375,
+      0.6328125,
+      0.01904296875,
+      0.0218505859375,
+      0.0003070831298828125,
+      0.00012159347534179688,
+      0.0400390625,
+      0.0081787109375,
+      0.0238037109375,
+      0.302734375,
+      0.000759124755859375,
+      0.004730224609375,
+      0.69140625,
+      4.678964614868164e-06,
+      0.06103515625,
+      0.0291748046875,
+      0.00946044921875,
+      0.000667572021484375,
+      0.005950927734375,
+      0.006256103515625,
+      0.00138092041015625,
+      0.921875,
+      0.00139617919921875,
+      2.396106719970703e-05,
+      0.023681640625,
+      0.005096435546875,
+      0.54296875,
+      0.032470703125,
+      0.00020313262939453125,
+      0.6953125,
+      0.00131988525390625,
+      0.053955078125,
+      0.00079345703125,
+      0.00762939453125,
+      0.000583648681640625
+    ],
+    "len": 90,
+    "num_tokens_generated": 90,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 5,
+    "watermarking_fraction": 0.05555555555555555,
+    "green_fraction": 1.0,
+    "z_score": 2.23606797749979,
+    "p_value": 0.012673659338734126,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1298828125,
+      2.546875,
+      0.59375,
+      1.2109375,
+      0.67578125,
+      0.455078125,
+      0.80859375,
+      0.002349853515625,
+      0.00653076171875,
+      0.043701171875,
+      0.00168609619140625,
+      0.000583648681640625,
+      0.09228515625,
+      0.0211181640625,
+      0.1787109375,
+      0.1396484375,
+      0.02685546875,
+      0.0087890625,
+      0.0028228759765625,
+      0.11474609375,
+      0.00090789794921875,
+      0.69140625,
+      0.0002651214599609375,
+      1.1328125
+    ],
+    "len": 24,
+    "num_tokens_generated": 24,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.08333333333333333,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  }
+}

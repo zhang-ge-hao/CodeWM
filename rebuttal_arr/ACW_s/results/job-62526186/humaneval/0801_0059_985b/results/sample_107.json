@@ -1,0 +1,500 @@
+{
+  "prompt": [
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\""
+  ],
+  "generations": [
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)",
+    "def even_odd_palindrome(n):\n    \"\"\"\n    Given a positive integer n, return a tuple that has the number of even and odd\n    integer palindromes that fall within the range(1, n), inclusive.\n\n    Example 1:\n\n        Input: 3\n        Output: (1, 2)\n        Explanation:\n        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.\n\n    Example 2:\n\n        Input: 12\n        Output: (4, 6)\n        Explanation:\n        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.\n\n    Note:\n        1. 1 <= n <= 10^3\n        2. returned tuple has the number of even and odd integer palindromes respectively.\n    \"\"\"\n\n\n    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i) and i % 2 == 0:\n            even_palindrome_count += 1\n        elif is_palindrome(i) and i % 2 != 0:\n            odd_palindrome_count += 1\n\n    return (even_palindrome_count, odd_palindrome_count)"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(123) == (8, 13)\n    assert candidate(12) == (4, 6)\n    assert candidate(3) == (1, 2)\n    assert candidate(63) == (6, 8)\n    assert candidate(25) == (5, 6)\n    assert candidate(19) == (4, 6)\n    assert candidate(9) == (4, 5), \"This prints if this assert fails 1 (good for debugging!)\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1) == (0, 1), \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(even_odd_palindrome)"
+  ],
+  "solution": [
+    "    def is_palindrome(n):\n        return str(n) == str(n)[::-1]\n\n    even_palindrome_count = 0\n    odd_palindrome_count = 0\n\n    for i in range(1, n+1):\n        if i%2 == 1 and is_palindrome(i):\n                odd_palindrome_count += 1\n        elif i%2 == 0 and is_palindrome(i):\n            even_palindrome_count += 1\n    return (even_palindrome_count, odd_palindrome_count)\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.078125,
+      0.66796875,
+      0.96484375,
+      0.72265625,
+      0.40625,
+      0.0091552734375,
+      0.03564453125,
+      1.4375,
+      0.31640625,
+      0.05029296875,
+      1.234375,
+      0.060546875,
+      0.000743865966796875,
+      0.00836181640625,
+      0.00115203857421875,
+      0.0014495849609375,
+      0.0001068115234375,
+      0.0001926422119140625,
+      0.0012664794921875,
+      3.838539123535156e-05,
+      0.83203125,
+      0.0301513671875,
+      1.109375,
+      1.2578125,
+      0.0296630859375,
+      0.66015625,
+      0.83203125,
+      0.1953125,
+      0.16796875,
+      0.000972747802734375,
+      0.005523681640625,
+      7.972121238708496e-07,
+      0.00067901611328125,
+      6.580352783203125e-05,
+      1.0013580322265625e-05,
+      0.00180816650390625,
+      0.000942230224609375,
+      0.01336669921875,
+      0.00011491775512695312,
+      0.0022430419921875,
+      0.67578125,
+      0.0016021728515625,
+      0.0289306640625,
+      0.2412109375,
+      3.7670135498046875e-05,
+      0.00299072265625,
+      0.005523681640625,
+      0.0003509521484375,
+      0.0225830078125,
+      0.000957489013671875,
+      0.69140625,
+      0.0003643035888671875,
+      2.0384788513183594e-05,
+      0.0206298828125,
+      0.001708984375,
+      0.002960205078125,
+      0.0498046875,
+      1.6391277313232422e-06,
+      7.683411240577698e-08,
+      2.2444874048233032e-07,
+      0.000560760498046875,
+      0.609375,
+      0.00909423828125,
+      0.0810546875,
+      0.0201416015625,
+      0.000186920166015625,
+      7.724761962890625e-05,
+      0.0001888275146484375,
+      0.00173187255859375,
+      5.8650970458984375e-05,
+      0.0047607421875,
+      0.000751495361328125,
+      0.0003986358642578125,
+      2.9921531677246094e-05,
+      1.0989606380462646e-07,
+      1.9669532775878906e-05,
+      4.380941390991211e-06,
+      0.000518798828125,
+      0.000823974609375,
+      3.457069396972656e-05,
+      0.0030975341796875,
+      0.000278472900390625,
+      0.1904296875,
+      0.003387451171875,
+      3.241002559661865e-07,
+      2.207234501838684e-07,
+      2.3692846298217773e-06,
+      2.0742416381835938e-05,
+      0.0003070831298828125,
+      9.441375732421875e-05,
+      0.000286102294921875,
+      0.0001354217529296875,
+      0.0002899169921875,
+      6.5267086029052734e-06,
+      0.14453125,
+      0.00110626220703125,
+      1.895427703857422e-05,
+      0.001708984375,
+      0.00011157989501953125,
+      7.772445678710938e-05,
+      3.390014171600342e-07,
+      7.599592208862305e-07,
+      4.947185516357422e-06,
+      9.59634780883789e-06,
+      0.000213623046875,
+      0.0009002685546875,
+      1.1324882507324219e-05,
+      0.041259765625,
+      0.00087738037109375,
+      0.0030670166015625,
+      0.2490234375,
+      0.00012111663818359375,
+      5.990266799926758e-06,
+      4.16184775531292e-09,
+      5.543231964111328e-06,
+      9.59634780883789e-06,
+      0.0004177093505859375,
+      0.000576019287109375,
+      3.296881914138794e-07,
+      1.30385160446167e-07,
+      7.3909759521484375e-06,
+      1.7762184143066406e-05,
+      0.84765625
+    ],
+    "len": 123,
+    "num_tokens_generated": 123,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.032520325203252036,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.04345703125,
+      1.2109375,
+      0.345703125,
+      0.171875,
+      0.001617431640625,
+      0.007293701171875,
+      1.1953125,
+      0.1181640625,
+      0.00109100341796875,
+      0.2158203125,
+      0.0030670166015625,
+      3.695487976074219e-05,
+      0.0002899169921875,
+      7.2479248046875e-05,
+      2.956390380859375e-05,
+      1.1146068572998047e-05,
+      2.1576881408691406e-05,
+      0.0001850128173828125,
+      6.973743438720703e-06,
+      0.06982421875,
+      0.0001888275146484375,
+      0.93359375,
+      1.1640625,
+      0.01177978515625,
+      0.64453125,
+      0.484375,
+      0.1748046875,
+      0.216796875,
+      0.000720977783203125,
+      0.0003757476806640625,
+      2.491287887096405e-08,
+      0.000270843505859375,
+      2.9325485229492188e-05,
+      1.8700957298278809e-06,
+      0.0006561279296875,
+      0.0004177093505859375,
+      0.00128173828125,
+      1.7881393432617188e-05,
+      0.0014190673828125,
+      0.5625,
+      2.8014183044433594e-05,
+      0.0091552734375,
+      0.11376953125,
+      5.401670932769775e-07,
+      0.000835418701171875,
+      0.00128936767578125,
+      0.0002117156982421875,
+      0.000370025634765625,
+      0.0002536773681640625,
+      0.53125,
+      1.4662742614746094e-05,
+      0.000690460205078125,
+      4.220008850097656e-05,
+      0.000606536865234375,
+      0.05078125,
+      0.1982421875,
+      0.1845703125,
+      0.44140625,
+      0.08349609375,
+      0.06640625,
+      0.439453125,
+      0.006439208984375,
+      2.551823854446411e-07,
+      1.7043203115463257e-07,
+      2.812594175338745e-07,
+      0.0022735595703125,
+      0.25390625,
+      0.0022430419921875,
+      0.00396728515625,
+      4.649162292480469e-06,
+      5.140900611877441e-07,
+      3.0279159545898438e-05,
+      3.6716461181640625e-05,
+      0.08740234375,
+      0.048828125,
+      0.0003604888916015625,
+      0.058349609375,
+      0.00109100341796875,
+      0.62109375,
+      0.228515625,
+      0.021484375,
+      0.00070953369140625,
+      0.00439453125,
+      0.01220703125,
+      0.000194549560546875,
+      0.00634765625,
+      0.0033721923828125,
+      1.2442469596862793e-06,
+      3.166496753692627e-07,
+      7.301568984985352e-07,
+      0.00069427490234375,
+      0.017822265625,
+      0.2197265625,
+      0.0019989013671875,
+      3.1441450119018555e-06,
+      3.9674341678619385e-07,
+      2.384185791015625e-05,
+      9.000301361083984e-06,
+      0.0026092529296875,
+      0.009765625,
+      3.814697265625e-05,
+      0.4609375,
+      0.25,
+      0.00323486328125,
+      0.255859375,
+      0.00531005859375,
+      1.71661376953125e-05,
+      1.2048985809087753e-08,
+      9.953975677490234e-06,
+      7.200241088867188e-05,
+      0.01104736328125,
+      0.0107421875,
+      4.4889748096466064e-07,
+      4.866160452365875e-08,
+      6.8247318267822266e-06,
+      6.151199340820312e-05,
+      1.1015625
+    ],
+    "len": 117,
+    "num_tokens_generated": 117,
+    "num_tokens_scored": 1,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.008547008547008548,
+    "green_fraction": 0.0,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

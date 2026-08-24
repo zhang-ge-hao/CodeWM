@@ -1,0 +1,348 @@
+{
+  "prompt": [
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    '''"
+  ],
+  "generations": [
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # return sorted(lst, key=lambda x: (lst.index(x)%2, lst[::-1].index(x)%2, x))\n    # return sorted(lst, key=lambda x: (x%2, lst[::-1].index(x)%2, x))\n    return sorted(lst, key=lambda x: (x%2, lst[::-1].index(x)%2, x))\n\n    # return sorted(lst, key=lambda x: (x%2, lst[::-1].index(x)%2, x))\n\n    # return sorted(lst, key=lambda x: (x%2, lst[::-1].index(x)%2, x))\n",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # Your code here\n    lst = sorted(lst)\n    strange_list = []\n    while lst:\n        strange_list.append(lst.pop(0))\n        if lst:\n            strange_list.append(lst.pop())\n    return strange_list\n    # Your code here",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    new_lst = []\n    lst.sort()\n    while lst:\n        new_lst.append(lst.pop(0))\n        if lst:\n            new_lst.append(lst.pop())\n    return new_lst",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # return sorted(lst, key=lambda x: (lst.index(x)%2, lst[::-1].index(x)%2))\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result\n    # return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    new_lst = []\n    lst.sort()\n    while lst:\n        new_lst.append(lst.pop(0))\n        if lst:\n            new_lst.append(lst.pop())\n    return new_lst\n    # Your code here",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # Your code here\n    lst = sorted(lst)\n    strange_list = []\n    while lst:\n        strange_list.append(lst.pop(0))\n        if lst:\n            strange_list.append(lst.pop())\n    return strange_list\n    # Your code here\n    # Your code here",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # return sorted(lst, key=lambda x: (lst.index(x)%2, lst[::-1].index(x)%2, x))\n    # return sorted(lst, key=lambda x: (x%2, lst[::-1].index(x)%2, x))\n    return sorted(lst, key=lambda x: (x%2, lst.index(x)%2, x))\n    # return sorted(lst, key=lambda x: (x%2, lst[::-1].index(x)%2, x))\n",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # return sorted(lst, key=lambda x: (lst.index(x)%2, lst[::-1].index(x)%2))\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result\n    # return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    # return sorted(lst, key=lambda x: (lst.index(x)%2, lst[::-1].index(x)%2))\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result\n    # return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result",
+    "def strange_sort_list(lst):\n    '''\n    Given list of integers, return list in strange order.\n    Strange sorting, is when you start with the minimum value,\n    then maximum of the remaining integers, then minimum and so on.\n\n    Examples:\n    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]\n    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]\n    strange_sort_list([]) == []\n    ''' \n    # Your code here\n    result = []\n    lst_sorted = sorted(lst)\n    while lst_sorted:\n        result.append(lst_sorted.pop(0))\n        if lst_sorted:\n            result.append(lst_sorted.pop())\n    return result"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 2, 3, 4]) == [1, 4, 2, 3]\n    assert candidate([5, 6, 7, 8, 9]) == [5, 9, 6, 8, 7]\n    assert candidate([1, 2, 3, 4, 5]) == [1, 5, 2, 4, 3]\n    assert candidate([5, 6, 7, 8, 9, 1]) == [1, 9, 5, 8, 6, 7]\n    assert candidate([5, 5, 5, 5]) == [5, 5, 5, 5]\n    assert candidate([]) == []\n    assert candidate([1,2,3,4,5,6,7,8]) == [1, 8, 2, 7, 3, 6, 4, 5]\n    assert candidate([0,2,2,2,5,5,-5,-5]) == [-5, 5, -5, 5, 0, 2, 2, 2]\n    assert candidate([111111]) == [111111]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True\n\n\ncheck(strange_sort_list)"
+  ],
+  "solution": [
+    "    res, switch = [], True\n    while lst:\n        res.append(min(lst) if switch else max(lst))\n        lst.remove(res[-1])\n        switch = not switch\n    return res\n"
+  ],
+  "metrics": {
+    "pass@1": 0.8999999999999999,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.234375,
+      0.07373046875,
+      1.9453125,
+      3.484375,
+      0.123046875,
+      0.54296875,
+      0.54296875,
+      0.07275390625,
+      2.53125,
+      0.1513671875,
+      0.150390625,
+      0.0703125,
+      1.3046875,
+      1.21875,
+      0.01043701171875,
+      0.0017547607421875,
+      0.00286865234375,
+      0.2734375,
+      0.447265625,
+      0.0286865234375,
+      0.048828125,
+      0.00250244140625,
+      0.0084228515625,
+      0.01129150390625,
+      0.11669921875,
+      5.412101745605469e-05,
+      0.0003108978271484375,
+      1.1265277862548828e-05,
+      7.361173629760742e-06,
+      0.000308990478515625,
+      2.5331974029541016e-06,
+      0.6640625,
+      0.000385284423828125,
+      0.000766754150390625,
+      5.7220458984375e-05,
+      2.276897430419922e-05,
+      0.006378173828125,
+      0.00167083740234375,
+      1.5079975128173828e-05,
+      3.3527612686157227e-07,
+      5.289912223815918e-07,
+      0.000148773193359375,
+      4.6566128730773926e-07,
+      0.01080322265625,
+      0.0252685546875,
+      0.000232696533203125,
+      0.001434326171875
+    ],
+    "len": 47,
+    "num_tokens_generated": 47,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 5,
+    "watermarking_fraction": 0.1276595744680851,
+    "green_fraction": 0.8333333333333334,
+    "z_score": 1.6329931618554523,
+    "p_value": 0.051235217429874684,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.212890625,
+      2.015625,
+      0.388671875,
+      1.4140625,
+      0.369140625,
+      0.054443359375,
+      1.1640625,
+      0.49609375,
+      0.000904083251953125,
+      0.2158203125,
+      0.146484375,
+      0.12060546875,
+      0.034423828125,
+      0.83203125,
+      0.53125,
+      0.578125,
+      0.0634765625,
+      0.1220703125,
+      0.000736236572265625,
+      0.003875732421875,
+      0.00148773193359375,
+      0.000675201416015625,
+      5.4836273193359375e-05,
+      0.032958984375,
+      0.0023651123046875,
+      0.1025390625,
+      0.052490234375,
+      0.8046875,
+      0.005584716796875,
+      0.00019073486328125,
+      0.1865234375,
+      0.0025482177734375,
+      0.57421875,
+      0.11181640625,
+      0.0078125,
+      0.0010223388671875,
+      0.095703125,
+      0.0103759765625,
+      0.003692626953125,
+      0.00762939453125,
+      0.921875
+    ],
+    "len": 41,
+    "num_tokens_generated": 41,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.04878048780487805,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  }
+}

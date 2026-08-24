@@ -1,0 +1,444 @@
+{
+  "prompt": [
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\""
+  ],
+  "generations": [
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left, right = 0, 1\n    for coeff in xs:\n        if coeff != 0:\n            left, right = 0, abs(coeff)\n            break\n    return binary_search(xs, left, right)\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of elements\")\n    xs.sort(reverse=True)\n    left, right = 0, 2\n    for x in xs:\n        if x != 0:\n            left, right = 0, 2\n            break\n        left += 1\n        right += 1\n    return left - (right - left) / 2\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    if any(coeff != 0 for coeff in xs):\n        raise ValueError(\"Coefficients of polynomial must be 0 for x to be a root.\")\n    return 1.0\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of elements\")\n    xs.sort(reverse=True)\n    left, right = 0, 1\n    for coeff in xs:\n        if coeff != 0:\n            left, right = right, 2 * right + 1\n            break\n    return left + (right - left) / 2\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left, right = 0, 1\n    for coeff in xs:\n        if coeff != 0:\n            left, right = 0, abs(coeff)\n            break\n    return left + (right - left) / 2.0\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left, right = 0, 1\n    for coeff in xs:\n        if coeff != 0:\n            left, right = -1, 1\n            break\n    else:\n        return 0\n\n    while left + right > 0:\n        mid = (left + right) / 2\n        if poly(xs, mid) > 0:\n            right = mid\n        else:\n            left = mid\n    return left\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    if xs[-1] == 0:\n        raise ValueError(\"Largest non zero coefficient cannot be zero.\")\n    left = 0\n    right = 1\n    while left + 1e-9 < right:\n        mid = (left + right) / 2\n        if poly(xs, mid) < 0:\n            left = mid\n        else:\n            right = mid\n    return right\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left, right = 0, 2\n    for x in xs:\n        if x != 0:\n            left, right = x, x * right\n            break\n    return left - (left - right) / (left + right)\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of elements\")\n    xs.sort(reverse=True)\n    return xs.index(max(xs)) - 1\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left, right = 0, 1\n    while left < right:\n        mid = (left + right) / 2\n        if poly(xs, mid) < 0:\n            right = mid\n        else:\n            left = mid\n    return left\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    x = -xs[0] / xs[1]\n    if poly(xs, x) == 0:\n        return x\n    else:\n        raise ValueError(\"No zero found.\")\n        ",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    if any(coeff == 0 for coeff in xs):\n        raise ValueError(\"List must not contain zero coefficients.\")\n    return find_zero_recursive(xs, -100, 100)\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left, right = 0, 2\n    for x in xs:\n        if x != 0:\n            left, right = x, x * right\n            break\n    while left < right:\n        mid = (left + right) / 2\n        if poly(xs, mid) == 0:\n            return mid\n        elif poly(xs, mid) > 0:\n            right = mid\n        else:\n            left = mid\n    return left\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    return (-xs[0] / xs[1])\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left = 0\n    right = max(xs)\n    while right - left > 1e-6:\n        mid = (left + right) / 2\n        if poly(xs, mid) > 1e-6:\n            left = mid\n        else:\n            right = mid\n    return right\n    # return mid # or return left, right\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List must have even number of coefficients.\")\n    xs.sort(reverse=True)\n    return xs.index(max(xs)) - 1\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    a = 0\n    for i in range(0, len(xs), 2):\n        a += xs[i]\n    b = sum(xs[1::2])\n    x = (-b - math.sqrt(math.pow(b, 2) - 4 * a * xs[0])) / (2 * a)\n    return x\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    x0 = xs[0] / xs[1]\n    if abs(poly(xs, x0)) < 1e-6:\n        return x0\n    else:\n        raise ValueError(\"Cannot find a zero of the polynomial.\")\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left = 0\n    right = max(xs)\n    while right - left > 1e-6:\n        mid = (left + right) / 2\n        if poly(xs, mid) > 1e-6:\n            left = mid\n        else:\n            right = mid\n    return right\n    # return mid # or return left, right\n\n",
+    "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\" \n    if len(xs) % 2 != 0:\n        raise ValueError(\"List xs should have even number of coefficients.\")\n    xs.sort(reverse=True)\n    left = 0\n    right = max(xs)\n    while right - left > 1e-6:\n        mid = (left + right) / 2\n        if poly(xs, mid) > 1e-6:\n            left = mid\n        else:\n            right = mid\n    return right\n    # return mid # or return left, right\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    import math\n    import random\n    rng = random.Random(42)\n    import copy\n    for _ in range(100):\n        ncoeff = 2 * rng.randint(1, 4)\n        coeffs = []\n        for _ in range(ncoeff):\n            coeff = rng.randint(-10, 10)\n            if coeff == 0:\n                coeff = 1\n            coeffs.append(coeff)\n        solution = candidate(copy.deepcopy(coeffs))\n        assert math.fabs(poly(coeffs, solution)) < 1e-4\n\n\ncheck(find_zero)"
+  ],
+  "solution": [
+    "    begin, end = -1., 1.\n    while poly(xs, begin) * poly(xs, end) > 0:\n        begin *= 2.0\n        end *= 2.0\n    while end - begin > 1e-10:\n        center = (begin + end) / 2.0\n        if poly(xs, center) * poly(xs, begin) > 0:\n            begin = center\n        else:\n            end = center\n    return begin\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'binary_search' is not defined",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Coefficients of polynomial must be 0 for x to be a root.",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: No zero found.",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'find_zero_recursive' is not defined",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Cannot find a zero of the polynomial.",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.171875,
+      0.0225830078125,
+      3.109375,
+      0.4453125,
+      0.00946044921875,
+      0.158203125,
+      0.41796875,
+      0.00885009765625,
+      0.00131988525390625,
+      0.83203125,
+      0.0072021484375,
+      0.07568359375,
+      0.83203125,
+      0.049072265625,
+      0.578125,
+      0.55078125,
+      0.75390625,
+      2.171875,
+      1.8125,
+      0.71875,
+      0.71875,
+      0.53125,
+      0.038818359375,
+      0.79296875,
+      1.3984375,
+      0.734375,
+      3.359375,
+      1.5078125,
+      0.9296875,
+      0.1298828125,
+      0.7109375,
+      0.08935546875,
+      3.46875,
+      0.86328125,
+      0.0169677734375,
+      0.02294921875,
+      0.5625,
+      0.359375,
+      0.361328125,
+      1.2109375,
+      1.609375,
+      1.140625,
+      0.0008392333984375,
+      2.09375,
+      1.5,
+      0.027099609375,
+      0.01190185546875,
+      0.50390625,
+      0.0069580078125,
+      0.7890625,
+      0.5078125,
+      0.59375,
+      0.001800537109375,
+      0.0006103515625,
+      0.1982421875,
+      0.007568359375,
+      1.5078125,
+      0.8046875,
+      0.006744384765625,
+      0.03125,
+      1.25,
+      0.439453125,
+      0.045654296875,
+      1.3671875,
+      0.0242919921875,
+      0.000202178955078125,
+      0.388671875,
+      0.1064453125,
+      0.02587890625,
+      0.50390625,
+      0.26953125,
+      2.625,
+      2.546875,
+      0.1865234375,
+      2.1875,
+      0.05859375,
+      0.10888671875,
+      0.006988525390625,
+      0.0036468505859375,
+      0.7109375
+    ],
+    "len": 80,
+    "num_tokens_generated": 80,
+    "num_tokens_scored": 18,
+    "num_green_tokens": 17,
+    "watermarking_fraction": 0.225,
+    "green_fraction": 0.9444444444444444,
+    "z_score": 3.771236166328254,
+    "p_value": 8.122042259340038e-05,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.0299072265625,
+      2.578125,
+      1.3671875,
+      0.275390625,
+      0.1015625,
+      1.8515625,
+      1.3046875,
+      1.2421875,
+      0.109375,
+      0.423828125,
+      0.60546875,
+      0.01080322265625,
+      3.3125,
+      1.65625,
+      0.0172119140625,
+      0.0128173828125,
+      0.58203125,
+      0.0390625,
+      0.1943359375,
+      0.02099609375,
+      3.3855438232421875e-05,
+      0.0011749267578125,
+      0.0625,
+      0.01153564453125,
+      1.2734375,
+      0.0028533935546875,
+      0.001556396484375,
+      0.412109375,
+      0.0028533935546875,
+      0.96875,
+      1.3984375,
+      0.07568359375,
+      0.56640625,
+      0.67578125,
+      0.66015625,
+      0.2314453125,
+      0.041259765625,
+      0.024658203125,
+      0.73828125,
+      0.00201416015625,
+      0.0224609375,
+      0.020751953125,
+      0.000682830810546875,
+      0.5,
+      0.0927734375,
+      2.875,
+      1.0,
+      0.0966796875,
+      0.000499725341796875,
+      0.068359375,
+      0.0771484375,
+      0.11328125,
+      0.2041015625,
+      0.000415802001953125,
+      2.296875,
+      0.166015625,
+      0.001251220703125,
+      1.0703125,
+      0.0098876953125,
+      0.2275390625,
+      0.423828125,
+      0.024169921875,
+      0.000751495361328125,
+      0.0185546875,
+      0.04541015625,
+      0.00244140625,
+      4.1961669921875e-05,
+      0.953125,
+      0.00555419921875,
+      0.032470703125,
+      8.153915405273438e-05,
+      0.482421875,
+      0.034912109375,
+      0.00015354156494140625,
+      0.000637054443359375,
+      0.006072998046875,
+      0.0101318359375,
+      1.1796875,
+      0.0023956298828125,
+      3.361701965332031e-05,
+      0.00133514404296875,
+      0.08642578125,
+      0.001739501953125,
+      0.984375,
+      0.0019683837890625,
+      0.003875732421875,
+      0.1298828125,
+      0.00168609619140625,
+      0.1767578125,
+      0.01214599609375,
+      0.0020599365234375,
+      0.0101318359375,
+      0.00092315673828125,
+      0.024658203125,
+      0.0164794921875,
+      0.000232696533203125,
+      0.005828857421875,
+      0.00311279296875,
+      0.000850677490234375,
+      0.1689453125,
+      0.00848388671875,
+      0.134765625,
+      1.2890625,
+      1.1796875
+    ],
+    "len": 104,
+    "num_tokens_generated": 104,
+    "num_tokens_scored": 12,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.11538461538461539,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -1.1547005383792517,
+    "p_value": 0.8758934605050381,
+    "prediction": false
+  }
+}

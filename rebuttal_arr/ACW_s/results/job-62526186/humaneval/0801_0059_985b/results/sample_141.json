@@ -1,0 +1,508 @@
+{
+  "prompt": [
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\""
+  ],
+  "generations": [
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower():\n        return 'No'\n    digits = sum(c.isdigit() for c in file_parts[0])\n    if digits > 3:\n        return 'No'\n    return 'Yes'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name:\n            return 'No'\n        if not name[0].isalpha():\n            return 'No'\n        if not any(char.isdigit() for char in name):\n            return 'No'\n        if not extension.isdigit() and not extension in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower():\n        return 'No'\n    if len(file_parts[0]) > 10:\n        return 'No'\n    return 'Yes'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name:\n            return 'No'\n        if not name[0].isalpha() and not name[0].isdigit():\n            return 'No'\n        if len(name) > 1:\n            for char in name[1:]:\n                if not char.isalpha() and not char.isdigit():\n                    return 'No'\n        if not extension:\n            return 'No'\n        if not extension in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split(\".\")\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        if file_name_list[0] == \"\" or not file_name_list[0][0].isalpha():\n            return 'No'\n        if not file_name_list[1] in ['txt', 'exe', 'dll']:\n            return 'No'\n        if not file_name_list[0].isdigit() and len(file_name_list[0]) <= 3:\n            return 'Yes'\n        else:\n            return 'No'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower():\n        return 'No'\n    digits = sum(c.isdigit() for c in file_parts[0])\n    if digits > 3:\n        return 'No'\n    return 'Yes'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0].islower():\n        return 'No'\n    if len([i for i in file_parts[0] if i.isdigit()]) > 3:\n        return 'No'\n    return 'Yes'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower() and not file_parts[0].isupper():\n        return 'No'\n    if not file_parts[0].isdigit():\n        return 'No'\n    return 'Yes'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    elif not file_name_list[0].isalpha() or not file_name_list[0]:\n        return 'No'\n    elif not file_name_list[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    elif not file_name_list[0][-1].isdigit() or len(file_name_list[0]) > 10:\n        return 'No'\n    else:\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name[0].isalpha() or not name.isidentifier():\n            return 'No'\n        if not 0 <= sum(c.isdigit() for c in name) <= 3:\n            return 'No'\n        if extension not in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name = file_name.split('.')\n    count = 0\n    if len(file_name) != 2:\n        return 'No'\n    else:\n        for char in file_name[0]:\n            if char.isdigit():\n                count += 1\n        if count > 3:\n            return 'No'\n        if not file_name[0][0].isalpha():\n            return 'No'\n        if file_name[1] not in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n    pass\n",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower():\n        return 'No'\n    digits = sum(c.isdigit() for c in file_parts[0])\n    if digits > 3:\n        return 'No'\n    return 'Yes'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name:\n            return 'No'\n        if not name[0].isalpha():\n            return 'No'\n        if not name.islower() and not name.isupper():\n            return 'No'\n        if not extension.isalpha():\n            return 'No'\n        if not extension in ['txt', 'exe', 'dll']:\n            return 'No'\n        if len(name) > 10:\n            return 'No'\n        for char in name:\n            if not char.isdigit() and char not in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']:\n                return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name:\n            return 'No'\n        if not name[0].isalpha() and not name[0].isdigit():\n            return 'No'\n        if len(name) > 15:\n            return 'No'\n        if not extension:\n            return 'No'\n        if not any(char.isdigit() for char in name):\n            return 'No'\n        if not extension in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name[0].isalpha() or not name.isidentifier():\n            return 'No'\n        if not 0 <= sum(c.isdigit() for c in name) <= 3:\n            return 'No'\n        if extension not in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower() and not file_parts[0].isupper():\n        return 'No'\n    if not file_parts[0].isdigit():\n        return 'Yes'\n    return 'No'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if len(re.findall('\\d', file_parts[0])) > 3:\n        return 'No'\n    return 'Yes'\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end\n    # end",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name_list = file_name.split('.')\n    if len(file_name_list) != 2:\n        return 'No'\n    else:\n        name = file_name_list[0]\n        extension = file_name_list[1]\n        if not name:\n            return 'No'\n        if not name[0].isalpha():\n            return 'No'\n        if not any(char.isdigit() for char in name):\n            return 'No'\n        if not extension.isdigit() and not extension in ['txt', 'exe', 'dll']:\n            return 'No'\n        return 'Yes'\n        ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_parts = file_name.split('.')\n    if len(file_parts) != 2:\n        return 'No'\n    if not file_parts[0].isalpha() or not file_parts[0]:\n        return 'No'\n    if not file_parts[1] in ['txt', 'exe', 'dll']:\n        return 'No'\n    if not file_parts[0].islower() and not file_parts[0].isupper():\n        return 'No'\n    if not file_parts[0].isdigit():\n        return 'Yes'\n    return 'No'\n    ",
+    "def file_name_check(file_name):\n    \"\"\"Create a function which takes a string representing a file's name, and returns\n    'Yes' if the the file's name is valid, and returns 'No' otherwise.\n    A file's name is considered to be valid if and only if all the following conditions \n    are met:\n    - There should not be more than three digits ('0'-'9') in the file's name.\n    - The file's name contains exactly one dot '.'\n    - The substring before the dot should not be empty, and it starts with a letter from \n    the latin alphapet ('a'-'z' and 'A'-'Z').\n    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']\n    Examples:\n    file_name_check(\"example.txt\") # => 'Yes'\n    file_name_check(\"1example.dll\") # => 'No' (the name should start with a latin alphapet letter)\n    \"\"\" \n    # your code here\n    file_name = file_name.split('.')\n    if len(file_name) != 2:\n        return 'No'\n    name, extension = file_name\n    if not name or not extension:\n        return 'No'\n    if not name[0].isalpha() and not name[0].isdigit():\n        return 'No'\n    if not all(c.isdigit() or c.isalpha() for c in name):\n        return 'No'\n    if not extension in ['txt', 'exe', 'dll']:\n        return 'No'\n    return 'Yes'\n    "
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(\"example.txt\") == 'Yes'\n    assert candidate(\"1example.dll\") == 'No'\n    assert candidate('s1sdf3.asd') == 'No'\n    assert candidate('K.dll') == 'Yes'\n    assert candidate('MY16FILE3.exe') == 'Yes'\n    assert candidate('His12FILE94.exe') == 'No'\n    assert candidate('_Y.txt') == 'No'\n    assert candidate('?aREYA.exe') == 'No'\n    assert candidate('/this_is_valid.dll') == 'No'\n    assert candidate('this_is_valid.wow') == 'No'\n    assert candidate('this_is_valid.txt') == 'Yes'\n    assert candidate('this_is_valid.txtexe') == 'No'\n    assert candidate('#this2_i4s_5valid.ten') == 'No'\n    assert candidate('@this1_is6_valid.exe') == 'No'\n    assert candidate('this_is_12valid.6exe4.txt') == 'No'\n    assert candidate('all.exe.txt') == 'No'\n    assert candidate('I563_No.exe') == 'Yes'\n    assert candidate('Is3youfault.txt') == 'Yes'\n    assert candidate('no_one#knows.dll') == 'Yes'\n    assert candidate('1I563_Yes3.exe') == 'No'\n    assert candidate('I563_Yes3.txtt') == 'No'\n    assert candidate('final..txt') == 'No'\n    assert candidate('final132') == 'No'\n    assert candidate('_f4indsartal132.') == 'No'\n    \n        \n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate('.txt') == 'No'\n    assert candidate('s.') == 'No'\n\n\ncheck(file_name_check)"
+  ],
+  "solution": [
+    "    suf = ['txt', 'exe', 'dll']\n    lst = file_name.split(sep='.')\n    if len(lst) != 2:\n        return 'No'\n    if not lst[1] in suf:\n        return 'No'\n    if len(lst[0]) == 0:\n        return 'No'\n    if not lst[0][0].isalpha():\n        return 'No'\n    t = len([x for x in lst[0] if x.isdigit()])\n    if t > 3:\n        return 'No'\n    return 'Yes'\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: string index out of range",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.484375,
+      0.0703125,
+      2.828125,
+      3.453125,
+      0.224609375,
+      0.40234375,
+      0.92578125,
+      0.130859375,
+      3.203125,
+      1.28125,
+      0.25390625,
+      0.0274658203125,
+      7.677078247070312e-05,
+      0.0400390625,
+      0.77734375,
+      0.057861328125,
+      0.38671875,
+      0.75390625,
+      0.1845703125,
+      0.0028228759765625,
+      0.11083984375,
+      0.150390625,
+      0.244140625,
+      0.0263671875,
+      8.249282836914062e-05,
+      0.58984375,
+      0.05517578125,
+      0.00921630859375,
+      0.431640625,
+      0.00057220458984375,
+      0.48828125,
+      0.38671875,
+      2.15625,
+      0.91015625,
+      0.283203125,
+      0.06640625,
+      0.000324249267578125,
+      0.0172119140625,
+      0.87890625,
+      0.337890625,
+      0.08349609375,
+      0.53515625,
+      0.09228515625,
+      0.2119140625,
+      0.171875,
+      0.001800537109375,
+      0.0003223419189453125,
+      0.53125,
+      1.0234375,
+      0.003448486328125,
+      0.001007080078125,
+      0.0024261474609375,
+      3.3855438232421875e-05,
+      0.0263671875,
+      0.0262451171875,
+      0.62109375,
+      0.2177734375,
+      0.26953125,
+      0.043212890625,
+      0.000583648681640625,
+      0.1748046875,
+      0.1923828125,
+      0.2138671875,
+      0.265625,
+      0.00689697265625,
+      0.052978515625,
+      0.000446319580078125,
+      0.002197265625,
+      0.00189208984375,
+      0.00064849853515625,
+      4.827976226806641e-06,
+      8.717179298400879e-07,
+      0.0419921875,
+      0.004058837890625,
+      0.00012969970703125,
+      0.0033416748046875,
+      6.151199340820312e-05,
+      0.06494140625,
+      0.057861328125,
+      0.83203125,
+      1.0234375,
+      0.259765625,
+      0.00122833251953125,
+      0.0014190673828125,
+      0.6875,
+      1.0546875,
+      0.2255859375,
+      0.96484375,
+      0.67578125,
+      0.00543212890625,
+      0.038818359375,
+      0.003814697265625,
+      0.006500244140625,
+      0.05712890625,
+      0.033935546875,
+      1.390625,
+      0.79296875,
+      0.98046875,
+      0.283203125,
+      0.003143310546875,
+      0.0001010894775390625,
+      2.771615982055664e-06,
+      0.00616455078125,
+      7.43865966796875e-05,
+      8.440017700195312e-05,
+      0.00421142578125,
+      0.0186767578125,
+      7.295608520507812e-05,
+      0.00089263916015625,
+      0.032958984375,
+      0.010498046875,
+      0.16796875,
+      0.2734375,
+      0.146484375,
+      0.0179443359375,
+      0.0205078125,
+      0.291015625,
+      0.0032806396484375,
+      0.00010728836059570312,
+      0.004608154296875,
+      7.200241088867188e-05,
+      0.0299072265625,
+      0.048828125,
+      0.1083984375,
+      0.011474609375,
+      0.000518798828125,
+      0.92578125,
+      2.8125
+    ],
+    "len": 128,
+    "num_tokens_generated": 128,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.0625,
+    "green_fraction": 0.875,
+    "z_score": 2.1213203435596424,
+    "p_value": 0.016947426762344633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.296875,
+      2.953125,
+      2.234375,
+      1.03125,
+      0.220703125,
+      0.138671875,
+      0.0032501220703125,
+      0.0019683837890625,
+      0.007049560546875,
+      0.0026702880859375,
+      5.555152893066406e-05,
+      7.987022399902344e-06,
+      0.2255859375,
+      0.09033203125,
+      3.8125,
+      0.5390625,
+      1.359375,
+      0.00060272216796875,
+      0.0233154296875,
+      0.58203125,
+      0.0004520416259765625,
+      1.2421875,
+      0.45703125,
+      0.1640625,
+      1.828125,
+      0.65234375,
+      0.4296875,
+      0.515625,
+      0.5546875,
+      0.03857421875,
+      0.0009765625,
+      0.9296875,
+      0.037109375,
+      0.013671875,
+      0.5078125,
+      0.00170135498046875,
+      0.341796875,
+      0.1962890625,
+      2.5,
+      1.265625,
+      0.859375,
+      0.0008544921875,
+      0.0079345703125,
+      0.2119140625,
+      0.0810546875,
+      0.00150299072265625,
+      0.1904296875,
+      0.006256103515625,
+      0.0006866455078125,
+      0.03271484375,
+      0.0002593994140625,
+      0.08447265625,
+      0.04638671875,
+      2.0625,
+      0.890625,
+      0.86328125,
+      0.0003814697265625,
+      0.0186767578125,
+      0.03173828125,
+      1.4140625,
+      0.0262451171875,
+      0.01312255859375,
+      0.2392578125,
+      0.0091552734375,
+      0.002166748046875,
+      0.00872802734375,
+      0.000576019287109375,
+      0.050537109375,
+      0.0238037109375,
+      1.5625,
+      0.45703125,
+      0.1396484375,
+      1.6570091247558594e-05,
+      0.001251220703125,
+      0.01202392578125,
+      6.723403930664062e-05,
+      0.039794921875,
+      0.004730224609375,
+      0.053466796875,
+      0.671875,
+      0.004150390625,
+      0.004974365234375,
+      0.00689697265625,
+      0.000202178955078125,
+      0.053955078125,
+      0.03515625,
+      2.3125,
+      1.0234375,
+      2.15625,
+      1.3203125,
+      1.3984375,
+      0.0087890625,
+      0.0029754638671875,
+      0.00128936767578125,
+      0.119140625,
+      0.00012111663818359375,
+      0.000507354736328125,
+      0.0018310546875,
+      0.00262451171875,
+      0.06201171875,
+      0.024169921875,
+      0.053466796875,
+      0.150390625,
+      0.0096435546875,
+      0.283203125,
+      0.408203125,
+      1.0,
+      0.025390625,
+      0.025146484375,
+      0.7109375,
+      0.0023345947265625,
+      0.00042724609375,
+      0.02197265625,
+      0.0004673004150390625,
+      0.0308837890625,
+      0.028076171875,
+      0.73046875,
+      0.04150390625,
+      0.0020294189453125,
+      1.140625
+    ],
+    "len": 120,
+    "num_tokens_generated": 120,
+    "num_tokens_scored": 15,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.125,
+    "green_fraction": 0.4,
+    "z_score": -0.7745966692414834,
+    "p_value": 0.7807109869595001,
+    "prediction": false
+  }
+}

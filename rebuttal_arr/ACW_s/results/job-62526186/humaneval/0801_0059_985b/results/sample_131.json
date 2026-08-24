@@ -1,0 +1,387 @@
+{
+  "prompt": [
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\""
+  ],
+  "generations": [
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    s=''\n    while n>0:\n        s=str(n%10)+s\n        n=n//10\n    a=list(map(int,s.split('0')))\n    product=1\n    for i in a:\n        if i%2!=0:\n            product*=i\n    return product if product!=1 else 0\n    pass",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    product = 1\n    found_odd = False\n    for i in n:\n        if int(i) % 2 != 0:\n            product *= int(i)\n            found_odd = True\n    return product if found_odd else 0\n    pass\n",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    product = 1\n    found_odd = False\n    for i in n:\n        if int(i) % 2 != 0:\n            product *= int(i)\n            found_odd = True\n    return product if found_odd else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    product = 1\n    found_odd = False\n    for i in n:\n        if int(i) % 2 != 0:\n            product *= int(i)\n            found_odd = True\n    return product if found_odd else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    s=''\n    while n>0:\n        s=str(n%10)+s\n        n=n//10\n    a=list(map(int,s.split('0')))\n    product=1\n    for i in a:\n        if i%2!=0:\n            product*=i\n    return product if product!=1 else 0\n    pass",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    product = 1\n    found_odd = False\n    for i in n:\n        if int(i) % 2 != 0:\n            product *= int(i)\n            found_odd = True\n    return product if found_odd else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    product = 1\n    found_odd = False\n    for i in n:\n        if int(i) % 2 != 0:\n            product *= int(i)\n            found_odd = True\n    return product if found_odd else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    result = 1\n    for digit in n:\n        if int(digit) % 2 != 0:\n            result *= int(digit)\n    return result if result != 1 else 0",
+    "def digits(n):\n    \"\"\"Given a positive integer n, return the product of the odd digits.\n    Return 0 if all digits are even.\n    For example:\n    digits(1)  == 1\n    digits(4)  == 0\n    digits(235) == 15\n    \"\"\" \n    # your code here\n    n = str(n)\n    product = 1\n    found_odd = False\n    for i in n:\n        if int(i) % 2 != 0:\n            product *= int(i)\n            found_odd = True\n    return product if found_odd else 0"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(5) == 5\n    assert candidate(54) == 5\n    assert candidate(120) ==1\n    assert candidate(5014) == 5\n    assert candidate(98765) == 315\n    assert candidate(5576543) == 2625\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(2468) == 0\n\n\ncheck(digits)"
+  ],
+  "solution": [
+    "    product = 1\n    odd_count = 0\n    for digit in str(n):\n        int_digit = int(digit)\n        if int_digit%2 == 1:\n            product= product*int_digit\n            odd_count+=1\n    if odd_count ==0:\n        return 0\n    else:\n        return product\n"
+  ],
+  "metrics": {
+    "pass@1": 0.30000000000000004,
+    "pass@10": 0.9945820433436533,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.96875,
+      0.034912109375,
+      2.40625,
+      3.65625,
+      0.08154296875,
+      0.197265625,
+      0.455078125,
+      0.1533203125,
+      3.078125,
+      1.953125,
+      0.46875,
+      0.00168609619140625,
+      0.189453125,
+      0.054443359375,
+      2.0,
+      0.0732421875,
+      0.041748046875,
+      0.0027923583984375,
+      0.2578125,
+      0.00156402587890625,
+      1.8515625,
+      1.796875,
+      0.0054931640625,
+      0.0123291015625,
+      0.031005859375,
+      0.0242919921875,
+      0.271484375,
+      0.04150390625,
+      0.00015163421630859375,
+      1.3053417205810547e-05,
+      0.0869140625,
+      0.0281982421875,
+      0.0120849609375,
+      0.0001392364501953125,
+      0.48828125,
+      0.022216796875,
+      0.0001773834228515625,
+      0.14453125,
+      0.0244140625,
+      0.007293701171875,
+      0.035888671875,
+      0.00299072265625,
+      0.00010061264038085938,
+      2.6226043701171875e-05,
+      0.134765625,
+      0.140625,
+      0.5625,
+      0.267578125,
+      0.1455078125,
+      0.050048828125,
+      0.2333984375,
+      0.010009765625,
+      0.002716064453125,
+      0.62890625,
+      7.486343383789062e-05,
+      0.000186920166015625
+    ],
+    "len": 56,
+    "num_tokens_generated": 56,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 8,
+    "watermarking_fraction": 0.14285714285714285,
+    "green_fraction": 1.0,
+    "z_score": 2.82842712474619,
+    "p_value": 0.002338867490523633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1416015625,
+      2.25,
+      0.060302734375,
+      0.003997802734375,
+      0.00064849853515625,
+      0.04248046875,
+      9.584426879882812e-05,
+      0.494140625,
+      0.984375,
+      0.000957489013671875,
+      4.482269287109375e-05,
+      1.33514404296875e-05,
+      0.279296875,
+      0.0002803802490234375,
+      0.69921875,
+      1.09375,
+      0.0004863739013671875,
+      0.0234375,
+      8.678436279296875e-05,
+      0.003387451171875,
+      0.000850677490234375,
+      0.43359375,
+      0.0244140625,
+      0.000423431396484375,
+      0.0003814697265625,
+      0.00011539459228515625,
+      1.1205673217773438e-05,
+      0.0101318359375,
+      0.000652313232421875,
+      0.0185546875,
+      0.039306640625,
+      9.250640869140625e-05,
+      0.0059814453125,
+      0.006500244140625,
+      0.84375,
+      0.15234375,
+      0.038330078125,
+      0.20703125,
+      0.0194091796875,
+      0.1220703125,
+      0.2099609375,
+      0.734375,
+      0.671875,
+      0.314453125,
+      0.002471923828125,
+      0.05419921875,
+      0.0654296875,
+      0.0027923583984375,
+      0.0001659393310546875,
+      1.1796875,
+      0.1904296875,
+      0.7109375,
+      0.1494140625,
+      0.70703125,
+      0.365234375,
+      0.0003032684326171875,
+      0.65234375,
+      0.6953125,
+      0.40234375,
+      0.060791015625,
+      0.275390625,
+      0.0086669921875,
+      0.0296630859375,
+      0.39453125,
+      0.004425048828125,
+      0.671875,
+      0.2412109375,
+      0.01153564453125,
+      0.00125885009765625,
+      0.06982421875,
+      1.34375
+    ],
+    "len": 71,
+    "num_tokens_generated": 71,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.028169014084507043,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  }
+}

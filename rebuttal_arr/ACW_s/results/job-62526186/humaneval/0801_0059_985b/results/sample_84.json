@@ -1,0 +1,303 @@
+{
+  "prompt": [
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\""
+  ],
+  "generations": [
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"  \n    sum = 0\n    for i in str(N):\n        sum += int(i)\n    return bin(sum)[2:]\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n).replace(\"0b\", \"\")\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(N)\n\n    return binary_rep + str(total_sum)\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n).replace(\"0b\", \"\")\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(N)\n\n    return binary_rep + str(total_sum)\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"  \n    sum = 0\n    for i in str(N):\n        sum += int(i)\n    return bin(sum)[2:]\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(sum_of_digits(n))[2:]\n\n    return binary_representation(N)",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n)[2:]\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(total_sum)\n    return binary_rep",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n).replace(\"0b\", \"\")\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(N)\n\n    return binary_rep + str(total_sum)\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(sum_of_digits(n))[2:]\n\n    return binary_representation(N)\n    ",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(sum_of_digits(n))[2:]\n\n    return binary_representation(N)\n    ",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n)[2:]\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(total_sum)\n    return binary_rep\n    pass",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n).replace(\"0b\", \"\")\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(N)\n\n    return binary_rep + str(total_sum)\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n)[2:]\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(total_sum)\n    return binary_rep\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"  \n    sum = 0\n    for i in str(N):\n        sum += int(i)\n    return bin(sum)[2:]\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n)[2:]\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(total_sum)\n    return binary_rep\n    pass",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n)[2:]\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(total_sum)\n    return binary_rep\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(sum_of_digits(n))[2:]\n\n    return binary_representation(N)\n    ",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"  \n    sum = 0\n    for i in str(N):\n        sum += int(i)\n    return bin(sum)[2:]\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n).replace(\"0b\", \"\")\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(N)\n\n    return binary_rep + str(total_sum)\n\n",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(sum_of_digits(n))[2:]\n\n    return binary_representation(N)\n    ",
+    "def solve(N):\n    \"\"\"Given a positive integer N, return the total sum of its digits in binary.\n    \n    Example\n        For N = 1000, the sum of digits will be 1 the output should be \"1\".\n        For N = 150, the sum of digits will be 6 the output should be \"110\".\n        For N = 147, the sum of digits will be 12 the output should be \"1100\".\n    \n    Variables:\n        @N integer\n             Constraints: 0 \u2264 N \u2264 10000.\n    Output:\n         a string of binary number\n    \"\"\"\n\n\n    def sum_of_digits(n):\n        return sum(int(digit) for digit in str(n))\n\n    def binary_representation(n):\n        return bin(n)[2:]\n\n    total_sum = sum_of_digits(N)\n    binary_rep = binary_representation(total_sum)\n    return binary_rep"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(1000) == \"1\", \"Error\"\n    assert candidate(150) == \"110\", \"Error\"\n    assert candidate(147) == \"1100\", \"Error\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(333) == \"1001\", \"Error\"\n    assert candidate(963) == \"10010\", \"Error\"\n\n\ncheck(solve)"
+  ],
+  "solution": [
+    "    return bin(sum(int(i) for i in str(N)))[2:]\n"
+  ],
+  "metrics": {
+    "pass@1": 0.75,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Error",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Error",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Error",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Error",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Error",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.34375,
+      0.50390625,
+      2.609375,
+      2.15625,
+      0.1513671875,
+      0.000949859619140625,
+      0.28515625,
+      0.00250244140625,
+      1.6953125,
+      1.75,
+      0.02685546875,
+      0.2490234375,
+      0.006378173828125,
+      0.201171875,
+      0.054443359375,
+      0.072265625,
+      0.33984375,
+      0.0269775390625,
+      0.003570556640625,
+      0.34765625,
+      0.78515625,
+      0.83203125,
+      0.2021484375,
+      0.0205078125,
+      0.55859375,
+      0.0028228759765625,
+      1.25
+    ],
+    "len": 27,
+    "num_tokens_generated": 27,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 5,
+    "watermarking_fraction": 0.2222222222222222,
+    "green_fraction": 0.8333333333333334,
+    "z_score": 1.6329931618554523,
+    "p_value": 0.051235217429874684,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.51171875,
+      2.421875,
+      0.2294921875,
+      0.1748046875,
+      0.5703125,
+      0.43359375,
+      0.0020294189453125,
+      0.00555419921875,
+      0.000560760498046875,
+      0.000518798828125,
+      0.0059814453125,
+      0.0001544952392578125,
+      0.271484375,
+      0.0517578125,
+      0.0106201171875,
+      1.2109375
+    ],
+    "len": 16,
+    "num_tokens_generated": 16,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.125,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  }
+}

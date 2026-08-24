@@ -1,0 +1,495 @@
+{
+  "prompt": [
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\""
+  ],
+  "generations": [
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: i for i, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    nums = numbers.split()\n    \n    # Sort the numbers based on their index in the dictionary\n    nums.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted numbers into a string and return it\n    return ' '.join(nums)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: i for i, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    nums = numbers.split()\n    \n    # Sort the numbers based on their index in the dictionary\n    nums.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted numbers back into a string\n    return ' '.join(nums)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    num_list = numbers.split()\n    \n    # Sort the list of numbers based on their index in the dictionary\n    num_list.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted list of numbers into a string and return it\n    return ' '.join(num_list)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n\n    # Split the input string into a list of numbers\n    num_list = numbers.split()\n\n    # Sort the list of numbers based on their index in the dictionary\n    num_list.sort(key=lambda x: num_to_index[x])\n\n    # Join the sorted numbers into a string and return it\n    return ' '.join(num_list)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: i for i, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    nums = numbers.split()\n    \n    # Sort the numbers based on their index in the dictionary\n    nums.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted numbers into a string and return it\n    return ' '.join(nums)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n\n    # Convert the input string into a list of integers\n    num_list = [num_to_index[num] for num in numbers.split()]\n\n    # Sort the list of indices\n    num_list.sort()\n\n    # Convert the sorted indices back into numbers and return as a space-delimited string\n    return ' '.join([num_to_index[i] for i in num_list])\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    numeral_map = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}\n    sorted_numbers = []\n    for number in numbers.split():\n        sorted_numbers.append(numeral_map[number])\n    return ' '.join(sorted(sorted_numbers))\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    num_list = numbers.split()\n    \n    # Sort the list of numbers based on their index in the dictionary\n    num_list.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted numbers into a string and return it\n    return ' '.join(num_list)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    num_list = numbers.split()\n\n    # Sort the list of numbers based on their index in the dictionary\n    num_list.sort(key=lambda num: num_to_index[num])\n\n    # Join the sorted numbers back into a string with spaces in between\n    return ' '.join(num_list)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    num_list = numbers.split()\n    \n    # Sort the list of numbers based on their index in the dictionary\n    num_list.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted list of numbers into a string and return it\n    return ' '.join(num_list)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Convert the input string into a list of numbers\n    num_list = [num_to_index[num] for num in numbers.split()]\n    \n    # Sort the list of indices\n    num_list.sort()\n    \n    # Convert the sorted indices back into numbers and return as a string\n    sorted_numbers = ' '.join([num_to_index[num_list[i]] for i in range(len(numbers.split()))])\n    return sorted_numbers\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary mapping each number to its index\n    number_map = {number: index for index, number in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    number_list = numbers.split()\n    \n    # Sort the list of numbers using the dictionary mapping\n    number_list.sort(key=lambda x: number_map[x])\n    \n    # Join the sorted numbers back into a string with spaces in between\n    sorted_numbers = ' '.join(number_list)\n    \n    return sorted_numbers\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    # Convert the input string into a list of integers\n    num_list = [num_to_index[num] for num in numbers.split()]\n    # Sort the list of indices\n    num_list.sort()\n    # Convert the sorted indices back into numbers\n    sorted_numbers = ' '.join([num_to_index[idx] for idx in num_list])\n    return sorted_numbers\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its corresponding number\n    num_map = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}\n    # Split the input string into a list of words\n    words = numbers.split()\n    # Sort the list of words based on the corresponding number in the dictionary\n    sorted_words = sorted(words, key=lambda word: num_map[word])\n    # Join the sorted list of words back into a string\n    sorted_numbers = ' '.join(sorted_words)\n    return sorted_numbers\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its corresponding number\n    num_map = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}\n    \n    # Split the input string into a list of words\n    words = numbers.split()\n    \n    # Sort the list of words based on the corresponding number in the dictionary\n    sorted_words = sorted(words, key=lambda x: num_map[x])\n    \n    # Join the sorted list of words back into a string\n    sorted_numbers = ' '.join(sorted_words)\n    \n    return sorted_numbers\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    sorted_numbers = sorted(numbers.split(), key=lambda x: num_to_index[x])\n    \n    # Join the sorted numbers into a single string\n    return ' '.join(sorted_numbers)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n\n    # Convert the input string into a list of integers\n    num_list = [num_to_index[num] for num in numbers.split()]\n\n    # Sort the list of indices\n    num_list.sort()\n\n    # Convert the sorted indices back into numbers and return as a string\n    sorted_numbers = ' '.join([num_to_index[i] for i in num_list])\n    return sorted_numbers\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    \n    # Split the input string into a list of numbers\n    num_list = numbers.split()\n    \n    # Sort the list of numbers based on their index in the dictionary\n    num_list.sort(key=lambda num: num_to_index[num])\n    \n    # Join the sorted list of numbers into a string and return it\n    return ' '.join(num_list)\n\n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: i for i, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n\n    # Convert the input string into a list of integers\n    num_list = [num_to_index[n] for n in numbers.split()]\n\n    # Sort the list of indices\n    num_list.sort()\n\n    # Convert the sorted indices back into numbers\n    sorted_numbers = ' '.join([num_to_index[i] for i in num_list])\n\n    return sorted_numbers\n    \n",
+    "from typing import List\n\n\ndef sort_numbers(numbers: str) -> str:\n    \"\"\" Input is a space-delimited string of numberals from 'zero' to 'nine'.\n    Valid choices are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight' and 'nine'.\n    Return the string with numbers sorted from smallest to largest\n    >>> sort_numbers('three one five')\n    'one three five'\n    \"\"\" \n    # Create a dictionary that maps each number to its index\n    num_to_index = {num: idx for idx, num in enumerate(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'])}\n    # Convert the input string into a list of integers\n    num_list = [num_to_index[num] for num in numbers.split()]\n    # Sort the list of indices\n    num_list.sort()\n    # Convert the sorted indices back into numbers and join them into a string\n    sorted_numbers = ' '.join([num_to_index[num_list[i]] for i in range(len(num_list))])\n    return sorted_numbers\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate('') == ''\n    assert candidate('three') == 'three'\n    assert candidate('three five nine') == 'three five nine'\n    assert candidate('five zero four seven nine eight') == 'zero four five seven eight nine'\n    assert candidate('six five four three two one zero') == 'zero one two three four five six'\n\ncheck(sort_numbers)"
+  ],
+  "solution": [
+    "    value_map = {\n        'zero': 0,\n        'one': 1,\n        'two': 2,\n        'three': 3,\n        'four': 4,\n        'five': 5,\n        'six': 6,\n        'seven': 7,\n        'eight': 8,\n        'nine': 9\n    }\n    return ' '.join(sorted([x for x in numbers.split(' ') if x], key=lambda x: value_map[x]))\n"
+  ],
+  "metrics": {
+    "pass@1": 0.65,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: 3",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: 3",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: 3",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: 3",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: 3",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: 3",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.3125,
+      0.0274658203125,
+      3.6875,
+      5.21875,
+      0.86328125,
+      0.9765625,
+      1.5859375,
+      0.88671875,
+      2.34375,
+      1.1484375,
+      1.65625,
+      0.044189453125,
+      2.46875,
+      1.4765625,
+      0.00061798095703125,
+      1.96875,
+      1.578125,
+      0.7890625,
+      0.020751953125,
+      1.1484375,
+      0.9921875,
+      0.083984375,
+      1.390625,
+      0.00811767578125,
+      0.0002918243408203125,
+      0.0098876953125,
+      0.00022983551025390625,
+      7.867813110351562e-05,
+      0.0028228759765625,
+      0.69921875,
+      0.01263427734375,
+      0.04248046875,
+      0.0016937255859375,
+      0.0003108978271484375,
+      0.0009613037109375,
+      0.000675201416015625,
+      1.6808509826660156e-05,
+      0.003997802734375,
+      0.0020599365234375,
+      0.00020599365234375,
+      0.00970458984375,
+      0.0172119140625,
+      6.341934204101562e-05,
+      0.04638671875,
+      0.021484375,
+      0.000308990478515625,
+      0.06689453125,
+      0.046875,
+      0.00017642974853515625,
+      0.0234375,
+      0.00762939453125,
+      3.6954879760742188e-06,
+      3.1948089599609375e-05,
+      0.00982666015625,
+      0.00138092041015625,
+      0.0001220703125,
+      0.00021076202392578125,
+      0.006195068359375,
+      0.000743865966796875,
+      1.3947486877441406e-05,
+      7.808208465576172e-06,
+      0.5390625,
+      0.72265625,
+      0.74609375,
+      0.0016937255859375,
+      0.025634765625,
+      1.0234375,
+      0.0274658203125,
+      0.376953125,
+      0.12060546875,
+      0.13671875,
+      0.412109375,
+      0.005950927734375,
+      0.05859375,
+      1.328125,
+      0.1875,
+      1.7762184143066406e-05,
+      1.484375,
+      0.734375,
+      0.1689453125,
+      0.0189208984375,
+      0.91015625,
+      0.0380859375,
+      0.00022602081298828125,
+      0.000423431396484375,
+      0.94921875,
+      0.0341796875,
+      0.6875,
+      0.890625,
+      0.00011777877807617188,
+      0.37109375,
+      0.921875,
+      0.1455078125,
+      0.080078125,
+      0.5859375,
+      0.08349609375,
+      5.435943603515625e-05,
+      0.79296875,
+      0.4921875,
+      0.00010395050048828125,
+      0.416015625,
+      0.6640625,
+      0.0238037109375,
+      0.0014801025390625,
+      1.2040138244628906e-05,
+      2.294778823852539e-06,
+      0.01153564453125,
+      0.2109375,
+      0.02734375,
+      0.000125885009765625,
+      0.1220703125,
+      0.52734375,
+      0.002166748046875,
+      0.0264892578125,
+      0.039794921875,
+      0.76953125,
+      0.00188446044921875,
+      0.94140625,
+      1.09375,
+      0.0021820068359375,
+      0.71484375,
+      0.006683349609375,
+      3.24249267578125e-05,
+      0.045654296875,
+      0.1611328125,
+      5.078315734863281e-05,
+      7.104873657226562e-05,
+      0.00098419189453125,
+      0.89453125
+    ],
+    "len": 129,
+    "num_tokens_generated": 129,
+    "num_tokens_scored": 13,
+    "num_green_tokens": 12,
+    "watermarking_fraction": 0.10077519379844961,
+    "green_fraction": 0.9230769230769231,
+    "z_score": 3.05085107923876,
+    "p_value": 0.0011409686266577242,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1357421875,
+      3.765625,
+      2.265625,
+      0.039306640625,
+      1.21875,
+      0.06005859375,
+      0.6953125,
+      0.0595703125,
+      0.05126953125,
+      0.50390625,
+      0.0006866455078125,
+      0.5078125,
+      0.0004825592041015625,
+      0.005340576171875,
+      0.005096435546875,
+      0.00173187255859375,
+      0.01165771484375,
+      0.00101470947265625,
+      0.0072021484375,
+      0.0001392364501953125,
+      0.0019378662109375,
+      0.0003871917724609375,
+      9.775161743164062e-05,
+      0.00040435791015625,
+      0.000270843505859375,
+      0.00176239013671875,
+      4.029273986816406e-05,
+      0.0003509521484375,
+      0.001129150390625,
+      0.00012493133544921875,
+      0.00115203857421875,
+      5.14984130859375e-05,
+      0.00125885009765625,
+      3.4332275390625e-05,
+      0.0002956390380859375,
+      0.00019359588623046875,
+      0.0001220703125,
+      0.00119781494140625,
+      0.00012063980102539062,
+      0.00103759765625,
+      5.14984130859375e-05,
+      0.0003299713134765625,
+      8.96453857421875e-05,
+      7.867813110351562e-05,
+      0.0002918243408203125,
+      0.00014400482177734375,
+      0.00093841552734375,
+      0.0001316070556640625,
+      0.000518798828125,
+      0.0003986358642578125,
+      0.000194549560546875,
+      0.00042724609375,
+      0.00018024444580078125,
+      0.0008697509765625,
+      3.218650817871094e-05,
+      0.0001544952392578125,
+      6.07222318649292e-07,
+      9.052455425262451e-07,
+      0.00019073486328125,
+      0.00164794921875,
+      0.0003643035888671875,
+      0.00109100341796875,
+      5.4836273193359375e-05,
+      0.000225067138671875,
+      0.00011873245239257812,
+      3.457069396972656e-05,
+      0.00013828277587890625,
+      0.000812530517578125,
+      0.00019359588623046875,
+      0.0034637451171875,
+      0.0002765655517578125,
+      0.001129150390625,
+      4.202127456665039e-06,
+      1.1444091796875e-05,
+      0.00014209747314453125,
+      0.000492095947265625,
+      5.817413330078125e-05,
+      0.65234375,
+      0.005706787109375,
+      0.6796875,
+      0.330078125,
+      3.265625,
+      0.447265625,
+      0.0001354217529296875,
+      0.0004405975341796875,
+      1.2421875,
+      0.8125,
+      0.21875,
+      0.2275390625,
+      0.0146484375,
+      0.040283203125,
+      0.024169921875,
+      0.0023040771484375,
+      0.3984375,
+      0.1435546875,
+      0.75390625,
+      0.1767578125,
+      0.2431640625,
+      0.0216064453125,
+      0.296875,
+      1.5078125,
+      0.0634765625,
+      0.1005859375,
+      3.635883331298828e-06,
+      0.033935546875,
+      0.75390625
+    ],
+    "len": 106,
+    "num_tokens_generated": 106,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.05660377358490566,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -0.8164965809277261,
+    "p_value": 0.7928919108787373,
+    "prediction": false
+  }
+}

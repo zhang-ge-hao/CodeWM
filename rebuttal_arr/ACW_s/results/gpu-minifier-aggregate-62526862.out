@@ -1,0 +1,36 @@
+{
+  "dataset": "HumanEval",
+  "cohort": "official_retained_160",
+  "task_count": 160,
+  "excluded_task_indices": [
+    122,
+    137,
+    144,
+    149
+  ],
+  "python_minifier": {
+    "pass_at_1": 0.6562499999999999,
+    "pass_at_10": 0.7664473345926519,
+    "transform_success_count": 3195
+  },
+  "original_detection_recomputed": {
+    "roc_auc": 0.91486328125,
+    "tpr_at_fpr_0": 0.275,
+    "tpr_at_fpr_01": 0.35625,
+    "tpr_at_fpr_05": 0.55625
+  },
+  "attacked_detection": {
+    "roc_auc": 0.5291796875,
+    "tpr_at_fpr_0": 0.0,
+    "tpr_at_fpr_01": 0.00625,
+    "tpr_at_fpr_05": 0.05
+  },
+  "detection_change": {
+    "roc_auc": -0.38568359375000005,
+    "tpr_at_fpr_0": -0.275,
+    "tpr_at_fpr_01": -0.35000000000000003,
+    "tpr_at_fpr_05": -0.50625
+  },
+  "invalid_attack_task_count": 0,
+  "selected_nonzero_completion_count": 1
+}

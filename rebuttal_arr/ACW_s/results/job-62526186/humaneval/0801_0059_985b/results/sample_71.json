@@ -1,0 +1,415 @@
+{
+  "prompt": [
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    '''"
+  ],
+  "generations": [
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s * (s - a) * (s - b) * (s - c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b <= c) or (a + c <= b) or (b + c <= a):\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b <= c) or (a + c <= b) or (b + c <= a):\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\n    ",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s * (s - a) * (s - b) * (s - c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b <= c) or (a + c <= b) or (b + c <= a):\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\n    ",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s * (s - a) * (s - b) * (s - c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1",
+    "def triangle_area(a, b, c):\n    '''\n    Given the lengths of the three sides of a triangle. Return the area of\n    the triangle rounded to 2 decimal points if the three sides form a valid triangle. \n    Otherwise return -1\n    Three sides make a valid triangle when the sum of any two sides is greater \n    than the third side.\n    Example:\n    triangle_area(3, 4, 5) == 6.00\n    triangle_area(1, 2, 10) == -1\n    ''' \n    if (a + b > c) and (a + c > b) and (b + c > a):\n        s = (a + b + c) / 2\n        area = round((s*(s-a)*(s-b)*(s-c)) ** 0.5, 2)\n        return area\n    else:\n        return -1"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(3, 4, 5) == 6.00, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(1, 2, 10) == -1\n    assert candidate(4, 8, 5) == 8.18\n    assert candidate(2, 2, 2) == 1.73\n    assert candidate(1, 2, 3) == -1\n    assert candidate(10, 5, 7) == 16.25\n    assert candidate(2, 6, 3) == -1\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1, 1, 1) == 0.43, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(2, 2, 10) == -1\n\n\ncheck(triangle_area)"
+  ],
+  "solution": [
+    "    if a + b <= c or a + c <= b or b + c <= a:\n        return -1 \n    s = (a + b + c)/2    \n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    area = round(area, 2)\n    return area\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.7265625,
+      0.07275390625,
+      1.46875,
+      1.1640625,
+      0.0830078125,
+      1.03125,
+      0.00154876708984375,
+      0.84765625,
+      0.003631591796875,
+      0.115234375,
+      0.01043701171875,
+      0.019287109375,
+      0.197265625,
+      0.0038604736328125,
+      7.677078247070312e-05,
+      0.000293731689453125,
+      0.000766754150390625,
+      0.001434326171875,
+      0.002716064453125,
+      0.01190185546875,
+      0.031494140625,
+      0.0005950927734375,
+      0.0002956390380859375,
+      0.00921630859375,
+      0.003814697265625,
+      0.337890625,
+      0.06884765625,
+      0.470703125,
+      0.048095703125,
+      0.0281982421875,
+      0.00170135498046875,
+      0.058349609375,
+      0.00110626220703125,
+      0.00077056884765625,
+      0.0023040771484375,
+      0.08984375,
+      0.00396728515625,
+      0.023193359375,
+      0.00014209747314453125,
+      0.484375,
+      0.00115203857421875,
+      0.3046875,
+      0.01312255859375,
+      0.74609375,
+      0.45703125,
+      0.044189453125,
+      0.6953125,
+      5.5789947509765625e-05,
+      0.1103515625,
+      0.00119781494140625,
+      6.3478946685791016e-06,
+      3.695487976074219e-05,
+      1.609325408935547e-05,
+      1.341104507446289e-05,
+      7.104873657226562e-05,
+      0.001007080078125,
+      0.53125,
+      0.033935546875,
+      0.0006561279296875,
+      0.0001049041748046875,
+      0.00011777877807617188,
+      0.1611328125,
+      0.06103515625,
+      0.00124359130859375,
+      0.07177734375,
+      0.0361328125,
+      0.035400390625,
+      0.06494140625,
+      0.166015625,
+      0.006591796875,
+      0.3203125,
+      0.21875,
+      0.021240234375,
+      0.00250244140625,
+      0.0093994140625,
+      0.00058746337890625
+    ],
+    "len": 76,
+    "num_tokens_generated": 76,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.02631578947368421,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.302734375,
+      1.46875,
+      1.203125,
+      0.88671875,
+      0.0004329681396484375,
+      0.66015625,
+      0.00543212890625,
+      0.00994873046875,
+      0.349609375,
+      0.0006866455078125,
+      2.6106834411621094e-05,
+      0.00099945068359375,
+      0.005340576171875,
+      0.00101470947265625,
+      0.0235595703125,
+      0.00078582763671875,
+      0.000591278076171875,
+      0.0019378662109375,
+      0.0026397705078125,
+      0.267578125,
+      0.034423828125,
+      0.038330078125,
+      0.00677490234375,
+      0.0010223388671875,
+      0.82421875,
+      0.0791015625,
+      1.1015625,
+      0.1103515625,
+      0.019775390625,
+      0.004150390625,
+      0.111328125,
+      0.00170135498046875,
+      0.00139617919921875,
+      0.005584716796875,
+      0.11865234375,
+      0.049072265625,
+      1.078125,
+      0.007659912109375,
+      0.546875,
+      0.0576171875,
+      0.7734375,
+      0.01251220703125,
+      0.63671875,
+      0.00115203857421875,
+      0.00026702880859375,
+      0.33984375,
+      0.02734375,
+      0.01300048828125,
+      0.002716064453125,
+      0.001129150390625,
+      0.00010585784912109375,
+      0.004150390625,
+      0.0028533935546875,
+      0.0022125244140625,
+      0.0028533935546875,
+      0.00106048583984375,
+      6.961822509765625e-05,
+      0.00799560546875,
+      0.0203857421875,
+      0.005096435546875,
+      0.5078125,
+      0.06201171875,
+      0.0014801025390625,
+      0.0002593994140625,
+      0.00023174285888671875,
+      0.9375,
+      0.0024871826171875,
+      0.07373046875,
+      0.2421875,
+      0.052734375,
+      0.021728515625,
+      0.032470703125,
+      0.1611328125,
+      0.0014801025390625,
+      0.32421875,
+      0.08349609375,
+      0.01104736328125,
+      0.12109375,
+      1.328125
+    ],
+    "len": 79,
+    "num_tokens_generated": 79,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.0379746835443038,
+    "green_fraction": 0.6666666666666666,
+    "z_score": 0.5773502691896258,
+    "p_value": 0.28185143082538655,
+    "prediction": false
+  }
+}

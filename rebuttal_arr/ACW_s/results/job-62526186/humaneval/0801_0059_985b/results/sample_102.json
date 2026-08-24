@@ -1,0 +1,357 @@
+{
+  "prompt": [
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\""
+  ],
+  "generations": [
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    # First, check if x and y are positive numbers\n    if x < 0 or y < 0:\n        return -1\n    # Then, check if x and y are not equal\n    if x == y:\n        return -1\n    # If they are both positive and not equal, find the maximum number in the range [x, y]\n    return max(x, y)\n    # If the number is even, return it. If it's odd, subtract 1 to make it even and return it.\n    # If the number is not in the range [x, y], return -1.\n    # If the number is 0, return -1 as 0 is not considered in the range.\n    # If the number is less than 0, return -1 as negative numbers are not considered in the range.\n    # If the number is greater than y, return -1 as it's not in the range.\n    # If the number is less than x, return -1 as it's not in the range.\n    # If the number is not even, subtract 1 to make it even and return it.\n    # If the number is greater than y, return -1 as it's not in the range.\n    # If the number is not even, subtract 1 to make it even and return it.\n    # If the number is not even, subtract 1 to make it even and return it.\n    # If the number is not even, subtract 1 to make it even and return it.\n    # If the number is not even, subtract 1 to make it even and return it.\n    # If the number is not even, subtract 1 to make it even and return it.\n    # If the number is not even, subtract 1 to make",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    # Check if x is greater than y, if so return -1\n    if x > y:\n        return -1\n    # If x and y are equal, return x (or y, both are fine)\n    elif x == y:\n        return x\n    # If x < y, start from y and decrement until you find the first even number\n    else:\n        for i in range(y, x-1, -1):\n            if i % 2 == 0:\n                return i\n        # If no even number is found, return -1\n        return -1\n    # End function\n    # End of function\n    # End of function\n",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x-1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    # Check if x is greater than y, if so return -1\n    if x > y:\n        return -1\n    # If x and y are equal, return x (or y, both are fine)\n    elif x == y:\n        return x\n    # If x is less than y, start from y and decrement until you find an even number\n    else:\n        for i in range(y, x-1, -1):\n            if i % 2 == 0:\n                return i\n        # If no even number is found, return -1\n        return -1\n    # End function\n    # End of function\n    # End of function",
+    "def choose_num(x, y):\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    choose_num(12, 15) = 14\n    choose_num(13, 12) = -1\n    \"\"\" \n    # Your code here\n    max_even = -1\n    for i in range(y, x - 1, -1):\n        if i % 2 == 0:\n            max_even = i\n            break\n    return max_even"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(12, 15) == 14\n    assert candidate(13, 12) == -1\n    assert candidate(33, 12354) == 12354\n    assert candidate(5234, 5233) == -1\n    assert candidate(6, 29) == 28\n    assert candidate(27, 10) == -1\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(7, 7) == -1\n    assert candidate(546, 546) == 546\n\n\ncheck(choose_num)"
+  ],
+  "solution": [
+    "    if x > y:\n        return -1\n    if y % 2 == 0:\n        return y\n    if x == y:\n        return -1\n    return y - 1\n"
+  ],
+  "metrics": {
+    "pass@1": 0.85,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.96875,
+      0.047607421875,
+      2.625,
+      4.3125,
+      0.0810546875,
+      0.4921875,
+      0.55078125,
+      0.0458984375,
+      2.671875,
+      1.65625,
+      0.028564453125,
+      0.65625,
+      0.031494140625,
+      0.0072021484375,
+      0.6953125,
+      0.004058837890625,
+      0.138671875,
+      0.81640625,
+      0.0003414154052734375,
+      0.011474609375,
+      0.9140625,
+      0.5625,
+      0.000629425048828125,
+      0.7109375,
+      0.00014591217041015625,
+      0.025146484375,
+      0.00013256072998046875,
+      0.00180816650390625,
+      0.2138671875,
+      0.050048828125,
+      0.0272216796875,
+      0.059326171875,
+      0.61328125,
+      0.0108642578125,
+      0.0004673004150390625,
+      0.00567626953125,
+      0.018798828125,
+      0.00018310546875,
+      0.376953125,
+      0.0191650390625,
+      0.041015625,
+      4.798173904418945e-06,
+      7.115304470062256e-07,
+      0.004364013671875,
+      0.0072021484375,
+      0.046875,
+      0.049072265625,
+      0.017822265625,
+      0.28125,
+      0.00933837890625,
+      0.0673828125,
+      0.0038909912109375,
+      0.00012874603271484375,
+      4.637986421585083e-07
+    ],
+    "len": 54,
+    "num_tokens_generated": 54,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.09259259259259259,
+    "green_fraction": 0.8,
+    "z_score": 1.3416407864998738,
+    "p_value": 0.08985624743949988,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.26171875,
+      2.40625,
+      0.859375,
+      1.0234375,
+      0.001922607421875,
+      0.7109375,
+      0.04150390625,
+      0.5390625,
+      0.024658203125,
+      0.005828857421875,
+      0.890625,
+      0.005401611328125,
+      1.9765625,
+      0.84375,
+      0.1015625,
+      0.004669189453125,
+      0.00057220458984375,
+      0.412109375,
+      0.004425048828125,
+      0.29296875,
+      0.095703125,
+      0.004241943359375,
+      0.016845703125,
+      0.040771484375,
+      0.033447265625,
+      0.000545501708984375,
+      1.0546875,
+      0.447265625,
+      0.70703125,
+      0.00133514404296875,
+      0.265625,
+      0.0028839111328125,
+      0.045166015625,
+      0.006103515625,
+      0.005828857421875,
+      0.09619140625,
+      0.0005035400390625,
+      0.8125,
+      0.0947265625,
+      0.337890625,
+      0.018798828125,
+      1.1801719665527344e-05,
+      1.21875
+    ],
+    "len": 43,
+    "num_tokens_generated": 43,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.06976744186046512,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -0.5773502691896258,
+    "p_value": 0.7181485691746134,
+    "prediction": false
+  }
+}

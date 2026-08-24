@@ -1,0 +1,374 @@
+{
+  "prompt": [
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\""
+  ],
+  "generations": [
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    result = 0\n    for i in arr:\n        if i > 0:\n            result += i * 1\n        elif i < 0:\n            result += i * -1\n        else:\n            result += 0\n    return result",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    result = 0\n    for i in arr:\n        result += abs(i) * (1 if i > 0 else -1 if i < 0 else 0)\n    return result",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    result = 0\n    for i in arr:\n        if i > 0:\n            result += i\n        elif i < 0:\n            result -= i\n    return result * (arr[0] / abs(arr[0]))\n    ",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)*((i)/abs(i))\n    return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)*((i)/abs(i))\n        return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)\n        if i < 0:\n            total *= -1\n    return total",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)*((i)/abs(i))\n        return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)*((i)/abs(i))\n    return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    result = 0\n    for i in arr:\n        if i > 0:\n            result += i\n        elif i < 0:\n            result -= i\n    return result * (arr[0] / abs(arr[0]))\n    ",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)*((i)/abs(i))\n    return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)\n        if i < 0:\n            total *= -1\n    return total",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)\n            if i < 0:\n                total *= -1\n        return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    product_sign = 1\n    for i in arr:\n        if i < 0:\n            product_sign *= -1\n        elif i > 0:\n            product_sign *= 1\n    total = sum([abs(i) for i in arr])\n    return product_sign * total",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)*((i)/abs(i))\n        return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)\n        if i < 0:\n            total *= -1\n    return total",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)*((i)/abs(i))\n        return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)*sign(i)\n        return total\n",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)\n            if i < 0:\n                total *= -1\n        return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if len(arr) == 0:\n        return None\n    total = 0\n    for i in arr:\n        total += abs(i)*((i)/abs(i))\n    return total\n    pass",
+    "def prod_signs(arr):\n    \"\"\"\n    You are given an array arr of integers and you need to return\n    sum of magnitudes of integers multiplied by product of all signs\n    of each number in the array, represented by 1, -1 or 0.\n    Note: return None for empty arr.\n\n    Example:\n    >>> prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n    \"\"\" \n    if not arr:\n        return None\n    else:\n        total = 0\n        for i in arr:\n            total += abs(i)*((i)/abs(i))\n        return total\n    pass"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([1, 2, 2, -4]) == -9\n    assert candidate([0, 1]) == 0\n    assert candidate([1, 1, 1, 2, 3, -1, 1]) == -10\n    assert candidate([]) == None\n    assert candidate([2, 4,1, 2, -1, -1, 9]) == 20\n    assert candidate([-1, 1, -1, 1]) == 4\n    assert candidate([-1, 1, 1, 1]) == -4\n    assert candidate([-1, 1, 1, 0]) == 0\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(prod_signs)"
+  ],
+  "solution": [
+    "    if not arr: return None\n    prod = 0 if 0 in arr else (-1) ** len(list(filter(lambda x: x < 0, arr)))\n    return prod * sum([abs(i) for i in arr])\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'sign' is not defined",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.140625,
+      0.04296875,
+      0.92578125,
+      0.7421875,
+      0.08837890625,
+      0.73828125,
+      0.034423828125,
+      0.00439453125,
+      0.0027618408203125,
+      1.2109375,
+      0.026123046875,
+      3.078125,
+      0.48046875,
+      0.41796875,
+      0.67578125,
+      0.1943359375,
+      0.000881195068359375,
+      1.1875,
+      1.671875,
+      0.045166015625,
+      0.267578125,
+      0.05029296875,
+      0.0126953125,
+      0.76953125,
+      0.07958984375,
+      1.0546875,
+      0.0037994384765625,
+      0.0001964569091796875,
+      0.087890625,
+      0.018310546875,
+      0.0281982421875,
+      0.047119140625,
+      0.62890625,
+      1.1640625,
+      0.201171875,
+      0.00188446044921875,
+      0.087890625,
+      0.00537109375,
+      0.138671875,
+      0.0016632080078125,
+      0.056640625,
+      0.004669189453125,
+      7.200241088867188e-05,
+      0.0235595703125,
+      0.002838134765625,
+      0.000431060791015625,
+      0.0245361328125,
+      0.248046875,
+      0.0018157958984375,
+      0.023681640625,
+      2.09808349609375e-05,
+      0.07373046875,
+      0.60546875,
+      0.0233154296875,
+      0.0771484375,
+      0.004058837890625,
+      0.00872802734375,
+      0.0015716552734375,
+      0.423828125,
+      0.0004367828369140625,
+      0.283203125,
+      0.006103515625,
+      0.06005859375,
+      0.0260009765625
+    ],
+    "len": 64,
+    "num_tokens_generated": 64,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.0625,
+    "green_fraction": 1.0,
+    "z_score": 2.0,
+    "p_value": 0.022750131948179195,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.201171875,
+      0.376953125,
+      0.625,
+      0.0286865234375,
+      0.56640625,
+      1.1328125,
+      0.000972747802734375,
+      1.15625,
+      0.007415771484375,
+      3.1875,
+      0.984375,
+      0.2158203125,
+      0.03173828125,
+      0.2392578125,
+      1.8046875,
+      0.08984375,
+      0.053466796875,
+      0.0032196044921875,
+      0.01226806640625,
+      0.58984375,
+      0.09814453125,
+      0.10107421875,
+      0.033447265625,
+      0.671875,
+      1.125,
+      0.005096435546875,
+      0.08447265625,
+      0.69140625,
+      0.15625,
+      0.008056640625,
+      0.859375,
+      0.007171630859375,
+      0.004180908203125,
+      0.02392578125,
+      0.0269775390625,
+      0.0751953125,
+      0.0284423828125,
+      0.8828125,
+      0.427734375,
+      0.0859375,
+      0.078125,
+      0.400390625,
+      0.032958984375,
+      0.9765625,
+      0.0005035400390625,
+      0.01153564453125,
+      0.00014972686767578125,
+      0.00013256072998046875,
+      0.0026702880859375,
+      0.6015625
+    ],
+    "len": 50,
+    "num_tokens_generated": 50,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.04,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  }
+}

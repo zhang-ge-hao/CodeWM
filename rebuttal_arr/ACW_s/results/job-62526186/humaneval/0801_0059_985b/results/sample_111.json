@@ -1,0 +1,422 @@
+{
+  "prompt": [
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\""
+  ],
+  "generations": [
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    test_dict = {}\n    max_val = 0\n    for letter in test:\n        if letter in test_dict:\n            test_dict[letter] += 1\n        else:\n            test_dict[letter] = 1\n        if test_dict[letter] > max_val:\n            max_val = test_dict[letter]\n    result = {k: v for k, v in test_dict.items() if v == max_val}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n\n    letters = test.split()\n    counts = {}\n    max_count = 0\n\n    for letter in letters:\n        if letter in counts:\n            counts[letter] += 1\n        else:\n            counts[letter] = 1\n\n        if counts[letter] > max_count:\n            max_count = counts[letter]\n\n    return {k: v for k, v in counts.items() if v == max_count}\n    ",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test: \n        return {}\n    test = test.split()\n    count = {}\n    max_count = 0\n    for i in test:\n        if i in count:\n            count[i] += 1\n        else:\n            count[i] = 1\n        max_count = max(max_count, count[i])\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    dic = {}\n    max_val = 0\n    for letter in test:\n        if letter in dic:\n            dic[letter] += 1\n        else:\n            dic[letter] = 1\n        if dic[letter] > max_val:\n            max_val = dic[letter]\n    result = {k: v for k, v in dic.items() if v == max_val}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    test_dict = {}\n    max_val = 0\n    for letter in test:\n        if letter in test_dict:\n            test_dict[letter] += 1\n        else:\n            test_dict[letter] = 1\n        if test_dict[letter] > max_val:\n            max_val = test_dict[letter]\n    result = {k: v for k, v in test_dict.items() if v == max_val}\n    return result",
+    "def histogram(test):\n    \"\"\"Given a string representing a space separated lowercase letters, return a dictionary\n    of the letter with the most repetition and containing the corresponding count.\n    If several letters have the same occurrence, return all of them.\n    \n    Example:\n    histogram('a b c') == {'a': 1, 'b': 1, 'c': 1}\n    histogram('a b b a') == {'a': 2, 'b': 2}\n    histogram('a b c a b') == {'a': 2, 'b': 2}\n    histogram('b b b b a') == {'b': 4}\n    histogram('') == {}\n\n    \"\"\" \n    if not test:\n        return {}\n    test = test.split()\n    count = {}\n    for letter in test:\n        if letter in count:\n            count[letter] += 1\n        else:\n            count[letter] = 1\n    max_count = max(count.values())\n    result = {k: v for k, v in count.items() if v == max_count}\n    return result"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate('a b b a') == {'a':2,'b': 2}, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate('a b c a b') == {'a': 2, 'b': 2}, \"This prints if this assert fails 2 (good for debugging!)\"\n    assert candidate('a b c d g') == {'a': 1, 'b': 1, 'c': 1, 'd': 1, 'g': 1}, \"This prints if this assert fails 3 (good for debugging!)\"\n    assert candidate('r t g') == {'r': 1,'t': 1,'g': 1}, \"This prints if this assert fails 4 (good for debugging!)\"\n    assert candidate('b b b b a') == {'b': 4}, \"This prints if this assert fails 5 (good for debugging!)\"\n    assert candidate('r t g') == {'r': 1,'t': 1,'g': 1}, \"This prints if this assert fails 6 (good for debugging!)\"\n    \n    \n    # Check some edge cases that are easy to work out by hand.\n    assert candidate('') == {}, \"This prints if this assert fails 7 (also good for debugging!)\"\n    assert candidate('a') == {'a': 1}, \"This prints if this assert fails 8 (also good for debugging!)\"\n\n\ncheck(histogram)"
+  ],
+  "solution": [
+    "    dict1={}\n    list1=test.split(\" \")\n    t=0\n\n    for i in list1:\n        if(list1.count(i)>t) and i!='':\n            t=list1.count(i)\n    if t>0:\n        for i in list1:\n            if(list1.count(i)==t):\n                \n                dict1[i]=t\n    return dict1\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.453125,
+      0.04541015625,
+      3.265625,
+      0.98828125,
+      0.068359375,
+      0.7578125,
+      0.062255859375,
+      0.0238037109375,
+      0.76171875,
+      0.84375,
+      3.609375,
+      1.1875,
+      0.703125,
+      0.2119140625,
+      1.0625,
+      0.0869140625,
+      3.703125,
+      1.03125,
+      0.97265625,
+      0.072265625,
+      1.1328125,
+      2.171875,
+      0.003143310546875,
+      0.07275390625,
+      0.05419921875,
+      0.0223388671875,
+      0.490234375,
+      0.035888671875,
+      0.6015625,
+      0.0035247802734375,
+      0.1689453125,
+      0.005706787109375,
+      0.002288818359375,
+      0.0018768310546875,
+      0.0017242431640625,
+      0.06884765625,
+      0.068359375,
+      0.0625,
+      0.00042724609375,
+      0.033447265625,
+      0.004058837890625,
+      0.00531005859375,
+      0.0791015625,
+      0.00250244140625,
+      0.0003910064697265625,
+      0.005706787109375,
+      0.000499725341796875,
+      0.003387451171875,
+      0.00115203857421875,
+      0.0012969970703125,
+      0.0013427734375,
+      0.6796875,
+      0.0113525390625,
+      1.0625,
+      0.85546875,
+      0.01007080078125,
+      0.03662109375,
+      0.2421875,
+      0.00159454345703125,
+      0.06005859375,
+      0.01043701171875,
+      1.328125,
+      0.006134033203125,
+      0.2177734375,
+      0.62109375,
+      0.0986328125,
+      0.000934600830078125,
+      0.0002841949462890625,
+      0.000545501708984375,
+      0.00244140625,
+      1.424551010131836e-05,
+      3.6716461181640625e-05,
+      0.000518798828125,
+      5.21540641784668e-06,
+      0.0004787445068359375,
+      4.100799560546875e-05,
+      0.000335693359375,
+      0.0025634765625,
+      0.00018596649169921875,
+      4.76837158203125e-06,
+      0.01116943359375,
+      0.0284423828125,
+      0.006927490234375,
+      0.0047607421875
+    ],
+    "len": 84,
+    "num_tokens_generated": 84,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.07142857142857142,
+    "green_fraction": 1.0,
+    "z_score": 2.4494897427831783,
+    "p_value": 0.007152939217714809,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.2119140625,
+      3.140625,
+      2.09375,
+      0.515625,
+      0.06689453125,
+      3.34375,
+      0.73046875,
+      0.828125,
+      0.03466796875,
+      1.15625,
+      0.115234375,
+      0.15625,
+      2.03125,
+      3.3125,
+      1.359375,
+      0.12255859375,
+      0.0751953125,
+      0.255859375,
+      1.171875,
+      0.11669921875,
+      0.482421875,
+      0.006256103515625,
+      0.287109375,
+      0.2314453125,
+      0.98828125,
+      0.287109375,
+      0.053466796875,
+      0.0303955078125,
+      0.009765625,
+      0.66796875,
+      0.059814453125,
+      0.162109375,
+      1.53125,
+      0.53515625,
+      1.2734375,
+      0.89453125,
+      0.1494140625,
+      1.3046875,
+      0.029296875,
+      0.00014495849609375,
+      2.300739288330078e-05,
+      0.000942230224609375,
+      0.306640625,
+      0.78515625,
+      0.4453125,
+      0.77734375,
+      1.21875,
+      0.220703125,
+      0.33203125,
+      0.1796875,
+      0.236328125,
+      1.3515625,
+      0.07080078125,
+      0.039306640625,
+      0.000728607177734375,
+      0.051513671875,
+      0.0556640625,
+      0.04443359375,
+      1.4921875,
+      8.7738037109375e-05,
+      1.3828277587890625e-05,
+      0.00063323974609375,
+      0.2236328125,
+      0.03076171875,
+      0.51953125,
+      0.11669921875,
+      0.11962890625,
+      0.470703125,
+      0.0023651123046875,
+      0.2421875,
+      0.1865234375,
+      0.58984375,
+      0.9765625,
+      1.125,
+      0.28515625,
+      0.22265625,
+      0.004638671875,
+      1.3828125
+    ],
+    "len": 78,
+    "num_tokens_generated": 78,
+    "num_tokens_scored": 13,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.16666666666666666,
+    "green_fraction": 0.3076923076923077,
+    "z_score": -1.386750490563073,
+    "p_value": 0.917241070651265,
+    "prediction": false
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "prompt": [
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\""
+  ],
+  "generations": [
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count",
+    "def specialFilter(nums):\n    \"\"\"Write a function that takes an array of numbers as input and returns \n    the number of elements in the array that are greater than 10 and both \n    first and last digits of a number are odd (1, 3, 5, 7, 9).\n    For example:\n    specialFilter([15, -73, 14, -15]) => 1 \n    specialFilter([33, -2, -3, 45, 21, 109]) => 2\n    \"\"\" \n    count = 0\n    for num in nums:\n        if num > 10:\n            str_num = str(abs(num))\n            if str_num[0] in ['1', '3', '5', '7', '9'] and str_num[-1] in ['1', '3', '5', '7', '9']:\n                count += 1\n    return count"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([5, -2, 1, -5]) == 0  \n    assert candidate([15, -73, 14, -15]) == 1\n    assert candidate([33, -2, -3, 45, 21, 109]) == 2\n    assert candidate([43, -12, 93, 125, 121, 109]) == 4\n    assert candidate([71, -2, -33, 75, 21, 19]) == 3\n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([1]) == 0              \n    assert candidate([]) == 0                   \n\n\ncheck(specialFilter)"
+  ],
+  "solution": [
+    "    \n    count = 0\n    for num in nums:\n        if num > 10:\n            odd_digits = (1, 3, 5, 7, 9)\n            number_as_string = str(num)\n            if int(number_as_string[0]) in odd_digits and int(number_as_string[-1]) in odd_digits:\n                count += 1\n        \n    return count \n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.8671875,
+      0.04345703125,
+      1.6484375,
+      0.1416015625,
+      0.01226806640625,
+      0.00014400482177734375,
+      0.310546875,
+      0.00142669677734375,
+      0.146484375,
+      0.609375,
+      0.003875732421875,
+      0.00775146484375,
+      0.0869140625,
+      0.00927734375,
+      0.7578125,
+      0.08837890625,
+      0.1337890625,
+      0.001953125,
+      2.7060508728027344e-05,
+      0.63671875,
+      0.0089111328125,
+      1.015625,
+      0.1806640625,
+      0.00116729736328125,
+      0.0035400390625,
+      0.421875,
+      0.0001964569091796875,
+      0.341796875,
+      0.00103759765625,
+      0.671875,
+      0.78125,
+      1.6450881958007812e-05,
+      0.000949859619140625,
+      4.2654573917388916e-07,
+      0.00102996826171875,
+      0.18359375,
+      1.1953125,
+      5.3882598876953125e-05,
+      0.1748046875,
+      8.344650268554688e-05,
+      2.1576881408691406e-05,
+      0.0019683837890625,
+      0.00019931793212890625,
+      8.456408977508545e-07,
+      0.0024871826171875,
+      9.965896606445312e-05,
+      6.22868537902832e-06,
+      0.002166748046875,
+      7.43865966796875e-05,
+      6.295740604400635e-07,
+      0.0001068115234375,
+      0.00372314453125,
+      0.020751953125,
+      5.602836608886719e-06,
+      0.0021514892578125,
+      1.329183578491211e-05,
+      3.266334533691406e-05,
+      0.006622314453125,
+      0.00555419921875,
+      1.3768672943115234e-05,
+      0.0024261474609375,
+      0.00014019012451171875,
+      2.0116567611694336e-07,
+      0.0005645751953125,
+      0.000476837158203125,
+      5.327165126800537e-07,
+      0.00124359130859375,
+      0.0002422332763671875,
+      1.1399388313293457e-06,
+      0.00168609619140625,
+      8.916854858398438e-05,
+      2.0116567611694336e-07,
+      0.01031494140625,
+      0.000797271728515625,
+      0.00017070770263671875,
+      0.009765625,
+      0.004150390625,
+      3.5762786865234375e-05,
+      0.0830078125,
+      0.0026702880859375,
+      0.000553131103515625,
+      0.001739501953125
+    ],
+    "len": 82,
+    "num_tokens_generated": 82,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.024390243902439025,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.2451171875,
+      0.0047607421875,
+      0.7578125,
+      0.12109375,
+      0.0133056640625,
+      0.0001430511474609375,
+      0.64453125,
+      0.0031585693359375,
+      0.2001953125,
+      0.56640625,
+      0.005096435546875,
+      0.005126953125,
+      0.043701171875,
+      0.019775390625,
+      0.79296875,
+      0.057373046875,
+      0.0849609375,
+      0.00112152099609375,
+      2.3365020751953125e-05,
+      0.578125,
+      0.0062255859375,
+      1.0390625,
+      0.76171875,
+      0.024169921875,
+      1.4453125,
+      0.34375,
+      0.41015625,
+      0.01007080078125,
+      0.000408172607421875,
+      9.489059448242188e-05,
+      3.075599670410156e-05,
+      2.041459083557129e-06,
+      9.1552734375e-05,
+      7.724761962890625e-05,
+      9.59634780883789e-06,
+      0.0002956390380859375,
+      3.6716461181640625e-05,
+      2.7567148208618164e-06,
+      0.034912109375,
+      0.00286865234375,
+      1.3125,
+      0.72265625,
+      0.76171875,
+      0.007720947265625,
+      0.007659912109375,
+      0.53125,
+      0.053955078125,
+      0.0294189453125,
+      0.765625,
+      1.03125,
+      6.103515625e-05,
+      1.214444637298584e-06,
+      5.245208740234375e-06,
+      0.0037841796875,
+      1.1026859283447266e-06,
+      0.00011539459228515625,
+      0.00191497802734375,
+      5.745887756347656e-05,
+      5.602836608886719e-05,
+      0.00107574462890625,
+      0.031494140625,
+      0.00011968612670898438,
+      2.8870999813079834e-07,
+      1.3470649719238281e-05,
+      0.00543212890625,
+      3.409385681152344e-05,
+      5.2928924560546875e-05,
+      0.000514984130859375,
+      0.0001468658447265625,
+      2.47955322265625e-05,
+      0.0025634765625,
+      0.00124359130859375,
+      0.0007171630859375,
+      0.028564453125,
+      0.00640869140625,
+      5.650520324707031e-05,
+      0.400390625,
+      0.0255126953125,
+      0.0011444091796875,
+      0.003204345703125,
+      0.2890625
+    ],
+    "len": 81,
+    "num_tokens_generated": 81,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.024691358024691357,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  }
+}
