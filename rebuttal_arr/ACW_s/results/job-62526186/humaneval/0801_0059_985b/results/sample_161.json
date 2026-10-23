@@ -1,0 +1,446 @@
+{
+  "prompt": [
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\""
+  ],
+  "generations": [
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    result = \"\"\n    has_letters = False\n    for i in range(len(s)):\n        if s[i].isalpha():\n            has_letters = True\n            if s[i].islower():\n                result += s[i].upper()\n            else:\n                result += s[i].lower()\n        else:\n            result += s[i]\n    if not has_letters:\n        result = result[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    result = \"\"\n    if letters:\n        for char in letters:\n            if char.islower():\n                result += char.upper()\n            else:\n                result += char.lower()\n        result = result[::-1] + no_letters[::-1]\n    else:\n        result = no_letters[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    if letters:\n        no_letters = no_letters[::-1]\n    return no_letters + \"\".join([char.swapcase() if char.isalpha() else char for char in letters])\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    result = \"\"\n    if letters:\n        for char in letters:\n            if char.islower():\n                result += char.upper()\n            else:\n                result += char.lower()\n        result += no_letters[::-1]\n    else:\n        result = no_letters[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    letters = letters[::-1] if any(char.isalpha() for char in s) else no_letters[::-1]\n    return \"\".join(letters + no_letters)\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    #return s if not any(c.isalpha() for c in s) else ''.join(c.lower() if c.isupper() else c.upper() for c in s)\n    if any(c.isalpha() for c in s):\n        return ''.join(c.lower() if c.isupper() else c.upper() for c in s)\n    else:\n        return s[::-1]\n    pass\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    if letters:\n        no_letters = no_letters[::-1]\n        result = \"\"\n        for i in range(len(letters)):\n            if letters[i].islower():\n                result += letters[i].upper()\n            else:\n                result += letters[i].lower()\n        return result + no_letters\n    else:\n        return no_letters[::-1]\n    ",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    result = \"\"\n    has_letters = False\n    for i in range(len(s)):\n        if s[i].isalpha():\n            has_letters = True\n            if s[i].islower():\n                result += s[i].upper()\n            else:\n                result += s[i].lower()\n        else:\n            result += s[i]\n    if not has_letters:\n        result = result[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    result = \"\"\n    has_letters = False\n    for i in range(len(s)):\n        if s[i].isalpha():\n            has_letters = True\n            if s[i].islower():\n                result += s[i].upper()\n            else:\n                result += s[i].lower()\n        else:\n            result += s[i]\n    if not has_letters:\n        result = result[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    letters = letters[::-1] if any(char.isalpha() for char in s) else no_letters[::-1]\n    return \"\".join(letters + no_letters)\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    if letters:\n        no_letters = no_letters[::-1]\n    return no_letters + \"\".join([char.swapcase() if char.isalpha() else char for char in letters])\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    letters = letters[::-1] if any(char.isalpha() for char in s) else no_letters[::-1]\n    return \"\".join(letters + no_letters)\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    result = \"\"\n    has_letters = False\n    for i in range(len(s)):\n        if s[i].isalpha():\n            has_letters = True\n            if s[i].islower():\n                result += s[i].upper()\n            else:\n                result += s[i].lower()\n        else:\n            result += s[i]\n    if not has_letters:\n        result = result[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    letters = letters[::-1] if any(char.isalpha() for char in s) else no_letters[::-1]\n    return \"\".join(letters + no_letters)\n",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    if letters:\n        no_letters = no_letters[::-1]\n        result = \"\"\n        for i in range(len(no_letters)):\n            if letters[i].isalpha():\n                if letters[i].islower():\n                    result += letters[i].upper()\n                else:\n                    result += letters[i].lower()\n            else:\n                result += no_letters[i]\n        return result\n    else:\n        return no_letters[::-1]\n        ",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    if letters:\n        no_letters = no_letters[::-1]\n    return no_letters + \"\".join([char.swapcase() for char in letters])\n    ",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    result = \"\"\n    if letters:\n        for char in letters:\n            if char.islower():\n                result += char.upper()\n            else:\n                result += char.lower()\n        result += no_letters[::-1]\n    else:\n        result = no_letters[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    result = \"\"\n    if letters:\n        for char in letters:\n            if char.islower():\n                result += char.upper()\n            else:\n                result += char.lower()\n        result += no_letters[::-1]\n    else:\n        result = no_letters[::-1]\n    return result",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    letters = \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\"\n    result = []\n    has_letters = False\n    for i in range(len(s)):\n        if s[i] in letters:\n            has_letters = True\n            result.append(s[i] if s[i].islower() else s[i].swapcase())\n        else:\n            result.append(s[i])\n    return \"\".join(result[::-1]) if has_letters else \"\".join(result)\n    ",
+    "def solve(s):\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    solve(\"1234\") = \"4321\"\n    solve(\"ab\") = \"AB\"\n    solve(\"#a@C\") = \"#A@c\"\n    \"\"\" \n    # your code here\n    letters = []\n    no_letters = \"\"\n    for char in s:\n        if char.isalpha():\n            letters.append(char)\n        else:\n            no_letters += char\n    if letters:\n        no_letters = no_letters[::-1]\n        result = \"\"\n        for i in range(len(letters)):\n            if letters[i].islower():\n                result += letters[i].upper()\n            else:\n                result += letters[i].lower()\n        return result + no_letters\n    else:\n        return no_letters[::-1]\n    "
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(\"AsDf\") == \"aSdF\"\n    assert candidate(\"1234\") == \"4321\"\n    assert candidate(\"ab\") == \"AB\"\n    assert candidate(\"#a@C\") == \"#A@c\"\n    assert candidate(\"#AsdfW^45\") == \"#aSDFw^45\"\n    assert candidate(\"#6@2\") == \"2@6#\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(\"#$a^D\") == \"#$A^d\"\n    assert candidate(\"#ccc\") == \"#CCC\"\n\n    # Don't remove this line:\n\ncheck(solve)"
+  ],
+  "solution": [
+    "    flg = 0\n    idx = 0\n    new_str = list(s)\n    for i in s:\n        if i.isalpha():\n            new_str[idx] = i.swapcase()\n            flg = 1\n        idx += 1\n    s = \"\"\n    for i in new_str:\n        s += i\n    if flg == 0:\n        return s[len(s)::-1]\n    return s\n"
+  ],
+  "metrics": {
+    "pass@1": 0.25,
+    "pass@10": 0.9837461300309598,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: can only concatenate list (not \"str\") to list",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: can only concatenate list (not \"str\") to list",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: can only concatenate list (not \"str\") to list",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: can only concatenate list (not \"str\") to list",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.375,
+      0.091796875,
+      3.40625,
+      2.40625,
+      0.0888671875,
+      0.2333984375,
+      0.455078125,
+      0.05517578125,
+      3.25,
+      1.046875,
+      1.4765625,
+      0.1142578125,
+      2.40625,
+      1.0078125,
+      0.00750732421875,
+      0.00946044921875,
+      0.30078125,
+      0.78125,
+      0.0078125,
+      0.31640625,
+      1.5234375,
+      0.578125,
+      0.60546875,
+      0.10595703125,
+      0.002044677734375,
+      0.48046875,
+      0.0927734375,
+      0.75390625,
+      0.125,
+      0.000171661376953125,
+      0.000835418701171875,
+      0.0024871826171875,
+      0.0037384033203125,
+      0.099609375,
+      0.007232666015625,
+      0.1923828125,
+      0.000263214111328125,
+      4.124641418457031e-05,
+      0.00408935546875,
+      0.00170135498046875,
+      0.040283203125,
+      0.0216064453125,
+      0.91796875,
+      0.0216064453125,
+      9.012222290039062e-05,
+      0.000637054443359375,
+      0.0013427734375,
+      0.421875,
+      0.025390625,
+      0.01171875,
+      0.07177734375,
+      0.054931640625,
+      0.003570556640625,
+      0.00020503997802734375,
+      9.417533874511719e-06,
+      0.03466796875,
+      0.0166015625,
+      0.00811767578125,
+      0.142578125,
+      0.033203125,
+      0.0020904541015625,
+      7.677078247070312e-05,
+      0.001708984375,
+      0.00115203857421875,
+      1.895427703857422e-05,
+      1.087784767150879e-06,
+      1.2040138244628906e-05,
+      0.03515625,
+      0.029296875,
+      0.0390625,
+      0.061767578125,
+      0.0087890625,
+      0.24609375,
+      0.007537841796875,
+      0.0031890869140625,
+      0.00022602081298828125,
+      0.365234375,
+      0.48046875,
+      0.51171875,
+      0.5390625,
+      0.00151824951171875,
+      1.609325408935547e-05,
+      0.00010585784912109375,
+      0.032958984375,
+      0.01007080078125,
+      0.63671875,
+      0.00384521484375,
+      0.63671875,
+      0.00091552734375,
+      1.5079975128173828e-05,
+      0.1044921875,
+      0.061767578125,
+      0.0035552978515625,
+      0.01300048828125
+    ],
+    "len": 94,
+    "num_tokens_generated": 94,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.07446808510638298,
+    "green_fraction": 1.0,
+    "z_score": 2.6457513110645903,
+    "p_value": 0.00407548579675135,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.287109375,
+      3.359375,
+      1.5625,
+      0.92578125,
+      0.64453125,
+      0.30078125,
+      0.63671875,
+      0.00099945068359375,
+      2.65625,
+      0.40625,
+      1.1328125,
+      0.047119140625,
+      0.220703125,
+      0.00173187255859375,
+      3.296875,
+      1.984375,
+      0.1513671875,
+      1.3125,
+      0.6796875,
+      0.333984375,
+      0.359375,
+      1.71875,
+      1.40625,
+      0.7265625,
+      0.6953125,
+      0.10302734375,
+      0.0712890625,
+      0.08203125,
+      0.671875,
+      0.024658203125,
+      0.05078125,
+      0.337890625,
+      0.013671875,
+      0.51171875,
+      0.00384521484375,
+      0.0576171875,
+      0.02978515625,
+      0.0025634765625,
+      0.7734375,
+      0.703125,
+      0.00012874603271484375,
+      0.07080078125,
+      0.00099945068359375,
+      0.51171875,
+      3.606081008911133e-06,
+      0.1328125,
+      0.0257568359375,
+      0.0029144287109375,
+      0.0458984375,
+      0.392578125,
+      0.1123046875,
+      0.177734375,
+      0.05029296875,
+      0.0003795623779296875,
+      0.75390625,
+      0.0230712890625,
+      0.515625,
+      0.9296875,
+      0.76171875,
+      0.02490234375,
+      0.255859375,
+      0.78515625,
+      0.00909423828125,
+      0.4609375,
+      1.8477439880371094e-05,
+      0.0299072265625,
+      0.0220947265625,
+      0.0299072265625,
+      0.302734375,
+      0.11767578125,
+      0.1962890625,
+      0.003997802734375,
+      0.4921875,
+      0.431640625,
+      3.844499588012695e-06,
+      0.26953125,
+      0.0078125,
+      0.11083984375,
+      0.125,
+      0.0216064453125,
+      0.8203125,
+      0.0198974609375,
+      0.0023193359375,
+      0.001556396484375,
+      0.74609375,
+      0.2080078125,
+      0.0001773834228515625,
+      0.0439453125,
+      0.03271484375,
+      0.69140625,
+      0.0556640625,
+      1.21875
+    ],
+    "len": 92,
+    "num_tokens_generated": 92,
+    "num_tokens_scored": 9,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.09782608695652174,
+    "green_fraction": 0.4444444444444444,
+    "z_score": -0.3333333333333333,
+    "p_value": 0.6305586598182363,
+    "prediction": false
+  }
+}

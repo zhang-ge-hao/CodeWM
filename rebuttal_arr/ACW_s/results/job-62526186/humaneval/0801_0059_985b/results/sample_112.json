@@ -1,0 +1,336 @@
+{
+  "prompt": [
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\""
+  ],
+  "generations": [
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    for i in c:\n        s = s.replace(i, '')\n    if s == s[::-1]:\n        return (s,True)\n    else:\n        return (s,False)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    for i in c:\n        s = s.replace(i, \"\")\n    if s == s[::-1]:\n        return (s,True)\n    else:\n        return (s,False)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    # return the reversed string and the check\n    return (s.translate(str.maketrans('', '', c))[::-1], s.translate(str.maketrans('', '', c)) == s.translate(str.maketrans('', '', c))[::-1])\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    # return the reversed string and the check\n    return (s.translate(str.maketrans('', '', c))[::-1], s.translate(str.maketrans('', '', c)) == s.translate(str.maketrans('', '', c))[::-1])\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([char for char in s if char not in c])\n    is_palindrome = s_without_c == s_without_c[::-1]\n    return (s_without_c, is_palindrome)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    is_palindrome = s_without_c == s_without_c[::-1]\n    return (s_without_c, is_palindrome)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    for i in c:\n        s = s.replace(i, '')\n    if s == s[::-1]:\n        return (s,True)\n    else:\n        return (s,False)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    return (s_without_c, s_without_c == s_without_c[::-1])\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([i for i in s if i not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    # return the reversed string and the check\n    return (s.translate(str.maketrans('', '', c))[::-1], s.translate(str.maketrans('', '', c)) == s.translate(str.maketrans('', '', c))[::-1])\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([char for char in s if char not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([char for char in s if char not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    ",
+    "def reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    For s = \"abcde\", c = \"ae\", the result should be ('bcd',False)\n    For s = \"abcdef\", c = \"b\"  the result should be ('acdef',False)\n    For s = \"abcdedcba\", c = \"ab\", the result should be ('cdedc',True)\n    \"\"\" \n    # Your code goes here\n    s_without_c = ''.join([char for char in s if char not in c])\n    palindrome_check = s_without_c == s_without_c[::-1]\n    return (s_without_c, palindrome_check)\n    "
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    assert candidate(\"abcde\",\"ae\") == ('bcd',False)\n    assert candidate(\"abcdef\", \"b\") == ('acdef',False)\n    assert candidate(\"abcdedcba\",\"ab\") == ('cdedc',True)\n    assert candidate(\"dwik\",\"w\") == ('dik',False)\n    assert candidate(\"a\",\"a\") == ('',True)\n    assert candidate(\"abcdedcba\",\"\") == ('abcdedcba',True)\n    assert candidate(\"abcdedcba\",\"v\") == ('abcdedcba',True)\n    assert candidate(\"vabba\",\"v\") == ('abba',True)\n    assert candidate(\"mamma\", \"mia\") == (\"\", True)\n\ncheck(reverse_delete)"
+  ],
+  "solution": [
+    "    s = ''.join([char for char in s if char not in c])\n    return (s,s[::-1] == s)\n"
+  ],
+  "metrics": {
+    "pass@1": 0.85,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.953125,
+      0.0576171875,
+      2.65625,
+      3.4375,
+      0.0625,
+      0.71875,
+      0.1650390625,
+      0.54296875,
+      0.07421875,
+      2.84375,
+      1.4609375,
+      0.0546875,
+      0.5078125,
+      0.259765625,
+      0.0830078125,
+      0.75,
+      0.232421875,
+      0.037109375,
+      2.1457672119140625e-05,
+      0.003875732421875,
+      1.0234375,
+      1.0,
+      0.375,
+      1.9140625,
+      0.10595703125,
+      0.244140625,
+      0.007476806640625,
+      0.00026702880859375,
+      2.47955322265625e-05,
+      0.1005859375,
+      0.0296630859375,
+      0.53125,
+      0.494140625,
+      0.00106048583984375,
+      0.00750732421875,
+      0.60546875,
+      0.0341796875,
+      0.0113525390625,
+      0.193359375,
+      0.2412109375,
+      0.008544921875,
+      0.001312255859375,
+      0.0693359375,
+      6.0558319091796875e-05,
+      0.0031280517578125,
+      0.1611328125,
+      1.1015625,
+      2.6875
+    ],
+    "len": 48,
+    "num_tokens_generated": 48,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.14583333333333334,
+    "green_fraction": 1.0,
+    "z_score": 2.6457513110645903,
+    "p_value": 0.00407548579675135,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.265625,
+      2.703125,
+      1.671875,
+      1.40625,
+      0.0004482269287109375,
+      1.578125,
+      0.98046875,
+      0.00069427490234375,
+      5.841255187988281e-05,
+      0.00017070770263671875,
+      0.0018768310546875,
+      0.00101470947265625,
+      0.00927734375,
+      0.000392913818359375,
+      2.6345252990722656e-05,
+      0.0125732421875,
+      0.154296875,
+      0.06396484375,
+      1.640625,
+      0.1376953125,
+      0.00191497802734375,
+      0.2060546875,
+      0.73828125,
+      2.753734588623047e-05,
+      0.369140625,
+      0.000812530517578125,
+      0.00408935546875,
+      1.03125
+    ],
+    "len": 28,
+    "num_tokens_generated": 28,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.17857142857142858,
+    "green_fraction": 0.4,
+    "z_score": -0.4472135954999579,
+    "p_value": 0.6726395769907115,
+    "prediction": false
+  }
+}

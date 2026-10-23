@@ -1,0 +1,337 @@
+{
+  "prompt": [
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\""
+  ],
+  "generations": [
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    if not numbers:\n        return []\n    result = [numbers[0]]\n    for num in numbers[1:]:\n        result.extend([delimeter, num])\n    return result",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n",
+    "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    \"\"\" Insert a number 'delimeter' between every two consecutive elements of input list `numbers'\n    >>> intersperse([], 4)\n    []\n    >>> intersperse([1, 2, 3], 4)\n    [1, 4, 2, 4, 3]\n    \"\"\" \n    result = []\n    for number in numbers:\n        result.extend([number, delimeter])\n    return result[:-1]  # remove the last extra delimeter\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([], 7) == []\n    assert candidate([5, 6, 3, 2], 8) == [5, 8, 6, 8, 3, 8, 2]\n    assert candidate([2, 2, 2], 2) == [2, 2, 2, 2, 2]\n\ncheck(intersperse)"
+  ],
+  "solution": [
+    "    if not numbers:\n        return []\n\n    result = []\n\n    for n in numbers[:-1]:\n        result.append(n)\n        result.append(delimeter)\n\n    result.append(numbers[-1])\n\n    return result\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.953125,
+      0.02587890625,
+      1.453125,
+      0.2041015625,
+      0.419921875,
+      0.0830078125,
+      0.1318359375,
+      1.59375,
+      0.0064697265625,
+      0.005126953125,
+      0.126953125,
+      0.025390625,
+      0.0220947265625,
+      0.87890625,
+      0.1953125,
+      0.150390625,
+      0.00156402587890625,
+      0.0252685546875,
+      2.658367156982422e-05,
+      0.146484375,
+      0.06884765625,
+      0.275390625,
+      0.007110595703125,
+      0.0576171875,
+      7.2479248046875e-05,
+      0.7734375,
+      1.046875,
+      0.023193359375,
+      3.265625,
+      0.99609375,
+      0.453125,
+      1.625,
+      1.03125,
+      0.0007171630859375,
+      1.375
+    ],
+    "len": 35,
+    "num_tokens_generated": 35,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.17142857142857143,
+    "green_fraction": 0.6666666666666666,
+    "z_score": 0.8164965809277261,
+    "p_value": 0.2071080891212626,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.2119140625,
+      1.4375,
+      0.87890625,
+      0.2001953125,
+      0.435546875,
+      0.0123291015625,
+      0.032958984375,
+      1.1953125,
+      0.0022735595703125,
+      0.70703125,
+      0.07470703125,
+      0.953125,
+      0.00060272216796875,
+      0.150390625,
+      1.2109375,
+      0.322265625,
+      0.064453125,
+      0.54296875,
+      0.0002307891845703125,
+      0.263671875,
+      0.00799560546875,
+      0.0267333984375,
+      0.490234375,
+      0.002288818359375,
+      0.01202392578125,
+      0.000522613525390625,
+      0.009033203125,
+      0.00174713134765625,
+      0.00141143798828125,
+      0.000240325927734375,
+      0.2890625,
+      0.000965118408203125,
+      0.47265625,
+      0.06591796875,
+      0.0002613067626953125,
+      0.0002231597900390625,
+      6.818771362304688e-05,
+      0.4375,
+      0.001190185546875,
+      0.0012969970703125,
+      0.0010528564453125,
+      0.94921875
+    ],
+    "len": 42,
+    "num_tokens_generated": 42,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.047619047619047616,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  }
+}

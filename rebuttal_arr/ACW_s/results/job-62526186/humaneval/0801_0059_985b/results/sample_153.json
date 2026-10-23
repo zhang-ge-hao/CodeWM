@@ -1,0 +1,482 @@
+{
+  "prompt": [
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\""
+  ],
+  "generations": [
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    strongest_extension = extensions[0]\n    strongest_strength = 0\n    for extension in extensions:\n        extension_strength = sum([1 for char in extension if char.isupper()]) - sum([1 for char in extension if char.islower()])\n        if extension_strength > strongest_strength:\n            strongest_extension = extension\n            strongest_strength = extension_strength\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    strongest = max(extensions, key=lambda ext: (-len(re.findall(r'[A-Z]', ext)), ext))\n    return f'{class_name}.{strongest}'",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code goes here\n    max_strength = -1\n    strongest_extension = ''\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength or (strength == max_strength and extension < strongest_extension):\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code goes here\n    max_strength = -1\n    strongest_extension = ''\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f'{class_name}.{strongest_extension}'\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    strongest = max(extensions, key=lambda ext: (len(re.findall(r'[A-Z]', ext)) - len(re.findall(r'[a-z]', ext)), ext))\n    return f'{class_name}.{strongest}'",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    max_strength = -1000\n    strongest_extension = ''\n    for extension in extensions:\n        strength = sum([1 for char in extension if char.isupper()]) - sum([1 for char in extension if char.islower()])\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f'{class_name}.{strongest_extension}'\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength or (strength == max_strength and extension < strongest_extension):\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    strongest_extension = extensions[0]\n    strongest_strength = strength(extensions[0])\n    for extension in extensions[1:]:\n        current_strength = strength(extension)\n        if current_strength > strongest_strength:\n            strongest_extension = extension\n            strongest_strength = current_strength\n    return f'{class_name}.{strongest_extension}'\n",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = ''\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength or (strength == max_strength and extension < strongest_extension):\n            max_strength = strength\n            strongest_extension = extension\n    return f'{class_name}.{strongest_extension}'",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code goes here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength or (strength == max_strength and extension < strongest_extension):\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = ''\n    for ext in extensions:\n        strength = sum([1 for c in ext if c.isupper()]) - sum([1 for c in ext if c.islower()])\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = ext\n    return f'{class_name}.{strongest_extension}'\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code goes here\n    max_strength = -1\n    strongest_extension = ''\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f'{class_name}.{strongest_extension}'\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code goes here\n    max_strength = -1\n    strongest_extension = ''\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f'{class_name}.{strongest_extension}'\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    strongest_extension = extensions[0]\n    strongest_strength = 0\n    for extension in extensions:\n        extension_strength = sum([1 for char in extension if char.isupper()]) - sum([1 for char in extension if char.islower()])\n        if extension_strength > strongest_strength:\n            strongest_extension = extension\n            strongest_strength = extension_strength\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code here\n    max_strength = -1\n    strongest_extension = None\n    for extension in extensions:\n        strength = sum(1 for c in extension if c.isupper()) - sum(1 for c in extension if c.islower())\n        if strength > max_strength:\n            max_strength = strength\n            strongest_extension = extension\n    return f\"{class_name}.{strongest_extension}\"\n    ",
+    "def Strongest_Extension(class_name, extensions):\n    \"\"\"You will be given the name of a class (a string) and a list of extensions.\n    The extensions are to be used to load additional classes to the class. The\n    strength of the extension is as follows: Let CAP be the number of the uppercase\n    letters in the extension's name, and let SM be the number of lowercase letters \n    in the extension's name, the strength is given by the fraction CAP - SM. \n    You should find the strongest extension and return a string in this \n    format: ClassName.StrongestExtensionName.\n    If there are two or more extensions with the same strength, you should\n    choose the one that comes first in the list.\n    For example, if you are given \"Slices\" as the class and a list of the\n    extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed'] then you should\n    return 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest extension \n    (its strength is -1).\n    Example:\n    for Strongest_Extension('my_class', ['AA', 'Be', 'CC']) == 'my_class.AA'\n    \"\"\" \n    # Your code goes here\n    strongest_extension = extensions[0]\n    strength = sum(c.isupper() for c in strongest_extension) - sum(c.islower() for c in strongest_extension)\n    for extension in extensions[1:]:\n        ext_strength = sum(c.isupper() for c in extension) - sum(c.islower() for c in extension)\n        if ext_strength > strength:\n            strongest_extension = extension\n            strength = ext_strength\n    return f\"{class_name}.{strongest_extension}\"\n    "
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate('Watashi', ['tEN', 'niNE', 'eIGHt8OKe']) == 'Watashi.eIGHt8OKe'\n    assert candidate('Boku123', ['nani', 'NazeDa', 'YEs.WeCaNe', '32145tggg']) == 'Boku123.YEs.WeCaNe'\n    assert candidate('__YESIMHERE', ['t', 'eMptY', 'nothing', 'zeR00', 'NuLl__', '123NoooneB321']) == '__YESIMHERE.NuLl__'\n    assert candidate('K', ['Ta', 'TAR', 't234An', 'cosSo']) == 'K.TAR'\n    assert candidate('__HAHA', ['Tab', '123', '781345', '-_-']) == '__HAHA.123'\n    assert candidate('YameRore', ['HhAas', 'okIWILL123', 'WorkOut', 'Fails', '-_-']) == 'YameRore.okIWILL123'\n    assert candidate('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW']) == 'finNNalLLly.WoW'\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate('_', ['Bb', '91245']) == '_.Bb'\n    assert candidate('Sp', ['671235', 'Bb']) == 'Sp.671235'\n    \n\ncheck(Strongest_Extension)"
+  ],
+  "solution": [
+    "    strong = extensions[0]\n    my_val = len([x for x in extensions[0] if x.isalpha() and x.isupper()]) - len([x for x in extensions[0] if x.isalpha() and x.islower()])\n    for s in extensions:\n        val = len([x for x in s if x.isalpha() and x.isupper()]) - len([x for x in s if x.isalpha() and x.islower()])\n        if val > my_val:\n            strong = s\n            my_val = val\n\n    ans = class_name + \".\" + strong\n    return ans\n\n"
+  ],
+  "metrics": {
+    "pass@1": 0.5499999999999998,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: '<' not supported between instances of 'str' and 'NoneType'",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: '<' not supported between instances of 'str' and 'NoneType'",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'strength' is not defined",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: '<' not supported between instances of 'str' and 'NoneType'",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.234375,
+      0.0625,
+      1.59375,
+      1.1875,
+      0.37109375,
+      1.484375,
+      0.002471923828125,
+      0.00011587142944335938,
+      0.236328125,
+      0.035400390625,
+      1.3984375,
+      0.8671875,
+      0.0096435546875,
+      0.03759765625,
+      2.40625,
+      0.298828125,
+      1.0546875,
+      0.0152587890625,
+      0.400390625,
+      0.63671875,
+      0.009765625,
+      0.00445556640625,
+      0.55859375,
+      0.046875,
+      1.625,
+      0.1298828125,
+      0.0002899169921875,
+      0.0037078857421875,
+      0.38671875,
+      1.34375,
+      0.88671875,
+      0.396484375,
+      1.1875,
+      0.0004253387451171875,
+      0.00238037109375,
+      0.004302978515625,
+      0.0244140625,
+      0.208984375,
+      0.017578125,
+      0.3125,
+      0.099609375,
+      0.0986328125,
+      0.205078125,
+      0.2265625,
+      0.0021514892578125,
+      0.006866455078125,
+      0.005859375,
+      0.0021820068359375,
+      0.009765625,
+      0.003143310546875,
+      0.014404296875,
+      0.00070953369140625,
+      4.220008850097656e-05,
+      0.0498046875,
+      0.046875,
+      0.0137939453125,
+      0.060302734375,
+      4.5299530029296875e-05,
+      4.023313522338867e-06,
+      0.06787109375,
+      0.00055694580078125,
+      6.9141387939453125e-06,
+      1.4960765838623047e-05,
+      0.515625,
+      0.0003376007080078125,
+      0.0001354217529296875,
+      0.609375,
+      0.00054168701171875,
+      0.0003757476806640625,
+      0.0101318359375,
+      0.0308837890625,
+      0.00049591064453125,
+      2.8312206268310547e-06,
+      0.00011873245239257812,
+      0.000568389892578125,
+      0.0014495849609375,
+      1.704692840576172e-05,
+      1.6614794731140137e-06,
+      0.392578125,
+      0.10302734375,
+      0.0791015625,
+      0.37890625,
+      0.69140625,
+      0.00051116943359375,
+      1.71661376953125e-05,
+      0.00077056884765625,
+      0.0002956390380859375,
+      0.0234375,
+      0.00020885467529296875,
+      2.467632293701172e-05,
+      0.734375,
+      3.1875
+    ],
+    "len": 92,
+    "num_tokens_generated": 92,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.08695652173913043,
+    "green_fraction": 0.75,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.2451171875,
+      1.5625,
+      1.3671875,
+      2.734375,
+      0.00457763671875,
+      0.000156402587890625,
+      0.1953125,
+      0.0245361328125,
+      2.34375,
+      2.28125,
+      0.14453125,
+      2.703125,
+      0.54296875,
+      1.703125,
+      0.10498046875,
+      0.0028076171875,
+      0.0017852783203125,
+      1.28125,
+      0.369140625,
+      0.0262451171875,
+      0.021728515625,
+      0.0081787109375,
+      0.0274658203125,
+      0.0830078125,
+      0.0400390625,
+      0.61328125,
+      0.671875,
+      0.0162353515625,
+      0.259765625,
+      0.03125,
+      0.55859375,
+      0.765625,
+      0.2099609375,
+      0.15234375,
+      0.412109375,
+      0.2451171875,
+      0.00787353515625,
+      0.00130462646484375,
+      0.00177001953125,
+      0.033203125,
+      0.00131988525390625,
+      0.000263214111328125,
+      0.001861572265625,
+      0.047607421875,
+      0.036865234375,
+      0.0028228759765625,
+      0.02392578125,
+      0.0037841796875,
+      0.00823974609375,
+      0.0087890625,
+      0.0002155303955078125,
+      2.7418136596679688e-05,
+      0.37890625,
+      0.330078125,
+      0.51953125,
+      1.9296875,
+      0.0225830078125,
+      0.11669921875,
+      0.51953125,
+      0.0693359375,
+      1.5078125,
+      0.0274658203125,
+      0.049072265625,
+      0.0023651123046875,
+      0.0152587890625,
+      0.000965118408203125,
+      4.696846008300781e-05,
+      4.3392181396484375e-05,
+      0.00157928466796875,
+      0.0023193359375,
+      0.00185394287109375,
+      0.000476837158203125,
+      0.00084686279296875,
+      0.0004787445068359375,
+      0.00179290771484375,
+      0.00098419189453125,
+      0.00046539306640625,
+      0.00011873245239257812,
+      0.00115203857421875,
+      0.0164794921875,
+      0.003173828125,
+      0.00677490234375,
+      0.000667572021484375,
+      0.0179443359375,
+      0.0004119873046875,
+      5.221366882324219e-05,
+      2.9087066650390625e-05,
+      0.0015869140625,
+      0.000865936279296875,
+      0.0001239776611328125,
+      0.0002346038818359375,
+      7.581710815429688e-05,
+      0.00150299072265625,
+      0.00128173828125,
+      0.0010223388671875,
+      0.0002346038818359375,
+      1.1861324310302734e-05,
+      0.13671875,
+      0.01287841796875,
+      0.029052734375,
+      1.1015625,
+      0.251953125,
+      0.00531005859375,
+      3.9637088775634766e-06,
+      0.5703125,
+      0.0252685546875,
+      0.2109375,
+      0.0255126953125,
+      0.0031585693359375,
+      0.09619140625,
+      0.19140625,
+      0.000423431396484375,
+      6.723403930664062e-05,
+      0.0107421875,
+      0.00616455078125,
+      0.353515625,
+      0.024658203125,
+      0.11865234375,
+      0.1015625,
+      1.3828125,
+      8.821487426757812e-05,
+      0.27734375,
+      0.29296875,
+      0.0240478515625,
+      0.03662109375,
+      0.3359375,
+      0.0033111572265625,
+      0.02392578125,
+      0.0849609375,
+      1.1796875
+    ],
+    "len": 130,
+    "num_tokens_generated": 130,
+    "num_tokens_scored": 11,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.08461538461538462,
+    "green_fraction": 0.2727272727272727,
+    "z_score": -1.507556722888818,
+    "p_value": 0.9341659919885928,
+    "prediction": false
+  }
+}

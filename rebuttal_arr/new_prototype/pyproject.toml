@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rw-python-minifier-prototype"
+version = "0.1.0"
+description = "Finite reversible random-walk Python obfuscator prototype"
+requires-python = ">=3.10"
+dependencies = ["libcst>=1.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "hypothesis>=6"]
+
+[project.scripts]
+rw-obfuscate = "rw_obfuscator.cli:main"
+rw-corpus = "rw_obfuscator.corpus:main"
+
+[tool.setuptools]
+packages = ["rw_obfuscator", "rw_obfuscator.rules"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "long: full HumanEval/MBPP reference-corpus differential test (not part of the short suite)",
+]

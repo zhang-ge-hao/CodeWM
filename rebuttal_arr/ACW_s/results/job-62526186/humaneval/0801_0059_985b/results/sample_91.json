@@ -1,0 +1,354 @@
+{
+  "prompt": [
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\""
+  ],
+  "generations": [
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace('!', '.').replace('?', '.').split('.')\n    for sentence in sentences:\n        if sentence.strip() and sentence.split()[0].lower() == 'i':\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace(\"!\", \"?\").replace(\".\", \"?\").split(\"?\")\n    for sentence in sentences:\n        if sentence.strip() and sentence.split(\" \")[0].lower() == \"i\":\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace('!', '.').replace('?', '.').split('.')\n    for sentence in sentences:\n        if sentence.strip() and sentence.split()[0].lower() == 'i':\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace(\"!\", \"?\").replace(\".\", \"?\").split(\"?\")\n    for sentence in sentences:\n        if sentence.strip() and sentence.split(\" \")[0].lower() == \"i\":\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace('!', '.').replace('?', '.').split('.')\n    for sentence in sentences:\n        if sentence.strip() and sentence.split(' ')[0].lower() == 'i':\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace('!', '.').replace('?', '.').split('.')\n    for sentence in sentences:\n        if sentence.strip() and sentence.split()[0].lower() == 'i':\n            count += 1\n    return count\n",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.split('.')\n    for sentence in sentences:\n        if sentence.strip().startswith('I'):\n            count += 1\n    return count",
+    "def is_bored(S):\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1\n    \"\"\" \n    count = 0\n    sentences = S.replace('!', '.').replace('?', '.').split('.')\n    for sentence in sentences:\n        if sentence.strip() and sentence.split(' ')[0].lower() == 'i':\n            count += 1\n    return count\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(\"Hello world\") == 0, \"Test 1\"\n    assert candidate(\"Is the sky blue?\") == 0, \"Test 2\"\n    assert candidate(\"I love It !\") == 1, \"Test 3\"\n    assert candidate(\"bIt\") == 0, \"Test 4\"\n    assert candidate(\"I feel good today. I will be productive. will kill It\") == 2, \"Test 5\"\n    assert candidate(\"You and I are going for a walk\") == 0, \"Test 6\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(is_bored)"
+  ],
+  "solution": [
+    "    import re\n    sentences = re.split(r'[.?!]\\s*', S)\n    return sum(sentence[0:2] == 'I ' for sentence in sentences)\n"
+  ],
+  "metrics": {
+    "pass@1": 0.15000000000000002,
+    "pass@10": 0.8947368421052632,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 5",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 5",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 5",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 2",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: Test 5",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.25,
+      0.0693359375,
+      3.328125,
+      0.306640625,
+      0.44921875,
+      0.00750732421875,
+      0.20703125,
+      0.000946044921875,
+      2.75,
+      0.1748046875,
+      0.70703125,
+      0.8125,
+      0.93359375,
+      1.0078125,
+      0.9375,
+      0.6328125,
+      0.029296875,
+      0.0205078125,
+      0.1982421875,
+      0.0027923583984375,
+      0.0101318359375,
+      0.06787109375,
+      0.0264892578125,
+      0.0859375,
+      0.2041015625,
+      0.033447265625,
+      0.1552734375,
+      0.0002288818359375,
+      0.018310546875,
+      0.05810546875,
+      0.023681640625,
+      0.6953125,
+      0.396484375,
+      0.59765625,
+      0.1708984375,
+      0.9375,
+      0.0283203125,
+      0.609375,
+      0.73046875,
+      6.341934204101562e-05,
+      0.6171875,
+      0.2158203125,
+      0.0031585693359375,
+      0.05029296875,
+      0.478515625,
+      0.000400543212890625,
+      0.0634765625,
+      0.0037994384765625,
+      0.01116943359375,
+      0.034423828125,
+      0.00738525390625,
+      0.00020313262939453125,
+      0.10546875,
+      0.00616455078125,
+      0.0025787353515625,
+      0.00482177734375
+    ],
+    "len": 56,
+    "num_tokens_generated": 56,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.05357142857142857,
+    "green_fraction": 1.0,
+    "z_score": 1.7320508075688774,
+    "p_value": 0.0416322583317752,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.294921875,
+      2.953125,
+      0.255859375,
+      0.435546875,
+      0.00144195556640625,
+      2.3125,
+      0.0751953125,
+      0.013916015625,
+      0.0198974609375,
+      1.3671875,
+      0.228515625,
+      0.69140625,
+      0.0498046875,
+      0.1328125,
+      0.259765625,
+      0.00153350830078125,
+      0.00750732421875,
+      0.00164031982421875,
+      0.0247802734375,
+      0.142578125,
+      0.033935546875,
+      1.671875,
+      0.5546875,
+      0.1396484375,
+      0.78125,
+      0.0002498626708984375,
+      0.76171875,
+      0.828125,
+      0.0703125,
+      0.09423828125,
+      1.140625,
+      0.00037384033203125,
+      0.012451171875,
+      0.16796875,
+      8.20159912109375e-05,
+      0.000171661376953125,
+      0.00396728515625,
+      1.265625
+    ],
+    "len": 38,
+    "num_tokens_generated": 38,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.13157894736842105,
+    "green_fraction": 0.2,
+    "z_score": -1.3416407864998738,
+    "p_value": 0.9101437525605001,
+    "prediction": false
+  }
+}

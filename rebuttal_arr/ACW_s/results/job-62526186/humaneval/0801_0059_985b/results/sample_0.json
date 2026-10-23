@@ -1,0 +1,349 @@
+{
+  "prompt": [
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\""
+  ],
+  "generations": [
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i - 1] < threshold:\n            return True\n    return False\n\n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n\n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n\n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n\n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n\n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i+1] - numbers[i] < threshold:\n            return True\n    return False\n        \n",
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\" \n    numbers.sort()\n    for i in range(1, len(numbers)):\n        if numbers[i] - numbers[i-1] < threshold:\n            return True\n    return False\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True\n    assert candidate([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False\n    assert candidate([1.0, 2.0, 5.9, 4.0, 5.0], 0.95) == True\n    assert candidate([1.0, 2.0, 5.9, 4.0, 5.0], 0.8) == False\n    assert candidate([1.0, 2.0, 3.0, 4.0, 5.0, 2.0], 0.1) == True\n    assert candidate([1.1, 2.2, 3.1, 4.1, 5.1], 1.0) == True\n    assert candidate([1.1, 2.2, 3.1, 4.1, 5.1], 0.5) == False\n\n\ncheck(has_close_elements)"
+  ],
+  "solution": [
+    "    for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(numbers):\n            if idx != idx2:\n                distance = abs(elem - elem2)\n                if distance < threshold:\n                    return True\n\n    return False\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.9375,
+      0.01519775390625,
+      2.515625,
+      1.2109375,
+      0.56640625,
+      0.208984375,
+      0.7578125,
+      0.44140625,
+      0.25,
+      0.0029754638671875,
+      0.6953125,
+      6.532669067382812e-05,
+      0.640625,
+      0.0004177093505859375,
+      0.024169921875,
+      0.0042724609375,
+      0.0810546875,
+      0.010009765625,
+      0.1796875,
+      0.54296875,
+      0.00017642974853515625,
+      0.671875,
+      0.0002613067626953125,
+      0.0079345703125,
+      0.0101318359375,
+      0.004241943359375,
+      0.00010013580322265625,
+      3.170967102050781e-05,
+      0.447265625,
+      0.01202392578125,
+      0.0859375,
+      0.005706787109375,
+      0.002349853515625,
+      0.0022125244140625,
+      0.15625,
+      0.007781982421875,
+      0.01025390625,
+      0.000270843505859375,
+      1.203125
+    ],
+    "len": 39,
+    "num_tokens_generated": 39,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.10256410256410256,
+    "green_fraction": 0.75,
+    "z_score": 1.0,
+    "p_value": 0.15865525393145707,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1806640625,
+      2.671875,
+      0.51171875,
+      1.1484375,
+      1.9140625,
+      0.4765625,
+      0.002349853515625,
+      0.0009765625,
+      0.388671875,
+      0.01416015625,
+      1.4921875,
+      2.921875,
+      1.234375,
+      0.296875,
+      0.29296875,
+      0.006500244140625,
+      0.0014495849609375,
+      0.000629425048828125,
+      0.002288818359375,
+      0.515625,
+      0.01422119140625,
+      0.1318359375,
+      1.109375,
+      0.95703125,
+      0.00075531005859375,
+      0.0004062652587890625,
+      0.71484375,
+      0.0098876953125,
+      0.84375,
+      0.059326171875,
+      0.0267333984375,
+      0.0189208984375,
+      0.10791015625,
+      0.001190185546875,
+      4.029273986816406e-05,
+      0.057373046875,
+      0.006591796875,
+      0.0299072265625,
+      0.0576171875,
+      0.5859375,
+      0.0057373046875,
+      0.0771484375,
+      0.003631591796875,
+      0.01031494140625,
+      0.001983642578125,
+      0.271484375,
+      0.026611328125,
+      0.007049560546875,
+      0.000553131103515625,
+      0.875
+    ],
+    "len": 50,
+    "num_tokens_generated": 50,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.1,
+    "green_fraction": 0.4,
+    "z_score": -0.4472135954999579,
+    "p_value": 0.6726395769907115,
+    "prediction": false
+  }
+}

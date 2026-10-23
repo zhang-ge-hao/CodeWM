@@ -1,0 +1,358 @@
+{
+  "prompt": [
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\""
+  ],
+  "generations": [
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(d) for d in str(x)), nums.index(x)))\n\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n",
+    "def order_by_points(nums):\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    >>> order_by_points([]) == []\n    \"\"\"  \n    return sorted(nums, key=lambda x: (sum(int(digit) for digit in str(x)), nums.index(x)))\n\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]\n    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]\n    assert candidate([]) == []\n    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]\n    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(order_by_points)"
+  ],
+  "solution": [
+    "    def digits_sum(n):\n        neg = 1\n        if n < 0: n, neg = -1 * n, -1 \n        n = [int(i) for i in str(n)]\n        n[0] = n[0] * neg\n        return sum(n)\n    return sorted(nums, key=digits_sum)\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: invalid literal for int() with base 10: '-'",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.765625,
+      0.2490234375,
+      1.796875,
+      0.0654296875,
+      0.52734375,
+      0.06494140625,
+      0.0002918243408203125,
+      0.04248046875,
+      0.3515625,
+      0.0986328125,
+      0.1064453125,
+      0.2451171875,
+      0.87890625,
+      0.052734375,
+      0.7890625,
+      0.002349853515625,
+      0.0033721923828125,
+      0.00010061264038085938,
+      5.841255187988281e-05,
+      0.00186920166015625,
+      0.5078125,
+      0.00531005859375,
+      0.00885009765625,
+      6.532669067382812e-05,
+      4.506111145019531e-05,
+      1.171875
+    ],
+    "len": 26,
+    "num_tokens_generated": 26,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.07692307692307693,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.302734375,
+      1.53125,
+      1.1328125,
+      0.0830078125,
+      1.1171875,
+      0.248046875,
+      0.0172119140625,
+      0.34765625,
+      1.03125,
+      1.8359375,
+      0.6484375,
+      0.5546875,
+      6.532669067382812e-05,
+      0.1689453125,
+      0.036376953125,
+      0.349609375,
+      0.00537109375,
+      0.000675201416015625,
+      0.1904296875,
+      1.015625,
+      0.84375,
+      0.000629425048828125,
+      0.00927734375,
+      0.07275390625,
+      0.10205078125,
+      0.98046875,
+      0.0257568359375,
+      0.0196533203125,
+      0.00023651123046875,
+      0.0008392333984375,
+      0.2421875,
+      0.0208740234375,
+      2.421875,
+      1.3046875,
+      0.427734375,
+      0.1396484375,
+      1.3984375,
+      0.00994873046875,
+      0.006988525390625,
+      0.002410888671875,
+      0.000518798828125,
+      0.1591796875,
+      0.0242919921875,
+      0.34375,
+      0.06787109375,
+      1.3125,
+      0.4453125,
+      0.0947265625,
+      0.388671875,
+      0.6875,
+      1.625,
+      0.1884765625,
+      0.2265625,
+      0.373046875,
+      0.89453125,
+      0.455078125,
+      0.58984375,
+      0.002532958984375,
+      1.2734375,
+      0.421875,
+      0.053466796875,
+      0.8046875,
+      1.1953125,
+      1.5859375,
+      0.70703125,
+      1.1484375,
+      0.00628662109375,
+      0.0026397705078125,
+      0.52734375,
+      0.00010633468627929688,
+      1.4543533325195312e-05,
+      1.796875
+    ],
+    "len": 72,
+    "num_tokens_generated": 72,
+    "num_tokens_scored": 10,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.1388888888888889,
+    "green_fraction": 0.3,
+    "z_score": -1.2649110640673518,
+    "p_value": 0.8970483946339658,
+    "prediction": false
+  }
+}

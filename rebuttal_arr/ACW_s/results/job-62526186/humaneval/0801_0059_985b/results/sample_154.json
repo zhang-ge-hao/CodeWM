@@ -1,0 +1,379 @@
+{
+  "prompt": [
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\""
+  ],
+  "generations": [
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    # for i in range(len(b)):\n    #     if b in a:\n    #         return True\n    #     b = b[1:] + b[0]\n    # return False\n\n    # solution\n    for i in range(len(b)):\n        b = b[1:] + b[0]\n        if b in a:\n            return True\n    return False\n\n    # solution using in operator\n    # return any(b in a for i in range(len(b)) for a in [b[i:] + b[:i] for b in [b]])\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            if b in a:\n                return True\n            else:\n                b = b[-1:] + b[:-1]\n        return False\n\n    pass\n\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    # for loop to rotate the second word and check if it's a substring of the first word\n    # if found, return True\n    # else return False\n\n    b = b + b\n    if (a in b):\n        return True\n    else:\n        return False",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            if b in a:\n                return True\n            else:\n                b = b[1:] + b[0]\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    a = str(a)\n    b = str(b)\n    if b in a:\n        return True\n    for i in range(len(b)):\n        b = b[-1] + b[:-1]\n        if b in a:\n            return True\n    return False\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    a = str(a)\n    b = str(b)\n    if b in a:\n        return True\n    for i in range(len(b)):\n        b = b[-1] + b[:-1]\n        if b in a:\n            return True\n    return False\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    a = list(a)\n    b = list(b)\n    for i in range(len(b)):\n        b.append(b.pop(0))\n        if b in a:\n            return True\n    return False\n\n    #return b in a\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated_b = b[i:] + b[:i]\n            if rotated_b in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            if b in a:\n                return True\n            else:\n                b = b[1:] + b[0]\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            if b in a:\n                return True\n            else:\n                b = b[-1:] + b[:-1]\n        return False\n\n    pass\n\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            if b in a:\n                return True\n            else:\n                b = b[1:] + b[0]\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            rotated = b[i:] + b[:i]\n            if rotated in a:\n                return True\n        return False\n\n    pass\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            if b in a:\n                return True\n            else:\n                b = b[-1:] + b[:-1]\n        return False\n\n    pass\n\n",
+    "def cycpattern_check(a , b):\n    \"\"\"You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word\n    cycpattern_check(\"abcd\",\"abd\") => False\n    cycpattern_check(\"hello\",\"ell\") => True\n    cycpattern_check(\"whassup\",\"psus\") => False\n    cycpattern_check(\"abab\",\"baa\") => True\n    cycpattern_check(\"efef\",\"eeff\") => False\n    cycpattern_check(\"himenss\",\"simen\") => True\n\n    \"\"\"\n\n\n    # Your code here\n    if len(a) != len(b):\n        return False\n    else:\n        for i in range(len(b)):\n            b = b[-1:] + b[:-1]\n            if b in a:\n                return True\n        return False\n\n    pass\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    #assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n\n    # Check some edge cases that are easy to work out by hand.\n    #assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert  candidate(\"xyzw\",\"xyw\") == False , \"test #0\"\n    assert  candidate(\"yello\",\"ell\") == True , \"test #1\"\n    assert  candidate(\"whattup\",\"ptut\") == False , \"test #2\"\n    assert  candidate(\"efef\",\"fee\") == True , \"test #3\"\n    assert  candidate(\"abab\",\"aabb\") == False , \"test #4\"\n    assert  candidate(\"winemtt\",\"tinem\") == True , \"test #5\"\n\n\ncheck(cycpattern_check)"
+  ],
+  "solution": [
+    "    l = len(b)\n    pat = b + b\n    for i in range(len(a) - l + 1):\n        for j in range(l + 1):\n            if a[i:i+l] == pat[j:j+l]:\n                return True\n    return False\n"
+  ],
+  "metrics": {
+    "pass@1": 0.15000000000000002,
+    "pass@10": 0.8947368421052632,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: test #1",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.171875,
+      0.51171875,
+      2.640625,
+      5.3125,
+      0.671875,
+      0.85546875,
+      0.9296875,
+      0.109375,
+      2.75,
+      1.3984375,
+      0.490234375,
+      0.5859375,
+      1.234375,
+      0.045166015625,
+      0.002197265625,
+      0.3828125,
+      0.1474609375,
+      0.029296875,
+      0.031494140625,
+      1.0625,
+      0.0303955078125,
+      2.46875,
+      0.251953125,
+      0.05419921875,
+      2.046875,
+      0.69921875,
+      0.0234375,
+      0.039306640625,
+      0.47265625,
+      0.314453125,
+      0.2392578125,
+      0.05224609375,
+      1.5546875,
+      1.078125,
+      0.04150390625,
+      0.0830078125,
+      0.09521484375,
+      0.002197265625,
+      0.0033721923828125,
+      0.06103515625,
+      0.00811767578125,
+      0.15234375,
+      0.022705078125,
+      0.07666015625,
+      0.0023040771484375,
+      0.00154876708984375,
+      0.0030364990234375,
+      0.07470703125,
+      0.014404296875,
+      0.006378173828125,
+      0.00115966796875,
+      0.25390625,
+      0.44921875,
+      0.09521484375,
+      0.001983642578125,
+      1.4453125,
+      2.078125,
+      1.3046875,
+      1.421875
+    ],
+    "len": 59,
+    "num_tokens_generated": 59,
+    "num_tokens_scored": 13,
+    "num_green_tokens": 12,
+    "watermarking_fraction": 0.22033898305084745,
+    "green_fraction": 0.9230769230769231,
+    "z_score": 3.05085107923876,
+    "p_value": 0.0011409686266577242,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.328125,
+      3.09375,
+      1.171875,
+      0.578125,
+      0.6875,
+      0.359375,
+      0.11865234375,
+      2.125,
+      1.140625,
+      0.462890625,
+      1.390625,
+      0.0284423828125,
+      0.71875,
+      0.00433349609375,
+      1.09375,
+      0.322265625,
+      0.01513671875,
+      0.0159912109375,
+      1.1328125,
+      0.0098876953125,
+      1.0390625,
+      0.03369140625,
+      0.1923828125,
+      0.197265625,
+      0.0986328125,
+      0.001922607421875,
+      0.169921875,
+      0.07568359375,
+      0.365234375,
+      0.3125,
+      0.00274658203125,
+      0.00189208984375,
+      1.1015625,
+      0.240234375,
+      0.23828125,
+      0.004669189453125,
+      0.09033203125,
+      0.02490234375,
+      0.875,
+      0.94921875,
+      0.7109375,
+      1.453125,
+      0.7265625,
+      0.119140625,
+      0.6640625,
+      0.2333984375,
+      0.0289306640625,
+      0.01226806640625,
+      0.091796875,
+      0.181640625,
+      0.00787353515625,
+      0.1953125,
+      0.05126953125,
+      0.053955078125,
+      0.00994873046875,
+      0.328125,
+      0.08154296875,
+      0.02587890625,
+      0.00136566162109375,
+      1.296875
+    ],
+    "len": 60,
+    "num_tokens_generated": 60,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.08333333333333333,
+    "green_fraction": 0.8,
+    "z_score": 1.3416407864998738,
+    "p_value": 0.08985624743949988,
+    "prediction": false
+  }
+}

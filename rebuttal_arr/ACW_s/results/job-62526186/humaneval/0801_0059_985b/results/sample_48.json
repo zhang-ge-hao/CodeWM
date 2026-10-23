@@ -1,0 +1,315 @@
+{
+  "prompt": [
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\""
+  ],
+  "generations": [
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = re.sub('[^a-z0-9]', '', text)\n    return text == text[::-1]",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = re.sub('[^a-z0-9]', '', text)\n    return text == text[::-1]",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = re.sub('[^a-z0-9]', '', text)\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = re.sub('[^a-z0-9]', '', text)\n    return text == text[::-1]",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = text.replace(' ', '')\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = re.sub('[^a-z0-9]', '', text)\n    return text == text[::-1]\n",
+    "def is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\" \n    text = text.lower()\n    text = re.sub('[^a-z0-9]', '', text)\n    return text == text[::-1]\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('') == True\n    assert candidate('aba') == True\n    assert candidate('aaaaa') == True\n    assert candidate('zbcd') == False\n    assert candidate('xywyx') == True\n    assert candidate('xywyz') == False\n    assert candidate('xywzx') == False\n\n\ncheck(is_palindrome)"
+  ],
+  "solution": [
+    "    for i in range(len(text)):\n        if text[i] != text[len(text) - 1 - i]:\n            return False\n    return True\n"
+  ],
+  "metrics": {
+    "pass@1": 0.7,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 're' is not defined",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.96875,
+      0.017333984375,
+      2.21875,
+      0.33203125,
+      0.6328125,
+      0.439453125,
+      0.86328125,
+      0.0732421875,
+      2.609375,
+      0.419921875,
+      1.3125,
+      0.255859375,
+      0.68359375,
+      0.298828125,
+      0.765625,
+      0.390625,
+      1.4921875,
+      0.03955078125,
+      0.03369140625,
+      0.0108642578125,
+      0.006195068359375,
+      3.457069396972656e-05,
+      1.2109375
+    ],
+    "len": 23,
+    "num_tokens_generated": 23,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.2608695652173913,
+    "green_fraction": 0.6666666666666666,
+    "z_score": 0.8164965809277261,
+    "p_value": 0.2071080891212626,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.162109375,
+      2.34375,
+      1.46875,
+      0.2421875,
+      0.06591796875,
+      0.494140625,
+      0.0118408203125,
+      0.91015625,
+      0.03466796875,
+      0.95703125,
+      0.267578125,
+      0.046875,
+      0.279296875,
+      0.078125,
+      0.00372314453125,
+      0.796875,
+      0.00116729736328125,
+      0.69921875,
+      0.00787353515625,
+      0.77734375,
+      0.0014190673828125,
+      0.0137939453125,
+      0.068359375,
+      0.033203125,
+      0.00653076171875,
+      0.006011962890625,
+      0.0031890869140625,
+      0.28515625,
+      0.044677734375,
+      0.01708984375,
+      0.00060272216796875,
+      1.0859375
+    ],
+    "len": 32,
+    "num_tokens_generated": 32,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.0625,
+    "green_fraction": 0.0,
+    "z_score": -1.414213562373095,
+    "p_value": 0.9213503964748574,
+    "prediction": false
+  }
+}

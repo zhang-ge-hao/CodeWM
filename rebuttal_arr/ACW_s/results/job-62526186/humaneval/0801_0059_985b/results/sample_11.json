@@ -1,0 +1,328 @@
+{
+  "prompt": [
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\""
+  ],
+  "generations": [
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n",
+    "from typing import List\n\n\ndef string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\" \n    return ''.join(str(int(a[i]) ^ int(b[i])) for i in range(len(a)))\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate('111000', '101010') == '010010'\n    assert candidate('1', '1') == '0'\n    assert candidate('0101', '0000') == '0101'\n\ncheck(string_xor)"
+  ],
+  "solution": [
+    "    def xor(i, j):\n        if i == j:\n            return '0'\n        else:\n            return '1'\n\n    return ''.join(xor(x, y) for x, y in zip(a, b))\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.078125,
+      0.0220947265625,
+      2.3125,
+      0.671875,
+      0.00017452239990234375,
+      0.7734375,
+      0.021728515625,
+      0.486328125,
+      0.0361328125,
+      0.0103759765625,
+      0.032958984375,
+      0.000835418701171875,
+      0.0001392364501953125,
+      3.4332275390625e-05,
+      0.00439453125,
+      0.021728515625,
+      0.0003299713134765625,
+      0.0001888275146484375,
+      0.0002269744873046875,
+      0.0869140625,
+      0.023193359375,
+      0.80859375
+    ],
+    "len": 22,
+    "num_tokens_generated": 22,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.09090909090909091,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.10302734375,
+      2.25,
+      2.625,
+      3.3125,
+      0.8671875,
+      0.07177734375,
+      0.080078125,
+      0.03271484375,
+      0.98828125,
+      0.177734375,
+      0.140625,
+      0.671875,
+      0.1982421875,
+      0.0037841796875,
+      0.00836181640625,
+      0.8203125,
+      0.000652313232421875,
+      0.0244140625,
+      0.0008544921875,
+      0.6640625,
+      0.020751953125,
+      0.001434326171875,
+      0.000942230224609375,
+      0.001953125,
+      2.5987625122070312e-05,
+      0.6015625,
+      0.0016326904296875,
+      1.7109375,
+      0.48046875,
+      9.775161743164062e-05,
+      0.78125,
+      0.00112152099609375,
+      1.59375,
+      0.076171875,
+      0.000370025634765625,
+      0.08154296875,
+      0.00274658203125,
+      0.29296875,
+      0.0031585693359375,
+      2.002716064453125e-05,
+      6.914138793945312e-05,
+      0.000858306884765625,
+      0.01275634765625,
+      0.002716064453125,
+      0.000690460205078125,
+      0.369140625
+    ],
+    "len": 46,
+    "num_tokens_generated": 46,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.10869565217391304,
+    "green_fraction": 0.4,
+    "z_score": -0.4472135954999579,
+    "p_value": 0.6726395769907115,
+    "prediction": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/TimeLovercc/code-watermark",
+  "commit": "4291a8e07abda0bc20560626f98340a90059be67",
+  "commit_date": "2025-10-01T23:17:01-04:00",
+  "files": {
+    "upstream/models/sweetcode.py": "sha256:5d5c61bebecda097f90b154c0a1089a39cef46531f6c28b20afae9681bb034bc",
+    "upstream/models/wllm.py": "sha256:b55df87efb872c3cbb1f8257f0a9c652f5760d9af0d365d2e5a7bc96941c9bda",
+    "upstream/src/main.py": "sha256:d74b2b1d0b2e30ea44be72d4aa2d65cee13ba538086194ac63a0d1c4e94d1a3a",
+    "upstream/src/utils.py": "sha256:c464b1fff5a428b48a19dd85bf739c85888fd5c38507d19d298a55339e63e938",
+    "upstream/src/datahelper.py": "sha256:d19fa6d03d122d22bcdc265ea7bf7683fd6b43deb4fdf39e27d5506a4eef485e"
+  },
+  "license_note": "The upstream repository did not include a LICENSE file at this commit. The snapshot is vendored here solely for experiment reproducibility."
+}

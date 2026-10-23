@@ -1,0 +1,367 @@
+{
+  "prompt": [
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    '''"
+  ],
+  "generations": [
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n    return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n        else:\n            return False\n    else:\n        return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n    return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n        else:\n            return False\n    else:\n        return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n    return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (x == z + y) or (y == x + z) or (y == z + x) or (z == x + y) or (z == y + x)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n    return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (x == z + y) or (y == x + z) or (y == z + x) or (z == x + y) or (z == y + x)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (x == z + y) or (y == x + z) or (y == z + x) or (z == x + y) or (z == y + x)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n        else:\n            return False\n    else:\n        return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n        else:\n            return False\n    else:\n        return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n    return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        if x == y + z or y == x + z or z == x + y:\n            return True\n        else:\n            return False\n    else:\n        return False\n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y)\n    \n",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y) or (x != int(x)) or (y != int(y)) or (z != int(z))\n    ",
+    "def any_int(x, y, z):\n    '''\n    Create a function that takes 3 numbers.\n    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.\n    Returns false in any other cases.\n    \n    Examples\n    any_int(5, 2, 7) \u279e True\n    \n    any_int(3, 2, 2) \u279e False\n\n    any_int(3, -2, 1) \u279e True\n    \n    any_int(3.6, -2.2, 2) \u279e False\n  \n\n    \n    ''' \n    # your code here\n    return (x == y + z) or (y == x + z) or (z == x + y)\n    \n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(2, 3, 1)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(2.5, 2, 3)==False, \"This prints if this assert fails 2 (good for debugging!)\"\n    assert candidate(1.5, 5, 3.5)==False, \"This prints if this assert fails 3 (good for debugging!)\"\n    assert candidate(2, 6, 2)==False, \"This prints if this assert fails 4 (good for debugging!)\"\n    assert candidate(4, 2, 2)==True, \"This prints if this assert fails 5 (good for debugging!)\"\n    assert candidate(2.2, 2.2, 2.2)==False, \"This prints if this assert fails 6 (good for debugging!)\"\n    assert candidate(-4, 6, 2)==True, \"This prints if this assert fails 7 (good for debugging!)\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(2,1,1)==True, \"This prints if this assert fails 8 (also good for debugging!)\"\n    assert candidate(3,4,7)==True, \"This prints if this assert fails 9 (also good for debugging!)\"\n    assert candidate(3.0,4,7)==False, \"This prints if this assert fails 10 (also good for debugging!)\"\n\n\ncheck(any_int)"
+  ],
+  "solution": [
+    "    \n    if isinstance(x,int) and isinstance(y,int) and isinstance(z,int):\n        if (x+y==z) or (x+z==y) or (y+z==x):\n            return True\n        return False\n    return False\n"
+  ],
+  "metrics": {
+    "pass@1": 0.4999999999999999,
+    "pass@10": 0.9999945874558878,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 2 (good for debugging!)",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 3 (good for debugging!)",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.609375,
+      0.26953125,
+      2.09375,
+      4.0625,
+      0.0242919921875,
+      0.310546875,
+      0.78125,
+      0.392578125,
+      1.71875,
+      1.796875,
+      0.0303955078125,
+      0.296875,
+      0.0230712890625,
+      0.01177978515625,
+      0.057373046875,
+      0.0208740234375,
+      0.0033111572265625,
+      0.0220947265625,
+      0.00054168701171875,
+      0.0033111572265625,
+      0.006744384765625,
+      0.009521484375,
+      0.0012664794921875,
+      0.0069580078125,
+      0.000522613525390625,
+      0.21484375,
+      0.107421875,
+      0.51953125,
+      0.44140625,
+      0.6171875,
+      0.33203125,
+      0.56640625,
+      0.0031585693359375,
+      0.1435546875,
+      0.51171875,
+      0.00933837890625,
+      0.15234375,
+      0.003997802734375,
+      0.000942230224609375,
+      0.0054931640625,
+      0.006439208984375,
+      0.003173828125,
+      0.14453125,
+      0.00372314453125,
+      0.03173828125,
+      0.05517578125,
+      0.023681640625,
+      0.0267333984375,
+      0.00537109375,
+      0.205078125,
+      0.70703125,
+      0.0037841796875,
+      0.000453948974609375,
+      1.265625
+    ],
+    "len": 54,
+    "num_tokens_generated": 54,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.1111111111111111,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.46484375,
+      0.05859375,
+      1.9375,
+      1.71875,
+      0.0289306640625,
+      0.267578125,
+      0.033935546875,
+      0.11474609375,
+      0.033447265625,
+      0.006988525390625,
+      0.287109375,
+      0.0076904296875,
+      0.0245361328125,
+      0.0194091796875,
+      0.0050048828125,
+      0.06396484375,
+      0.251953125,
+      0.3671875,
+      0.75390625,
+      0.51953125,
+      0.0262451171875,
+      1.28125,
+      0.03125,
+      0.0140380859375,
+      0.408203125,
+      0.2109375,
+      0.058349609375,
+      0.375,
+      0.10693359375,
+      0.000713348388671875,
+      0.033447265625,
+      0.0089111328125,
+      0.004730224609375,
+      0.0693359375,
+      0.0289306640625,
+      0.197265625,
+      0.00010204315185546875,
+      2.5987625122070312e-05,
+      0.0245361328125,
+      0.0015716552734375,
+      0.16015625,
+      0.0634765625,
+      0.037841796875,
+      0.0140380859375,
+      0.3046875,
+      0.5,
+      0.1484375,
+      0.0020904541015625,
+      0.48046875,
+      0.049560546875,
+      0.6640625,
+      0.1220703125,
+      1.3671875
+    ],
+    "len": 53,
+    "num_tokens_generated": 53,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.07547169811320754,
+    "green_fraction": 0.25,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

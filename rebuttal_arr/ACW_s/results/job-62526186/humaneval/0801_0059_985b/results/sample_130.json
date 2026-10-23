@@ -1,0 +1,477 @@
+{
+  "prompt": [
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\""
+  ],
+  "generations": [
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        else:\n            trib = [3, 1]\n            for i in range(2, n):\n                if i % 2 == 0:\n                    trib.append(1 + i / 2)\n                else:\n                    trib.append(trib[i - 1] + trib[i - 2] + trib[i + 1])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri_helper(n, tri_dict):\n        if n == 0:\n            return 0\n        elif n == 1:\n            return 1\n        elif n == 2:\n            return 2\n        elif n in tri_dict:\n            return tri_dict[n]\n        else:\n            tri_dict[n] = tri_helper(n - 1, tri_dict) + tri_helper(n - 2, tri_dict) + tri_helper(n - 3, tri_dict)\n            return tri_dict[n]\n    tri_dict = {0: 0, 1: 1, 2: 2}\n    tri_sequence = [tri_helper(i, tri_dict) for i in range(n + 1)]\n    return tri_sequence",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [1]\n        elif n == 2:\n            return [1, 3]\n        else:\n            trib = [1, 3]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri_helper(n, tri):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [1]\n        elif n == 2:\n            return [1, 3]\n        elif n == 3:\n            return [1, 3, 2, 8]\n        else:\n            tri.append(1)\n            tri.append(3)\n            if n % 2 == 0:\n                tri.append(1)\n                tri_helper(n - 3, tri)\n            else:\n                tri_helper(n - 2, tri)\n                tri_helper(n + 1, tri)\n            return tri\n\n    tri = []\n    return tri_helper(n, tri)\n    ",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri_helper(n, tri_dict):\n        if n == 0:\n            return 0\n        elif n == 1:\n            return 1\n        elif n in tri_dict:\n            return tri_dict[n]\n        else:\n            tri_dict[n] = tri_helper(n - 1, tri_dict) + tri_helper(n - 2, tri_dict) + tri_helper(n + 1, tri_dict)\n            return tri_dict[n]\n\n    tri_dict = {}\n    return [tri_helper(i, tri_dict) for i in range(n + 1)]",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri_helper(n):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        else:\n            trib = [3, 1]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n\n    return tri_helper(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 2]\n        elif n == 3:\n            return [3, 2, 8]\n        else:\n            trib = [3, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri_helper(n):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [1]\n        elif n == 2:\n            return [1, 3]\n        else:\n            trib = [1, 3]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri_helper(n)\n    ",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri_helper(n):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [1]\n        elif n == 2:\n            return [1, 3]\n        else:\n            trib = [1, 3]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri_helper(n)\n    ",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 1]\n        elif n == 3:\n            return [3, 1, 2, 8]\n        else:\n            trib = [3, 1, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 1:\n            return [3]\n        elif n == 2:\n            return [3, 2]\n        elif n == 3:\n            return [3, 2, 8]\n        else:\n            trib = [3, 2, 8]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)",
+    "def tri(n):\n    \"\"\"Everyone knows Fibonacci sequence, it was studied deeply by mathematicians in \n    the last couple centuries. However, what people don't know is Tribonacci sequence.\n    Tribonacci sequence is defined by the recurrence:\n    tri(1) = 3\n    tri(n) = 1 + n / 2, if n is even.\n    tri(n) =  tri(n - 1) + tri(n - 2) + tri(n + 1), if n is odd.\n    For example:\n    tri(2) = 1 + (2 / 2) = 2\n    tri(4) = 3\n    tri(3) = tri(2) + tri(1) + tri(4)\n           = 2 + 3 + 3 = 8 \n    You are given a non-negative integer number n, you have to a return a list of the \n    first n + 1 numbers of the Tribonacci sequence.\n    Examples:\n    tri(3) = [1, 3, 2, 8]\n    \"\"\" \n    def tri(n):\n        if n == 0:\n            return []\n        elif n == 1:\n            return [1]\n        elif n == 2:\n            return [1, 3]\n        else:\n            trib = [1, 3]\n            while len(trib) < n + 1:\n                trib.append(trib[-1] + trib[-2] + trib[-3])\n            return trib\n    return tri(n)"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    \n    assert candidate(3) == [1, 3, 2.0, 8.0]\n    assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]\n    assert candidate(5) == [1, 3, 2.0, 8.0, 3.0, 15.0]\n    assert candidate(6) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0]\n    assert candidate(7) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0]\n    assert candidate(8) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0]\n    assert candidate(9) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0]\n    assert candidate(20) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0, 8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(0) == [1]\n    assert candidate(1) == [1, 3]\n\ncheck(tri)"
+  ],
+  "solution": [
+    "    if n == 0:\n        return [1]\n    my_tri = [1, 3]\n    for i in range(2, n + 1):\n        if i % 2 == 0:\n            my_tri.append(i / 2 + 1)\n        else:\n            my_tri.append(my_tri[i - 1] + my_tri[i - 2] + (i + 3) / 2)\n    return my_tri\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: maximum recursion depth exceeded in comparison",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: list index out of range",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.34375,
+      0.059326171875,
+      2.65625,
+      3.453125,
+      3.328125,
+      0.59765625,
+      0.1484375,
+      1.2421875,
+      0.1630859375,
+      1.109375,
+      0.0263671875,
+      0.70703125,
+      0.640625,
+      0.021240234375,
+      0.052734375,
+      0.953125,
+      0.0341796875,
+      0.91796875,
+      0.005584716796875,
+      0.2255859375,
+      0.0179443359375,
+      0.006103515625,
+      0.2431640625,
+      0.00360107421875,
+      0.01031494140625,
+      0.032958984375,
+      1.0625,
+      0.076171875,
+      0.018310546875,
+      0.314453125,
+      0.00384521484375,
+      0.0810546875,
+      0.00604248046875,
+      0.00101470947265625,
+      0.03466796875,
+      0.0035552978515625,
+      0.00194549560546875,
+      0.0118408203125,
+      0.52734375,
+      0.01220703125,
+      0.1875,
+      0.71875,
+      0.2060546875,
+      0.11328125,
+      1.3359375,
+      0.1181640625,
+      0.01123046875,
+      3.328125,
+      1.3125,
+      0.306640625,
+      0.158203125,
+      0.12451171875,
+      0.04345703125,
+      0.0137939453125,
+      0.5234375,
+      0.0341796875,
+      1.4765625,
+      0.62109375,
+      0.0017242431640625,
+      0.01007080078125,
+      0.482421875,
+      0.07421875,
+      0.11572265625,
+      0.00872802734375,
+      0.8671875,
+      0.011962890625,
+      0.9296875,
+      0.2099609375,
+      0.1728515625,
+      0.0019683837890625,
+      0.010986328125,
+      0.07421875,
+      0.006439208984375,
+      0.049072265625,
+      0.09521484375,
+      0.01312255859375,
+      0.1279296875,
+      0.123046875,
+      1.0234375,
+      0.796875,
+      0.23046875,
+      0.87109375,
+      0.6484375,
+      0.0029296875,
+      0.000133514404296875,
+      0.05126953125,
+      0.00726318359375,
+      0.00860595703125,
+      0.045166015625,
+      0.0025482177734375,
+      0.1904296875,
+      0.177734375,
+      0.04638671875,
+      0.00054168701171875,
+      0.71484375,
+      0.4296875,
+      0.0035247802734375,
+      0.0927734375,
+      0.0025787353515625,
+      0.00445556640625,
+      0.01043701171875,
+      0.000732421875,
+      0.00555419921875,
+      0.00518798828125,
+      0.000652313232421875,
+      0.0019073486328125,
+      0.00396728515625,
+      0.4296875,
+      0.005828857421875,
+      0.1240234375,
+      0.001495361328125,
+      0.00021839141845703125,
+      0.62109375,
+      0.171875,
+      0.10400390625,
+      0.003662109375,
+      1.421875,
+      0.48828125,
+      0.451171875,
+      0.029296875,
+      0.052734375,
+      1.203125
+    ],
+    "len": 122,
+    "num_tokens_generated": 122,
+    "num_tokens_scored": 11,
+    "num_green_tokens": 9,
+    "watermarking_fraction": 0.09016393442622951,
+    "green_fraction": 0.8181818181818182,
+    "z_score": 2.1105794120443453,
+    "p_value": 0.017404239405933563,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.28125,
+      2.59375,
+      0.24609375,
+      1.328125,
+      0.0277099609375,
+      0.25390625,
+      0.55859375,
+      0.0537109375,
+      0.032470703125,
+      0.859375,
+      0.85546875,
+      0.6953125,
+      0.3203125,
+      1.8671875,
+      1.578125,
+      0.39453125,
+      0.2197265625,
+      0.361328125,
+      0.9765625,
+      0.193359375,
+      0.302734375,
+      0.8515625,
+      0.15234375,
+      2.09375,
+      0.5390625,
+      0.003814697265625,
+      0.0118408203125,
+      0.30078125,
+      0.2158203125,
+      0.11767578125,
+      0.042236328125,
+      1.046875,
+      0.004669189453125,
+      0.0179443359375,
+      0.0732421875,
+      0.029296875,
+      0.984375,
+      0.24609375,
+      0.158203125,
+      0.001434326171875,
+      0.0274658203125,
+      0.115234375,
+      0.008056640625,
+      0.041748046875,
+      0.09423828125,
+      0.01348876953125,
+      0.435546875,
+      0.000919342041015625,
+      0.10595703125,
+      1.625,
+      0.5625,
+      0.0029449462890625,
+      0.00037384033203125,
+      0.06640625,
+      0.78515625,
+      0.53125,
+      0.1533203125,
+      0.0869140625,
+      0.044189453125,
+      0.06298828125,
+      0.0050048828125,
+      0.435546875,
+      0.000324249267578125,
+      0.298828125,
+      0.051513671875,
+      1.564621925354004e-06,
+      0.76171875,
+      0.306640625,
+      0.00518798828125,
+      0.251953125,
+      0.0033111572265625,
+      0.0054931640625,
+      0.00958251953125,
+      1.4007091522216797e-06,
+      0.00180816650390625,
+      0.007720947265625,
+      0.007171630859375,
+      0.002593994140625,
+      0.01324462890625,
+      0.01129150390625,
+      1.140625,
+      0.87890625,
+      0.0859375,
+      0.000682830810546875,
+      0.033935546875,
+      0.9921875,
+      0.84765625,
+      0.030517578125,
+      0.0086669921875,
+      0.53125,
+      0.1953125,
+      0.0235595703125,
+      0.0255126953125,
+      4.26173210144043e-06,
+      1.4453125
+    ],
+    "len": 95,
+    "num_tokens_generated": 95,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.07368421052631578,
+    "green_fraction": 0.5714285714285714,
+    "z_score": 0.3779644730092272,
+    "p_value": 0.3527284930556367,
+    "prediction": false
+  }
+}

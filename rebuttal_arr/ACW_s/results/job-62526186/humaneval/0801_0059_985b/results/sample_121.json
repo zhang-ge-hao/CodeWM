@@ -1,0 +1,331 @@
+{
+  "prompt": [
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\""
+  ],
+  "generations": [
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass\n",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    #return sum(x for i, x in enumerate(lst) if x % 2 != 0 and i % 2 == 0)\n    ",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass",
+    "def solution(lst):\n    \"\"\"Given a non-empty list of integers, return the sum of all of the odd elements that are in even positions.\n    \n\n    Examples\n    solution([5, 8, 7, 1]) ==> 12\n    solution([3, 3, 3, 3, 3]) ==> 9\n    solution([30, 13, 24, 321]) ==>0\n    \"\"\" \n    total = 0\n    for i in range(0, len(lst), 2):\n        if lst[i] % 2 != 0:\n            total += lst[i]\n    return total\n    pass"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([5, 8, 7, 1])    == 12\n    assert candidate([3, 3, 3, 3, 3]) == 9\n    assert candidate([30, 13, 24, 321]) == 0\n    assert candidate([5, 9]) == 5\n    assert candidate([2, 4, 8]) == 0\n    assert candidate([30, 13, 23, 32]) == 23\n    assert candidate([3, 13, 2, 9]) == 3\n\n    # Check some edge cases that are easy to work out by hand.\n\n\ncheck(solution)"
+  ],
+  "solution": [
+    "    return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.1484375,
+      0.043701171875,
+      2.265625,
+      0.46875,
+      0.037109375,
+      0.00012302398681640625,
+      0.4453125,
+      0.004669189453125,
+      0.14453125,
+      0.8671875,
+      0.248046875,
+      0.00714111328125,
+      0.326171875,
+      0.53125,
+      0.5859375,
+      0.007415771484375,
+      0.00014781951904296875,
+      0.1806640625,
+      0.03076171875,
+      0.000278472900390625,
+      0.296875,
+      0.050537109375,
+      0.0654296875,
+      0.08251953125,
+      0.00018787384033203125,
+      0.000583648681640625,
+      0.01214599609375,
+      0.00787353515625,
+      0.0001277923583984375,
+      0.27734375,
+      0.0108642578125,
+      0.000156402587890625,
+      0.2216796875,
+      0.026123046875,
+      0.01324462890625,
+      0.04736328125,
+      0.00921630859375,
+      4.673004150390625e-05,
+      0.1591796875,
+      0.091796875,
+      0.0025787353515625,
+      0.0113525390625,
+      1.1015625,
+      3.140625,
+      0.8828125
+    ],
+    "len": 45,
+    "num_tokens_generated": 45,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.044444444444444446,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.3046875,
+      2.203125,
+      0.0069580078125,
+      1.84375,
+      1.921875,
+      0.10888671875,
+      0.48046875,
+      0.107421875,
+      0.0034027099609375,
+      0.00042724609375,
+      8.58306884765625e-05,
+      0.0034637451171875,
+      0.034912109375,
+      0.00244140625,
+      0.77734375,
+      0.091796875,
+      0.003387451171875,
+      0.671875,
+      0.076171875,
+      0.00799560546875,
+      0.01043701171875,
+      0.60546875,
+      6.103515625e-05,
+      0.96484375,
+      0.000820159912109375,
+      1.03125
+    ],
+    "len": 26,
+    "num_tokens_generated": 26,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.11538461538461539,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -0.5773502691896258,
+    "p_value": 0.7181485691746134,
+    "prediction": false
+  }
+}

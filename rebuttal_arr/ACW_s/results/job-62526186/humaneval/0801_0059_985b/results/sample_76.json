@@ -1,0 +1,367 @@
+{
+  "prompt": [
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\""
+  ],
+  "generations": [
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == 0:\n        return False\n    elif x < 0:\n        return False\n    elif x % n == 0:\n        return is_simple_power(x//n, n)\n    else:\n        return False",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    x_root = x ** (1.0 / n)\n    return x_root.is_integer() and x == n ** int(x_root)\n    ",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == 0:\n        return False\n    elif x < 0:\n        return False\n    elif x % n == 0:\n        return is_simple_power(x/n, n)\n    else:\n        return False",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == 0:\n        return False\n    elif x < 0:\n        return False\n    elif x % n == 0:\n        return is_simple_power(x//n, n)\n    else:\n        return False",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    x_root = x ** (1.0 / n)\n    return x_root.is_integer() and x == n ** int(x_root)\n\n",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == 0:\n        return False\n    elif x < 0:\n        return False\n    elif x % n == 0:\n        return is_simple_power(x/n, n)\n    else:\n        return False",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    x_root = x ** (1.0 / n)\n    return x_root.is_integer() and x == n ** int(x_root)\n    ",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    pass\n",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == 0:\n        return False\n    elif x < 0:\n        return False\n    elif x % n == 0:\n        return is_simple_power(x//n, n)\n    else:\n        return False",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here",
+    "def is_simple_power(x, n):\n    \"\"\"Your task is to write a function that returns true if a number x is a simple\n    power of n and false in other cases.\n    x is a simple power of n if n**int=x\n    For example:\n    is_simple_power(1, 4) => true\n    is_simple_power(2, 2) => true\n    is_simple_power(8, 2) => true\n    is_simple_power(3, 2) => false\n    is_simple_power(3, 1) => false\n    is_simple_power(5, 3) => false\n    \"\"\" \n    if x == 1:\n        return True\n    elif x == n**int:\n        return True\n    else:\n        return False\n    # Your code here"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(16, 2)== True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(143214, 16)== False, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(4, 2)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(9, 3)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(16, 4)==True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(24, 2)==False, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(128, 4)==False, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(12, 6)==False, \"This prints if this assert fails 1 (good for debugging!)\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1, 1)==True, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(1, 12)==True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(is_simple_power)"
+  ],
+  "solution": [
+    "    if (n == 1): \n        return (x == 1) \n    power = 1\n    while (power < x): \n        power = power * n \n    return (power == x) \n"
+  ],
+  "metrics": {
+    "pass@1": 0.25,
+    "pass@10": 0.9837461300309598,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: unsupported operand type(s) for ** or pow(): 'int' and 'type'",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.546875,
+      0.06640625,
+      2.71875,
+      0.8828125,
+      0.921875,
+      0.1650390625,
+      0.0546875,
+      1.125,
+      0.041015625,
+      0.072265625,
+      0.1455078125,
+      0.46875,
+      0.002593994140625,
+      2.296875,
+      0.53125,
+      1.328125,
+      0.70703125,
+      0.58984375,
+      0.42578125,
+      0.0026397705078125,
+      0.0361328125,
+      0.59375,
+      0.234375,
+      0.0021514892578125,
+      1.8125,
+      0.65625,
+      0.875,
+      0.1259765625,
+      0.44921875,
+      0.78125,
+      0.00494384765625,
+      0.322265625,
+      0.1015625,
+      0.2138671875,
+      0.00213623046875,
+      1.4765625,
+      0.78515625,
+      0.9453125,
+      0.302734375,
+      0.69140625,
+      0.005218505859375,
+      0.0006866455078125,
+      0.216796875,
+      0.004974365234375,
+      0.91796875,
+      0.734375,
+      0.01123046875,
+      0.00058746337890625,
+      0.1376953125,
+      1.375,
+      0.004150390625,
+      0.08642578125,
+      0.002410888671875,
+      0.08154296875,
+      0.0247802734375,
+      0.29296875,
+      0.06494140625,
+      0.00433349609375,
+      0.0145263671875,
+      0.00909423828125
+    ],
+    "len": 60,
+    "num_tokens_generated": 60,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.11666666666666667,
+    "green_fraction": 1.0,
+    "z_score": 2.6457513110645903,
+    "p_value": 0.00407548579675135,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.189453125,
+      2.78125,
+      0.8203125,
+      0.7109375,
+      1.546875,
+      0.1376953125,
+      0.361328125,
+      1.4609375,
+      1.0234375,
+      0.10400390625,
+      0.38671875,
+      1.421875,
+      0.109375,
+      0.55078125,
+      0.05078125,
+      0.008056640625,
+      0.96875,
+      1.390625,
+      0.8828125,
+      3.125,
+      0.154296875,
+      0.8984375,
+      0.431640625,
+      0.66796875,
+      0.00653076171875,
+      0.4765625,
+      0.75390625,
+      0.150390625,
+      0.38671875,
+      0.05126953125,
+      0.478515625,
+      0.1943359375,
+      0.009033203125,
+      0.02587890625,
+      0.69921875,
+      0.10107421875,
+      0.0693359375,
+      0.0224609375,
+      1.1015625,
+      0.166015625,
+      0.486328125,
+      0.64453125,
+      0.201171875,
+      0.020263671875,
+      0.0057373046875,
+      1.2265625,
+      1.9296875
+    ],
+    "len": 47,
+    "num_tokens_generated": 47,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.1702127659574468,
+    "green_fraction": 0.25,
+    "z_score": -1.414213562373095,
+    "p_value": 0.9213503964748574,
+    "prediction": false
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "prompt": [
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\""
+  ],
+  "generations": [
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        \"\"\"Return True if the integer n has even digit(s), else False.\"\"\"\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        \"\"\"Return True if the integer n has even digit(s), else False.\"\"\"\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    \n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        \"\"\"Return True if the integer n has even digit(s), else False.\"\"\"\n        return any(int(d) % 2 == 0 for d in str(n))\n    \n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        \"\"\"Return True if the integer n has even digit(s), else False.\"\"\"\n        return any(int(d) % 2 == 0 for d in str(n))\n    \n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        \"\"\"Return True if the integer n has even digit(s), else return False.\"\"\"\n        return any(int(d) % 2 == 0 for d in str(n))\n\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        return any(int(d) % 2 == 0 for d in str(n))\n    \n    return sorted([n for n in x if not has_even_digit(n)])\n",
+    "def unique_digits(x):\n    \"\"\"Given a list of positive integers x. return a sorted list of all \n    elements that hasn't any even digit.\n\n    Note: Returned list should be sorted in increasing order.\n    \n    For example:\n    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []\n    \"\"\" \n    def has_even_digit(n):\n        \"\"\"Return True if the integer n has even digit(s), else False.\"\"\"\n        return any(int(d) % 2 == 0 for d in str(n))\n    \n    return sorted([n for n in x if not has_even_digit(n)])\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([15, 33, 1422, 1]) == [1, 15, 33]\n    assert candidate([152, 323, 1422, 10]) == []\n    assert candidate([12345, 2033, 111, 151]) == [111, 151]\n    assert candidate([135, 103, 31]) == [31, 135]\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True\n\n\ncheck(unique_digits)"
+  ],
+  "solution": [
+    "    odd_digit_elements = []\n    for i in x:\n        if all (int(c) % 2 == 1 for c in str(i)):\n            odd_digit_elements.append(i)\n    return sorted(odd_digit_elements)\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.9921875,
+      0.04541015625,
+      2.453125,
+      1.5625,
+      0.45703125,
+      0.00185394287109375,
+      0.09326171875,
+      0.6875,
+      0.26953125,
+      0.06982421875,
+      1.171875,
+      2.21875,
+      0.478515625,
+      0.04248046875,
+      1.375,
+      1.2421875,
+      0.47265625,
+      0.3359375,
+      1.234375,
+      0.7890625,
+      1.421875,
+      0.88671875,
+      1.1796875,
+      0.80078125,
+      0.97265625,
+      0.01043701171875,
+      0.88671875,
+      0.007598876953125,
+      0.05029296875,
+      0.0341796875,
+      0.150390625,
+      0.000244140625,
+      0.00057220458984375,
+      1.080334186553955e-06,
+      0.057373046875,
+      0.000408172607421875,
+      1.704692840576172e-05,
+      0.00171661376953125,
+      0.00014209747314453125,
+      2.586841583251953e-05,
+      0.002960205078125,
+      0.00128936767578125,
+      0.7421875,
+      0.00506591796875,
+      0.51171875,
+      0.0177001953125,
+      0.73046875,
+      0.291015625,
+      0.00189971923828125,
+      0.0001926422119140625,
+      2.86102294921875e-05,
+      0.02783203125,
+      0.0001621246337890625,
+      0.0027313232421875,
+      0.001190185546875,
+      2.3990869522094727e-06,
+      1.862645149230957e-06,
+      3.4332275390625e-05,
+      8.916854858398438e-05,
+      0.796875
+    ],
+    "len": 60,
+    "num_tokens_generated": 60,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 8,
+    "watermarking_fraction": 0.13333333333333333,
+    "green_fraction": 1.0,
+    "z_score": 2.82842712474619,
+    "p_value": 0.002338867490523633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.27734375,
+      2.34375,
+      1.9296875,
+      1.8671875,
+      0.154296875,
+      1.1953125,
+      0.35546875,
+      0.09033203125,
+      1.890625,
+      0.00396728515625,
+      0.1865234375,
+      0.06640625,
+      0.035400390625,
+      2.125,
+      1.84375,
+      0.039794921875,
+      0.353515625,
+      0.640625,
+      0.1630859375,
+      0.000278472900390625,
+      0.0262451171875,
+      4.976987838745117e-06,
+      0.03759765625,
+      0.01708984375,
+      0.009765625,
+      0.00543212890625,
+      0.000705718994140625,
+      0.0001850128173828125,
+      0.00909423828125,
+      0.0034637451171875,
+      0.234375,
+      0.07275390625,
+      0.0038909912109375,
+      7.987022399902344e-06,
+      4.082918167114258e-06,
+      0.031982421875,
+      0.019287109375,
+      0.4140625,
+      0.5390625,
+      0.7265625,
+      0.146484375,
+      0.470703125,
+      0.006866455078125,
+      7.569789886474609e-06,
+      1.8477439880371094e-06,
+      1.1796875
+    ],
+    "len": 46,
+    "num_tokens_generated": 46,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.13043478260869565,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -0.8164965809277261,
+    "p_value": 0.7928919108787373,
+    "prediction": false
+  }
+}

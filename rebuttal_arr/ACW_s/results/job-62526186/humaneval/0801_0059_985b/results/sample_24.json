@@ -1,0 +1,369 @@
+{
+  "prompt": [
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\""
+  ],
+  "generations": [
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n // 2, 0, -1):\n        if n % i == 0:\n            return i\n    return 1  # If no divisor found, return 1 (as 1 is a divisor of all numbers)\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            # Return the divisor i\n            return i\n    # If no divisor is found, return 1 (every number is divisible by 1)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n // 2, 0, -1):\n        if n % i == 0:\n            return i\n    return 1  # If no divisor found, return 1 (as 1 is a divisor of every number)\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            # Return the divisor i\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (as 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n // 2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (as 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        if n % i == 0:\n            return i\n    return 1  # If no divisor found, return 1 (as 1 is a divisor of every number)\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n // 2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (as 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (as 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (as 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n // 2, 0, -1):\n        # If n is divisible by i, then i is a divisor of n\n        if n % i == 0:\n            return i\n    # If no divisor is found, return 1 (since 1 is a divisor of all numbers)\n    return 1\n",
+    "def largest_divisor(n: int) -> int:\n    \"\"\" For a given number n, find the largest number that divides n evenly, smaller than n\n    >>> largest_divisor(15)\n    5\n    \"\"\" \n    # Start from n//2 and go down to 1\n    for i in range(n//2, 0, -1):\n        if n % i == 0:\n            return i\n    return 1  # If no divisor found, return 1 (as 1 is a divisor of every number)\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate(3) == 1\n    assert candidate(7) == 1\n    assert candidate(10) == 5\n    assert candidate(100) == 50\n    assert candidate(49) == 7\n\ncheck(largest_divisor)"
+  ],
+  "solution": [
+    "    for i in reversed(range(n)):\n        if n % i == 0:\n            return i\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.75,
+      0.0228271484375,
+      1.2578125,
+      3.6875,
+      0.2158203125,
+      0.078125,
+      0.98828125,
+      3.814697265625e-05,
+      0.333984375,
+      0.419921875,
+      0.01141357421875,
+      0.08203125,
+      0.0010223388671875,
+      0.00142669677734375,
+      0.765625,
+      0.000179290771484375,
+      0.1708984375,
+      0.1845703125,
+      2.3543834686279297e-06,
+      0.0286865234375,
+      0.0001373291015625,
+      0.69140625,
+      8.046627044677734e-06,
+      0.0013885498046875,
+      0.00150299072265625,
+      4.696846008300781e-05,
+      0.0005340576171875,
+      2.9921531677246094e-05,
+      8.463859558105469e-06,
+      0.031494140625,
+      0.0079345703125,
+      0.69140625,
+      0.62109375,
+      0.63671875,
+      0.01080322265625,
+      0.1533203125,
+      1.4424324035644531e-05,
+      0.041259765625,
+      0.005401611328125,
+      0.88671875,
+      0.75390625,
+      0.0003604888916015625,
+      0.00042724609375,
+      0.2265625,
+      0.0272216796875,
+      0.07275390625,
+      0.00031280517578125,
+      0.1962890625,
+      7.200241088867188e-05,
+      0.0023956298828125,
+      0.003326416015625,
+      0.00185394287109375,
+      3.528594970703125e-05,
+      0.00011920928955078125,
+      8.296966552734375e-05,
+      6.593763828277588e-07,
+      0.0191650390625,
+      0.0020751953125,
+      0.67578125,
+      0.001220703125,
+      0.96875,
+      0.1484375,
+      0.6796875,
+      0.1396484375,
+      0.0024261474609375,
+      0.29296875,
+      0.13671875,
+      1.1622905731201172e-05,
+      0.53515625,
+      0.40625,
+      0.2470703125,
+      0.0002899169921875,
+      0.4453125,
+      1.953125,
+      0.5390625,
+      0.01092529296875,
+      0.00469970703125,
+      0.1259765625,
+      0.283203125,
+      0.0030364990234375,
+      0.62890625,
+      0.01171875,
+      0.02490234375,
+      0.000560760498046875,
+      0.01019287109375,
+      0.00021648406982421875,
+      5.340576171875e-05,
+      1.0546875
+    ],
+    "len": 88,
+    "num_tokens_generated": 88,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.045454545454545456,
+    "green_fraction": 1.0,
+    "z_score": 2.0,
+    "p_value": 0.022750131948179195,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.109375,
+      1.1796875,
+      0.31640625,
+      0.00022029876708984375,
+      0.32421875,
+      0.000415802001953125,
+      0.0245361328125,
+      0.5078125,
+      0.0130615234375,
+      0.046875,
+      0.021240234375,
+      0.0028076171875,
+      0.0014495849609375,
+      0.002655029296875,
+      0.00057220458984375,
+      2.428889274597168e-06,
+      0.0927734375,
+      0.0033416748046875,
+      0.0174560546875,
+      0.0068359375,
+      1.1328125
+    ],
+    "len": 21,
+    "num_tokens_generated": 21,
+    "num_tokens_scored": 0,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0,
+    "green_fraction": 0,
+    "z_score": 0.0,
+    "p_value": 1,
+    "prediction": false
+  }
+}

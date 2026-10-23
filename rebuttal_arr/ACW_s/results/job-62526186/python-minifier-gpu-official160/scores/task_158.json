@@ -1,0 +1,20 @@
+{
+  "task_index": 158,
+  "source_task_id": "Python/158",
+  "selected_completion_index": 0,
+  "skipped_transform_failure_indices": [],
+  "skipped_empty_suffix_indices": [],
+  "attacked_metrics": {
+    "num_tokens_generated": 37,
+    "num_tokens_scored": 9,
+    "num_green_tokens": 5,
+    "watermarking_fraction": 0.24324324324324326,
+    "green_fraction": 0.5555555555555556,
+    "z_score": 0.3333333333333333,
+    "p_value": 0.36944134018176367,
+    "prediction": false,
+    "len": 37
+  },
+  "original_machine_z_score": 1.6329931618554523,
+  "human_z_score": -1.414213562373095
+}

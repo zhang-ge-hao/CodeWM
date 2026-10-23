@@ -1,0 +1,314 @@
+{
+  "prompt": [
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\""
+  ],
+  "generations": [
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    return hashlib.md5(text.encode()).hexdigest() if text else None\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode('utf-8')).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    return hashlib.md5(text.encode()).hexdigest() if text else None\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n    pass\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if text == \"\":\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    return hashlib.md5(text.encode()).hexdigest() if text else None\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n    pass\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    if not text:\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()\n",
+    "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\" \n    import hashlib\n    text = text.encode()\n    md5 = hashlib.md5()\n    md5.update(text)\n    return md5.hexdigest()\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    assert candidate('') == None\n    assert candidate('A B C') == '0ef78513b0cb8cef12743f5aeb35f888'\n    assert candidate('password') == '5f4dcc3b5aa765d61d8327deb882cf99'\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True\n\n\ncheck(string_to_md5)"
+  ],
+  "solution": [
+    "    import hashlib\n    return hashlib.md5(text.encode('ascii')).hexdigest() if text else None\n"
+  ],
+  "metrics": {
+    "pass@1": 0.4999999999999999,
+    "pass@10": 0.9999945874558878,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'hashlib' is not defined",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'hashlib' is not defined",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'hashlib' is not defined",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      3.359375,
+      0.01104736328125,
+      1.1796875,
+      0.1708984375,
+      1.0234375,
+      0.005645751953125,
+      1.515625,
+      0.171875,
+      0.93359375,
+      0.1591796875,
+      1.3125,
+      0.08984375,
+      1.3984375,
+      0.0101318359375,
+      0.85546875,
+      0.000339508056640625,
+      0.00128936767578125,
+      3.516674041748047e-06,
+      0.8046875,
+      0.01275634765625,
+      0.0267333984375,
+      2.3245811462402344e-05,
+      0.00013065338134765625,
+      0.00167083740234375,
+      0.208984375,
+      0.047607421875,
+      0.302734375,
+      0.02001953125,
+      1.4841556549072266e-05,
+      0.000713348388671875,
+      0.00022125244140625,
+      1.171875
+    ],
+    "len": 32,
+    "num_tokens_generated": 32,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.125,
+    "green_fraction": 1.0,
+    "z_score": 2.0,
+    "p_value": 0.022750131948179195,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.09814453125,
+      1.1484375,
+      0.2138671875,
+      0.84375,
+      0.000942230224609375,
+      1.3203125,
+      0.46484375,
+      0.0011138916015625,
+      6.973743438720703e-06,
+      0.02099609375,
+      0.033935546875,
+      0.87890625,
+      0.08056640625,
+      0.185546875,
+      0.0030670166015625,
+      4.8160552978515625e-05,
+      0.458984375,
+      0.041015625,
+      0.01025390625,
+      0.06396484375,
+      0.0011749267578125,
+      1.078125
+    ],
+    "len": 22,
+    "num_tokens_generated": 22,
+    "num_tokens_scored": 1,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.045454545454545456,
+    "green_fraction": 1.0,
+    "z_score": 1.0,
+    "p_value": 0.15865525393145707,
+    "prediction": false
+  }
+}

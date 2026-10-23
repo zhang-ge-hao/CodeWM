@@ -1,0 +1,332 @@
+{
+  "prompt": [
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\""
+  ],
+  "generations": [
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = a % 10 * b % 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 1\n    while a > 0:\n        product *= a % 10\n        a //= 10\n    while b > 0:\n        product *= b % 10\n        b //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a //= 10\n    return product\n",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = a % 10 * b % 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 1\n    while a > 0:\n        product *= a % 10\n        a //= 10\n    while b > 0:\n        product *= b % 10\n        b //= 10\n    return product",
+    "def multiply(a, b):\n    \"\"\"Complete the function that takes two integers and returns \n    the product of their unit digits.\n    Assume the input is always valid.\n    Examples:\n    multiply(148, 412) should return 16.\n    multiply(19, 28) should return 72.\n    multiply(2020, 1851) should return 0.\n    multiply(14,-15) should return 20.\n    \"\"\" \n    # your code here\n    a = abs(a)\n    b = abs(b)\n    product = 0\n    while a > 0:\n        digit = a % 10\n        product += digit * b\n        a = a // 10\n    return product"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(148, 412) == 16, \"First test error: \" + str(candidate(148, 412))                    \n    assert candidate(19, 28) == 72, \"Second test error: \" + str(candidate(19, 28))           \n    assert candidate(2020, 1851) == 0, \"Third test error: \" + str(candidate(2020, 1851))\n    assert candidate(14,-15) == 20, \"Fourth test error: \" + str(candidate(14,-15))      \n    assert candidate(76, 67) == 42, \"Fifth test error: \" + str(candidate(76, 67))      \n    assert candidate(17, 27) == 49, \"Sixth test error: \" + str(candidate(17, 27))      \n\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(0, 1) == 0, \"1st edge test error: \" + str(candidate(0, 1))\n    assert candidate(0, 0) == 0, \"2nd edge test error: \" + str(candidate(0, 0))\n\n\ncheck(multiply)"
+  ],
+  "solution": [
+    "    return abs(a % 10) * abs(b % 10)\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 6",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 256",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 6",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 256",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: First test error: 5356",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.9296875,
+      0.06591796875,
+      1.8046875,
+      4.15625,
+      0.037353515625,
+      0.388671875,
+      0.486328125,
+      0.18359375,
+      2.515625,
+      2.21875,
+      0.73828125,
+      0.004791259765625,
+      0.302734375,
+      0.0004138946533203125,
+      0.003326416015625,
+      0.004608154296875,
+      0.0024566650390625,
+      0.000530242919921875,
+      0.203125,
+      0.3046875,
+      2.203125,
+      0.0615234375,
+      0.73046875,
+      0.66796875,
+      0.609375,
+      0.00384521484375,
+      0.9375,
+      1.21875,
+      0.57421875,
+      0.004364013671875,
+      0.0279541015625,
+      0.2021484375,
+      0.048828125,
+      1.8515625,
+      0.357421875,
+      0.003204345703125,
+      0.07666015625,
+      0.00156402587890625,
+      2.6673078536987305e-06,
+      0.03369140625,
+      0.000537872314453125,
+      0.61328125,
+      0.050537109375,
+      0.21875,
+      0.78125,
+      0.5,
+      0.1123046875,
+      0.00037384033203125,
+      0.0027618408203125,
+      0.70703125,
+      0.0001220703125,
+      0.00335693359375,
+      1.0013580322265625e-05,
+      0.2734375,
+      0.0235595703125,
+      0.02587890625,
+      0.1884765625
+    ],
+    "len": 57,
+    "num_tokens_generated": 57,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 8,
+    "watermarking_fraction": 0.14035087719298245,
+    "green_fraction": 1.0,
+    "z_score": 2.82842712474619,
+    "p_value": 0.002338867490523633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.177734375,
+      1.78125,
+      0.66796875,
+      0.000606536865234375,
+      1.2109375,
+      0.00110626220703125,
+      1.4960765838623047e-05,
+      0.6640625,
+      0.00012493133544921875,
+      0.000640869140625,
+      8.940696716308594e-06,
+      0.0001621246337890625,
+      0.000408172607421875,
+      2.0265579223632812e-06,
+      1.1953125
+    ],
+    "len": 15,
+    "num_tokens_generated": 15,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.13333333333333333,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  }
+}

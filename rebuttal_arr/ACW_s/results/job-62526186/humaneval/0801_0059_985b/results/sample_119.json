@@ -1,0 +1,434 @@
+{
+  "prompt": [
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''"
+  ],
+  "generations": [
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parens(str3) or valid_parens(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst[0], lst[1]\n    balance1, balance2 = 0, 0\n\n    for char in str1:\n        if char == '(':\n            balance1 += 1\n        else:\n            balance1 -= 1\n\n    for char in str2:\n        if char == '(':\n            balance2 += 1\n        else:\n            balance2 -= 1\n\n    if balance1 == balance2 == 0:\n        return 'Yes'\n    else:\n        return 'No'\n    pass",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst[0], lst[1]\n    stack1, stack2 = [], []\n    for s in str1:\n        if s == '(':\n            stack1.append(s)\n        else:\n            if not stack1:\n                return 'No'\n            stack1.pop()\n    for s in str2:\n        if s == '(':\n            stack2.append(s)\n        else:\n            if not stack2:\n                return 'No'\n            stack2.pop()\n    if stack1 and stack2:\n        return 'No'\n    return 'Yes'\n    ",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst[0], lst[1]\n    balance = 0\n    for char in str1:\n        if char == '(':\n            balance += 1\n        else:\n            balance -= 1\n        if balance < 0:\n            return 'No'\n    balance = 0\n    for char in str2:\n        if char == '(':\n            balance += 1\n        else:\n            balance -= 1\n        if balance < 0:\n            return 'No'\n    return 'Yes'\n    pass",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3 = str1 + str2\n    stack = []\n    for i in str3:\n        if i == '(':\n            stack.append(i)\n        else:\n            if stack:\n                stack.pop()\n            else:\n                return 'No'\n    if stack:\n        return 'No'\n    return 'Yes'\n    # end of your code here",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3 = str1 + str2\n    stack = []\n    for i in str3:\n        if i == '(':\n            stack.append(i)\n        else:\n            if len(stack) == 0:\n                return 'No'\n            else:\n                stack.pop()\n    if len(stack) == 0:\n        return 'Yes'\n    else:\n        return 'No'\n    ",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parens(str3) or valid_parens(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parentheses(str3) or valid_parentheses(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1 = lst[0]\n    str2 = lst[1]\n\n    # Check if there's a way to make a good string by balancing parentheses\n    def is_good(s):\n        balance = 0\n        for char in s:\n            if char == '(':\n                balance += 1\n            else:\n                balance -= 1\n            if balance < 0:\n                return False\n        return balance == 0\n\n    # Check if we can make a good string by either concatenating str1 to str2 or vice versa\n    if is_good(str1 + str2) or is_good(str2 + str1):\n        return 'Yes'\n    else:\n        return 'No'\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass\n    pass",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parentheses(str3) or valid_parentheses(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3 = str1 + str2\n    if check_balance(str3):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst[0], lst[1]\n    if len(str1) == 0 and len(str2) == 0:\n        return 'Yes'\n    if len(str1) == 0:\n        return 'Yes' if str2[-1] == ')' else 'No'\n    if len(str2) == 0:\n        return 'Yes' if str1[-1] == '(' else 'No'\n    if str1[-1] == '(' and str2[0] == ')':\n        return 'Yes'\n    return 'No'\n    pass",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parentheses(str3) or valid_parentheses(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3 = str1 + str2\n    stack = []\n    for i in str3:\n        if i == '(':\n            stack.append(i)\n        else:\n            if stack and stack[-1] == '(':\n                stack.pop()\n            else:\n                return 'No'\n    return 'Yes' if not stack else 'No'\n    pass",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parens(str3) or valid_parens(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1 = lst[0]\n    str2 = lst[1]\n    stack1 = []\n    stack2 = []\n    for i in str1:\n        if i == '(':\n            stack1.append(i)\n        else:\n            if stack1:\n                stack1.pop()\n            else:\n                return 'No'\n    for i in str2:\n        if i == '(':\n            stack2.append(i)\n        else:\n            if stack2:\n                stack2.pop()\n            else:\n                return 'No'\n    if stack1 and stack2:\n        return 'No'\n    else:\n        return 'Yes'\n    #return \"Yes\" if len(stack1) == 0 and len(stack2) == 0 else \"No\"\n    #return \"Yes\" if len(stack1) == 0 and len(stack2) == 0 else \"No\"\n    #return 'Yes' if len(stack1) == 0 and len(stack2) == 0 else 'No'\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return \"Yes\" if not stack1 and not stack2 else \"No\"\n    #return",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst[0], lst[1]\n    stack1, stack2 = [], []\n    for s in str1:\n        if s == '(':\n            stack1.append(s)\n        else:\n            if stack1 and stack1[-1] == '(':\n                stack1.pop()\n            else:\n                stack1.append(s)\n    for s in str2:\n        if s == '(':\n            stack2.append(s)\n        else:\n            if stack2 and stack2[-1] == '(':\n                stack2.pop()\n            else:\n                stack2.append(s)\n    if not stack1 and not stack2:\n        return 'Yes'\n    else:\n        return 'No'\n    ",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n\n    stack1 = []\n    stack2 = []\n\n    for s in str1:\n        if s == '(':\n            stack1.append(s)\n        else:\n            if stack1:\n                stack1.pop()\n            else:\n                return 'No'\n\n    for s in str2:\n        if s == '(':\n            stack2.append(s)\n        else:\n            if stack2:\n                stack2.pop()\n            else:\n                return 'No'\n\n    if stack1 and stack2:\n        return 'No'\n    elif stack1:\n        return 'Yes'\n    elif stack2:\n        return 'Yes'\n    else:\n        return 'No'\n    # return 'Yes' if stack1 or stack2 else 'No'\n    # return 'Yes' if stack1 and stack2 else 'No'\n    # return 'Yes' if not stack1 and not stack2 else 'No'\n    # return 'Yes' if not stack1 or not stack2 else 'No'\n    # return 'Yes' if len(stack1) == 0 and len(stack2) == 0 else 'No'\n    # return 'Yes' if not stack1 and not stack2 else 'No'\n    # return 'Yes' if len(stack1) == 0 and len(stack2) == 0 else 'No'\n    # return 'Yes' if len(stack1) == 0 or len(stack2) == 0 else 'No'\n    # return 'Yes' if len(stack1) == 0 and len(stack2) == 0 else 'No'\n    # return 'Yes' if len(stack1) == 0 or len(stack2) == 0 else 'No'\n    # return 'Yes' if not stack1 and not stack2",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parens(str3) or valid_parens(str4):\n        return 'Yes'\n    else:\n        return 'No'\n",
+    "def match_parens(lst):\n    '''\n    You are given a list of two strings, both strings consist of open\n    parentheses '(' or close parentheses ')' only.\n    Your job is to check if it is possible to concatenate the two strings in\n    some order, that the resulting string will be good.\n    A string S is considered to be good if and only if all parentheses in S\n    are balanced. For example: the string '(())()' is good, while the string\n    '())' is not.\n    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.\n\n    Examples:\n    match_parens(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n    '''\n\n\n    # Your code here\n    str1, str2 = lst\n    str3, str4 = str1 + str2, str2 + str1\n    if valid_parens(str3) or valid_parens(str4):\n        return 'Yes'\n    else:\n        return 'No'\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate(['()(', ')']) == 'Yes'\n    assert candidate([')', ')']) == 'No'\n    assert candidate(['(()(())', '())())']) == 'No'\n    assert candidate([')())', '(()()(']) == 'Yes'\n    assert candidate(['(())))', '(()())((']) == 'Yes'\n    assert candidate(['()', '())']) == 'No'\n    assert candidate(['(()(', '()))()']) == 'Yes'\n    assert candidate(['((((', '((())']) == 'No'\n    assert candidate([')(()', '(()(']) == 'No'\n    assert candidate([')(', ')(']) == 'No'\n    \n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(['(', ')']) == 'Yes'\n    assert candidate([')', '(']) == 'Yes' \n\n\ncheck(match_parens)"
+  ],
+  "solution": [
+    "    def check(s):\n        val = 0\n        for i in s:\n            if i == '(':\n                val = val + 1\n            else:\n                val = val - 1\n            if val < 0:\n                return False\n        return True if val == 0 else False\n\n    S1 = lst[0] + lst[1]\n    S2 = lst[1] + lst[0]\n    return 'Yes' if check(S1) or check(S2) else 'No'\n"
+  ],
+  "metrics": {
+    "pass@1": 0.050000000000000044,
+    "pass@10": 0.5,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parens' is not defined",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parens' is not defined",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parentheses' is not defined",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parentheses' is not defined",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'check_balance' is not defined",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parentheses' is not defined",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parens' is not defined",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parens' is not defined",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'valid_parens' is not defined",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.171875,
+      0.90625,
+      2.796875,
+      5.84375,
+      0.412109375,
+      0.59765625,
+      0.8671875,
+      0.296875,
+      3.265625,
+      0.498046875,
+      1.0234375,
+      0.000865936279296875,
+      0.0003719329833984375,
+      0.048828125,
+      0.052978515625,
+      1.171875,
+      0.004608154296875,
+      2.96875,
+      1.921875,
+      0.74609375,
+      0.0120849609375,
+      0.0030059814453125,
+      0.022705078125,
+      0.79296875,
+      0.236328125,
+      0.9921875,
+      0.00390625,
+      0.00811767578125,
+      0.034423828125,
+      0.0047607421875,
+      0.0062255859375,
+      0.00885009765625,
+      0.003570556640625,
+      0.0033721923828125,
+      0.9921875,
+      0.015869140625,
+      1.703125,
+      1.4921875,
+      1.3203125,
+      0.703125,
+      1.3113021850585938e-06,
+      0.09912109375,
+      0.06982421875,
+      0.04736328125,
+      0.39453125,
+      0.0038909912109375,
+      1.9669532775878906e-05,
+      0.000865936279296875,
+      4.1961669921875e-05,
+      0.0009002685546875,
+      0.000370025634765625,
+      0.06103515625,
+      0.05810546875,
+      0.01116943359375,
+      0.302734375,
+      0.0002460479736328125,
+      0.025390625,
+      0.0252685546875,
+      0.625,
+      0.032958984375,
+      0.0022125244140625,
+      0.0022125244140625,
+      0.003936767578125,
+      2.574920654296875e-05,
+      1.0390625
+    ],
+    "len": 65,
+    "num_tokens_generated": 65,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 8,
+    "watermarking_fraction": 0.12307692307692308,
+    "green_fraction": 1.0,
+    "z_score": 2.82842712474619,
+    "p_value": 0.002338867490523633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1640625,
+      2.828125,
+      2.375,
+      2.078125,
+      1.0703125,
+      0.054443359375,
+      2.96875,
+      0.5,
+      0.298828125,
+      0.0021820068359375,
+      0.1328125,
+      4.8160552978515625e-05,
+      0.0927734375,
+      1.9609375,
+      0.03173828125,
+      0.2275390625,
+      0.0390625,
+      0.0050048828125,
+      0.140625,
+      0.259765625,
+      0.12109375,
+      0.6953125,
+      0.00787353515625,
+      0.0086669921875,
+      0.000560760498046875,
+      0.11328125,
+      0.08349609375,
+      0.419921875,
+      0.024658203125,
+      0.0002994537353515625,
+      0.041748046875,
+      0.005218505859375,
+      0.6015625,
+      0.046630859375,
+      0.0032196044921875,
+      0.703125,
+      0.025390625,
+      0.004302978515625,
+      0.033447265625,
+      0.02880859375,
+      0.0002765655517578125,
+      0.21484375,
+      0.62890625,
+      0.00860595703125,
+      0.0308837890625,
+      0.035888671875,
+      0.01068115234375,
+      0.00013637542724609375,
+      0.1435546875,
+      0.0064697265625,
+      0.026611328125,
+      0.07080078125,
+      0.0625,
+      0.00107574462890625,
+      0.11083984375,
+      0.1640625,
+      0.703125,
+      0.1572265625,
+      0.07958984375,
+      0.0029754638671875,
+      0.000263214111328125,
+      0.003204345703125,
+      0.000507354736328125,
+      0.474609375,
+      0.0020751953125,
+      2.546875,
+      0.8046875,
+      0.69921875,
+      0.28125,
+      0.00057220458984375,
+      0.005767822265625,
+      0.373046875,
+      0.0546875,
+      0.004791259765625,
+      0.00055694580078125,
+      0.00531005859375,
+      0.412109375,
+      0.00021266937255859375,
+      0.279296875,
+      0.01177978515625,
+      0.00058746337890625,
+      0.00157928466796875,
+      8.058547973632812e-05,
+      0.0001373291015625,
+      0.00023651123046875,
+      0.00011777877807617188,
+      0.00018596649169921875,
+      6.29425048828125e-05,
+      0.0002384185791015625,
+      0.5390625,
+      0.06640625,
+      0.62890625,
+      0.1591796875,
+      0.00531005859375,
+      0.00013446807861328125,
+      4.649162292480469e-05,
+      0.5859375,
+      0.00118255615234375,
+      0.000896453857421875,
+      0.000461578369140625,
+      0.061279296875,
+      0.0014801025390625,
+      0.0002574920654296875,
+      0.0002918243408203125,
+      0.000522613525390625,
+      0.01104736328125,
+      0.0054931640625,
+      2.3365020751953125e-05,
+      1.0546875
+    ],
+    "len": 109,
+    "num_tokens_generated": 109,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.05504587155963303,
+    "green_fraction": 0.16666666666666666,
+    "z_score": -1.6329931618554523,
+    "p_value": 0.9487647825701253,
+    "prediction": false
+  }
+}

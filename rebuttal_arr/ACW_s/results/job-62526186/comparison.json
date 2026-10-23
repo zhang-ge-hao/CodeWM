@@ -1,0 +1,55 @@
+{
+  "paper_table": "Table 1, OpenCoder-1.5B-Instruct, ACW-s",
+  "tasks": {
+    "humaneval": {
+      "metrics_path": "/home/gehaozhang_umass_edu/projects/code-watermarking/rebuttal_arr/acw_s/results/job-62526186/humaneval/0801_0059_985b/results/metrics.json",
+      "reported_sample_count": 160,
+      "comparison": {
+        "avg_pass_1": {
+          "observed": 0.655,
+          "paper": 0.6413,
+          "absolute_difference": 0.013700000000000045,
+          "percentage_point_difference": 1.3700000000000045
+        },
+        "avg_pass_10": {
+          "observed": 0.7725957140769447,
+          "paper": 0.7639,
+          "absolute_difference": 0.008695714076944694,
+          "percentage_point_difference": 0.8695714076944694
+        },
+        "roc_auc": {
+          "observed": 0.91486328125,
+          "paper": 0.9338,
+          "absolute_difference": -0.018936718749999915,
+          "percentage_point_difference": -1.8936718749999915
+        },
+        "tpr_at_fpr_05": {
+          "observed": 0.55625,
+          "paper": 0.6187,
+          "absolute_difference": -0.062450000000000006,
+          "percentage_point_difference": -6.245000000000001
+        }
+      },
+      "all_metrics": {
+        "avg_pass_1": 0.655,
+        "avg_pass_10": 0.7725957140769447,
+        "avg_entropy": 0.340336900392789,
+        "total_count": 160,
+        "positive_count": 4,
+        "avg_len": 69.0625,
+        "roc_auc": 0.91486328125,
+        "tpr_at_fpr_0": 0.275,
+        "tpr_at_fpr_01": 0.35625,
+        "tpr_at_fpr_05": 0.55625,
+        "avg_watermark_fraction": 0.10952879832834712,
+        "avg_green_fraction": 0.9054990234653548,
+        "avg_z_score": 1.8452631841010039,
+        "avg_human_z_score": -0.0869319039751235
+      }
+    },
+    "mbpp": {
+      "skipped": true,
+      "skip_marker": "/home/gehaozhang_umass_edu/projects/code-watermarking/rebuttal_arr/ACW_s/results/job-62526186/SKIP_MBPP"
+    }
+  }
+}

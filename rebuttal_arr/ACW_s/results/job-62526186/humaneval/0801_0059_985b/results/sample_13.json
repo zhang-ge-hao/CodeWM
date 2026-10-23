@@ -1,0 +1,312 @@
+{
+  "prompt": [
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\""
+  ],
+  "generations": [
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclid's algorithm\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclid's algorithm\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm for greatest common divisor\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclid's algorithm\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclid's algorithm\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclidean algorithm\n    while b != 0:\n        a, b = b, a % b\n    return a\n",
+    "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\" \n    # Euclid's algorithm\n    while b != 0:\n        a, b = b, a % b\n    return a\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {\n    'author': 'jt',\n    'dataset': 'test'\n}\n\n\ndef check(candidate):\n    assert candidate(3, 7) == 1\n    assert candidate(10, 15) == 5\n    assert candidate(49, 14) == 7\n    assert candidate(144, 60) == 12\n\ncheck(greatest_common_divisor)"
+  ],
+  "solution": [
+    "    while b:\n        a, b = b, a % b\n    return a\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.8359375,
+      0.010986328125,
+      1.3046875,
+      5.25,
+      0.703125,
+      0.2734375,
+      1.2265625,
+      1.203125,
+      0.01239013671875,
+      0.029541015625,
+      0.58203125,
+      0.0017547607421875,
+      0.259765625,
+      0.1875,
+      0.330078125,
+      0.000823974609375,
+      5.459785461425781e-05,
+      0.0888671875,
+      0.0067138671875,
+      0.33203125,
+      0.0234375,
+      1.0311603546142578e-05,
+      0.0004253387451171875,
+      0.00152587890625,
+      0.0038909912109375,
+      0.000644683837890625,
+      0.023193359375,
+      5.841255187988281e-05,
+      0.04833984375,
+      0.00145721435546875,
+      0.0002536773681640625,
+      0.4296875,
+      1.0234375
+    ],
+    "len": 33,
+    "num_tokens_generated": 33,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.15151515151515152,
+    "green_fraction": 0.8,
+    "z_score": 1.3416407864998738,
+    "p_value": 0.08985624743949988,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.11865234375,
+      1.375,
+      0.33984375,
+      0.59765625,
+      0.01409912109375,
+      0.1416015625,
+      0.01348876953125,
+      5.030632019042969e-05,
+      0.0009918212890625,
+      0.0029754638671875,
+      0.000762939453125,
+      0.0009765625,
+      0.0673828125,
+      0.00010204315185546875,
+      0.05810546875,
+      0.0023956298828125,
+      0.00081634521484375,
+      0.51953125,
+      1.1171875
+    ],
+    "len": 19,
+    "num_tokens_generated": 19,
+    "num_tokens_scored": 1,
+    "num_green_tokens": 0,
+    "watermarking_fraction": 0.05263157894736842,
+    "green_fraction": 0.0,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

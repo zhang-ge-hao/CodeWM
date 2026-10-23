@@ -1,0 +1,334 @@
+{
+  "prompt": [
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\""
+  ],
+  "generations": [
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result\n    \n",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result\n    pass",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result\n    pass",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result\n    pass",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result\n    pass",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result\n    pass",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    total = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            total += lst[i]\n    return total",
+    "def add(lst):\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n        add([4, 2, 6, 7]) ==> 2 \n    \"\"\" \n    result = 0\n    for i in range(len(lst)):\n        if i % 2 != 0 and lst[i] % 2 == 0:\n            result += lst[i]\n    return result"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([4, 88]) == 88\n    assert candidate([4, 5, 6, 7, 2, 122]) == 122\n    assert candidate([4, 0, 6, 7]) == 0\n    assert candidate([4, 4, 6, 8]) == 12\n\n    # Check some edge cases that are easy to work out by hand.\n    \n\ncheck(add)"
+  ],
+  "solution": [
+    "    return sum([lst[i] for i in range(1, len(lst), 2) if lst[i]%2 == 0])\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.078125,
+      0.1904296875,
+      2.8125,
+      0.4140625,
+      0.5546875,
+      0.004150390625,
+      0.53125,
+      0.0036163330078125,
+      0.1455078125,
+      0.75,
+      0.21484375,
+      0.011962890625,
+      0.59765625,
+      0.000713348388671875,
+      0.1240234375,
+      0.052734375,
+      0.08203125,
+      0.384765625,
+      0.302734375,
+      0.01214599609375,
+      0.00037384033203125,
+      0.30078125,
+      0.044677734375,
+      0.000804901123046875,
+      0.0615234375,
+      0.0247802734375,
+      0.0002498626708984375,
+      0.0003261566162109375,
+      0.00921630859375,
+      0.0087890625,
+      0.0003719329833984375,
+      0.007354736328125,
+      0.022216796875,
+      8.20159912109375e-05,
+      0.16796875,
+      0.034912109375,
+      0.00836181640625,
+      0.123046875,
+      0.0133056640625,
+      0.00017261505126953125,
+      0.25390625,
+      0.15234375,
+      0.01348876953125,
+      0.0235595703125
+    ],
+    "len": 44,
+    "num_tokens_generated": 44,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.045454545454545456,
+    "green_fraction": 1.0,
+    "z_score": 1.414213562373095,
+    "p_value": 0.07864960352514258,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.224609375,
+      2.984375,
+      0.061767578125,
+      1.7265625,
+      1.921875,
+      0.396484375,
+      0.0260009765625,
+      0.0146484375,
+      0.0020294189453125,
+      0.0023345947265625,
+      0.00909423828125,
+      0.6953125,
+      0.1611328125,
+      0.251953125,
+      0.0024871826171875,
+      0.000560760498046875,
+      0.019287109375,
+      0.0267333984375,
+      0.0004730224609375,
+      0.003143310546875,
+      0.00194549560546875,
+      0.006622314453125,
+      5.3882598876953125e-05,
+      0.00104522705078125,
+      0.13671875,
+      0.0205078125,
+      0.63671875,
+      0.1748046875,
+      0.00016689300537109375,
+      1.3359375
+    ],
+    "len": 30,
+    "num_tokens_generated": 30,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.13333333333333333,
+    "green_fraction": 0.25,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

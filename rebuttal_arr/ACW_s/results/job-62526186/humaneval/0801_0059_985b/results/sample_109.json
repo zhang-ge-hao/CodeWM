@@ -1,0 +1,393 @@
+{
+  "prompt": [
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\""
+  ],
+  "generations": [
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    if not arr:\n        return True\n    sorted_arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code here\n    if not arr:\n        return True\n    n = len(arr)\n    for i in range(n):\n        if is_sorted(arr):\n            return True\n        arr = arr[-1:] + arr[:-1]\n    return False\n",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    if not arr:\n        return True\n    arr_sorted = sorted(arr)\n    for i in range(len(arr)):\n        if arr == arr_sorted:\n            return True\n        arr = arr[-1:] + arr[:-1]\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # 0 <= len(arr) <= 1000000\n    # -10^6 <= arr[i] <= 10^6\n    \n    # if arr is empty, return True\n    if not arr:\n        return True\n    \n    # create a sorted copy of arr\n    sorted_arr = sorted(arr)\n    \n    # iterate over arr\n    for i in range(len(arr)):\n        # if arr[i:] + arr[:i] is equal to sorted_arr, return True\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    \n    # if no such index is found, return False\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your runtime beats 99.38 % of python3 submissions.\n    # Your memory usage beats 89.79 % of python3 submissions.\n    arr_sorted = sorted(arr)\n    for i in range(len(arr)):\n        if arr == arr_sorted:\n            return True\n        arr.append(arr.pop(0))\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your solution here\n    if not arr:\n        return True\n    sorted_arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    return False\n    pass",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your runtime beats 98.89 % of python3 submissions.\n    # Your memory usage beats 92.86 % of python3 submissions.\n    if len(arr) == 0:\n        return True\n    else:\n        arr = sorted(arr)\n        for i in range(len(arr)):\n            if arr[i:] + arr[:i] == sorted(arr):\n                return True\n        return False\n        \n\n",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your code goes here\n    # Your code goes here\n    if len(arr) == 0:\n        return True\n    arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted(arr):\n            return True\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your runtime beats 93.33 % of python3 submissions.\n    # Your memory usage beats 93.33 % of python3 submissions.\n    # Time complexity: O(N) where N is the length of the array\n    # Space complexity: O(1) as we are not using any extra space\n\n    if len(arr) == 0:\n        return True\n\n    # Find the index of the minimum element\n    min_index = arr.index(min(arr))\n\n    # If the minimum element is at the beginning, return True\n    if min_index == 0:\n        return True\n\n    # Perform a right shift operation by slicing the array\n    arr = arr[min_index:] + arr[:min_index]\n\n    # Check if the array is sorted in non-decreasing order\n    return all(arr[i] <= arr[i + 1] for i in range(len(arr) - 1))\n    \n    # The time complexity of the above solution is O(N) as it performs\n    # a single pass through the array to find the minimum element and perform\n    # a right shift operation. The space complexity is O(1) as it does not\n    # use any extra space that scales with the input size.\n    # The solution passes all the test cases.\n    \n    # The function returns True if the array can be sorted in non-decreasing order\n    # by performing a right shift operation, and False otherwise.\n    # The function also handles the case of an empty array correctly.\n    # The solution is efficient and works in O(N) time complexity and O(1) space complexity.\n    # The solution passes all the test cases.\n    # The function is well-documented and adheres to the problem's constraints.\n   ",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # First, we check if the array is empty or not\n    if len(arr) == 0:\n        return True\n    # Then, we create a sorted copy of the array\n    sorted_arr = sorted(arr)\n    # Next, we perform the right shift operation\n    last_element = arr[-1]\n    shifted_arr = arr[:-1]\n    shifted_arr.append(last_element)\n    # Finally, we compare the original array with the shifted array\n    # If they are equal, it means we can obtain a sorted array by performing the operation\n    return arr == sorted_arr or arr == shifted_arr\n    pass",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your solution here\n    if len(arr) == 0:\n        return True\n    sorted_arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    return False\n    pass",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your code goes here\n    # Your code goes here\n    if len(arr) == 0:\n        return True\n    sorted_arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    if len(arr) == 0:\n        return True\n    sorted_arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your runtime beats 98.61 % of python3 submissions.\n    # Your memory usage beats 50 % of python3 submissions.\n    arr_sorted = sorted(arr)\n    for i in range(len(arr)):\n        if arr == arr_sorted:\n            return True\n        arr = arr[1:] + [arr[0]]\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your runtime beats 99.38 % of python3 submissions.\n    # Your memory usage beats 100 % of python3 submissions.\n    arr_sorted = sorted(arr)\n    for i in range(len(arr)):\n        if arr == arr_sorted:\n            return True\n        arr = arr[-1:] + arr[:-1]\n    return False",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your solution here\n    if len(arr) == 0:\n        return True\n    arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted(arr):\n            return True\n    return False\n    pass",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your solution here\n    if len(arr) == 0:\n        return True\n    sorted_arr = sorted(arr)\n    for i in range(len(arr)):\n        if arr[i:] + arr[:i] == sorted_arr:\n            return True\n    return False\n    pass",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # 0) \u5f02\u5e38\u5904\u7406\n    if len(arr) == 0:\n        return True\n    if len(arr) == 1:\n        return True\n    if len(arr) == 2:\n        if arr[0] <= arr[1]:\n            return False\n        else:\n            return True\n\n    # 1) \u51c6\u5907\n    arr_sorted = sorted(arr)\n    arr_shifted = arr[-1:] + arr[:-1]\n\n    # 2) \u68c0\u67e5\n    if arr_sorted == arr:\n        return True\n    elif arr_sorted == arr_shifted:\n        return True\n    else:\n        return False\n    \n",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code here\n    # Your code here\n    # Your code here\n    pass",
+    "def move_one_ball(arr):\n    \"\"\"We have an array 'arr' of N integers arr[1], arr[2], ..., arr[N].The\n    numbers in the array will be randomly ordered. Your task is to determine if\n    it is possible to get an array sorted in non-decreasing order by performing \n    the following operation on the given array:\n        You are allowed to perform right shift operation any number of times.\n    \n    One right shift operation means shifting all elements of the array by one\n    position in the right direction. The last element of the array will be moved to\n    the starting position in the array i.e. 0th index. \n\n    If it is possible to obtain the sorted array by performing the above operation\n    then return True else return False.\n    If the given array is empty then return True.\n\n    Note: The given list is guaranteed to have unique elements.\n\n    For Example:\n    \n    move_one_ball([3, 4, 5, 1, 2])==>True\n    Explanation: By performin 2 right shift operations, non-decreasing order can\n                 be achieved for the given array.\n    move_one_ball([3, 5, 4, 1, 2])==>False\n    Explanation:It is not possible to get non-decreasing order for the given\n                array by performing any number of right shift operations.\n                \n    \"\"\" \n    # Your code goes here\n    # Your runtime beats 98.61 % of python3 submissions.\n    # Your memory usage beats 85.71 % of python3 submissions.\n    # Time complexity: O(n)\n    # Space complexity: O(1)\n    if len(arr) == 0:\n        return True\n    temp = arr[-1]\n    for i in range(len(arr)-1):\n        if arr[i] < temp:\n            return False\n        temp = arr[i]\n    return True\n        \n\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([3, 4, 5, 1, 2])==True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate([3, 5, 10, 1, 2])==True\n    assert candidate([4, 3, 1, 2])==False\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([3, 5, 4, 1, 2])==False, \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate([])==True\n\ncheck(move_one_ball)"
+  ],
+  "solution": [
+    "    if len(arr)==0:\n      return True\n    sorted_array=sorted(arr)\n    my_arr=[]\n    \n    min_value=min(arr)\n    min_index=arr.index(min_value)\n    my_arr=arr[min_index:]+arr[0:min_index]\n    for i in range(len(arr)):\n      if my_arr[i]!=sorted_array[i]:\n        return False\n    return True\n"
+  ],
+  "metrics": {
+    "pass@1": 0.44999999999999984,
+    "pass@10": 0.9999404620147654,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'is_sorted' is not defined",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.515625,
+      0.11376953125,
+      1.25,
+      4.75,
+      0.4296875,
+      0.87890625,
+      0.091796875,
+      1.3203125,
+      0.07470703125,
+      1.6171875,
+      0.82421875,
+      0.0849609375,
+      0.80078125,
+      0.08203125,
+      0.01806640625,
+      0.00616455078125,
+      1.3125,
+      0.0262451171875,
+      3.21875,
+      0.193359375,
+      0.095703125,
+      0.00799560546875,
+      0.0036163330078125,
+      0.1015625,
+      0.1064453125,
+      1.0859375,
+      0.2197265625,
+      0.047119140625,
+      0.003875732421875,
+      0.0771484375,
+      0.052978515625,
+      0.2021484375,
+      0.00885009765625,
+      0.52734375,
+      0.2421875,
+      0.04931640625,
+      0.00179290771484375,
+      0.017822265625,
+      0.00154876708984375,
+      0.061767578125,
+      0.0027618408203125,
+      0.000972747802734375,
+      3.147125244140625e-05,
+      0.000614166259765625,
+      0.00010824203491210938,
+      0.01165771484375,
+      0.0020904541015625,
+      0.000591278076171875,
+      0.0001392364501953125,
+      0.053955078125,
+      0.0045166015625,
+      0.008544921875,
+      8.58306884765625e-05
+    ],
+    "len": 53,
+    "num_tokens_generated": 53,
+    "num_tokens_scored": 7,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.1320754716981132,
+    "green_fraction": 0.8571428571428571,
+    "z_score": 1.889822365046136,
+    "p_value": 0.02939086067767943,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.44140625,
+      1.0546875,
+      0.76953125,
+      0.001953125,
+      0.412109375,
+      0.0947265625,
+      0.55078125,
+      0.09130859375,
+      0.01336669921875,
+      0.0106201171875,
+      1.2421875,
+      0.06640625,
+      3.359375,
+      0.34375,
+      0.5703125,
+      0.19140625,
+      0.00921630859375,
+      0.09814453125,
+      0.1396484375,
+      1.21875,
+      3.359375,
+      1.25,
+      0.1552734375,
+      0.0137939453125,
+      0.765625,
+      2.484375,
+      0.400390625,
+      0.69921875,
+      0.10546875,
+      0.40625,
+      1.9453125,
+      0.357421875,
+      0.2412109375,
+      0.0224609375,
+      0.0002498626708984375,
+      2.956390380859375e-05,
+      0.004241943359375,
+      0.22265625,
+      0.80859375,
+      2.15625,
+      0.0181884765625,
+      1.0859375,
+      0.0751953125,
+      0.006134033203125,
+      8.487701416015625e-05,
+      0.0966796875,
+      0.08837890625,
+      0.1259765625,
+      0.62890625,
+      0.0032501220703125,
+      0.000377655029296875,
+      0.02685546875,
+      4.029273986816406e-05,
+      0.2294921875,
+      0.91796875,
+      1.203125,
+      0.6328125,
+      0.1689453125,
+      0.044677734375,
+      0.4453125,
+      0.9453125,
+      0.21875,
+      0.77734375,
+      0.1396484375,
+      0.8046875,
+      7.331371307373047e-06,
+      0.1435546875,
+      0.416015625,
+      0.064453125,
+      0.004150390625,
+      0.00014209747314453125,
+      0.04296875,
+      0.10498046875,
+      0.0035858154296875,
+      0.01019287109375,
+      0.6796875,
+      0.11376953125,
+      0.103515625,
+      0.0018157958984375,
+      1.3046875
+    ],
+    "len": 80,
+    "num_tokens_generated": 80,
+    "num_tokens_scored": 10,
+    "num_green_tokens": 6,
+    "watermarking_fraction": 0.125,
+    "green_fraction": 0.6,
+    "z_score": 0.6324555320336759,
+    "p_value": 0.26354462843276905,
+    "prediction": false
+  }
+}

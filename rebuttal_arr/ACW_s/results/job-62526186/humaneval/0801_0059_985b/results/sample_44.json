@@ -1,0 +1,332 @@
+{
+  "prompt": [
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\""
+  ],
+  "generations": [
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    digits = \"0123456789\"\n    result = \"\"\n    while x > 0:\n        result = digits[x % base] + result\n        x //= base\n    return result or \"0\"\n    ",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x //= base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x //= base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x //= base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n",
+    "def change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\" \n    # Your code here\n    result = ''\n    while x > 0:\n        result = str(x % base) + result\n        x = x // base\n    return result\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(8, 3) == \"22\"\n    assert candidate(9, 3) == \"100\"\n    assert candidate(234, 2) == \"11101010\"\n    assert candidate(16, 2) == \"10000\"\n    assert candidate(8, 2) == \"1000\"\n    assert candidate(7, 2) == \"111\"\n    for x in range(2, 8):\n        assert candidate(x, x + 1) == str(x)\n\n\ncheck(change_base)"
+  ],
+  "solution": [
+    "    ret = \"\"\n    while x > 0:\n        ret = str(x % base) + ret\n        x //= base\n    return ret\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.109375,
+      0.021484375,
+      3.203125,
+      4.6875,
+      0.443359375,
+      0.64453125,
+      0.478515625,
+      0.03271484375,
+      3.40625,
+      0.59765625,
+      1.1328125,
+      0.08251953125,
+      0.40625,
+      0.1513671875,
+      0.89453125,
+      0.0098876953125,
+      0.00238037109375,
+      0.078125,
+      0.053955078125,
+      0.7109375,
+      0.322265625,
+      0.0216064453125,
+      0.01025390625,
+      0.248046875,
+      0.0011138916015625,
+      0.00750732421875,
+      0.00125885009765625,
+      0.002899169921875,
+      0.181640625,
+      0.0003261566162109375,
+      0.000812530517578125,
+      0.69921875,
+      0.0634765625,
+      0.030029296875,
+      0.0032501220703125,
+      0.2119140625,
+      0.004486083984375,
+      0.0191650390625,
+      0.01129150390625,
+      1.609375
+    ],
+    "len": 40,
+    "num_tokens_generated": 40,
+    "num_tokens_scored": 5,
+    "num_green_tokens": 4,
+    "watermarking_fraction": 0.125,
+    "green_fraction": 0.8,
+    "z_score": 1.3416407864998738,
+    "p_value": 0.08985624743949988,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.193359375,
+      3.125,
+      1.0859375,
+      1.1875,
+      0.07080078125,
+      0.93359375,
+      0.271484375,
+      1.1640625,
+      0.0235595703125,
+      0.0040283203125,
+      0.0537109375,
+      0.049072265625,
+      2.59375,
+      0.6640625,
+      0.08837890625,
+      0.04931640625,
+      0.451171875,
+      0.0024566650390625,
+      0.0255126953125,
+      0.0020599365234375,
+      0.0037994384765625,
+      0.1904296875,
+      0.000213623046875,
+      0.00182342529296875,
+      0.70703125,
+      0.000537872314453125,
+      0.00347900390625,
+      0.2451171875,
+      0.002349853515625,
+      0.051025390625,
+      0.057861328125,
+      1.4921875
+    ],
+    "len": 32,
+    "num_tokens_generated": 32,
+    "num_tokens_scored": 3,
+    "num_green_tokens": 2,
+    "watermarking_fraction": 0.09375,
+    "green_fraction": 0.6666666666666666,
+    "z_score": 0.5773502691896258,
+    "p_value": 0.28185143082538655,
+    "prediction": false
+  }
+}

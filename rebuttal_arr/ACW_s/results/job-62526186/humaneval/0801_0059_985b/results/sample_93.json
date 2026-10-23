@@ -1,0 +1,428 @@
+{
+  "prompt": [
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\""
+  ],
+  "generations": [
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n        \n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n\n    return ''.join(replace_vowels(swap_case(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n\n    def replace_vowels(char):\n        vowels = {'a': 'E', 'e': 'A', 'i': 'O', 'o': 'I', 'u': 'U'}\n        return vowels.get(char.lower(), char)\n\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n\n",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n\n    def replace_vowels(char):\n        vowels = {'a': 'E', 'e': 'A', 'i': 'O', 'o': 'I', 'u': 'U'}\n        return vowels.get(char.lower(), char)\n\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n\n",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.isupper():\n            return char.lower()\n        else:\n            return char.upper()\n    \n    def replace_vowels(char):\n        vowels = {'a': 'E', 'e': 'A', 'i': 'O', 'o': 'I', 'u': 'U'}\n        return vowels.get(char.lower(), char)\n    \n    encoded_message = ''\n    for char in message:\n        if char.isalpha():\n            encoded_message += swap_case(char)\n        else:\n            encoded_message += replace_vowels(char)\n    \n    return encoded_message",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    encoded_message = \"\"\n    for char in message:\n        if char.isalpha():\n            if char.lower() in 'aeiou':\n                encoded_message += chr((ord(char.lower()) - 97 + 2) % 26 + 97).upper()\n            else:\n                encoded_message += char.swapcase()\n        else:\n            encoded_message += char\n    return encoded_message\n",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n        \n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n\n    return ''.join([swap_case(char) for char in message]).replace(\n        'a', replace_vowels('a'), 1).replace('e', replace_vowels('e'), 1).replace(\n        'i', replace_vowels('i'), 1).replace('o', replace_vowels('o'), 1).replace(\n        'u', replace_vowels('u'), 1)\n",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    encoded_message = \"\"\n    for char in message:\n        if char.isalpha():\n            if char.lower() in 'aeiou':\n                encoded_message += chr((ord(char.lower()) - 97 + 2) % 26 + 97).upper()\n            else:\n                encoded_message += char.swapcase()\n        else:\n            encoded_message += char\n    return encoded_message\n",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.isupper():\n            return char.lower()\n        else:\n            return char.upper()\n    \n    def replace_vowels(char):\n        vowels = {'a': 'E', 'e': 'A', 'i': 'O', 'o': 'I', 'u': 'U'}\n        return vowels.get(char.lower(), char)\n    \n    encoded_message = ''\n    for char in message:\n        if char.isalpha():\n            encoded_message += swap_case(char)\n        else:\n            encoded_message += replace_vowels(char)\n    \n    return encoded_message",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n        \n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n\n    return ''.join(replace_vowels(swap_case(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n        \n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n\n    return ''.join(replace_vowels(swap_case(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char in vowels:\n            return chr((ord(char) - ord('a') + 2) % 26 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    ",
+    "def encode(message):\n    \"\"\"\n    Write a function that takes a message, and encodes in such a \n    way that it swaps case of all letters, replaces all vowels in \n    the message with the letter that appears 2 places ahead of that \n    vowel in the english alphabet. \n    Assume only letters. \n    \n    Examples:\n    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\" \n    def swap_case(char):\n        if char.islower():\n            return char.upper()\n        else:\n            return char.lower()\n    def replace_vowels(char):\n        vowels = 'aeiou'\n        if char.lower() in vowels:\n            return chr((vowels.index(char.lower()) + 2) % 5 + ord('a'))\n        else:\n            return char\n    return ''.join(swap_case(replace_vowels(char)) for char in message)\n    "
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate('TEST') == 'tgst', \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate('Mudasir') == 'mWDCSKR', \"This prints if this assert fails 2 (good for debugging!)\"\n    assert candidate('YES') == 'ygs', \"This prints if this assert fails 3 (good for debugging!)\"\n    \n    # Check some edge cases that are easy to work out by hand.\n    assert candidate('This is a message') == 'tHKS KS C MGSSCGG', \"This prints if this assert fails 2 (also good for debugging!)\"\n    assert candidate(\"I DoNt KnOw WhAt tO WrItE\") == 'k dQnT kNqW wHcT Tq wRkTg', \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(encode)"
+  ],
+  "solution": [
+    "    vowels = \"aeiouAEIOU\"\n    vowels_replace = dict([(i, chr(ord(i) + 2)) for i in vowels])\n    message = message.swapcase()\n    return ''.join([vowels_replace[i] if i in vowels else i for i in message])\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: This prints if this assert fails 1 (good for debugging!)",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.34375,
+      0.10546875,
+      2.65625,
+      2.296875,
+      0.66796875,
+      2.5,
+      0.142578125,
+      0.09033203125,
+      0.828125,
+      0.06201171875,
+      0.0220947265625,
+      0.9609375,
+      0.16796875,
+      0.005859375,
+      0.0052490234375,
+      0.013916015625,
+      0.0025177001953125,
+      0.01007080078125,
+      0.00098419189453125,
+      0.78125,
+      0.038330078125,
+      0.00130462646484375,
+      9.393692016601562e-05,
+      0.00051116943359375,
+      1.1742115020751953e-05,
+      0.77734375,
+      1.2265625,
+      0.68359375,
+      0.4609375,
+      0.07568359375,
+      0.0014801025390625,
+      0.5078125,
+      0.384765625,
+      0.0458984375,
+      0.0076904296875,
+      0.2197265625,
+      0.11083984375,
+      0.236328125,
+      1.25,
+      0.31640625,
+      0.0003299713134765625,
+      0.00049591064453125,
+      0.57421875,
+      0.00139617919921875,
+      0.39453125,
+      0.046142578125,
+      0.6953125,
+      6.67572021484375e-05,
+      0.01092529296875,
+      0.000682830810546875,
+      1.9222497940063477e-06,
+      0.0308837890625,
+      0.00408935546875,
+      0.255859375,
+      0.08203125,
+      0.66015625,
+      0.62890625,
+      1.2069940567016602e-06,
+      1.1146068572998047e-05,
+      0.12255859375,
+      0.0001850128173828125,
+      0.00787353515625,
+      0.00193023681640625,
+      0.267578125,
+      0.00433349609375,
+      0.007415771484375,
+      0.042724609375,
+      0.000461578369140625,
+      0.10986328125,
+      0.259765625,
+      0.00860595703125,
+      0.609375,
+      0.04345703125,
+      0.1904296875,
+      0.03125,
+      0.00084686279296875,
+      0.5625,
+      0.031494140625,
+      0.001007080078125,
+      0.00026702880859375,
+      0.00101470947265625,
+      0.73046875,
+      0.0255126953125,
+      0.71484375,
+      0.326171875,
+      3.552436828613281e-05,
+      1.3671875,
+      3.361701965332031e-05,
+      0.00010061264038085938,
+      0.31640625,
+      5.3882598876953125e-05,
+      2.7894973754882812e-05,
+      1.9650906324386597e-07,
+      7.390975952148438e-05,
+      0.041259765625,
+      0.022705078125,
+      0.00823974609375,
+      7.724761962890625e-05,
+      2.4318695068359375e-05,
+      0.00982666015625,
+      1.1953125,
+      2.859375
+    ],
+    "len": 102,
+    "num_tokens_generated": 102,
+    "num_tokens_scored": 8,
+    "num_green_tokens": 7,
+    "watermarking_fraction": 0.0784313725490196,
+    "green_fraction": 0.875,
+    "z_score": 2.1213203435596424,
+    "p_value": 0.016947426762344633,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.5078125,
+      2.53125,
+      0.2119140625,
+      0.361328125,
+      1.71875,
+      0.41015625,
+      0.0025787353515625,
+      0.0008544921875,
+      0.71484375,
+      0.000553131103515625,
+      0.00174713134765625,
+      0.1640625,
+      0.26171875,
+      1.859375,
+      0.77734375,
+      3.46875,
+      0.310546875,
+      0.66015625,
+      1.453125,
+      1.1796875,
+      1.1328125,
+      0.546875,
+      0.546875,
+      0.08349609375,
+      0.1533203125,
+      0.73046875,
+      0.058349609375,
+      0.0322265625,
+      0.0018768310546875,
+      0.6328125,
+      0.0289306640625,
+      0.0029754638671875,
+      0.000885009765625,
+      0.2060546875,
+      0.000507354736328125,
+      0.490234375,
+      0.61328125,
+      2.953125,
+      1.0234375,
+      1.3515625,
+      1.3359375,
+      2.5033950805664062e-05,
+      0.34375,
+      0.1865234375,
+      1.3359375,
+      0.578125,
+      0.00011157989501953125,
+      0.67578125,
+      0.0712890625,
+      1.4379620552062988e-06,
+      9.715557098388672e-06,
+      0.00011301040649414062,
+      0.33203125,
+      0.02685546875,
+      0.0016326904296875,
+      0.04931640625,
+      0.049072265625,
+      0.001861572265625,
+      5.692243576049805e-06,
+      0.162109375,
+      0.00213623046875,
+      0.03173828125,
+      0.0003795623779296875,
+      0.0003681182861328125,
+      0.1669921875,
+      1.0625
+    ],
+    "len": 66,
+    "num_tokens_generated": 66,
+    "num_tokens_scored": 9,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.13636363636363635,
+    "green_fraction": 0.3333333333333333,
+    "z_score": -1.0,
+    "p_value": 0.8413447460685429,
+    "prediction": false
+  }
+}

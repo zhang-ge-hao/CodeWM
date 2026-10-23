@@ -1,0 +1,462 @@
+{
+  "prompt": [
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\""
+  ],
+  "generations": [
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    \n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    \n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    \n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # 4th Fibonacci number is 2\n    # 3rd Fibonacci number is 1\n    # 2nd Fibonacci number is 0\n    # 1st Fibonacci number is 0\n    # So, fib4(0) = 0, fib4(1) = 0, fib4(2) = 2, fib4(3) = 0, and so on.\n\n    # Base cases\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n\n    # Initialize variables\n    a, b, c, d = 0, 0, 2, 0\n\n    # Compute the n-th element of the fib4 number sequence\n    for _ in range(4, n + 1):\n        a, b, c, d = b, c, d, a + b + c + d\n\n    return d",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base case: \n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n    else:\n        a, b, c, d = 0, 0, 2, 0\n        for _ in range(4, n+1):\n            a, b, c, d = b, c, d, a+b+c+d\n        return d\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    \n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    \n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    \n    return arr[n]",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n\n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n\n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n\n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base case: \n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n    # recursive case:\n    else:\n        return fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4)\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n\n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n\n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n\n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    \n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    \n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    \n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # 1. Use a dynamic programming approach\n    # 2. Create an array of size n+1 to store the fib4 numbers\n    # 3. Base cases: fib4(0) = 0, fib4(1) = 0, fib4(2) = 2, fib4(3) = 0\n    # 4. For each fib4 number from 4 to n, calculate it as the sum of the previous 4 fib4 numbers\n    # 5. Return the n-th fib4 number\n\n    if n < 0:\n        raise ValueError(\"n must be a non-negative integer\")\n    if n == 0:\n        return 0\n    if n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n\n    fib4_nums = [0] * (n + 1)\n    fib4_nums[0] = 0\n    fib4_nums[1] = 0\n    fib4_nums[2] = 2\n    fib4_nums[3] = 0\n\n    for i in range(4, n + 1):\n        fib4_nums[i] = fib4_nums[i - 1] + fib4_nums[i - 2] + fib4_nums[i - 3] + fib4_nums[i - 4]\n\n    return fib4_nums[n]",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    \n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    \n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    \n    return arr[n]",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # 4th Fibonacci number is the sum of the three preceding ones, so we can use the same formula for Fibonacci numbers\n    # fib(n) = fib(n-1) + fib(n-2) + fib(n-3)\n    # However, we need to adjust for the fact that the 4th Fibonacci number is not defined in the same way as the other Fibonacci numbers\n    # So we need to adjust the formula for the 4th Fibonacci number to be fib4(n) = fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4)\n    # And the base cases for the 4th Fibonacci number are:\n    # fib4(0) = 0, fib4(1) = 0, fib4(2) = 2, fib4(3) = 0\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n    else:\n        a, b, c, d = 0, 0, 2, 0\n        for _ in range(4, n+1):\n            a, b, c, d = b, c, d, a + b + c + d\n        return d\n    \n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n\n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n\n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n\n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base case: \n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n    else:\n        a, b, c, d = 0, 0, 2, 0\n        for _ in range(4, n+1):\n            a, b, c, d = b, c, d, a + b + c + d\n        return d\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    \n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    \n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    \n    return arr[n]",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n\n    # initialize the array with base cases\n    fib4_array = [0, 0, 2, 0]\n\n    # compute the n-th element of the fib4 number sequence\n    for i in range(4, n+1):\n        fib4_array.append(fib4_array[i-1] + fib4_array[i-2] + fib4_array[i-3] + fib4_array[i-4])\n\n    return fib4_array[n]",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # Use a dynamic programming approach to store the computed values and avoid redundant calculations\n    # Initialize a list with the base cases\n    fib = [0, 0, 2, 0]\n    \n    # Compute the fib4 numbers iteratively\n    for i in range(4, n+1):\n        # Compute the current fib4 number as the sum of the previous four numbers\n        fib.append(fib[i-1] + fib[i-2] + fib[i-3] + fib[i-4])\n    \n    # Return the n-th fib4 number\n    return fib[n]",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n    \n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n    \n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n    \n    return arr[n]\n",
+    "def fib4(n: int):\n    \"\"\"The Fib4 number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:\n    fib4(0) -> 0\n    fib4(1) -> 0\n    fib4(2) -> 2\n    fib4(3) -> 0\n    fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n    Please write a function to efficiently compute the n-th element of the fib4 number sequence.  Do not use recursion.\n    >>> fib4(5)\n    4\n    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\" \n    # Your code here\n    # base cases\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n\n    # initialize the array with base cases\n    arr = [0, 0, 2, 0]\n\n    # compute the sequence\n    for i in range(4, n+1):\n        arr.append(arr[i-1] + arr[i-2] + arr[i-3] + arr[i-4])\n\n    return arr[n]\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == 4\n    assert candidate(8) == 28\n    assert candidate(10) == 104\n    assert candidate(12) == 386\n\n\ncheck(fib4)"
+  ],
+  "solution": [
+    "    results = [0, 0, 2, 0]\n    if n < 4:\n        return results[n]\n\n    for _ in range(4, n + 1):\n        results.append(results[-1] + results[-2] + results[-3] + results[-4])\n        results.pop(0)\n\n    return results[-1]\n"
+  ],
+  "metrics": {
+    "pass@1": 1.0,
+    "pass@10": 1.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.390625,
+      0.038330078125,
+      1.84375,
+      4.53125,
+      0.458984375,
+      0.3046875,
+      0.8046875,
+      0.205078125,
+      2.09375,
+      5.625,
+      0.90625,
+      1.0546875,
+      0.00384521484375,
+      0.1904296875,
+      0.1181640625,
+      1.0078125,
+      0.012939453125,
+      0.07373046875,
+      0.58984375,
+      0.004364013671875,
+      0.083984375,
+      0.049072265625,
+      0.0026702880859375,
+      0.359375,
+      0.0751953125,
+      0.029296875,
+      0.00897216796875,
+      0.0042724609375,
+      0.330078125,
+      0.00049591064453125,
+      0.71875,
+      0.000911712646484375,
+      0.01348876953125,
+      0.005218505859375,
+      0.0014495849609375,
+      0.0498046875,
+      0.00225830078125,
+      0.000537872314453125,
+      0.0018310546875,
+      0.007080078125,
+      0.302734375,
+      0.0010223388671875,
+      0.146484375,
+      0.000438690185546875,
+      0.006103515625,
+      0.00982666015625,
+      0.000728607177734375,
+      0.0087890625,
+      0.002716064453125,
+      0.000492095947265625,
+      0.00140380859375,
+      0.033203125,
+      1.2421875,
+      0.006561279296875,
+      0.89453125,
+      3.578125,
+      2.1875,
+      2.28125,
+      1.5234375,
+      0.63671875,
+      0.1845703125,
+      0.1298828125,
+      0.0003490447998046875,
+      1.4921875,
+      0.033935546875,
+      0.03759765625,
+      0.0267333984375,
+      0.8125,
+      0.061767578125,
+      0.0028076171875,
+      0.007415771484375,
+      0.000743865966796875,
+      0.009521484375,
+      0.00433349609375,
+      0.00060272216796875,
+      0.000690460205078125,
+      0.6875,
+      0.408203125,
+      0.0014801025390625,
+      0.50390625,
+      2.171875,
+      0.8359375,
+      2.15625,
+      1.859375,
+      9.918212890625e-05,
+      0.052001953125,
+      0.0252685546875,
+      0.0002002716064453125,
+      0.0003032684326171875,
+      0.013427734375,
+      0.0020294189453125,
+      0.0286865234375,
+      0.00164794921875,
+      0.6171875,
+      0.000782012939453125,
+      0.0283203125,
+      0.007415771484375,
+      0.158203125,
+      0.12890625,
+      0.09814453125,
+      0.1669921875,
+      0.0081787109375,
+      0.00188446044921875,
+      0.06103515625,
+      0.0004138946533203125,
+      0.00274658203125,
+      4.410743713378906e-05,
+      0.0003643035888671875,
+      0.00010585784912109375,
+      0.0015716552734375,
+      0.0006256103515625,
+      0.0033111572265625,
+      6.628036499023438e-05,
+      0.001556396484375,
+      0.0001621246337890625,
+      0.0037384033203125,
+      0.0009765625,
+      0.003509521484375,
+      7.963180541992188e-05,
+      0.0037384033203125,
+      7.724761962890625e-05,
+      0.1298828125,
+      0.58984375,
+      0.00029754638671875,
+      0.421875,
+      0.0020904541015625,
+      0.12255859375,
+      1.15625
+    ],
+    "len": 128,
+    "num_tokens_generated": 128,
+    "num_tokens_scored": 14,
+    "num_green_tokens": 14,
+    "watermarking_fraction": 0.109375,
+    "green_fraction": 1.0,
+    "z_score": 3.7416573867739413,
+    "p_value": 9.14053164909174e-05,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.1416015625,
+      1.6640625,
+      0.2890625,
+      0.6015625,
+      0.05078125,
+      0.1787109375,
+      0.061279296875,
+      0.004791259765625,
+      0.019775390625,
+      0.0027618408203125,
+      0.0184326171875,
+      0.0091552734375,
+      0.001129150390625,
+      0.0018310546875,
+      0.70703125,
+      0.1865234375,
+      0.91015625,
+      0.21875,
+      0.8515625,
+      0.1201171875,
+      0.58203125,
+      0.2890625,
+      0.0537109375,
+      0.031494140625,
+      0.0208740234375,
+      0.001251220703125,
+      0.447265625,
+      0.007537841796875,
+      1.109375,
+      0.490234375,
+      0.0152587890625,
+      0.002197265625,
+      0.228515625,
+      0.06640625,
+      0.047607421875,
+      0.0016632080078125,
+      0.75390625,
+      0.005767822265625,
+      0.000518798828125,
+      0.0272216796875,
+      0.005035400390625,
+      1.640625,
+      0.85546875,
+      0.58984375,
+      0.5859375,
+      0.4296875,
+      0.041259765625,
+      0.02197265625,
+      0.00799560546875,
+      0.0111083984375,
+      0.0030975341796875,
+      0.0067138671875,
+      0.005462646484375,
+      0.004425048828125,
+      0.00034332275390625,
+      0.0003719329833984375,
+      0.01806640625,
+      0.00110626220703125,
+      0.004180908203125,
+      0.000331878662109375,
+      2.1457672119140625e-05,
+      0.625,
+      0.58984375,
+      0.71875,
+      0.369140625,
+      0.0006561279296875,
+      4.9114227294921875e-05,
+      0.796875,
+      0.0034332275390625,
+      0.007110595703125,
+      0.00897216796875,
+      0.19921875,
+      4.2438507080078125e-05,
+      1.140625
+    ],
+    "len": 74,
+    "num_tokens_generated": 74,
+    "num_tokens_scored": 2,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.02702702702702703,
+    "green_fraction": 0.5,
+    "z_score": 0.0,
+    "p_value": 0.5,
+    "prediction": false
+  }
+}

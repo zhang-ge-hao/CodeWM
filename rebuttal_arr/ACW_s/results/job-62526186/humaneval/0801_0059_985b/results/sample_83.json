@@ -1,0 +1,390 @@
+{
+  "prompt": [
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\""
+  ],
+  "generations": [
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n-2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, or 5)\n    # and there are 10^(n-2) options for the remaining n-2 digits.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    if n == 1:\n        return 2\n    return 2 * (10 ** (n - 1) - 9)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    if n == 1:\n        return 2\n    return 2 * (5 ** (n - 1))\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # n*(n+1)/2 numbers of n-digit numbers, and each number can be at most\n    # 9*10^(n-1) and can start or end with 1. Therefore, the count of numbers\n    # that start or end with 1 is n*(n+1)/2.\n    return n*(n+1)//2\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n-2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, 5)\n    # and for the last digit (0-9), leaving a total of 5 * 10^(n-2) possibilities.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # n*(n+1)/2 numbers of n-digit numbers, and each number can be\n    # either 10^(n-1) to 9*10^(n-1) or 1 to 10^n-1.\n    # We subtract the numbers that start or end with 1 but do not include 10^(n-1) and 9*10^(n-1).\n    return (10**(n-1) - 10**(n-2) - 9*10**(n-2)) + 2*10**(n-1)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n - 2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, 5)\n    # multiplied by 10^(n - 2) for the remaining n - 2 digits.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n-2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, or 5)\n    # multiplied by 10^(n-2) options for the remaining digits.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n - 2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, 5)\n    # and there are 10^(n - 2) options for the remaining digits.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The number of n-digit numbers that start or end with 1 is 10^(n-1).\n    # However, since there are 4 possible digits (0, 1, 8, 9) and n can be 1 or 2,\n    # we need to subtract the cases where the number is a single digit 1.\n    # This is because we are counting the numbers that start or end with 1.\n    return 10 ** (n - 1) - 4\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    if n == 1:\n        return 2\n    return 2 * (5 ** (n - 1))\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # n*(n-1) = 9n (numbers of n-digit numbers) - (10^(n-1) - 10^n) (numbers\n    # that start or end with 1) = 9n - 9*10^(n-1) = 90 - 10^n.\n    # This is a mathematical formula derived from the fact that for each\n    # n-digit number, there are 10^(n-1) numbers that start or end with 1.\n    # The numbers that start or end with 1 are those that have at least\n    # one digit from 1 to 9 in them. Since there are 10 digits from 0 to 9,\n    # there are 10*(10^(n-1)) numbers that start or end with 1.\n    return 90 - 10**(n-1)\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are 10 * n - 10 + 1 = 90 n-digit numbers\n    # that start or end with 1. The first 90 numbers start with 1, the second 90, and so on, so the formula\n    # is (n + 1) * 45.\n    return (n + 1) * 45\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # n*(n+1)/2 numbers of n-digit numbers, and each number can be at most\n    # 9*10^(n-1) and can be divided by 10^(n-1) to get the numbers starting with 1.\n    return n * (n + 1) // 2 - n * 10 ** (n - 1)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n - 2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, 5)\n    # multiplied by 10^(n - 2) for the remaining digits.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    if n == 1:\n        return 2\n    return 2 * (10 ** (n - 1) - 9)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    if n == 1:\n        return 2\n    return 2 * (10 ** (n - 1) - 9)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    if n == 1:\n        return 2\n    return 2 * (10 ** (n - 1) - 9)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # 5 * 10^(n-2) possible n-digit numbers that start or end with 1.\n    # This is because there are 5 options for the first digit (1, 2, 3, 4, 5)\n    # and there are 10^(n-2) options for the remaining n-2 digits.\n    return 5 * 10 ** (n - 2)\n\n",
+    "def starts_one_ends(n):\n    \"\"\"\n    Given a positive integer n, return the count of the numbers of n-digit\n    positive integers that start or end with 1.\n    \"\"\" \n    # The formula used here is derived from the fact that there are\n    # n*(n-1) = 9n (numbers of n-digit numbers) - (10^(n-1) - 10^(n-2)) (numbers of n-1 digit numbers)\n    # where n is the number of digits.\n    return 9 * (10 ** (n - 1)) - (10 ** (n - 2)) - 9\n\n"
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert True, \"This prints if this assert fails 1 (good for debugging!)\"\n    assert candidate(1) == 1\n    assert candidate(2) == 18\n    assert candidate(3) == 180\n    assert candidate(4) == 1800\n    assert candidate(5) == 18000\n\n    # Check some edge cases that are easy to work out by hand.\n    assert True, \"This prints if this assert fails 2 (also good for debugging!)\"\n\n\ncheck(starts_one_ends)"
+  ],
+  "solution": [
+    "    if n == 1: return 1\n    return 18 * (10 ** (n - 2))\n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      1.875,
+      0.01116943359375,
+      2.640625,
+      4.78125,
+      2.3125,
+      1.3515625,
+      0.953125,
+      0.283203125,
+      0.97265625,
+      0.064453125,
+      0.55078125,
+      1.6796875,
+      0.032470703125,
+      2.453125,
+      0.029052734375,
+      1.28125,
+      0.00106048583984375,
+      0.001068115234375,
+      1.1796875,
+      0.337890625,
+      1.046875,
+      1.0546875,
+      0.52734375,
+      0.004547119140625,
+      4.1484832763671875e-05,
+      0.69140625,
+      0.314453125,
+      0.0003910064697265625,
+      1.3515625,
+      0.1279296875,
+      0.0703125,
+      0.01263427734375,
+      1.515625,
+      0.1201171875,
+      0.036865234375,
+      0.000385284423828125,
+      0.0024261474609375,
+      0.1376953125,
+      0.01214599609375,
+      1.5234375,
+      0.005645751953125,
+      0.66796875,
+      2.28125,
+      0.2578125,
+      0.150390625,
+      1.5390625,
+      0.006378173828125,
+      0.375,
+      0.294921875,
+      1.8515625,
+      0.39453125,
+      0.025146484375,
+      0.1650390625,
+      0.0179443359375,
+      0.1435546875,
+      0.5859375,
+      1.2734375,
+      0.09033203125,
+      0.41796875,
+      0.0103759765625,
+      0.10205078125,
+      0.0002765655517578125,
+      0.002166748046875,
+      0.0011444091796875,
+      2.1010637283325195e-06,
+      0.0294189453125,
+      0.6875,
+      0.000774383544921875,
+      0.01214599609375,
+      0.9296875,
+      5.1021575927734375e-05,
+      0.00054931640625,
+      1.1640625,
+      1.8125,
+      0.00665283203125,
+      0.014892578125,
+      0.025390625,
+      0.25390625,
+      1.5348196029663086e-06,
+      0.00125885009765625,
+      0.00787353515625,
+      1.9788742065429688e-05,
+      0.1513671875,
+      0.0036773681640625,
+      0.0037841796875,
+      0.404296875,
+      0.796875,
+      0.002777099609375,
+      0.1904296875,
+      0.00011301040649414062,
+      0.205078125,
+      0.02392578125,
+      0.98046875,
+      0.1328125,
+      0.00823974609375,
+      0.06396484375,
+      0.984375,
+      0.00518798828125,
+      0.62890625,
+      0.06689453125,
+      0.00069427490234375,
+      0.5078125,
+      0.018798828125,
+      0.0005950927734375,
+      1.2109375
+    ],
+    "len": 105,
+    "num_tokens_generated": 105,
+    "num_tokens_scored": 17,
+    "num_green_tokens": 15,
+    "watermarking_fraction": 0.1619047619047619,
+    "green_fraction": 0.8823529411764706,
+    "z_score": 3.1529631254723287,
+    "p_value": 0.0008081111075299929,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.01904296875,
+      2.0625,
+      0.1015625,
+      0.1845703125,
+      0.0029144287109375,
+      0.1123046875,
+      0.267578125,
+      1.0546875,
+      0.01416015625,
+      0.40625,
+      0.73046875,
+      0.0014801025390625,
+      2.359375,
+      0.419921875,
+      1.03125,
+      1.3359375,
+      1.2265625,
+      0.0712890625,
+      0.6484375,
+      0.024169921875,
+      5.626678466796875e-05,
+      0.2265625,
+      0.005126953125,
+      0.3671875,
+      0.71484375
+    ],
+    "len": 25,
+    "num_tokens_generated": 25,
+    "num_tokens_scored": 4,
+    "num_green_tokens": 3,
+    "watermarking_fraction": 0.16,
+    "green_fraction": 0.75,
+    "z_score": 1.0,
+    "p_value": 0.15865525393145707,
+    "prediction": false
+  }
+}

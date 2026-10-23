@@ -1,0 +1,358 @@
+{
+  "prompt": [
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\""
+  ],
+  "generations": [
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions.\n\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(cars):\n        collisions = 0\n        for i in range(len(cars)):\n            for j in range(i + 1, len(cars)):\n                if cars[i] > cars[j]:\n                    collisions += 1\n        return collisions\n\n    # Generate the cars for each direction and calculate the collisions\n    left_cars = [random.randint(1, 100) for _ in range(n)]\n    right_cars = [random.randint(1, 100) for _ in range(n)]\n\n    # Calculate the total number of collisions\n    total_collisions = carRacingCollision(left_cars) + carRacingCollision(right_cars)\n\n    return total_collisions\n\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n):\n        # The number of collisions is given by the sum of the first n odd numbers.\n        # This is because a car moving left to right will hit every other car\n        # moving right to left, and the number of collisions is the sum of the first\n        # n odd numbers.\n        return n * n\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(left_cars, right_cars):\n        left_cars.sort()\n        right_cars.sort()\n        collision = 0\n        i = len(right_cars) - 1\n        j = len(left_cars) - 1\n        while i >= 0 and j >= 0:\n            if left_cars[j] >= right_cars[i]:\n                collision += 1\n                i -= 1\n                j -= 1\n            else:\n                i -= 1\n        return collision\n\n    # Generate the cars' positions for the left and right cars\n    left_cars = [i for i in range(n, 2 * n)]\n    right_cars = [i for i in range(n - 1, -1, -1)]\n\n    return carRacingCollision(left_cars, right_cars)\n\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n):\n        # The number of collisions is given by the sum of the first n odd numbers.\n        # This is because a car moving left to right will hit every other car\n        # moving right to left, and the number of collisions is the sum of the first n odd numbers.\n        return n * n\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions.\n\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int) -> int:\n        # The formula to calculate the number of collisions is (n*(n-1))/2\n        # This is because for each car, there are n-1 cars to hit, and we are\n        # counting each collision. The formula calculates the sum of the first n natural numbers,\n        # which is the number of collisions.\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)\n\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions.\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions.\n        return n * (n - 1) // 2\n\n    # Call the function with the given number of cars\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions.\n\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions. So, the total number\n        # of collisions is half the number of opportunities for collisions.\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is given by n*(n-1)/2. This is based on the fact that each car is\n        # unique and there are n cars, so there are n*(n-1)/2 unique pairs of cars.\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(cars):\n        collisions = 0\n        for i in range(len(cars)):\n            for j in range(i + 1, len(cars)):\n                if cars[i] > cars[j]:\n                    collisions += 1\n        return collisions\n\n    # Generate the cars for each direction and add them to the list\n    left_cars = [random.randint(1, 10) for _ in range(n)]\n    right_cars = [random.randint(1, 10) for _ in range(n)]\n\n    # Calculate the number of collisions\n    total_collisions = carRacingCollision(left_cars) + carRacingCollision(right_cars)\n\n    return total_collisions",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n):\n        # The number of collisions is simply the number of cars.\n        return n\n\n    # The function call to test the function.\n    print(carRacingCollision(n))\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(left_cars, right_cars):\n        left_cars.sort()\n        right_cars.sort()\n        collision = 0\n        i = j = 0\n        while i < len(left_cars) and j < len(right_cars):\n            if left_cars[i] >= right_cars[j]:\n                collision += 1\n                j += 1\n            else:\n                i += 1\n        return collision\n\n    # Generate positions of cars moving left to right\n    left_cars = [i for i in range(n, 2 * n)]\n    # Generate positions of cars moving right to left\n    right_cars = [i for i in range(2 * n - 1, n - 1, -1)]\n\n    return carRacingCollision(left_cars, right_cars)\n\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(cars):\n        collisions = 0\n        for i in range(len(cars)):\n            for j in range(i+1, len(cars)):\n                if cars[i][0] < cars[j][0] and cars[i][1] > cars[j][1]:\n                    collisions += 1\n                elif cars[j][0] < cars[i][0] and cars[j][1] > cars[i][1]:\n                    collisions += 1\n        return collisions\n\n    cars = []\n    for i in range(n):\n        cars.append([random.randint(0, 100), random.randint(0, 100)])\n\n    return carRacingCollision(cars)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(n: int):\n        # The formula to calculate the number of collisions\n        # is (n * (n - 1)) / 2. This is derived from the fact\n        # that for n cars, there are n-1 opportunities for collision\n        # between cars moving in opposite directions.\n\n        return n * (n - 1) // 2\n\n    return carRacingCollision(n)",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def carRacingCollision(left_cars, right_cars):\n        left_cars.sort()\n        right_cars.sort()\n        collision = 0\n        i = 0\n        j = len(right_cars) - 1\n        while i < len(left_cars) and j >= 0:\n            if left_cars[i] < right_cars[j]:\n                collision += 1\n                i += 1\n            else:\n                j -= 1\n        return collision\n\n    # Generate cars' positions for left and right cars\n    left_cars = [i for i in range(n, 2*n)]\n    right_cars = [i for i in range(n)]\n\n    return carRacingCollision(left_cars, right_cars)\n\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def gcd(a, b):\n        while b != 0:\n            a, b = b, a % b\n        return a\n\n    def lcm(a, b):\n        return a * b // gcd(a, b)\n\n    def solve(left, right):\n        if left == right:\n            return 0\n        if left % 2 == 0 and right % 2 == 0:\n            return solve(left // 2, right // 2)\n        if left % 2 == 1 and right % 2 == 1:\n            return lcm(left, right) - 1\n        return max(solve(left - 1, right), solve(left, right - 1))\n\n    return solve(n, n)\n\n",
+    "def car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's a perfectly straight infinitely long line.\n    n cars are driving left to right;  simultaneously, a different set of n cars\n    are driving right to left.   The two sets of cars start out being very far from\n    each other.  All cars move in the same speed.  Two cars are said to collide\n    when a car that's moving left to right hits a car that's moving right to left.\n    However, the cars are infinitely sturdy and strong; as a result, they continue moving\n    in their trajectory as if they did not collide.\n\n    This function outputs the number of such collisions.\n    \"\"\"\n\n\n    def gcd(a, b):\n        while b != 0:\n            a, b = b, a % b\n        return a\n\n    def lcm(a, b):\n        return a * b // gcd(a, b)\n\n    left_cars = n\n    right_cars = n\n    total_collisions = 0\n\n    while left_cars > 0 and right_cars > 0:\n        left_cars -= 1\n        right_cars -= 1\n        total_collisions += lcm(left_cars, right_cars)\n\n    return total_collisions\n\n"
+  ],
+  "reference": [
+    "\n\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 4\n    assert candidate(3) == 9\n    assert candidate(4) == 16\n    assert candidate(8) == 64\n    assert candidate(10) == 100\n\n\ncheck(car_race_collision)"
+  ],
+  "solution": [
+    "    return n**2\n"
+  ],
+  "metrics": {
+    "pass@1": 0.09999999999999998,
+    "pass@10": 0.763157894736842,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'random' is not defined",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'random' is not defined",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: name 'random' is not defined",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: integer division or modulo by zero",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.0,
+      0.65625,
+      2.21875,
+      4.4375,
+      2.90625,
+      0.1591796875,
+      0.58203125,
+      1.8203125,
+      1.1484375,
+      0.02490234375,
+      0.9609375,
+      0.1435546875,
+      2.734375,
+      5.46875,
+      3.09375,
+      1.7265625,
+      0.56640625,
+      0.43359375,
+      0.82421875,
+      0.00787353515625,
+      0.294921875,
+      2.390625,
+      0.00157928466796875,
+      0.040283203125,
+      2.34375,
+      2.0,
+      0.1201171875,
+      1.0703125,
+      0.00634765625,
+      0.0020904541015625,
+      0.400390625,
+      0.00982666015625,
+      0.0003871917724609375,
+      0.1630859375,
+      0.298828125,
+      0.0022125244140625,
+      0.0037384033203125,
+      1.3828125,
+      0.94140625,
+      0.45703125,
+      1.265625,
+      0.21484375,
+      0.04736328125,
+      1.0390625,
+      0.65625,
+      0.0001697540283203125,
+      0.00017642974853515625,
+      0.004150390625,
+      1.6953125,
+      1.0703125,
+      0.005706787109375,
+      0.1748046875,
+      1.6015625,
+      0.1513671875,
+      0.1787109375,
+      2.625,
+      0.00262451171875,
+      3.234375,
+      0.5234375,
+      1.5390625,
+      1.5859375,
+      0.00070953369140625,
+      0.2294921875,
+      1.65625,
+      2.140625,
+      0.890625,
+      0.95703125,
+      0.09521484375,
+      0.0303955078125,
+      1.3046875,
+      0.021484375,
+      0.625,
+      0.89453125,
+      0.099609375,
+      0.007659912109375,
+      0.00017070770263671875,
+      0.09912109375,
+      0.005767822265625,
+      7.867813110351562e-05,
+      0.00787353515625,
+      0.013671875,
+      0.00046539306640625,
+      7.104873657226562e-05,
+      1.015625,
+      0.15234375,
+      1.046875,
+      0.052001953125,
+      0.02880859375,
+      4.220008850097656e-05,
+      6.103515625e-05,
+      0.0201416015625,
+      1.25
+    ],
+    "len": 92,
+    "num_tokens_generated": 92,
+    "num_tokens_scored": 24,
+    "num_green_tokens": 21,
+    "watermarking_fraction": 0.2608695652173913,
+    "green_fraction": 0.875,
+    "z_score": 3.6742346141747673,
+    "p_value": 0.00011928172701435494,
+    "prediction": false
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.11474609375,
+      2.171875,
+      0.6953125,
+      0.8359375,
+      0.026611328125,
+      1.1640625
+    ],
+    "len": 6,
+    "num_tokens_generated": 6,
+    "num_tokens_scored": 1,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.16666666666666666,
+    "green_fraction": 1.0,
+    "z_score": 1.0,
+    "p_value": 0.15865525393145707,
+    "prediction": false
+  }
+}

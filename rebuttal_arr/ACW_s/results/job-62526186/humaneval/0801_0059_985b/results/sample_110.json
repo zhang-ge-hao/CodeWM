@@ -1,0 +1,520 @@
+{
+  "prompt": [
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\""
+  ],
+  "generations": [
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make all lst1 even\n    if any(lst1_odds):\n        return \"NO\"\n\n    # if there is an even number in lst2, it's possible to make all lst1 even\n    if any(lst2_evens):\n        return \"YES\"\n\n    # if none of the above, it's impossible to make all lst1 even\n    return \"NO\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make all lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make all lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, then it's possible to make all numbers in lst1 even\n    # by swapping odd numbers from lst2 with even numbers from lst1\n    if len(lst1_evens) >= len(lst2_evens):\n        return \"YES\"\n    else:\n        return \"NO\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    even_lst1 = [x for x in lst1 if x % 2 == 0]\n    odd_lst1 = [x for x in lst1 if x % 2 != 0]\n    even_lst2 = [x for x in lst2 if x % 2 == 0]\n    odd_lst2 = [x for x in lst2 if x % 2 != 0]\n\n    # if the number of odd numbers in lst1 is greater than in lst2, it's impossible to make lst1 even\n    if len(odd_lst1) > len(even_lst2):\n        return \"NO\"\n\n    # if the number of even numbers in lst1 is less than in lst2, it's impossible to make lst1 even\n    if len(even_lst1) < len(even_lst2):\n        return \"NO\"\n\n    # if the number of odd numbers in lst1 is less than in lst2, it's impossible to make lst1 even\n    if len(odd_lst1) < len(odd_lst2):\n        return \"NO\"\n\n    # if it's possible to make lst1 even, return \"YES\"\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"\n\n",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(n):\n        if n % 2 == 0:\n            return True\n        else:\n            return False\n\n    count = 0\n    for num in lst1:\n        if not even_or_odd(num):\n            count += 1\n\n    if count <= len(lst2):\n        return \"YES\"\n    else:\n        return \"NO\"\n    ",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(n):\n        if n % 2 == 0:\n            return True\n        else:\n            return False\n\n    even_lst1 = list(filter(even_or_odd, lst1))\n    odd_lst2 = list(filter(even_or_odd, lst2))\n\n    if len(even_lst1) == len(odd_lst2):\n        return \"YES\"\n    else:\n        return \"NO\"\n    \n",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_number_check(num):\n        if num % 2 == 0:\n            return True\n        else:\n            return False\n\n    even_count_lst1 = sum([even_number_check(num) for num in lst1])\n    even_count_lst2 = sum([even_number_check(num) for num in lst2])\n\n    if even_count_lst1 == even_count_lst2:\n        return \"YES\"\n    else:\n        return \"NO\"\n    ",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(n):\n        if n % 2 == 0:\n            return True\n        else:\n            return False\n\n    even_lst1 = list(filter(even_or_odd, lst1))\n    odd_lst2 = list(filter(even_or_odd, lst2))\n\n    if len(even_lst1) == len(odd_lst2):\n        return \"YES\"\n    else:\n        return \"NO\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(n):\n        if n % 2 == 0:\n            return True\n        else:\n            return False\n\n    even_lst1 = list(filter(even_or_odd, lst1))\n    odd_lst2 = list(filter(even_or_odd, lst2))\n\n    if len(even_lst1) == len(odd_lst2):\n        return \"YES\"\n    else:\n        return \"NO\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if any(lst1_odds):\n        return \"NO\"\n\n    # if there is an even number in lst2 that is more than half of the total sum of lst1, it's impossible to make lst1 even\n    lst1_total = sum(lst1)\n    lst2_evens_more_than_half = any(even > lst1_total/2 for even in lst2_evens)\n    if lst2_evens_more_than_half:\n        return \"NO\"\n\n    # if none of the above conditions are met, it's possible to make lst1 even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(n):\n        if n % 2 == 0:\n            return True\n        else:\n            return False\n\n    count = 0\n    for num in lst1:\n        if not even_or_odd(num):\n            count += 1\n\n    if count <= len(lst2):\n        return \"YES\"\n    else:\n        return \"NO\"\n        \n",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    even_lst1 = [n for n in lst1 if n % 2 == 0]\n    odd_lst1 = [n for n in lst1 if n % 2 != 0]\n    even_lst2 = [n for n in lst2 if n % 2 == 0]\n    odd_lst2 = [n for n in lst2 if n % 2 != 0]\n\n    # if the number of odd numbers in lst1 is greater than in lst2, it's impossible to make lst1 even\n    if len(odd_lst1) > len(even_lst2):\n        return \"NO\"\n\n    # if the number of even numbers in lst1 is less than in lst2, it's impossible to make lst1 even\n    if len(even_lst1) < len(even_lst2):\n        return \"NO\"\n\n    # if it's possible to make lst1 even, return \"YES\"\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    even_numbers_in_lst1 = [n for n in lst1 if n % 2 == 0]\n    odd_numbers_in_lst1 = [n for n in lst1 if n % 2 != 0]\n    even_numbers_in_lst2 = [n for n in lst2 if n % 2 == 0]\n    odd_numbers_in_lst2 = [n for n in lst2 if n % 2 != 0]\n\n    # If there are enough odd numbers in lst1 to replace with even numbers in lst2,\n    # then it's possible to make lst1 even.\n    if len(odd_numbers_in_lst1) >= len(even_numbers_in_lst2):\n        return \"YES\"\n    else:\n        return \"NO\"\n    ",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(lst):\n        evens = []\n        odds = []\n        for i in lst:\n            if i % 2 == 0:\n                evens.append(i)\n            else:\n                odds.append(i)\n        return evens, odds\n\n    lst1_evens, lst1_odds = even_or_odd(lst1)\n    lst2_evens, lst2_odds = even_or_odd(lst2)\n\n    # if there is at least one odd number in lst1, it's impossible to make lst1 even\n    if len(lst1_odds) > 0:\n        return \"NO\"\n\n    # if there is an odd number in lst2, it's impossible to make lst1 even\n    if len(lst2_odds) > 0:\n        return \"NO\"\n\n    # if all numbers in lst1 are even, we can exchange numbers between lst1 and lst2\n    # to make them all even\n    return \"YES\"",
+    "def exchange(lst1, lst2):\n    \"\"\"In this problem, you will implement a function that takes two lists of numbers,\n    and determines whether it is possible to perform an exchange of elements\n    between them to make lst1 a list of only even numbers.\n    There is no limit on the number of exchanged elements between lst1 and lst2.\n    If it is possible to exchange elements between the lst1 and lst2 to make\n    all the elements of lst1 to be even, return \"YES\".\n    Otherwise, return \"NO\".\n    For example:\n    exchange([1, 2, 3, 4], [1, 2, 3, 4]) => \"YES\"\n    exchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\n    It is assumed that the input lists will be non-empty.\n    \"\"\"\n\n\n    def even_or_odd(n):\n        if n % 2 == 0:\n            return True\n        else:\n            return False\n\n    even_lst1 = list(filter(even_or_odd, lst1))\n    odd_lst2 = list(filter(even_or_odd, lst2))\n\n    if len(even_lst1) == len(odd_lst2):\n        return \"YES\"\n    else:\n        return \"NO\""
+  ],
+  "reference": [
+    "\ndef check(candidate):\n\n    # Check some simple cases\n    assert candidate([1, 2, 3, 4], [1, 2, 3, 4]) == \"YES\"\n    assert candidate([1, 2, 3, 4], [1, 5, 3, 4]) == \"NO\"\n    assert candidate([1, 2, 3, 4], [2, 1, 4, 3]) == \"YES\" \n    assert candidate([5, 7, 3], [2, 6, 4]) == \"YES\"\n    assert candidate([5, 7, 3], [2, 6, 3]) == \"NO\" \n    assert candidate([3, 2, 6, 1, 8, 9], [3, 5, 5, 1, 1, 1]) == \"NO\"\n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate([100, 200], [200, 200]) == \"YES\"\n\n\ncheck(exchange)"
+  ],
+  "solution": [
+    "    odd = 0\n    even = 0\n    for i in lst1:\n        if i%2 == 1:\n            odd += 1\n    for i in lst2:\n        if i%2 == 0:\n            even += 1\n    if even >= odd:\n        return \"YES\"\n    return \"NO\"\n            \n"
+  ],
+  "metrics": {
+    "pass@1": 0.0,
+    "pass@10": 0.0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 0
+          }
+        ],
+        [
+          1,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 1
+          }
+        ],
+        [
+          2,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 2
+          }
+        ],
+        [
+          3,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 3
+          }
+        ],
+        [
+          4,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 4
+          }
+        ],
+        [
+          5,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 5
+          }
+        ],
+        [
+          6,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 6
+          }
+        ],
+        [
+          7,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 7
+          }
+        ],
+        [
+          8,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 8
+          }
+        ],
+        [
+          9,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 9
+          }
+        ],
+        [
+          10,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 10
+          }
+        ],
+        [
+          11,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 11
+          }
+        ],
+        [
+          12,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 12
+          }
+        ],
+        [
+          13,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 13
+          }
+        ],
+        [
+          14,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 14
+          }
+        ],
+        [
+          15,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 15
+          }
+        ],
+        [
+          16,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 16
+          }
+        ],
+        [
+          17,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 17
+          }
+        ],
+        [
+          18,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 18
+          }
+        ],
+        [
+          19,
+          {
+            "task_id": 0,
+            "passed": false,
+            "result": "failed: ",
+            "completion_id": 19
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      2.03125,
+      1.03125,
+      2.625,
+      2.9375,
+      3.25,
+      0.263671875,
+      0.01446533203125,
+      2.03125,
+      0.271484375,
+      0.14453125,
+      2.609375,
+      0.039794921875,
+      0.515625,
+      1.453125,
+      0.003265380859375,
+      0.043701171875,
+      0.06494140625,
+      0.384765625,
+      0.07568359375,
+      0.048828125,
+      1.609375,
+      0.04541015625,
+      0.21875,
+      0.045166015625,
+      0.0302734375,
+      0.0250244140625,
+      0.07763671875,
+      0.43359375,
+      0.03125,
+      0.0025634765625,
+      0.052734375,
+      0.017333984375,
+      0.005645751953125,
+      0.0654296875,
+      0.027587890625,
+      0.00049591064453125,
+      1.519918441772461e-05,
+      0.032470703125,
+      0.05029296875,
+      0.00823974609375,
+      0.0032501220703125,
+      0.0791015625,
+      0.078125,
+      0.0033721923828125,
+      0.00021457672119140625,
+      0.0001811981201171875,
+      0.0011749267578125,
+      0.1767578125,
+      0.06591796875,
+      0.4765625,
+      0.6875,
+      7.450580596923828e-06,
+      0.265625,
+      0.0003986358642578125,
+      0.9765625,
+      0.056640625,
+      1.6796875,
+      0.0072021484375,
+      0.17578125,
+      0.06298828125,
+      0.021728515625,
+      0.033447265625,
+      0.005767822265625,
+      0.052734375,
+      1.8849968910217285e-06,
+      0.023193359375,
+      0.0107421875,
+      6.079673767089844e-06,
+      4.863739013671875e-05,
+      4.5299530029296875e-06,
+      0.0028839111328125,
+      0.00020694732666015625,
+      0.1103515625,
+      0.0115966796875,
+      0.030517578125,
+      0.0004367828369140625,
+      0.00101470947265625,
+      2.3126602172851562e-05,
+      0.0011138916015625,
+      0.021484375,
+      0.00016117095947265625,
+      0.00013828277587890625,
+      4.57763671875e-05,
+      0.00701904296875,
+      0.0021820068359375,
+      1.3262033462524414e-06,
+      1.3768672943115234e-05,
+      9.34600830078125e-05,
+      5.626678466796875e-05,
+      0.000133514404296875,
+      0.44921875,
+      0.0191650390625,
+      2.640625,
+      4.40625,
+      2.125,
+      1.234375,
+      1.6640625,
+      0.1318359375,
+      0.63671875,
+      0.1728515625,
+      0.236328125,
+      0.08349609375,
+      0.2734375,
+      0.5078125,
+      2.0625,
+      1.5234375,
+      1.0625,
+      0.1630859375,
+      0.12353515625,
+      1.0390625,
+      0.94140625,
+      2.0,
+      0.00183868408203125,
+      1.1875,
+      0.443359375,
+      0.00133514404296875,
+      0.10009765625,
+      0.81640625,
+      1.171875,
+      0.01214599609375,
+      0.0233154296875,
+      1.138448715209961e-05,
+      0.2158203125,
+      0.0289306640625,
+      0.01397705078125,
+      0.275390625,
+      6.961822509765625e-05,
+      0.482421875,
+      0.005523681640625,
+      0.796875,
+      2.375,
+      1.1328125,
+      0.8203125,
+      1.5703125,
+      0.7421875,
+      0.0225830078125,
+      0.1796875,
+      0.0634765625,
+      0.2470703125,
+      1.5,
+      1.9375,
+      1.1171875,
+      1.203125,
+      0.032470703125,
+      0.462890625,
+      0.091796875,
+      0.2109375,
+      0.006591796875,
+      0.030517578125,
+      1.1484375,
+      0.0002765655517578125,
+      0.75390625,
+      0.4765625,
+      0.00093841552734375,
+      0.0120849609375,
+      0.001190185546875,
+      2.574920654296875e-05,
+      0.0218505859375,
+      0.003692626953125,
+      0.0240478515625,
+      0.01123046875,
+      4.601478576660156e-05,
+      0.375,
+      0.00823974609375,
+      0.2265625,
+      1.34375,
+      1.53125,
+      0.013916015625,
+      0.07666015625,
+      0.64453125,
+      1.1796875,
+      0.8515625,
+      0.373046875,
+      0.984375,
+      0.58984375,
+      0.06201171875,
+      0.08349609375,
+      0.16796875,
+      0.00372314453125,
+      0.0233154296875,
+      0.578125,
+      0.000762939453125,
+      0.2001953125,
+      0.0186767578125,
+      0.0021820068359375,
+      1.015625
+    ],
+    "len": 186,
+    "num_tokens_generated": 186,
+    "num_tokens_scored": 24,
+    "num_green_tokens": 24,
+    "watermarking_fraction": 0.12903225806451613,
+    "green_fraction": 1.0,
+    "z_score": 4.898979485566357,
+    "p_value": 4.816785043215445e-07,
+    "prediction": true,
+    "confidence": 0.9999995183214957
+  },
+  "human_metrics": {
+    "pass@1": 1.0,
+    "pass@10": 0,
+    "pass_results": {
+      "0": [
+        [
+          0,
+          {
+            "task_id": 0,
+            "passed": true,
+            "result": "passed",
+            "completion_id": 0
+          }
+        ]
+      ]
+    },
+    "entropy": [
+      0.130859375,
+      2.5,
+      1.3359375,
+      1.5703125,
+      0.0028076171875,
+      0.26953125,
+      0.0001583099365234375,
+      0.51953125,
+      0.10693359375,
+      0.0595703125,
+      0.00390625,
+      0.3828125,
+      0.001373291015625,
+      0.3359375,
+      1.3203125,
+      0.0986328125,
+      0.494140625,
+      0.208984375,
+      0.11474609375,
+      0.02978515625,
+      0.039306640625,
+      0.1494140625,
+      0.64453125,
+      0.00811767578125,
+      1.328125,
+      0.11181640625,
+      0.421875,
+      0.1552734375,
+      0.0230712890625,
+      0.003753662109375,
+      0.37109375,
+      0.18359375,
+      0.0010223388671875,
+      0.049560546875,
+      0.0211181640625,
+      0.08203125,
+      0.55859375,
+      0.00106048583984375,
+      0.003631591796875,
+      0.0023956298828125,
+      0.0047607421875,
+      0.0037994384765625,
+      0.000843048095703125,
+      0.003997802734375,
+      0.1611328125,
+      0.000797271728515625,
+      0.055419921875,
+      0.01123046875,
+      0.62890625,
+      0.00848388671875,
+      0.0024566650390625,
+      0.00084686279296875,
+      0.007598876953125,
+      0.035400390625,
+      0.0001239776611328125,
+      0.5390625,
+      0.0118408203125,
+      0.72265625,
+      0.423828125,
+      0.640625,
+      0.01129150390625,
+      0.0615234375,
+      0.007232666015625,
+      0.052978515625,
+      0.400390625,
+      0.0003719329833984375,
+      0.0098876953125,
+      0.00787353515625,
+      0.3828125,
+      0.0269775390625,
+      0.0001583099365234375,
+      0.69140625,
+      1.953125
+    ],
+    "len": 73,
+    "num_tokens_generated": 73,
+    "num_tokens_scored": 6,
+    "num_green_tokens": 1,
+    "watermarking_fraction": 0.0821917808219178,
+    "green_fraction": 0.16666666666666666,
+    "z_score": -1.6329931618554523,
+    "p_value": 0.9487647825701253,
+    "prediction": false
+  }
+}
